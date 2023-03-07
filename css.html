@@ -21,7 +21,7 @@
     }
   </script>
    <title> CSS Tutorial | CodingNation</title>
-   <!-- <link rel="icon" href="../pictures/web.png" id="icon" > -->
+   <!-- <link rel="icon" href="./web.png" id="icon" > -->
 </head>
 
 
@@ -353,22 +353,22 @@ To use it, just assign the background-image with the URL of the image you want t
         <pre class="highlight"><code class="language-css">
        background-image: url("CSS\ image.png");
   </code>
-</pre><br><br><p>So, before going to the output some of you must be wondering how to write the location of the file, well with the VS code you can just right-click the file and select the path</p> <br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-backgrounds/copy%20path.webpp" alt="">  <br><p>Sorted? Now, this is the image I would be using for the output. Just try to pay attention, the output of this code is going to shock you.</p><br> <img src="../pictures/css logo.png" alt="" style="width: 100px; "><br><p>Normally you would expect the image to be displayed once as the background of the website, right? But that’s not how things work in CSS.</p><br><img src="../pictures/Screenshot 2023-02-25 184820.png" alt="">   <br><p>This is the output of the code written above; CSS repeats the image on both the x and y axis to avoid empty spaces being left due to the image dimensions. To solve this we will look at the next background property.</p><br><br><h3>Background Repeat</h3><br><p>As the name suggests we can control how the image is repeated as the background.</p>
+</pre><br><br><p>So, before going to the output some of you must be wondering how to write the location of the file, well with the VS code you can just right-click the file and select the path</p> <br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-backgrounds/copy%20path.webpp" alt="">  <br><p>Sorted? Now, this is the image I would be using for the output. Just try to pay attention, the output of this code is going to shock you.</p><br> <img src="./css logo.png" alt="" style="width: 100px; "><br><p>Normally you would expect the image to be displayed once as the background of the website, right? But that’s not how things work in CSS.</p><br><img src="./Screenshot 2023-02-25 184820.png" alt="">   <br><p>This is the output of the code written above; CSS repeats the image on both the x and y axis to avoid empty spaces being left due to the image dimensions. To solve this we will look at the next background property.</p><br><br><h3>Background Repeat</h3><br><p>As the name suggests we can control how the image is repeated as the background.</p>
 <br>
         <pre class="highlight"><code class="language-css">
       background-repeat: repeat-x;
   </code>
-</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185052.png" alt="">
+</pre><br><br><img src="./Screenshot 2023-02-25 185052.png" alt="">
 <br>
         <pre class="highlight"><code class="language-css">
       background-repeat: repeat-y;
   </code>
-</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185306.png" alt="" style="width: 400px;">
+</pre><br><br><img src="./Screenshot 2023-02-25 185306.png" alt="" style="width: 400px;">
 <br>
         <pre class="highlight"><code class="language-css">
       background-repeat: no-repeat;
   </code>
-</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185418.png" alt="" style="width: 400px; "><br><p>
+</pre><br><br><img src="./Screenshot 2023-02-25 185418.png" alt="" style="width: 400px; "><br><p>
 Apart from this, there are many more properties that you can test on your own. For eg- round, space, etc. </p>
 <br>
         <pre class="highlight"><code class="language-css">
@@ -380,14 +380,14 @@ Apart from this, there are many more properties that you can test on your own. F
         <pre class="highlight"><code class="language-css">
         background-size: cover;
   </code>
-</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 190152.png" alt=""><br><br>
+</pre><br><br><h3>Output:</h3><br><img src="./Screenshot 2023-02-25 190152.png" alt=""><br><br>
 <p>
 2. Contain: Fits the image according to its original dimensions. </p>
 <br>
         <pre class="highlight"><code class="language-css">
         background-size: contain;
   </code>
-</pre><br><br><p>So, the image I chose had a very small dimension and thus this output is very much obvious.</p><br><img src="../pictures/Screenshot 2023-02-25 190441.png" alt=""><br><p>3. Auto: This is the default size of the image which we saw using the “no-repeat command”. <br><br><b>Note: All commands listed have been used with no-repeat property, so if you are getting a different output it could be due to that.</b> <br><br>Apart from these three, you can manually set the width and height of the background image, as you wish it to be. Here’s a small overview, try running them in your code editor for more clarity.
+</pre><br><br><p>So, the image I chose had a very small dimension and thus this output is very much obvious.</p><br><img src="./Screenshot 2023-02-25 190441.png" alt=""><br><p>3. Auto: This is the default size of the image which we saw using the “no-repeat command”. <br><br><b>Note: All commands listed have been used with no-repeat property, so if you are getting a different output it could be due to that.</b> <br><br>Apart from these three, you can manually set the width and height of the background image, as you wish it to be. Here’s a small overview, try running them in your code editor for more clarity.
 <br><br>
 1. Equal width and height</p><br>
 <br>
@@ -408,7 +408,7 @@ Eg-</p>
         <pre class="highlight"><code class="language-css">
        background-position: top right;
   </code>
-</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 191019.png" alt=""><br><p><b>Note:</b> While using the “bottom right/left” as a value, you'll see the background image disappearing from the main screen. This is because we have been using the image directly in the body. Creating different divisions will fix this problem.</p><br><br><h3>Background Attachment</h3><br><p>This property determines what happens to the background image on scrolling. Sometimes we just want the background to remain the same even if we scroll down the page. In that case, we can use this property. <br><br>
+</pre><br><br><h3>Output:</h3><br><img src="./Screenshot 2023-02-25 191019.png" alt=""><br><p><b>Note:</b> While using the “bottom right/left” as a value, you'll see the background image disappearing from the main screen. This is because we have been using the image directly in the body. Creating different divisions will fix this problem.</p><br><br><h3>Background Attachment</h3><br><p>This property determines what happens to the background image on scrolling. Sometimes we just want the background to remain the same even if we scroll down the page. In that case, we can use this property. <br><br>
 Eg:</p>
 <br>
         <pre class="highlight"><code class="language-css">
@@ -420,7 +420,7 @@ All the properties we used so far, would look something like this in a single li
         <pre class="highlight"><code class="language-css">
       background: purple fixed url("CSS\ image.png") no-repeat right top;
   </code>
-</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 191635.png" alt=""><br><br><p>It is your choice which method you want to use. That was all about CSS backgrounds.</p><br><br>
+</pre><br><br><h3>Output:</h3><br><img src="./Screenshot 2023-02-25 191635.png" alt=""><br><br><p>It is your choice which method you want to use. That was all about CSS backgrounds.</p><br><br>
       </div>
       <div  class="notes" id="div9"  style="display: none;">
       <h2>CSS Borders</h2><br><p>Border property helps in creating borders around the text. Various properties in it are discussed in this module.</p><br><br><h3>Border Style</h3><br><p>It specifies the type of border a text is going to have. <br><br>
