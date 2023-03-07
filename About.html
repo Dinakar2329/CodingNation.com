@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https:///ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>About Us | CodingNation</title>
+    <link rel="icon" href="../pictures/icons8-code-100.png" id="icon" />
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+      @import url(https://fonts.googleapis.com/css?family=Khula:300,regular,600,700,800);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(101, 0, 94, 1) 3%,
+          rgba(60, 132, 206, 1) 38%,
+          rgba(48, 238, 226, 1) 68%,
+          rgba(255, 25, 25, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.05fr 1fr;
+        height: 190vh;
+        overflow: hidden;
+      }
+
+      .fixed-navbar {
+        background-color: #fff;
+        grid-column: 1 / span 2;
+        border-bottom: 2px solid #7e22ce;
+      }
+      .fixed-navbar p {
+        font-size: 30px;
+        position: absolute;
+        top: 4%;
+        left: 1%;
+        color: #9333ea;
+        float: left;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+      }
+      nav {
+        color: #fff;
+        grid-column: 1 / span 2;
+        background: white;
+        -webkit-box-shadow: 0 3px 12px 3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 3px 12px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 3px 12px 3px rgba(0, 0, 0, 0.2);
+      }
+      nav ul {
+        display: flex;
+      }
+      nav li {
+        /* border: 1px solid red; */
+        padding: 10px;
+        font-weight: 500;
+        position: relative;
+        left: 25%;
+      }
+      nav a {
+        color: rgb(124, 34, 206);
+        font-size: 15px;
+        text-decoration: none solid rgb(126, 34, 206);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin: 10px;
+        position: relative;
+        transition: all 0.3s;
+      }
+      /*navigation fields hover animation*/
+      nav li a:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #7e22ce;
+        border-radius: 12px;
+        transform-origin: right;
+        transition: all 0.4s ease;
+      }
+      nav li a:hover:before {
+        width: 100%;
+      }
+
+      nav li.center a:before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      nav li.upward a:before {
+        width: 100%;
+        bottom: -5px;
+        opacity: 0;
+      }
+      nav li.upward a:hover:before {
+        bottom: 0px;
+        opacity: 1;
+      }
+      nav li.forward a:before {
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+      }
+      nav li.forward a:hover:before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      nav i {
+        font-size: 20px;
+        width: 15px;
+      }
+      .topics {
+        display: none;
+      }
+
+      nav button {
+        display: none;
+      }
+      .menu i {
+        display: none;
+      }
+      header > button {
+        display: none;
+      }
+
+      .modal {
+        display: none;
+      }
+
+      /**===== bars1 =====*/
+      #bars1 {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        margin: -25px 0 0 -25px;
+      }
+      .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+        display: none;
+      }
+
+      #bars1 span {
+        position: absolute;
+        display: block;
+        bottom: 10px;
+        width: 9px;
+        height: 5px;
+        background: rgba(0, 0, 0, 0.25);
+        -webkit-animation: bars1 1.5s infinite ease-in-out;
+        animation: bars1 1.5s infinite ease-in-out;
+      }
+
+      #bars1 span:nth-child(2) {
+        left: 11px;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+
+      #bars1 span:nth-child(3) {
+        left: 22px;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+
+      #bars1 span:nth-child(4) {
+        left: 33px;
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+      }
+
+      #bars1 span:nth-child(5) {
+        left: 44px;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+      }
+      @keyframes bars1 {
+        0% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+        25% {
+          height: 30px;
+          -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+          -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+          background: #000000;
+        }
+        50% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+      }
+      @-webkit-keyframes bars1 {
+        0% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+        25% {
+          height: 30px;
+          -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+          background: #000000;
+        }
+        50% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+        100% {
+          height: 5px;
+          -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+          background: rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      footer {
+        background: #2c292c;
+        color: #fff;
+        margin-top: 3%;
+
+        max-width: 100vw;
+        padding: 20px;
+        text-align: center;
+        line-height: 30px;
+        font-size: medium;
+        font-family: "poppins";
+        border-radius: 5px;
+        -webkit-box-shadow: 25px 0px 0px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 25px 0px 0px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 25px 0px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+      footer p {
+        margin-left: 18%;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 15px;
+        text-shadow: 0 10px 10px rgb(0, 0, 0, 0.2);
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px auto;
+        padding: 1px;
+        position: relative;
+        top: 5%;
+      }
+      p {
+        max-width: 50em;
+        text-align: center;
+        font-family: "poppins";
+      }
+      @media only screen and (max-width: 900px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 70px 30px 1fr 20px;
+          overflow: hidden;
+          height: 180vh;
+        }
+        .fixed-navbar p {
+          font-size: 25px;
+        }
+        nav li {
+          display: none;
+        }
+        nav button {
+          display: block;
+          background: transparent;
+          border: transparent;
+          font-size: 26px;
+        }
+
+        .topics i {
+          display: block;
+        }
+        .menu i {
+          color: rgb(124, 34, 206);
+          display: block;
+          margin: 5px 5px;
+          font-size: 25px;
+        }
+
+        header > button {
+          display: block;
+          border: 1.5px solid #22ce33;
+          background-color: transparent;
+          float: right;
+          margin-top: 1em;
+          border-radius: 5px;
+        }
+        header > button > img {
+          width: 1.5rem;
+          color: #fff;
+        }
+        .content {
+          margin-left: -0em;
+          max-width: 95vw;
+        }
+
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 11; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0, 0, 0); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+          -webkit-box-shadow: 12px 3px 12px 3px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 12px 3px 12px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 12px 3px 12px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Modal Content */
+        .modal-content {
+          display: block;
+          background-color: rgb(124, 34, 206);
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          max-width: 80%;
+          border-radius: 8px;
+        }
+        .modal-content a {
+          display: flex;
+          align-items: center;
+          width: 1em;
+          color: #fff;
+          text-decoration: none solid rgb(126, 34, 206);
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          margin: 10px;
+          font-weight: 500;
+        }
+
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        footer {
+          font-size: 10px;
+          line-height: 10px;
+          padding: 15px;
+          margin-top: 25em;
+          border-radius: 5px;
+          border-radius: 5px;
+        }
+        .about {
+          font-size: 14px;
+          margin-top: 0.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--loader-->
+    <div id="backdrop" class="backdrop"></div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div id="bars1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!--for whole page-->
+    <div class="container">
+      <!--navigation bar-->
+      <header class="fixed-navbar">
+        <p>CodingNation</p>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="custom-btn btn-11">
+          <img src="/pictures/list.svg" alt="" />
+          <div class="dot"></div>
+        </button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">×</span>
+            <a href="./index.html">HOME</a>
+            <a href="./html.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./jascri.html">JAVASCRIPT</a>
+            <a href="./cpro.html">C</a>
+            <a href="./java.html">JAVA</a>
+            <a href="./Editor.html">Code Editor</a>
+          </div>
+        </div>
+      </header>
+
+      <!--navigation fields-->
+      <nav class="topnav">
+        <ul>
+          <a href="index.html"><i class="bx bxs-home"></i></a>
+          <li><a href="./html.html">HTML</a></li>
+          <li><a href="./css.html">CSS</a></li>
+          <li><a href="./jascri.html">JAVASCRIPT</a></li>
+          <li><a href="./cpro.html">C</a></li>
+          <li><a href="./java.html">JAVA</a></li>
+          <li><a href="./Editor.html">Code Editor</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+
+      <div class="about">
+        <h1>About Us</h1>
+        <p>
+          Welcome to our code tutorial website! We're two people who are
+          passionate about coding and want to share our knowledge with the
+          world. We've put in a lot of hard work to create this website and hope
+          that you find it useful.
+        </p>
+        <h2>Our Story</h2>
+        <p>
+          We both started learning to code at a young age and quickly fell in
+          love with it. Over the years, we've honed our skills and gained a
+          techniques. We wanted to find a way to share our knowledge with others
+          and decided to create this website.
+        </p>
+        <h2>What We Offer</h2>
+        <p>
+          Our website offers a wide range of tutorials on various programming
+          languages and tools. We cover everything from the basics to more
+          advanced topics, so there's something for everyone. We also offer tips
+          and tricks to help you become a better coder.
+        </p>
+        <h2>Our Philosophy</h2>
+        <p>
+          We believe that everyone should have access to quality coding
+          education, regardless of their background or experience. That's why
+          we've made our website free and accessible to everyone. We also
+          believe in making learning fun and engaging, so our tutorials are
+          designed to be interactive and easy to follow.
+        </p>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions, feedback, or suggestions, please don't
+          hesitate to contact us.
+        </p>
+      </div>
+    </div>
+    <!--background animation-->
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; 2023 CodingNation. All rights reserved.</p>
+      <p>Trademark &trade; CodingNation</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

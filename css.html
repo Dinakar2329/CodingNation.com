@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" href="style1.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https:///ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+    </style>
+  <script>
+    function changeTitle(newTitle) {
+      document.title = newTitle;
+    }
+  </script>
+   <title> CSS Tutorial | CodingNation</title>
+   <!-- <link rel="icon" href="../pictures/web.png" id="icon" > -->
+</head>
+
+    <!--loader-->
+<div id="backdrop" class="backdrop"></div>
+        <div class="row">            
+            <div class="col-sm-2">
+                <div id="bars1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    
+           
+
+
+
+<!--for whole page-->
+    <div class="container">
+
+      <!--navigation bar-->
+<header class="fixed-navbar">
+        <p>CodingNation</p>
+        
+    <!-- Trigger/Open The Modal -->
+     <button id="myBtn" class="custom-btn btn-11">
+      <img src="/pictures/list.svg" alt=""><div class="dot">
+     </div>
+  </button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+            <a href="./html.html">HTML</a>
+            <a href="./css.html">CSS</a>
+            <a href="./jascri.html">JAVASCRIPT</a>
+            <a href="./cpro.html">C</a>
+            <a href="./java.html">JAVA</a>
+            <a href="./Editor.html">Editor</a>
+            <a href="./About.html">About</a>
+      </div>
+    </div>
+</header>
+
+
+      <!--navigation fields-->
+      <nav class="topnav">
+           <ul>
+          <a href="index.html"><i class="bx bxs-home"></i></a>
+         <!-- menu icon-->
+        <div class="menu"> 
+           <i class='bx bx-menu-alt-left'  onclick="toggleSidebar()"></i>
+        </div>
+
+          <li><a href="./html.html">HTML</a></li>
+          <li><a href="./css.html">CSS</a></li>
+          <li><a href="./jascri.html">JAVASCRIPT</a></li>
+          <li><a href="./cpro.html">C</a></li>
+          <li><a href="./java.html">JAVA</a></li>
+          <li><a href="./Editor.html">Code Editor</a></li>
+          <li><a href="#">ABOUT</a></li>
+           
+        </ul>
+      </nav>
+
+      <!--sidebar-->
+      <aside class="fixed-sidebar" id="myNav">
+        <div class="menu">
+          <h2>Introduction</h2>
+          <button class="single"  data-index="0" onclick="changeTitle('Information & History | CodingNation')">Information & History</button>
+          <button class="single" data-index="1" onclick="changeTitle('Your first CSS website | CodingNation')">Your first CSS website</button>
+          <button class="single" data-index="2" onclick="changeTitle('How CSS works? | CodingNation')">How CSS works?</button>
+          <button class="single" data-index="3" onclick="changeTitle('Ways to add CSS | CodingNation')">Ways to add CSS</button>
+          <button class="single" data-index="4" onclick="changeTitle('CSS Selectors | CodingNation')">CSS Selectors</button>
+          <button class="single" data-index="5" onclick="changeTitle('CSS Comments | CodingNation')">CSS Comments</button>
+          <h2>CSS Properties</h2>
+          <button class="single" data-index="6" onclick="changeTitle('CSS Colors | CodingNation')">CSS Colors</button>
+          <button class="single" data-index="7" onclick="changeTitle('CSS Backgrounds | CodingNation')">CSS Backgrounds</button>
+          <button class="single" data-index="8" onclick="changeTitle('CSS Borders | CodingNation')">CSS Borders</button>
+          <button class="single" data-index="9" onclick="changeTitle('CSS Images | CodingNation')">CSS Images</button>
+          <button class="single" data-index="10" onclick="changeTitle('CSS Video Embedding | CodingNation')">CSS Video Embedding</button>
+          <button class="single" data-index="11" onclick="changeTitle('CSS Fonts | CodingNation')">CSS Fonts</button>
+          <button class="single" data-index="12" onclick="changeTitle('CSS Text Styling | CodingNation')">CSS Text Styling</button>
+          <button class="single" data-index="13" onclick="changeTitle('CSS Padding | CodingNation')">CSS Padding</button>
+          <button class="single" data-index="14" onclick="changeTitle('CSS Margin | CodingNation')">CSS Margin</button>
+          <button class="single" data-index="15" onclick="changeTitle('CSS Hover | CodingNation')">CSS Hover</button>
+          <button class="single" data-index="16" onclick="changeTitle('CSS Cursors | CodingNation')">CSS Cursors</button>
+          <button class="single" data-index="17" onclick="changeTitle('CSS Links | CodingNation')">CSS Links</button>
+          <button class="single" data-index="18" onclick="changeTitle('CSS Combinators | CodingNation')">CSS Combinators</button>
+          <button class="single" data-index="19" onclick="changeTitle('CSS Buttons | CodingNation')">CSS Buttons</button>
+          <button class="single" data-index="20" onclick="changeTitle('CSS Overflow | CodingNation')">CSS Overflow</button>
+          <button class="single" data-index="21" onclick="changeTitle('CSS Float | CodingNation')">CSS Float</button>
+          <button class="single" data-index="22" onclick="changeTitle('CSS !important | CodingNation')">CSS !important</button>
+          <button class="single" data-index="23" onclick="changeTitle('CSS Maths Functions | CodingNation')">CSS Maths Functions</button>
+          <button class="single" data-index="24" onclick="changeTitle('CSS Size | CodingNation')">CSS Size</button>
+          <button class="single" data-index="25" onclick="changeTitle('CSS Positioning | CodingNation')">CSS Positioning</button>
+          <button class="single" data-index="26" onclick="changeTitle('CSS Z-index | CodingNation')">CSS Z-index</button>
+          <button class="single" data-index="27" onclick="changeTitle('CSS Forms | CodingNation')">CSS Forms</button>
+          <button class="single" data-index="28" onclick="changeTitle('CSS Navigation Bar | CodingNation')">CSS Navigation Bar</button>
+          <h2>CSS Designing</h2>
+          <button class="single" data-index="29" onclick="changeTitle('CSS Display | CodingNation')">CSS Display</button>
+          <button class="single" data-index="30" onclick="changeTitle('CSS FlexBox | CodingNation')">CSS FlexBox</button>
+          <button class="single" data-index="31" onclick="changeTitle('CSS Grid | CodingNation')">CSS Grid</button>
+          <button class="single" data-index="32" onclick="changeTitle('CSS Media Queries | CodingNation')">CSS Media Queries</button>
+          </div>
+      </aside>
+
+
+      <!--for content side-->
+      <main class="main-content">
+        <div class="content">
+
+          <!--previous and next buttons-->
+      <button id="previous">Previous</button>
+      <button id="next">Next	</button>
+      
+      
+
+      <!--Notes-->
+      <div class="notes" id="div1 " >
+         <h2>Information & History</h2>
+            <br /><br />
+        <p>
+              &emsp; &emsp;Have you ever wondered about the websites you interact with daily basis, how do they look without any styling?  <br><br>
+Well, without Cascading Style Sheets (CSS) this is what this website looks like.</p>
+              <br /><br>
+                            <h2 style="font-weight: 400;">WITHOUT CSS</h2><br>
+                              <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-home/Without%20CSS.webp" alt="">
+                            <h2 style="font-weight: 400;">WITH CSS</h2><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-home/With%20CSS.webp" alt="">
+              <br><h2>History</h2><br>
+              <p>CSS was created by Håkon Wium Lie to allow web designers to change their website's layout, colours, and fonts. Originally, websites were meant to be used by researchers only, so the decoration did not matter. However, the need to make them look nice grew when websites became widespread.
+</p><br><br><h2>Why the word “Cascade”?</h2><br><p>The Cascade determines which CSS rules will be applied when multiple rules for an item are contradicting in the style sheet. </p>
+<br><br><h2>Key feature of CSS</h2><br><ol>
+  <li>Used to style and layout webpages</li>
+  <li>Written in HTML and XML</li>
+  <li>The last version was CSS 2.1, but seeing the scope everything now comes under the umbrella of CSS without any version number.</li>
+  <li>Reusability of the same rules for multiple HTML documents.</li>
+</ol><br><br>
+<h2>Why learn CSS?</h2><br>
+<p>CSS though optional, adds beauty to a website. It helps the user to design a majestic website according to their own liking. <br><br>
+So without wasting any time let’s start with your first CSS website.</p> </div>
+
+      <div  class="notes" id="div2"  style="display: none;"><h2>Your first CSS website</h2><br><br>
+        <h3>Installing VS Code</h3><br>
+        <li>Go to Google (or any preferred browser).</li>
+        <li>Type Visual studio code download</li>
+        <li>Click on download and install it as per your OS</li>
+        <li>After the installation is done, you need to install the Live Server extension to view the changes you make to your website.</li><br><br><h2>Which Browser should I use for web development?</h2><br><p>In general, you can use any web browser that is supported on your device. The most common of these are- </p><br>
+        <li>Chrome</li>
+        <li>Microsoft Edge</li>
+        <li>Safari</li>
+        <li>Firefox</li>
+        <li>Brave</li><br><br>
+        <p>But as per my personal advice, the Firefox browser gives the best usability and features especially for a new user. In fact, this tutorial will use Firefox to show the code outputs on our website.</p><br><br>
+        <h2>Your first CSS website</h2><br><p>
+       So, if you have successfully followed the above steps you can open vs code and create a new file with the name “first.html”. I assume you’ve enough knowledge so far about HTML to understand the working of HTML emmet and tags. <br> <br>So, if you have successfully followed the above steps you can open vs code and create a new file with the name “first.html”. I assume you’ve enough knowledge so far about HTML to understand the working of HTML emmet and tags. <br><br><a href="side.html">https://www.CodingNation.com/tutorial/html-home/</a></p><br><br><p>Now once you have created an HTML file, type “!” and enter to use the emmet for the default HTML website.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/!.webp" alt="" ><br>
+       <p>This code would then look something like this.</p><br><br>
+       <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/default%20HTML.webp" alt=""> <br><p>Rename the title to “First CSS”. This is the title that would be displayed at the top of the website.</p><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/first.webp" alt=""> <br> <br><p>Now let’s see the output of this code. Remember we had installed a live server extension earlier, you would see an icon on the bottom of the tray in VS code named “Go live”. You can also right-click to select open with Live Server to run the code. <br><br>
+This is how this website would look like without any text or attributes.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/preview.webp" alt=""><br><p>You can see here, that the title of the website is the only change we made. This is what an empty HTML website looks like. Now let’s add some HTML text and try styling that with CSS. <br><br>
+In the body tag, write anything you want to. Something like this-</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/first%20line.webp" alt=""><br><p>Now let’s add some styling. Though there are many ways to add CSS to an HTML website, we’ll look at them later. For now, in the head tag create a tag with the name style. <br><br>
+Add the body tag there, and finally, you’re going to add now your first CSS property. <br>
+Type the following lines-</p><br>
+  <pre class="highlight"><code class="language-css">
+ &lt;style&gt;
+    body {
+        color: yellow;
+        background-color: rebeccapurple;
+    }
+ &lt;/style&gt;
+  </code>
+</pre><br><br><p>Let’s see the output of this code first, which will give you half of the explanation of what exactly happened here.</p><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/first%20css.webp" alt=""><br><p>Pat yourself on the back! You’ve begun your journey with CSS. Throughout these tutorials, you’ll get better clarity about other properties as well.</p><br><br>
+<p>Coming back to this code, <b>here’s the whole code for you</b>.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-your-first-website/full%20code.webp" alt=""><br><p>To style any piece of code in CSS we need to select that (we selected body tag here). There are many other ways to do so as well. So just be patient and join with CodingNation to master CSS from Scratch.</p><br><br>
+      </div>
+      <div  class="notes" id="div3"  style="display: none;">
+      <h2>How CSS works?</h2><br>
+      <p>We wrote our first CSS style but still, the things wouldn’t be very much clear to an amateur person. Let’s look at how CSS works on the DOM model.</p><br><br>
+      <h3>DOM model - Document Object Model</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/how-css-works/DOM-model.webp" alt=""><br>
+      <p>Just like how any artist makes a structure of his art, similarly, when our website is loaded in the browser it creates a structure to manage the execution of different tags of HTML.Using DOM, HTML, as well as CSS of the web page, can be accessed along with the behaviour of the HTML elements. So, Document Object Model is a sort of API that represents and interacts with HTML documents.</p><br><br>
+      <h3>Working of CSS</h3><br><p>So basically after the DOM model is created in HTML, the browser parses CSS to the selectors we used (you’ll learn more about selectors in a while). The properties or the rules written in CSS are then applied to individual spans.</p><br><br>
+      </div>
+      <div  class="notes" id="div4"  style="display: none;">
+      <h2>Ways to add CSS</h2><br><p>So, there are mainly three ways to add CSS to any HTML document. One of the ways, we have already seen. </p><br><br><h3>Inline CSS:</h3><br><p>In this method, we can simply add CSS to the particular HTML tag using the style keyword.</p><br>
+        <pre class="highlight"><code class="language-css">
+&lt;h1 style="color:violet">Hello, I'm using in line CSS&gt;&lt;/h1&gt;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/ways-to-add-css/inline%20css.webp" alt=""><br><p>This way minute styling of the HTML document can be easily done without any hassles. <br><br>
+But still, generally, this method of adding CSS is not advised as it can create confusion in the tags and thus decrease the readability of code. 
+<br>
+Also, with this method of styling, you can’t use quotations within inline CSS. The quotations will be treated as the end of style and therefore stopping the block of code.</p><br><br>
+<h3>Internal CSS:</h3><br><p>This method would sound similar to you because we used this method originally to write our first CSS code. <br><br>
+Let’s try that again using another property. Create a style tag in the head of the HTML document and write the following code.</p><br>
+  <pre class="highlight"><code class="language-css">
+ &lt;style&gt;
+    body {
+        color: turquoise;
+        background-color: brown;
+        text-decoration: underline;
+    }
+ &lt;/style&gt;
+  </code>
+</pre><br><br><p>This tag selects the body and performs 3 operations on the text written in the body. Therefore the output would look like this-</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/ways-to-add-css/internal%20css.webp" alt=""><br><p>This way we can use CSS rules in the same document. But the major issue with this is, you can’t use these rules outside of the document, i.e, the scope of this style sheet is local. Therefore, let’s look at the most common method of adding the style sheet now…</p><br><br><h3>External CSS:</h3><br><p>As the name suggests, in this method we explicitly create a file name style (name can be changed) with the extension ‘.css’. Then we link this file in the head tag of the HTML document.
+<br><br>
+This style sheet can be linked with any number of documents thus making it easy to use everywhere.
+ <br><br>
+Let’s look at the implementation of the same. First, you need to create a file with the name “style.css” in the same folder where your HTML file is present. Later using the following command in the Head tag the file would be linked with the HTML document.</p><br>
+  <pre class="highlight"><code class="language-css">
+ &lt;link rel="stylesheet" href="style.css"&gt;
+  </code>
+</pre><br><br>
+<p>Here, “rel” defines the relationship between a linked resource and the current document, and “style.css” is the file we have created. Right now my file is already in the same directory as the HTML file so I don’t need to give the absolute path. <br><br>If you’ve created your “style.css” somewhere else, please give the path accordingly. <br><br>This way we can link CSS externally. But you’re on CodingnNation’s website, so here’s a shortcut for you to reduce the steps of doing so.
+ </p><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/ways-to-add-css/CSS_style_sheet.gif" alt=""><br><br><p>As you can see, I used the basic functionality of VS code and directly created a file called “style.css”. (I used ctrl+click to open the popup bar)
+<br>
+These were some ways in which you can link your CSS to your HTML file. But as a rule of thumb, external CSS is the best method to do so.</p><br><b></b>
+      
+      </div>
+      <div  class="notes" id="div5"  style="display: none;">
+      <h2>CSS Selectors</h2><br><p>So far we have just glanced at the basics of CSS, and you must have noticed me selecting the body tag every time I write any rule of CSS in the stylesheet.  <br><br>In technical terms, it is known as a selector. It tells the browser on which portion of the HTML document the styling needs to be applied. <br><br>The syntax of the selector goes as follows-</p><br>
+        <pre class="highlight"><code class="language-css">
+        Selector {
+          (Declaration)
+           Property: Value;
+        }
+  </code>
+</pre><br><br><p>There are primarily 5 types of Selectors.</p><br><br>
+<h3>1. CSS Element Selector</h3><br><p>This is the only method that we have used so far in all our examples. It is used to select an HTML element which has a particular keyword. 
+<br><br>
+But we don’t recommend using it in proper projects as there can be multiple times the same tag used in the document. So, overlapping of rules can occur in the stylesheet.
+<br><br>
+<b>Eg-</b></p><br>
+        <pre class="highlight"><code class="language-css">
+ &lt;style&gt;
+    h1 {
+        color: green;
+        background-color: aquamarine;
+    }
+     p {
+        color: aquamarine;
+        background-color: green;
+     }
+ &lt;/style&gt;
+  </code>
+</pre><br><br><p>We can see here, the output is applied to the individual elements of the code.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/CSS-selectors/element%20selector.webp" alt=""><br><br>
+<h3>2. CSS ID Selector</h3><br>
+<p>As I said earlier if we use an element selector we can’t add uniqueness to each element. This is achieved by the ID selector. We can create unique IDs for each element property and use that for selecting that block of code.
+<br><br>
+It is written with “#” followed by the ID name in the style sheet. But before that, we need to define it in the HTML document as well. Here’s an example-</p><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/CSS-selectors/id%20selector.webp" alt=""><br><p>Pay attention to how I created a division to use the id selector. You must be aware of div in HTML but just for a refresher, it is used to create separate blocks for refining the document structure. <br><br>
+I deliberately left an <p> in the div to show that the “id selector” tag will select every element present in the div. <br><br>
+The output of this code would be</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/CSS-selectors/id%20selector%20output.webp" alt=""><br><br>
+<h3>3. CSS Class Selector</h3><br><p>So roughly you can say that the class selector does the same job as the id selector; the only difference is we use the id selector for specifically one element of a unique type. On the other hand, a class selector helps us in grouping various types of elements. Like sometimes we need to style maybe a title and specific paragraph with the same rules. In that case, we can give the same class to both elements.
+<br><br>
+The syntax of a class selector is almost similar to the id selector, just “#” is replaced with “.”
+<br>
+Eg- .class-name{ property : value;}
+<br><br>
+So here’s a small assignment for you. You’ve to make this layout with just two class selectors. Try it out and then look down for the solution.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/CSS-selectors/class%20selector%20output.webp" alt=""><br><p>Notice how all of the 4 headings are different. So if you think to use an ID selector or element selector then you need to create 4 style properties. But with the class selector, it is cut in half.
+<br><br>
+Here’s the code of it, I hope you tried it yourself first.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/CSS-selectors/class%20selector.webp" alt=""><br><p>Thus we can see a class selector helps in grouping two distinct elements. But what if you want to group everything?</p><br><br><h3>4. CSS Universal Selector</h3><br><p>A universal selector is used to group everything present on the page. Thus it comes in handy while structuring websites quickly. You’ll learn in detail about the situations in which a universal selector is helpful. <br><br>
+The syntax of a universal selector is simple. Just use “*” to use the selector.
+<br><br>
+Eg- </p><br>
+        <pre class="highlight"><code class="language-css">
+ &lt;style&gt;
+   * {
+        color: brown;
+        background-color: yellowgreen;
+    }
+ &lt;/style&gt;
+  </code>
+</pre><br><br><p>Run it yourself and see what output it is giving to you.</p><br><br><h3>5. CSS Group Selector</h3><br><p>Previously we just saw the use of class selectors right? There’s another way to do so as well.</p><br>
+        <pre class="highlight"><code class="language-css">
+ &lt;style&gt;
+    h1, h3 {
+        color: brown;
+        background-color: yellowgreen;
+    }
+   
+    h2, h4 {
+        color: yellowgreen;
+        background-color: brown;
+    }
+ &lt;/style&gt;
+  </code>
+</pre><br><br><p>A grouping selector is used to minimize the code. Commas are used to separate each selector in a grouping. This reduces the number of lines of code and yes! The code looks clean.</p><br><br>
+      
+      </div>
+      <div  class="notes" id="div6"  style="display: none;"><h2>CSS Comments</h2><br><p>CSS comments are the same as what you must have learnt in any technical language. It is written to explain the code and is helpful for the users who read that code so that they can understand it easily.<br><br>
+Comments are ignored by browsers, and the syntax to write them is: </p><br>
+        <pre class="highlight"><code class="language-css">
+        /* Your comment */
+  </code>
+</pre><br><br><img src="https://th.bing.com/th/id/R.5d11f8d548aaae82d8de5a84b2fdefec?rik=GA4fAYmSJ4Cfcw&riu=http%3a%2f%2fconstructs.stampede-design.com%2fwp-content%2fuploads%2f2016%2f03%2fSWhAdDNLMG5zdGFuVGlWeplil_ViE82kGTiU_-VEWyg4HjJAqCF-lPJmYFwgk8zhRZ7hzC1eGDCmf19lZAPILAzhiCK0JSe4lwfhusGtrAA.png&ehk=dA6r03l8gho1piPSZxuwhdSMQsDa9tWKh11jrqE4YQI%3d&risl=&pid=ImgRaw&r=0" alt="">
+      <br><br>
+      </div>
+      <div  class="notes" id="div7"  style="display: none;">
+      <h2>CSS Colors</h2><br><p>We have been glimpsing this property for quite a while in the Introduction portion; so you must be aware that this property can help us set the colour of the text.</p><br>
+        <pre class="highlight"><code class="language-css">
+          Syntax: { color: value;}
+       </code>
+      </pre><br><br><p>Now there are many ways of giving this value to the colour. Some of the most common are listed below.</p><br><br><h3>1. RGB format:</h3><br><p>The full form of RGB is “Red, Green, Blue” and thus it defines the colour value by taking three arguments ranging from 0 to 255. <br>
+Syntax: {color: rgb(0,0,0);}.
+<br><br>
+Note that this colour is black, if you change each of the values to 255 white colours of the text would be selected.
+<br><br>
+<b>Here’s an example to give you clarity on the RGB colour scheme.</b></p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-colors/rgb%20color%20code.webp" alt=""><br><br><p>The output of this would be-</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-colors/rgb%20output.webp" alt=""><br><br><h3>2. Hexadecimal notation:</h3><br><p>By using the hex code of any colour you can assign that colour to the element.
+<br><b>For eg:-</b>
+</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+         h1 {
+            color: #ff7189;
+        }
+  </code>
+</pre><br><br><p>This way you can give specific values to the colour by searching for their hex codes on google.</p><br><br>
+<h3>3. HSL:
+</h3><br><p>HSL stands for Hue, Saturation and Lightness. Tweaking these values gives different colours, and the syntax is quite similar to RGB. <br></p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          Syntax: {color: hsl(hue,saturation,lightness);}.
+  </code>
+</pre><br><br><p>Hue refers to the dominant colour family present in that colour, saturation adds the shades to that dominant colour and lastly, lightness describes the transparency and boldness of that colour. <br><br>
+Apart from these methods RGBA and HSLA too are used to give colour to text, but that is something not so common with beginners.</p><br><br>
+      
+      </div>
+      <div  class="notes" id="div8"  style="display: none;"><h2>CSS Backgrounds</h2><br><br><h3>Background Colour</h3><br><p>We’ve already used this property in the Introduction to CSS but just as a refresher, here’s the syntax of it-</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      Syntax: {background-color: color;}
+  </code>
+</pre><br><br>   <p>The colour assignment is exactly similar to how we did for the text previously.</p><br><br><h3>Background Image</h3><br><p>Often websites add stylish images as a background to make the website look more beautiful. This can be achieved by using the background-image property.<br>
+To use it, just assign the background-image with the URL of the image you want to use. Here’s an example.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+       background-image: url("CSS\ image.png");
+  </code>
+</pre><br><br><p>So, before going to the output some of you must be wondering how to write the location of the file, well with the VS code you can just right-click the file and select the path</p> <br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-backgrounds/copy%20path.webpp" alt="">  <br><p>Sorted? Now, this is the image I would be using for the output. Just try to pay attention, the output of this code is going to shock you.</p><br> <img src="../pictures/css logo.png" alt="" style="width: 100px; "><br><p>Normally you would expect the image to be displayed once as the background of the website, right? But that’s not how things work in CSS.</p><br><img src="../pictures/Screenshot 2023-02-25 184820.png" alt="">   <br><p>This is the output of the code written above; CSS repeats the image on both the x and y axis to avoid empty spaces being left due to the image dimensions. To solve this we will look at the next background property.</p><br><br><h3>Background Repeat</h3><br><p>As the name suggests we can control how the image is repeated as the background.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      background-repeat: repeat-x;
+  </code>
+</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185052.png" alt="">
+<br>
+        <pre class="highlight"><code class="language-css">
+      background-repeat: repeat-y;
+  </code>
+</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185306.png" alt="" style="width: 400px;">
+<br>
+        <pre class="highlight"><code class="language-css">
+      background-repeat: no-repeat;
+  </code>
+</pre><br><br><img src="../pictures/Screenshot 2023-02-25 185418.png" alt="" style="width: 400px; "><br><p>
+Apart from this, there are many more properties that you can test on your own. For eg- round, space, etc. </p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      Syntax: background-repeat: property; (Here you can test round, space, and other such properties).
+  </code>
+</pre><br><br><h3>Background Size</h3><br><p>We use this property to set custom sizes for the background of the website. The most common of these are- <br>
+1. Cover: It fits the whole screen according to the dimensions of the HTML document leaving no empty space.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        background-size: cover;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 190152.png" alt=""><br><br>
+<p>
+2. Contain: Fits the image according to its original dimensions. </p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        background-size: contain;
+  </code>
+</pre><br><br><p>So, the image I chose had a very small dimension and thus this output is very much obvious.</p><br><img src="../pictures/Screenshot 2023-02-25 190441.png" alt=""><br><p>3. Auto: This is the default size of the image which we saw using the “no-repeat command”. <br><br><b>Note: All commands listed have been used with no-repeat property, so if you are getting a different output it could be due to that.</b> <br><br>Apart from these three, you can manually set the width and height of the background image, as you wish it to be. Here’s a small overview, try running them in your code editor for more clarity.
+<br><br>
+1. Equal width and height</p><br>
+<br>
+        <pre class="highlight"><code class="language-css">
+        background-size: 100px;
+  </code>
+</pre><br><br><p>This command will assign the same value to both the width and height of the background image. <br><br>
+2. Distinct width and height</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        background-size: 100px 150px;
+  </code>
+</pre><br><br>
+<h3>Background Position</h3><br><p>This property sets the starting position of the background image. By default, the position is the top left corner of the website, but using CSS we can change it.
+<br><br>
+Eg-</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+       background-position: top right;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 191019.png" alt=""><br><p><b>Note:</b> While using the “bottom right/left” as a value, you'll see the background image disappearing from the main screen. This is because we have been using the image directly in the body. Creating different divisions will fix this problem.</p><br><br><h3>Background Attachment</h3><br><p>This property determines what happens to the background image on scrolling. Sometimes we just want the background to remain the same even if we scroll down the page. In that case, we can use this property. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      background-attachment: fixed;
+  </code>
+</pre><br><br><p>After using this the image gets fixated on the screen.  </p><br><br><h3>Shorthands</h3><br><p>We all love shortcuts right, and remembering these many properties isn’t convenient as well. So, for that, we use shorthands to write everything in a single line. <br><br>
+All the properties we used so far, would look something like this in a single line.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      background: purple fixed url("CSS\ image.png") no-repeat right top;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="../pictures/Screenshot 2023-02-25 191635.png" alt=""><br><br><p>It is your choice which method you want to use. That was all about CSS backgrounds.</p><br><br>
+      </div>
+      <div  class="notes" id="div9"  style="display: none;">
+      <h2>CSS Borders</h2><br><p>Border property helps in creating borders around the text. Various properties in it are discussed in this module.</p><br><br><h3>Border Style</h3><br><p>It specifies the type of border a text is going to have. <br><br>
+Eg-</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20styles.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20styles%20output.webp" alt=""><br><br><h3>Border Width</h3><br><p>It sets the width of the border in pixels (or there are key values too like medium, thin, thick) <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      border-style: solid;
+      border-width: thin;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20width.webp" alt=""><br><br><p>You can assign values according to your wish or use medium/thick instead of thin if you wish to.</p><br><br><h3>CSS Border Colour</h3><br><p>This property assigns colours to the border of the text. We’ve already discussed in the CSS colours module different ways to provide the colour value like rgb, hsl, etc. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      border-style: solid;
+      border-color: aqua;
+  </code>
+</pre><br><br><h3>Output:</h3><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20colour.webp" alt=""><br><br><h3>CSS Border Radius</h3><br><p>Rounded borders around buttons look classic, which can be achieved by border-radius property.  <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      border-style: solid;
+      border-radius: 20px;
+  </code>
+</pre><br><br><h3>Output:</h3><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20radius.webp" alt=""><br><br><p>In this example, we gave a single value to the property; but if you want to choose for each edge you can provide two values, three values and four values which resemble the top-left corner, top-right corner, bottom-left corner, and bottom-right corner.  <br><br>
+Apart from that, you can control the outer radii as well using “%” or em (relative font size unit in CSS, we’ll discuss it later in depth).<br><br>
+Eg:</p><br>
+<br>
+        <pre class="highlight"><code class="language-css">
+      border-style: solid;
+      border-radius: 20px 10em;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/css%20border%20radius.webp" alt=""><br><br>
+<h3>Border Collapse & Spacing</h3><br><p>CSS has these two properties too, to help the user select the spacing between two borders but before you go testing them, this property requires a table. <br><br>
+Which of course we’ll look at later. For now, you can know the syntax of both properties.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        border-collapse: value;
+        border-spacing: value; 
+  </code>
+</pre><br><br><h3>Border Shorthand</h3><br><p>Just like background shorthands, there exists a border shorthand which takes three properties: width, style and colour. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        border: solid red 5px;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-borders/border%20shorthand.webp" alt=""><br><br>
+      </div>
+      <div  class="notes" id="div10"  style="display: none;">
+      <h2>CSS Images</h2><br><p>Images help in enhancing website looks therefore CSS provided image styling at our convenience. 
+<br><br>
+Syntax: </p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          &lt;img src="source of the image" alt=" "&gt;
+  </code>
+</pre><br><br><p>Various CSS rules that can be applied to the image are:</p><br><br><h3>Image Border Radius </h3><br><p>Rounding the edges of the image. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        img {border-radius: 10px;}
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-images/1.webp" alt=""><br><br><h3>Image Responsiveness </h3><br><p>By setting the height as auto you can make the image responsive. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+  </code>
+</pre><br><br><h3>Output:</h3><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-images/2.webp" alt=""><br><p>Apart from this, you can also use commands like fit-command, max-content, etc to let the image fit according to its value.</p><br><br><h3>Image Opacity </h3><br><p>This property controls the transparency of the image visible on the website and ranges from 0 to 1.
+<br><br>
+Eg: </p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          opacity: 0.5;
+  </code>
+</pre><br><br><h3>Output:</h3><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-images/opacity.webp" alt=""><br><br><h3>Image Filter</h3><br><p>Just like the filters on your phone camera, you can do the same with the images you use on your website. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          img {
+            max-width: 600px;
+            max-height: 600px;
+            filter: sepia();
+        }
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-images/filter.webp" alt=""><br><p>Other commonly known filters present in CSS are blur(), brightness(), contrast(), drop-shadow(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), sepia(), etc. As these are just functions therefore we can pass “%” as the parameters to control how much the filter affects the image.</p><br><br>
+      </div>
+      <div  class="notes" id="div11"  style="display: none;">
+      <h2>CSS Video Embedding</h2><br><p>With the help of CSS and HTML, we can use videos on our website. Here’s an example of the same.</p><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-video-embedding/css%20video%20embedding%20code.webp" alt=""><br><br><h3>Output:</h3><br><video src="https://www.w3schools.com/html/mov_bbb.mp4" controls ></video><br><br>
+      </div>
+      <div  class="notes" id="div12"  style="display: none;">
+      <h2>CSS Fonts</h2><br><p>Fonts decide how your text would look on the screen; depending on the website different kinds of fonts are used. Let’s look at major font attributes.</p><br><br><h3>CSS Font Colour</h3><br><p>It helps in changing the colour of the font. We have seen this in detail in the colour section. Refer to this</p><br><br><h3>CSS Font Size</h3><br><p>This property sets the size of the font. It also has predefined sizes like small, large, larger, medium, etc. The units of font size are em, px and %. <br><br>
+Eg: </p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20size.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20size%20output.webp" alt=""><br><h3>CSS Font Style</h3><br><p>Using this property, you can display various kinds of font styles like italic, bold, etc. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20style.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20style%20output.webp" alt=""><br><h3>CSS Font Variant</h3><br><p>Sometimes a paragraph is written in lowercase letters, so converting each word into uppercase seems a hectic process. Therefore, using this rule, you can do that with just a single line. <br><br>
+Eg:</p><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20variant.webp" alt=""><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20variant%20output.webp" alt=""> <br><h3>CSS Font Weight</h3><br><p>This property sets the weight of the text on your website. Various attributes of Font Weight are normal, bold, lighter, bolder and numbers ranging from 0 to 900. <br><br>
+Eg:</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20weigth.webp" alt=""><br><br><h3>Output:</h3><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20weight%20output.webp" alt=""><br><p>This way you can alter how your font looks on the website. Now let’s have a look at the most important property of all.</p><br><br><h3>Font Family </h3><br><p>It specifies the font of the text and can take multiple values to avoid a “fallback” system. Basically, some browsers fail to run some fonts, therefore we can assign multiple fonts of a family for the betterment of our website. <br><br>
+Eg:</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20family.webp" alt=""><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/font%20family%20output.webp" alt=""><br><br><p><b>Here's a small table for you</b></p><br>
+<table>
+  <tr>
+    <th>
+Name</th>
+    <th>Generic Type</th>
+  </tr>
+  <tr>
+    <td>Arial</td>
+    <td>Sans-serif</td>
+  </tr>
+  <tr>
+    <td>Courier New</td>
+    <td>Monospace</td>
+  </tr>
+  <tr>
+    <td>Georgia</td>
+    <td>Serif</td>
+  </tr>
+  <tr>
+    <td>Times New Roman</td>
+    <td>serif</td>
+  </tr>
+  <tr>
+    <td>Verdana</td>
+    <td>Sans-Serif</td>
+  </tr>
+</table><br><br><h3>Using Custom Google Fonts</h3><br><p>In order to use custom google fonts, go to google fonts then select the style you want to choose. On the right side, you’ll see a bar showing the font link and the rules to write it.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-fonts/custom%20fonts.webp" alt=""><br><br><p>Add the link tag into your <head> tag in HTML and then copy the style rules for the same. Your font would be visible on your website.</p><br><br>
+      </div>
+      <div  class="notes" id="div13"  style="display: none;">
+      <h2>CSS Text Styling</h2><br><p>Apart from playing with fonts, you can also decorate, alter and change the alignment of your text. Let’s have a look at these properties.</p><br><br><h3>Text Decoration</h3><br><p>Whether it is underlining text, cross through, etc these all can be achieved by using Text Decoration. <br><br>
+Eg:</p><br>
+<img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20decoration.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20decoration%20output.webp" alt=""><br><br><h3>Text Alignment</h3><br><p>To set the alignment of text visible on the website we use this property. It sets the horizontal alignment of the text across the screen. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20alignment.webp" alt=""><br>
+<br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20alignment%20output.webp" alt=""><br><p><b>Note:</b> Justify Text is mostly used in newspaper-styled websites to provide equispaced text in the line.</p><br><br>
+<h3>Text Transformation</h3><br><p>Using this property you can capitalise your text, and convert it into both upper and lower case. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20transform.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20transform%20output.webp" alt=""><br><br><h3>Text Spacing</h3><br><p>This property allows the spacing between words, letters and lines of the paragraph. Various attributes of it are listed in the below example. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20spacing.webp" alt=""><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20spacing%20output.webp" alt=""><br><br><h3>Text Shadow</h3><br><p>As the name suggests, you can add shadows to the text using this command. It adds both vertical and horizontal offset to the shadow. <br><br>
+Eg.</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      h1 {
+            color: yellow;
+            text-shadow: rebeccapurple 2px 2px;
+          }
+      p {
+            text-shadow: 2px 4px 4px royalblue;
+          }
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-text-styling/text%20shadow.webp" alt=""><br><br>
+      </div>
+      <div  class="notes" id="div14"  style="display: none;">
+        <h3>CSS Padding</h3><br><p>CSS works on a box model structure, where elements are packed according to the sequence of the image.</p><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-padding/css%20box%20model.webp" alt=""><br><br><p>The padding property defines the space between the element and the border. The background colour isn’t affected in the case of padding. Here’s an example: <br><br>
+This is how your website looks without padding.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-padding/css%20without%20padding.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-padding/css%20without%20padding%20output.webp" alt=""><br><p>Now on adding padding of 5px, 20px and 50px to h1, para1 and para2 respectively. This is the output you’ll be getting.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-padding/css%20padding%20output.webp" alt=""><br><br><p>You can also add padding individually to each corner: Top, Bottom, Left and Right.</p><br><br>
+      </div>
+      <div  class="notes" id="div15"  style="display: none;">
+      <h2>CSS Margin</h2><br><p>In margin property unlike padding, the background of the text is also included while adding the space between content and element. <br><br>
+Eg:</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-margin/css%20margin.webp" alt=""> <br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-margin/css%20margin%20output.webp" alt=""><br><br><p>You can add margins for individual elements as well by adding two or more values for it.</p><br><br><h3>Margin Collapse</h3><br><p>When two margins from different elements overlap, the resulting margin is common to both of them. For eg: I give a margin of 5px on one element and 2px to another. In the end, the margin of 5px would be taken as the rule for both of them.</p><br><br>
+      </div>
+      <div  class="notes" id="div16"  style="display: none;">
+      <h2>CSS Hover</h2><br><p>Hover selector allows dynamic styling of an element when the mouse is moved onto it. With help of it you can create cool transitions for your website, and is not just limited to links but can be used with any HTML element. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-hover/css%20hover.webp" alt=""><br><br><p>Here’s the output of this code.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-hover/CSS-hover-output.gif"><br><br>
+      </div>
+      <div  class="notes" id="div17"  style="display: none;">
+      <h2>CSS Cursors</h2><br><p>This property is generally used with the hover property. To make the element stand out we can add how the mouse cursor responds when we hover it on the element. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+&lt;!DOCTYPE html &gt;
+&lt;html lang="en" &gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Hover & Cursor&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            font-size: 20px;
+            color: royalblue;
+        }
+       
+        div {
+            background-color: violet;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+ &lt;h1&gt;CSS tutorials with CodingNation&lt;/h1&gt;
+    &lt;div style="cursor:pointer"&gt;Pointer&lt;/div&gt;
+    &lt;div style="cursor:alias"&gt;alias Value&lt;/div&gt;
+    &lt;div style="cursor:all-scroll"&gt;all-scroll value&lt;/div&gt;
+    &lt;div style="cursor:col-resize"&gt;col-resize value&lt;/div&gt;
+    &lt;div style="cursor:crosshair"&gt;Crosshair&lt;/div&gt;
+    &lt;div style="cursor:default"&gt;Default value&lt;/div&gt;
+    &lt;div style="cursor:copy"&gt;copy value&lt;/div&gt;
+    &lt;div style="cursor:move"&gt;Move&lt;/div&gt;
+    &lt;div style="cursor:e-resize"&gt;e-resize&lt;/div&gt;
+    &lt;div style="cursor:ew-resize"&gt;ew-resize&lt;/div&gt;
+    &lt;div style="cursor:ne-resize"&gt;ne-resize&lt;/div&gt;
+    &lt;div style="cursor:nw-resize"&gt;nw-resize&lt;/div&gt;
+    &lt;div style="cursor:n-resize"&gt;n-resize&lt;/div&gt;
+    &lt;div style="cursor:se-resize"&gt;se-resize&lt;/div&gt;
+    &lt;div style="cursor:w-resize"&gt;w-resize&lt;/div&gt;
+    &lt;div style="cursor:s-resize"&gt;s-resize&lt;/div&gt;
+    &lt;div style="cursor:wait"&gt;wait&lt;/div&gt;
+    &lt;div style="cursor:text"&gt;text&lt;/div&gt;
+    &lt;div style="cursor:help"&gt;help&lt;/div&gt;
+    &lt;div style="cursor:progress"&gt;progress&lt;/div&gt;
+    &lt;div style="cursor:no-drop"&gt;no-drop&lt;/div&gt;
+    &lt;div style="cursor:not-allowed"&gt;not-allowed&lt;/div&gt;
+    &lt;div style="cursor:vertical-text"&gt;vertical-text&lt;/div&gt;
+    &lt;div style="cursor:zoom-in"&gt;zoom-in&lt;/div&gt;
+    &lt;div style="cursor:zoom-out"&gt;zoom-out&lt;/div&gt;
+    &lt;div style="cursor:vertical-text"&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+  </code>
+</pre><br><br>
+      <p>Try running this code in your editor and you’ll see outputs for each individual case. The names of the properties are self-explanatory to tell you what output you would be getting.</p><br><br>     
+      </div>
+      <div  class="notes" id="div18"  style="display: none;">
+      <h2>CSS Links</h2><br><p>To style the way your HTML links look on the website you can use this property.  <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-links/css%20links.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-links/css%20links%20output.webp" alt=""><br><br><p>On hovering over this code, you could see the colour changing to “hotpink”. As the target is “_blank” the link would be opened in a new tab. </p><br><br>    
+      </div>
+            <div  class="notes" id="div19"  style="display: none;">
+            <h2>CSS Combinators</h2><br><p>It explains the relation between multiple or single selector. There are four major combinators that we would be looking at here.</p><br><br><h3>Descendant Selector</h3><br><p>It selects all the elements to present inside another specified HTML element. <br>
+Eg:</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-combinators/descendant%20combinator.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-combinators/descendant%20combinator%20ouput.webp" alt=""><br><p>As you can see, div had 4 paragraphs and so, CSS rules were applied on all of them.</p><br><br><h3>Child Selector</h3><br><p>It selects only the first generation descendants of a specified element. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          div>p {
+            color: wheat;
+            background-color: rebeccapurple;
+        }
+        </code>
+      </pre><br><br><p>Just using this child selector in the same code the output changes to this:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-combinators/child%20selector.webp" alt=""><br><p>It happened because paragraph 3 is nested in the &lt;section&gt; tag and therefore is 2nd generation to the &lt;div&gt; selector and thus wasn’t selected.</p><br><br><h3>Adjacent Sibling Selector</h3><br><p>As the name suggests this selector only selects the adjacent element to the specified element. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          div+p {
+            color: wheat;
+            background-color: rebeccapurple;
+        }
+        </code>
+      </pre><br><br><p>
+Now, the &lt;p&gt; tag right after &lt;div&gt; ends, would be selected. So, the output would look like this:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-combinators/adjacent%20sibling%20selector.webp" alt=""><br><h3>General Sibling Selector:
+</h3><br><p>Unlike the adjacent selector, this one going to select all the &lt;p&gt; tags present after &lt;div&gt;. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+          div~p {
+            color: wheat;
+            background-color: rebeccapurple;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-combinators/general%20sibling%20selector.webp" alt=""><br><br>  
+            </div>
+            <div  class="notes" id="div20"  style="display: none;">
+            <h2>CSS Buttons</h2><br><p>Buttons can be styled in CSS to match the theme of our website. Various ways of styling it is given below. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-buttons/button%20styling.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-buttons/button%20styling%20output.webp" alt=""><br><br>           
+            </div>
+            <div  class="notes" id="div21"  style="display: none;">
+            <h2>CSS Overflow</h2><br><p>Sometimes the content shown is too large to be visible in a single line or division of the website. So, to avoid loss of that information we can use overflow property.</p><br><br><h3>Overflow Visible</h3><br><p>This makes the whole text visible irrespective of the container size. <br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-overflow/visible%20overflow.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-overflow/visible%20overflow%20output.webp" alt=""><br><br><h3>Overflow Hidden</h3><br><p>It hides the content which doesn’t fit the box. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      div {
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: hidden;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-overflow/hidden%20overlfow%20output.webp" alt=""><br><br><h3>Overflow Scroll</h3><br><p>It adds an automatic scroller in the container so for the seeing the content it can be scrolled without affecting the container dimensions. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+      div {
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: scroll;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-overflow/scroll%20overflow%20output.webp" alt=""><br><h3>Overflow Auto</h3><br><p>It is quite similar to scroll but the scroller is only added when the content starts getting out of the container. Mostly this option is used to avoid unnecessary scroll bars if the content already is within the content dimensions.</p><br><br>
+            </div>
+            <div  class="notes" id="div22"  style="display: none;">
+            <h2>CSS Float</h2><br><p>Just like how “wrap through” works in MS Word, the float property allows the balance between text and the image shown beside it. <br><br>
+Eg:</p><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-float/float%20none.webp" alt=""><br><br><p>This is how your image looks without float property.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-float/float%20none%20output.webp" alt=""><br><p>When we add, “float: right;”, the style of the website changes drastically.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-float/float%20right%20output.webp" alt=""><br><br>            
+            </div>
+            <div  class="notes" id="div23"  style="display: none;">
+            <h2>CSS !important</h2><br><p>As we know CSS follows a style sheet sequence to decide the order of rules to be applied on the website, and inline CSS overrides all the rules of the internal and external stylesheet. <br><br>
+But if we want a particular rule to be prioritised at all costs in the stylesheet we can use !important tag with it.</p><br><br><h3>Syntax:</h3><br><br>
+        <pre class="highlight"><code class="language-css">
+      {property:value !important;}
+        </code>
+      </pre><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br>
+            </div>
+             <div  class="notes" id="div24"  style="display: none;">
+            <h2>CSS Maths Functions</h2><br><p>Maths functions helps us in fighting dimensions of elements or screen autonomously and thus helps in the responsiveness of a website.</p><br><br><h3>Calc() Function</h3><br><p>Calculates the value generally width of a particular property. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        width: calc(100%-20px);
+        </code>
+      </pre><br><br>
+            <p>This function will automatically subtract 20px from whatever is the 100% width of that container on the website. This way you can space your elements well without hassles</p><br><br><h3>Max & Min Functions</h3><br><p>This function takes two parameters and gives the result out of one accordingly. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        width: max(50px, 50%);
+        </code>
+      </pre><br><br><p>Out of these two whichever would be greater, would be assigned as a value to the width; vice versa happens for the minimum function.</p><br><br>
+            </div>
+             <div  class="notes" id="div25"  style="display: none;">
+            <h2>CSS Size</h2><br><p>We’ve seen various units in CSS so far used for many different purposes; we did hit and trial to find the correct dimensions of that unit for our website. <br><br>
+But now let’s understand how units work in CSS. </p><br><br><h3>Absolute Units.</h3><br><ol><li>cm - centimetres (1 cm = 37.8 px)</li>
+<li>mm - millimetres</li>
+<li>in - inches (1 in = 96 px = 2.54cm)</li>
+<li>pt - points (1pt = 1/72th of 1 in)</li>
+<li>pc - picas (1pc = 1/6th of 1 in)</li>
+<li>px - pixel (1px = 1/96th of 1 in)</li></ol><br>
+<p>Generally we only use pixels to set dimensions of an element.</p><br><br><h3>Relative Units</h3><ol>
+<li>em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.</li>
+<li>ex - Relative to X height of the existing font</li>
+<li>ex - Relative to X height of the existing font</li>
+<li>ex - Relative to X height of the existing font</li>
+<li>vw - Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)</li>
+<li>vh -  Relative to 1% of the height of the viewport</li>
+<li>% - Relative to the parent element’s size.</li>
+</ol><br><br><p>Apart from this some of the other metrics used in CSS are- </p><br><ol>
+  <li>Opacity: Ranges from 0 to 1</li>
+  <li>RGB & RGBA values: 0 to 255</li>
+  <li>HSL & HSLA values: 0 to 360</li>
+</ol><br><br>
+            </div>
+             <div  class="notes" id="div26"  style="display: none;">
+            <h2>CSS Positioning</h2><br><p>This CSS property states the type of positioning an element of CSS is taking. Let’s look at a few ways to set the values for the same.</p><br><br><h3>Static Position</h3><br><p>This is the default state of any element in CSS. Properties such as top, left, right and bottom are not applicable on a static element. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+       img {
+            width: 35%;
+            position: static;
+            top: 40px;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-positioning/static.webp" alt=""><br><p>As you can see the image is unaffected by the “top” property.</p><br><br><h3>Relative Positioning</h3><br><p>This property allows the use of the restricted properties that static couldn’t, and sets the position of the element flexible and relative to its normal position. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+       img {
+            width: 35%;
+            position: relative;
+            top: 40px;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-positioning/relative.webp" alt=""><br><br>
+      <p>As you can see the image is unaffected by the “top” property.</p><br><br><h3>Fixed Position</h3><br><p>This property fixes the element on the screen even if the website scrolls down. Also, the position of the element changes from relative to absolute. 
+ <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+       img {
+            width: 35%;
+            position: fixed;
+            top: 40px;
+        }
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-positioning/fixed.webp" alt=""><br><br>
+            <h3>Absolute Positioning
+</h3><br><p>This property would give the same output as fixed but will allow scrolling of the element. A noteworthy point about this property is that it allows overlapping elements to justify the value. <br><br>
+Thus, it is only used for elements whose position we can predict accurately on the website.</p>
+<br><br>
+<h3>Sticky Positioning</h3>  <br><p>This is an auto mode property and according to the nature of the user’s scroll shifts state from relative and absolute. </p>      <br><br>
+            </div>
+             <div  class="notes" id="div27"  style="display: none;">
+            <h2>CSS Z-index</h2><br><p>When there are multiple overlapping elements, the z-index helps in deciding the order of their visibility. The element having the highest value of z-index is shown first, followed by the other elements. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+&lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+     &lt;head&gt;
+       &lt;title&gt;CSS Z Index&lt;/title&gt;
+         &lt;style&gt;
+           .container {
+            position: relative;
+        }
+       
+        .box1-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 40px;
+            background-color: aqua;
+        }
+       
+        .box2-box {
+            position: absolute;
+            z-index: 3;
+            background-color: rosybrown;
+            height: 60px;
+            width: 70%;
+            left: 250px;
+            top: 50px;
+            border: 2px solid;
+        }
+       
+        .box3-box {
+            position: absolute;
+            color: wheat;
+            z-index: 2;
+            background-color: rebeccapurple;
+            width: 45%;
+            left: 270px;
+            top: 15px;
+            height: 100px;
+            border: 2px solid;
+        }
+          &lt;/style&gt;
+       &lt;/head&gt;
+         &lt;body&gt;
+           &lt;h1&gt;CSS z-index &lt;/h1&gt;
+             &lt;div class="container"&gt;
+              &lt;div class="box1-box"&gt;Box 1 (z-index: 1)&lt;/div&gt;
+              &lt;div class="box2-box"&gt;Box 2 (z-index: 3)&lt;/div&gt;
+              &lt;div class="box3-box"&gt;Box 3 (z-index: 2)&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;
+        </code>
+      </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-z-index/CSS%20Z%20index.webp" alt=""><br><p>When z-index isn’t used, the element defined in the last is shown on the topmost. Therefore Box 3 would’ve been visible to us.</p><br><br>
+            </div>
+             <div  class="notes" id="div28"  style="display: none;">
+            <h2>CSS Forms</h2><br><p>Using CSS you can make any ordinary element look amazing. Here’s a preview of a small form that I created just using HTML.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-forms/Form%20without%20CSS.webp" alt=""><br><p>The code for it is as follows:</p><br>
+            <br>
+        <pre class="highlight"><code class="language-css">
+&lt;!DOCTYPE html&gt;
+   &lt;html&gt;
+     &lt;head&gt;
+       &lt;title&gt;Contact Form&lt;/title&gt;
+         &lt;link rel="stylesheet" href="style.css"&gt;
+       &lt;/head&gt;
+         &lt;body&gt;
+         &lt;div&gt;
+           &lt;h1&gt;Contact Form&lt;/h1&gt;
+             &lt;p id="Subheading"&gt;Please fill all the text in the fields.&lt;/p&gt;&lt;/div&gt;
+              &lt;form action=""&gt;
+              Your Name:&lt;br&gt;
+              &lt;input type="text" placeholder="Your Full Name"&gt;
+              &lt;/p&gt;
+              &lt;p class="email"&gt; Your Email:
+              &lt;br&gt;
+              &lt;input type="email" name="email" id="" placeholder="Enter your Email"&gt;
+              &lt;/p&gt;
+              &lt;p class="message"&gt;
+              &lt; Your message to us:&gt;
+              &lt;br&gt;
+              &lt;textarea name="message" id="" cols="50" rows="5" placeholder="Enter your query here"&gt;
+              &lt;/textarea&gt;
+              &lt;/p&gt;
+              &lt;p&gt;Select how you want updates:
+              &lt;br&gt;
+              &lt;select name="Select" id=""&gt;
+              &lt;option value="Choose"&gt;--Please choose one option--
+              &lt;/option&gt;
+              &lt;option value="op1"&gt;Message
+              &lt;/option&gt;
+              &lt;option value="op2"&gt;Call
+              &lt;/option&gt;
+              &lt;option value="op3"&gt;Email
+              &lt;/option&gt;
+              &lt;/select&gt;
+              &lt;/p&gt;
+              &lt;input type="submit" value="Submit"&gt;
+              &lt;input type="reset" value="Reset"&gt;
+              &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+   &lt;/html&gt;
+        </code>
+      </pre><br><br><p>Now, I’ve linked a stylesheet here. Let’s write some CSS rules in it.</p>            <br>
+        <pre class="highlight"><code class="language-css">
+          body {
+    padding: 0px 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+    font-weight: 900;
+}
+
+div {
+    padding: 5px 5px;
+    background-color: rgb(164, 206, 147);
+    width: auto;
+    color: white;
+    line-height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+form {
+    background-color: rgb(238, 239, 235);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0px 80px 5px;
+    font-size: large;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type="submit"] {
+    background-color: rgb(164, 206, 147);
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 75%;
+}
+
+input[type="reset"] {
+    background-color: red;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 176, 76);
+}
+
+input[type="reset"]:hover {
+    background-color: rgb(191, 0, 0);
+}
+
+        </code>
+        </pre><br><br><p>This stylesheet covers almost all the rules we’ve seen so far. The output would now change to this.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-forms/Form%20with%20CSS.webp" alt=""><br><p>Try creating your version of this form by trying out other CSS properties as well.</p><br><br>        
+            </div>
+            <div  class="notes" id="div29"  style="display: none;">
+            <h2>CSS Navigation Bar</h2><br><p>For a better command of CSS, and to understand how Navbars work, let’s try creating the navbar of this website itself.</p><br><img src="../pictures/Screenshot 2023-02-27 200039.png" alt=""><br><p>First, we will create an &lt;nav&gt; element in HTML and then add the attributes to it. Later the CSS would be applied.</p>
+              <img src="../pictures/navbar html.webp" alt=""><br><h3>Output:</h3
+                ><br><img src="../pictures/Screenshot 2023-02-27 195658.png" alt=""><br><p>Now let’s add CSS to change this navbar according to our desired output.</p><br><img src="../pictures/navbar css.webp" alt=""><br><p><b>Note:</b>.Icon is the class that I added later in the first &lt;a&gt; tag to provide it with different styling than the other elements. <br><br>
+The output of this code would be identical to what we had as our reference.</p><br><img src="../pictures/Screenshot 2023-02-27 200039.png" alt=""><br><br>
+            </div>
+            <div  class="notes" id="div30"  style="display: none;">
+            <h2>CSS Display</h2><br><p>This property specifies and determines how an element would be displayed on the website. By tweaking the value of the display we can show the content “inline”, “grid”, “flex”, and whatnot. <br><br>
+Let’s look at a few properties.</p><br><br>
+<h3>Display Inline</h3><br><p>It only takes the space required for content, leaving the rest space for other elements to come. Setting other dimension properties isn’t like width, height, margin or padding is not allowed in Inline Display.</p><br>
+                        <br>
+        <pre class="highlight"><code class="language-css">
+          Syntax: {display: inline;}
+        </code>
+        </pre><br><br>
+        <h3>Display Block</h3><br><p>It takes the full width available across the website page leaving a new line before and after the element.</p>
+                                    <br>
+        <pre class="highlight"><code class="language-css">
+         Syntax: {display: block;}
+        </code>
+        </pre><br><br><h3>Display Inline Block</h3><br><p>This property is quite similar to inline but dimension properties are allowed in the case of the inline-block display.</p><br><br><h3>Display None & Hidden</h3><br><p>This property removes the element from the document, clearing the space taken by the element. When the display is hidden, though the element isn’t visible the space is still taken by the element. <br><br>
+Here’s an example for the Display property.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-display/css%20display.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-display/css%20display.webp" alt=""><br><br>
+            </div>
+            <div  class="notes" id="div31"  style="display: none;">
+            <h2>CSS FlexBox</h2><br><p>FlexBox aka Flexible Box Layout makes it easier to layout, align and style items in the container while maintaining the responsiveness of the website. <br><br>
+To create a flexbox you need to set the display of the container as flex <br>
+Eg: {display: flex;} <br><br>
+This element is called the flex container, and stores the sub-elements which are known as flex items</p><br><br><h3>Flex Container Properties</h3><br><p>The flex container properties are:</p><br><h3>1. Flex Direction</h3><br><p>It defines in which direction the flex elements would be displayed. It takes values like row, column or “reverse” too. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/css%20flexdirection.webp" alt=""><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/css%20flexdirection%20output.webp" alt=""><br><h3>2. Flex Wrap</h3><br><p>By using this property we can make our elements responsive for different screen sizes. <br><br>
+Eg:</p><br>                                   <br>
+        <pre class="highlight"><code class="language-css">
+         .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+            flex-wrap: wrap;
+        }
+        </code>
+        </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/flex%20wrap.webp" alt=""><br><p>You can use flex flow as a short to add both these properties. Eg: {flex-flow: row wrap;}</p><br><br><h3>3. Justify Content</h3><br><p>This property is used to set the position of content or rather align content along the main axis. <br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: yellowgreen;
+            justify-content: center;
+        }
+        </code>
+        </pre><br><br>   <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/flex%20justify.webp" alt="">  <br><p>It can take other values too like “space-around” which distributes flex items equally spaced in the container. Other properties include flex-end, flex-start, space-between, etc. (These could be seen in vs code when the justify-content property is selected).</p><br><br><h3>4. Align Items</h3><br><p>Just like the justify-content property, align-items define the alignment of the flex container but along the cross-axis. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+        .flex-container {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            background-color: yellowgreen;
+            align-items: center;
+        }
+        </code>
+        </pre><br><br>
+        <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/align%20items.webp" alt=""><br><h3>5. Align Content</h3><br><p>This property is very similar to align item but here rather than the flex items, the content present in the item is selected for the property. <br><br>
+Eg:</p> 
+<br>
+        <pre class="highlight"><code class="language-css">
+        .flex-container {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            background-color: yellowgreen;
+            align-content: center;
+        }
+        </code>
+        </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/align%20content.webp" alt=""><br><h3>Flex Items Properties</h3><br><p>The flex item properties are:</p><br><h3>1. Order:</h3><br><p>As the name suggests, this property sets the order in which the flex items are shown. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+    &lt;div style="order: 4;"&gt;1&lt;/div&gt;
+      &lt;div style="order: 3;"&gt;2&lt;/div&gt;
+        &lt;div style="order: 1;"&gt;3&lt;/div&gt;
+          &lt;div style="order: 5;"&gt;4&lt;/div&gt;
+            &lt;div style="order: 2;"&gt;5&lt;/div&gt;
+        </code>
+        </pre><br><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/order%20property.webp" alt=""><br><br><h3>2. Flex Grow & Shrink</h3><br><p>Decides the relative size of flex items. By default, this property is zero and thus items have the same size. <br><br>
+Eg:</p>
+<br>
+        <pre class="highlight"><code class="language-css">
+    &lt;div &gt;1&lt;/div&gt;
+      &lt;div &gt;2&lt;/div&gt;
+        &lt;div style="flex-grow: 3;"&gt;3&lt;/div&gt;
+          &lt;div &gt;4&lt;/div&gt;
+            &lt;div&gt;5&lt;/div&gt;
+        </code>
+        </pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-flexbox/flex%20grow.webp" alt=""><br><p>We can also use flex-shrink to decrease size of an element.</p><br><h3>3. Align Self</h3><br><p>This property allows default alignment to be overridden for the individual flex items. Try adding inline CSS to see how this property is used.</p><br><br>
+            
+            </div>
+            <div  class="notes" id="div32"  style="display: none;">
+            <h2>CSS Grid</h2><br><p>Just like FlexBox, CSS Grid with the use of rows and columns, make it easier to style website elements. <br><br>
+CSS display property allows two grid properties: Grid and Inline Grid. The elements placed in the grid container are called grid items. <br><br>
+Most of the properties of Grid are similar to FlexBox. <br><br>
+Let’s look at how you can create a grid in CSS.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-grid/css%20grid.webp" alt=""><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-grid/css%20grid%20output.webp" alt=""><br><h3>Grid Row & Column Property</h3><br><p>This is just adjacent to the flex-grow property in Flex Box. It decides how many columns would the selected element be taking in the Grid. <br><br>
+Eg:</p><br>
+<pre class="highlight">
+  <code class="language-css">
+    &lt;div class="grid-item" style="grid-row: 1/5;"&gt;2&lt;/div&gt;
+  </code>
+</pre><br><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-grid/css%20grid-row.webp" alt=""><br><p>This way you can style Grid dimensions to create Header, Footer, and other structures of your website.</p><br><br>
+            </div>
+            <div  class="notes" id="div33"  style="display: none;">
+            <h2>CSS Media Queries</h2><br><p>Media queries help to add responsiveness to the website by adding breakout points or when only a certain condition is true. <br><br>
+Eg:</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-media-queries/css%20media%20queries.webp" alt=""><br><h3>Output:</h3><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-media-queries/media%20queries%20output.webp" alt=""><br><p>The output of this code would change when the dimension would be 800px.</p><br><img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/css-media-queries/condition%20true%20output.webp" alt=""><br><br>
+            </div>
+
+       <button id="previous1">Previous</button>
+      <button id="next1">Next	</button>
+    </div>
+      </main>
+    </div>
+
+
+<script src="script.js"></script>
+  <!--code highlighter-->
+ <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+  <script>
+
+     Prism.highlightAll();
+  </script>
+ 
+
+</body>
+
+</html>
