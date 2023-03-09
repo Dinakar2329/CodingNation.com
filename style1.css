@@ -181,7 +181,12 @@ aside h2 {
   border-radius: 10px;
   border: 1px solid black;
 }
-
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
 /* Style the active class, and buttons on mouse-over */
 .active,
 .single:hover {
