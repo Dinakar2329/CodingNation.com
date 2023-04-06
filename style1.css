@@ -96,7 +96,9 @@ nav li.forward a:hover:before {
   transform-origin: left;
 }
 nav i {
-  font-size: 20px;
+   font-size: 25px;
+  margin: -6px -2px  ;
+  margin-right: 5px;
   width: 15px;
 }
 .topics {
@@ -462,8 +464,8 @@ header > button {
   .menu i {
     color: rgb(124, 34, 206);
     display: block;
-    margin: 5px 5px;
-    font-size: 25px;
+      margin: 3px 5px;
+    font-size: 30px;
   }
   .main-content {
     overflow-y: auto;
