@@ -427,115 +427,20 @@ header > button {
   overflow: hidden;
   border-right: 0.1em solid orange;
 }
-@media only screen and (max-width: 460px) {
-  .container {
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 52px 30px 1fr;
-  }
-  .menu i {
-    display: block;
-    margin: 5px 5px;
-    font-size: 25px;
-  }
-
-  .fixed-navbar p {
-    font-size: 15px;
-    position: relative;
-    top: 20%;
-  }
-  .fixed-sidebar {
-    grid-column: 1;
-    opacity: 1%;
-    pointer-events: auto;
-    visibility: visible;
-    background-color: #888;
-    overflow-y: visible;
-    z-index: 10;
-  }
-  .topics {
-    color: #000;
-    display: block;
-  }
-
-  .main-content {
-    position: absolute;
-    top: 18%;
-    right: 2%;
-  }
-
-  header > button {
-    display: block;
-    border: 1.5px solid #22ce33;
-    background-color: transparent;
-    float: right;
-    margin-top: 1em;
-    border-radius: 5px;
-  }
-  header > button > img {
-    width: 1.5rem;
-    color: #fff;
-  }
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-    transition: all 0.2s;
-  }
-
-  /* Modal Content */
-  .modal-content {
-    display: block;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    max-width: 80%;
-    border-radius: 8px;
-  }
-  .modal-content a {
-    display: flex;
-    align-items: center;
-    width: 1em;
-    color: #fff;
-    text-decoration: none solid rgb(126, 34, 206);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    margin: 10px;
-    font-weight: 500;
-  }
-
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .container {
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 200px auto;
     grid-template-rows: 70px 30px 1fr;
+  }
+  .fixed-navbar {
+    background-color: #fff;
+    grid-column: 1 / span 2;
+  }
+  .topnav {
+    background-color: #fff;
+    grid-column: 1 / span 2;
   }
   .fixed-navbar p {
     font-size: 25px;
@@ -559,10 +464,14 @@ header > button {
     margin: 5px 5px;
     font-size: 25px;
   }
-
+  .main-content {
+    overflow-y: auto;
+    grid-column: 2;
+    max-height: 83vh;
+  }
   main {
     position: absolute;
-    top: 23%;
+    top: 19%;
     left: 3%;
   }
   .fixed-sidebar {
@@ -578,6 +487,8 @@ header > button {
     background-color: #888;
     overflow-y: visible;
     z-index: 10;
+    height: 83.9vh;
+    margin-top: -3px;
   }
   header > button {
     display: block;
