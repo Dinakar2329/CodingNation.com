@@ -1,51 +1,65 @@
-// pre-loader
-
-document.addEventListener("DOMContentLoaded", function () {
-  const backdrop = document.getElementById("backdrop");
-  const preloader = document.getElementById("bars1");
-  backdrop.style.display = "block";
-  preloader.style.display = "flex";
-});
-
-window.addEventListener("load", function () {
-  const backdrop = document.getElementById("backdrop");
-  const preloader = document.getElementById("bars1");
-  backdrop.style.display = "none";
-  preloader.style.display = "none";
-});
-
-//show menu button
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// typing text
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+const textArray = [
+  "PYTHON",
+  "REACT JS",
+  "HTML",
+  "CSS",
+  "JAVASCRIPT",
+  "C",
+  "JAVA",
+  "PHP",
+];
+const typingDelay = 100;
+const erasingDelay = 100;
+const newTextDelay = 200;
+let textArrayIndex = 0;
+let charIndex = 0;
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
   }
-};
+}
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 //toggle menu
 function toggleSidebar() {
-  var sidebar = document.getElementById("myNav");
-
-  if (sidebar.style.display === "none") {
+  const sidebar = document.getElementById("myNav");
+  sidebar.style.display === "none";
+  if (sidebar.style.display == "none") {
     sidebar.style.display = "block";
   } else {
     sidebar.style.display = "none";
@@ -72,8 +86,7 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   document.querySelector(".content").style.display = "block";
-  divs[currentDiv].scrollTop = 0; // Scrolls to the top of the active div
-  divs[currentDiv].scrollIntoView({ behavior: "smooth", block: "start" }); // Scrolls to the top of the active div
+  divs[currentDiv].scrollIntoView({ block: "start" }); // Scrolls to the top of the active div
 }
 
 function updateActive() {
