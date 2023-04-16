@@ -67,14 +67,14 @@ function toggleSidebar() {
 }
 
 // show and hide Divs function
-
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
 const prevButton1 = document.getElementById("previous1");
 const nextButton1 = document.getElementById("next1");
-let currentDiv = 0;
+const mainContent = document.querySelector(".main-content");
+let currentDiv = parseInt(sessionStorage.getItem("currentDiv")) || 0;
 
 function showDiv(index) {
   divs[currentDiv].style.display = "none";
@@ -85,19 +85,18 @@ function showDiv(index) {
   prevButton1.disabled = currentDiv === 0;
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
-  document.querySelector(".content").style.display = "block";
-  divs.scrollTop = 0;
-  
+  mainContent.scrollTop = 0;
+  sessionStorage.setItem("currentDiv", currentDiv);
 }
 
 function updateActive() {
-  for (let i = 0; i < buttons.length; i++) {
-    if (i === currentDiv) {
-      buttons[i].classList.add("active");
+  buttons.forEach((button, index) => {
+    if (index === currentDiv) {
+      button.classList.add("active");
     } else {
-      buttons[i].classList.remove("active");
+      button.classList.remove("active");
     }
-  }
+  });
 }
 
 function setup() {
@@ -118,6 +117,7 @@ function setup() {
       showDiv(currentDiv + 1);
     }
   });
+
   prevButton1.addEventListener("click", () => {
     if (currentDiv > 0) {
       showDiv(currentDiv - 1);
@@ -125,11 +125,9 @@ function setup() {
   });
 
   nextButton1.addEventListener("click", () => {
-
     if (currentDiv < divs.length - 1) {
       showDiv(currentDiv + 1);
     }
-     
   });
 
   prevButton.disabled = true;
@@ -139,4 +137,4 @@ function setup() {
 
 setup();
 // Show the first div by default
-showDiv(0);
+showDiv(currentDiv);
