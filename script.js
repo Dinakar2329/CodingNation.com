@@ -87,7 +87,7 @@ function showDiv(index) {
   updateActive();
   document.querySelector(".content").style.display = "block";
   
-  document.documentElement.scrollTop = 0;
+  
 }
 
 function updateActive() {
@@ -125,6 +125,8 @@ function setup() {
   });
 
   nextButton1.addEventListener("click", () => {
+document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
     if (currentDiv < divs.length - 1) {
       showDiv(currentDiv + 1);
     }
