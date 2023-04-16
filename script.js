@@ -86,7 +86,7 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   document.querySelector(".content").style.display = "block";
-  divs[currentDiv].scrollIntoView({ block: "start" }); // Scrolls to the top of the active div
+  
 }
 
 function updateActive() {
