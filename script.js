@@ -74,7 +74,7 @@ const nextButton = document.getElementById("next");
 const prevButton1 = document.getElementById("previous1");
 const nextButton1 = document.getElementById("next1");
 const mainContent = document.querySelector(".main-content");
-let currentDiv = parseInt(sessionStorage.getItem("currentDiv")) || 0;
+let currentDiv = 0;
 
 function showDiv(index) {
   divs[currentDiv].style.display = "none";
@@ -86,7 +86,7 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   mainContent.scrollTop = 0;
-  sessionStorage.setItem("currentDiv", currentDiv);
+  
 }
 
 function updateActive() {
