@@ -86,7 +86,7 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   document.querySelector(".content").style.display = "block";
-  
+  divs.scrollTop = 0;
   
 }
 
@@ -125,11 +125,11 @@ function setup() {
   });
 
   nextButton1.addEventListener("click", () => {
-document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+
     if (currentDiv < divs.length - 1) {
       showDiv(currentDiv + 1);
     }
+     
   });
 
   prevButton.disabled = true;
