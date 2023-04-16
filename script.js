@@ -86,7 +86,7 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   document.querySelector(".content").style.display = "block";
-  document.body.scrollTop = 0;
+  
   document.documentElement.scrollTop = 0;
 }
 
