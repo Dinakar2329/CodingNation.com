@@ -332,7 +332,7 @@
 <div class="container-fluid">
 		<h1 class="H1">Feedback</h1>
 
-		<form action="https://formspree.io/f/xknakydd" method="POST" id="feedback-form">
+		<form id="feedback-form" action="https://formspree.io/f/xknakydd" method="POST">
 			<div class="form-group">
 				<label for="name">Name</label>
 				<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -340,7 +340,7 @@
 
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+				<input type="email" class="form-control" id="email" name="_replyto" placeholder="Enter your email address" required>
 			</div>
 
 			<div class="form-group">
@@ -348,7 +348,7 @@
 				<textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your feedback" required></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-primary" onclick="clearInputs()">Send Feedback</button>
+			<button type="submit" class="btn btn-primary">Send Feedback</button>
 		</form>
 	</div>
   <!-- Footer Section -->
@@ -360,11 +360,28 @@
   </footer>
   <script src="./script.js">
   </script>
-  <script>
-   function clearInputs() {
-     document.getElementById("feedback-form").reset();
-     }
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function() {
+			$("#feedback-form").on("submit", function(event) {
+				event.preventDefault();
+
+				$.ajax({
+					url: $(this).attr("action"),
+					type: "POST",
+					data: $(this).serialize(),
+					dataType: "json",
+					success: function(response) {
+						alert("Message sent successfully!");
+						$("#feedback-form")[0].reset();
+					},
+					error: function(jqXHR, textStatus, errorThrown) {
+						alert("Error sending message: " + errorThrown);
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
