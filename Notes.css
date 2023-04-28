@@ -96,6 +96,7 @@ nav li.forward a:hover:before {
   grid-column: 1;
   overflow-y: auto;
   overflow-x: hidden;
+    margin-top: -1rem;
 }
 
 .topics {
@@ -163,7 +164,7 @@ aside h2 {
   font-weight: 500;
   color: #000000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 2px 0px 4px;
+  margin: 25px 0px 4px;
   padding: 0px 0px 0px 12px;
 }
 
