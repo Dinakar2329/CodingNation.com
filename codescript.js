@@ -1,96 +1,185 @@
 const tagDefinitions = {
   //html definitions
+ //html definitions and syntax in thiS ARRAY
   html: {
-    definition: "The root element of an HTML document.",
+    definition:
+      "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag)1",
     syntax:
       "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
   },
+
   head: {
-    definition: "Contains metadata/information for the document.",
+    definition:
+      "The HTML head tag contains metadata/information for the document. It is used to specify the title of the document.",
     syntax: "<head>\n  <title>Page Title</title>\n</head>",
   },
   title: {
-    definition: "Defines a title for the document.",
+    definition:
+      "The HTML title tag defines a title for the document. It is used to specify the title of the document.",
     syntax: "<title>Page Title</title>",
   },
   body: {
-    definition: "Defines the document's body.",
+    definition:
+      "The HTML body tag defines the document's body. It is used to specify the content of the document.",
     syntax:
       "<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph.</p>\n</body>",
   },
   // Meta Tags
   meta: {
-    definition: "The meta tag provides metadata about an HTML document.",
+    definition:
+      "The HTML meta tag provides metadata about an HTML document. It is used to specify metadata about the document.",
     syntax: "<meta name='name' content='content'>",
   },
   base: {
     definition:
-      "The base tag specifies the base URL/target for all relative URLs in a document.",
+      "The HTML base tag specifies the base URL/target for all relative URLs in a document. It is used to specify the base URL of the document.",
     syntax: "<base href='URL' target='_blank'>",
   },
   h1: {
     definition:
-      "The h1 element is used to define a heading. It is the most important heading on the page.",
+      "The HTML h1 element is used to define a heading. It is the most important heading on the page. It is used to define a heading.",
     syntax: "<h1>Heading text</h1>",
   },
   h2: {
     definition:
-      "The h2 element is used to define a heading. It is the second most important heading on the page.",
+      "The HTML h2 element is used to define a heading. It is the second most important heading on the page. It is used to define a heading.",
     syntax: "<h2>Heading text</h2>",
   },
   h3: {
     definition:
-      "The <h3> tag is used to define a heading on a webpage, with level 3 importance.",
+      "The <h3> tag is used to define a heading on a webpage, with level 3 importance. It is used to define a heading.",
     syntax: "<h3>Heading</h3>",
   },
   h4: {
     definition:
-      "The <h4> tag is used to define a heading on a webpage, with level 4 importance.",
+      "The <h4> tag is used to define a heading on a webpage, with level 4 importance. It is used to define a heading.",
     syntax: "<h4>Heading</h4>",
   },
   h5: {
     definition:
-      "The <h5> tag is used to define a heading on a webpage, with level 5 importance.",
+      "The <h5> tag is used to define a heading on a webpage, with level 5 importance. It is used to define a heading.",
     syntax: "<h5>Heading</h5>",
   },
   h6: {
     definition:
-      "The h6 element is used to define a heading. It is the smallest and last most important heading on the page.",
+      "The h6 element is used to define a heading. It is the smallest and last most important heading on the page. It is used to define a heading.",
     syntax: "<h6>Heading text</h6>",
   },
   p: {
-    definition: "The p element is used to define a paragraph.",
+    definition:
+      "The p element is used to define a paragraph. It is used to define a paragraph.",
     syntax: "<p>Paragraph text</p>",
   },
   br: {
     definition:
-      "The <br> tag is used to insert a line break or carriage-return within a text block.",
-    syntax: "This is the first line.<br>This is the second line.",
+      "The br element is used to define a line break. It is used to define a line break.",
+    syntax: "<br>",
   },
   hr: {
     definition: "The hr tag is used to insert a horizontal line on a webpage.",
     syntax: "<hr>",
   },
   a: {
-    definition: "The a element is used to create a hyperlink.",
-    syntax: '<a href="URL">Link text</a>',
+    definition:
+      "The HTML <a> tag defines a hyperlink, which is used to link from one page to another1. The most important attribute of the <a> element is the href attribute, which indicates the link’s destination1.",
+    syntax: "<a href='URL'>Link text</a>",
   },
   img: {
-    definition: "The img element is used to embed an image in an HTML page.",
-    syntax: '<img src="image.jpg" alt="Image description">',
+    definition:
+      "<img>tag is used to insert images on an HTML page.<img>tag is an empty tag which means it doesn’t have a corresponding closing tag.<img>tag uses mandatory attributes i.e. 'alt attribute' a text description for an image and 'src attribute' for the location path of an image. These attributes provide additional information about the image tag.",
+    syntax: "<img src='URL'>",
   },
   ul: {
-    definition: "The ul element is used to create an unordered list.",
-    syntax: "<ul>\n  <li>List item 1</li>\n  <li>List item 2</li>\n</ul>",
-  },
-  ol: {
-    definition: "The ol element is used to create an ordered list.",
-    syntax: "<ol>\n  <li>List item 1</li>\n  <li>List item 2</li>\n</ol>",
+    definition:
+      "The HTML <ul> tag defines an unordered list. An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.",
+    syntax: "<ul>\n  <li>List item</li>\n  <li>List item</li>\n</ul>",
   },
   li: {
     definition:
-      "The li element is used to define a list item. It should be contained within a ul or ol element.",
-    syntax: "<ul>\n <li>List item 1</li>\n  <li>List item 2</li>\n</ul>",
+      "The HTML <li> tag defines a list item. The <li> tag is used in ordered lists (<ol>) and unordered lists (<ul>).",
+    syntax: "<li>list item</li>",
+  },
+  b: {
+    definition: "The HTML <b> tag defines a bold text.",
+    syntax: "<b>bold text</b>",
+  },
+  i: {
+    definition:
+      "The HTML <i> tag defines an italic text.The HTML <i> tag defines a part of text in an alternate voice or mood. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, or a ship name",
+    syntax: "<i>italic text</i>",
+  },
+  em: {
+    definition: "The HTML <em> tag defines an emphasized text.",
+    syntax: "<em>emphasized text</em>",
+  },
+  strong: {
+    definition:
+      "The HTML <strong> tag defines important text. The <strong> tag is often used to indicate text that should be bold by default, such as a heading or title.",
+    syntax: "<strong>strong text</strong>",
+  },
+  mark: {
+    definition:
+      "The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.",
+    syntax: "<mark>highlighted text</mark>",
+  },
+  address: {
+    definition:
+      "The address element represents a location in a document, such as a physical address or a mailing address.",
+    syntax:
+      "<address>\n  <strong>Address</strong>\n  <br>\n  <em>City, State, Zipcode</em>\n</address>",
+  },
+  sub: {
+    definition:
+      "The HTML <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
+    syntax: "<sub>sub text</sub>",
+  },
+  sup: {
+    definition:
+      "The HTML <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.",
+    syntax: "<sup>sup text</sup>",
+  },
+  del: {
+    definition:
+      "The HTML <del> tag defines deleted text. Deleted text is often rendered with a line through it. I hope this helps! Let me know if you have any other questions.",
+    syntax: "<del>del text</del>",
+  },
+  ins: {
+    definition:
+      "The HTML <ins> tag defines inserted text. Inserted text is often rendered with an underline.",
+    syntax: "<ins>ins text</ins>",
+  },
+  pre: {
+    definition:
+      "The HTML <pre> tag defines preformatted text. Preformatted text preserves both spaces and line breaks.",
+    syntax: "<pre>pre text</pre>",
+  },
+  code: {
+    definition:
+      "The HTML <code> tag defines code . It  defines a piece of computer code.",
+    syntax: "<code>code text</code>",
+  },
+  q: {
+    definition: "The HTML <q> tag defines a short quotation.",
+    syntax: "<q>quotation</q>",
+  },
+  link: {
+    definition:
+      "The HTML <link> tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets",
+    syntax: "<link href='url' rel='stylesheet'/>",
+  },
+  dl: {
+    definition:
+      "The HTML <dl> tag defines a description list. The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).",
+    syntax: "<dl>\n  <dt>Description</dt>\n  <dd>Description</dd>\n</dl>",
+  },
+  dt: {
+    definition: "The HTML <dt> tag defines a term/name in a description list.",
+    syntax: "<dt>Term/name</dt>",
+  },
+  dd: {
+    definition:
+      "The HTML <dd> tag defines the description of the term (name) in a description list. I hope this helps! Let me know if you have any other questions",
+    syntax: "<dd>Description</dd>",
   },
   div: {
     definition:
@@ -140,17 +229,6 @@ const tagDefinitions = {
     syntax:
       "<table>\n  <caption>Table Caption</caption>\n <tr>  <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
   },
-  // Text-level semantics
-  b: {
-    definition:
-      "The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance.",
-    syntax: "<b>bold text</b>",
-  },
-  i: {
-    definition:
-      "The i element represents a span of text that is offset from the normal prose in some manner, such as through stylistic changes or attention of the user agent.",
-    syntax: "<i>italicized text</i>",
-  },
   u: {
     definition:
       "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
@@ -160,30 +238,6 @@ const tagDefinitions = {
     definition:
       "The small element represents small print and similar fine print, such as legal disclaimers and caveats.",
     syntax: "<small>small print</small>",
-  },
-  strong: {
-    definition:
-      "The strong element represents strong importance, seriousness, or urgency for its contents.",
-    syntax: "<strong>strongly emphasized text</strong>",
-  },
-  em: {
-    definition: "The em element represents stress emphasis of its contents.",
-    syntax: "<em>emphasized text</em>",
-  },
-  mark: {
-    definition:
-      "The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.",
-    syntax: "<mark>highlighted text</mark>",
-  },
-
-  // Edits
-  ins: {
-    definition: "The ins element represents an addition to the document.",
-    syntax: "<ins>added text</ins>",
-  },
-  del: {
-    definition: "The del element represents a removal from the document.",
-    syntax: "<del>deleted text</del>",
   },
   textarea: {
     definition:
@@ -195,11 +249,11 @@ const tagDefinitions = {
     definition:
       "The select element creates a drop-down list of options for the user to choose from. The option elements within the select element specify the available options.",
     syntax: `<select>\n
-    <option value="volvo">Volvo</option>\n
- <option value="saab">Saab</option>\n
- <option value="mercedes">Mercedes</option>\n
- <option value="audi">Audi</option>\n
- </select>`,
+          <option value="volvo">Volvo</option>\n
+          <option value="saab">Saab</option>\n
+          <option value="mercedes">Mercedes</option>\n
+          <option value="audi">Audi</option>\n
+        </select>`,
   },
   option: {
     definition:
@@ -266,11 +320,6 @@ const tagDefinitions = {
     definition:
       "The blockquote element is used to indicate a section of quoted text.",
     syntax: "<blockquote><p>This is a section of quoted text.</p></blockquote>",
-  },
-
-  q: {
-    definition: "The q element is used to indicate a short inline quotation.",
-    syntax: "<p><q>This is a short quotation.</q></p>",
   },
 
   cite: {
@@ -365,7 +414,6 @@ const tagDefinitions = {
       "The style tag is used to define style information for an HTML document.",
     syntax: "<style> body {background-color: white;} </style>",
   },
-
   //css definitions
   width: {
     definition: "Specifies the width of an element's content area.",
