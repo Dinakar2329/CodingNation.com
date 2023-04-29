@@ -1,6 +1,6 @@
 const tagDefinitions = {
   //html definitions
- //html definitions and syntax in thiS ARRAY
+
   html: {
     definition:
       "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag)1",
