@@ -27,7 +27,7 @@ const tagDefinitions = {
   // Meta Tags
   meta: {
     definition:
-      "The HTML meta tag provides metadata about an HTML document. It is used to specify metadata about the document.",
+      "The HTML meta tag provides metadata about an HTML document. It is used to specify metadata about the document.It is used for SEO purposes",
     syntax: "<meta name='name' content='content'>",
   },
   base: {
@@ -47,17 +47,17 @@ const tagDefinitions = {
   },
   h3: {
     definition:
-      "The <h3> tag is used to define a heading on a webpage, with level 3 importance. It is used to define a heading.",
+      "The h3 tag is used to define a heading on a webpage, with level 3 importance. It is used to define a heading.",
     syntax: "<h3>Heading</h3>",
   },
   h4: {
     definition:
-      "The <h4> tag is used to define a heading on a webpage, with level 4 importance. It is used to define a heading.",
+      "The h4 tag is used to define a heading on a webpage, with level 4 importance. It is used to define a heading.",
     syntax: "<h4>Heading</h4>",
   },
   h5: {
     definition:
-      "The <h5> tag is used to define a heading on a webpage, with level 5 importance. It is used to define a heading.",
+      "The  h5 tag is used to define a heading on a webpage, with level 5 importance. It is used to define a heading.",
     syntax: "<h5>Heading</h5>",
   },
   h6: {
@@ -67,12 +67,12 @@ const tagDefinitions = {
   },
   p: {
     definition:
-      "The p element is used to define a paragraph. It is used to define a paragraph.",
+      "The p element is used to define a paragraph. ",
     syntax: "<p>Paragraph text</p>",
   },
   br: {
     definition:
-      "The br element is used to define a line break. It is used to define a line break.",
+      "The br element is used to define a line break.",
     syntax: "<br>",
   },
   hr: {
@@ -81,40 +81,40 @@ const tagDefinitions = {
   },
   a: {
     definition:
-      "The HTML <a> tag defines a hyperlink, which is used to link from one page to another1. The most important attribute of the <a> element is the href attribute, which indicates the link’s destination1.",
+      "The HTML a tag defines a hyperlink, which is used to link from one page to another1. The most important attribute of the <a> element is the href attribute, which indicates the link’s destination1.",
     syntax: "<a href='URL'>Link text</a>",
   },
   img: {
     definition:
-      "<img>tag is used to insert images on an HTML page.<img>tag is an empty tag which means it doesn’t have a corresponding closing tag.<img>tag uses mandatory attributes i.e. 'alt attribute' a text description for an image and 'src attribute' for the location path of an image. These attributes provide additional information about the image tag.",
+      "img tag is used to insert images on an HTML page.img tag is an empty tag which means it doesn’t have a corresponding closing tag.<img>tag uses mandatory attributes i.e. 'alt attribute' a text description for an image and 'src attribute' for the location path of an image. These attributes provide additional information about the image tag.",
     syntax: "<img src='URL'>",
   },
   ul: {
     definition:
-      "The HTML <ul> tag defines an unordered list. An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.",
+      "The HTML ul tag defines an unordered list. An unordered list starts with the ul tag. Each list item starts with the li tag.",
     syntax: "<ul>\n  <li>List item</li>\n  <li>List item</li>\n</ul>",
   },
   li: {
     definition:
-      "The HTML <li> tag defines a list item. The <li> tag is used in ordered lists (<ol>) and unordered lists (<ul>).",
+      "The HTML li tag defines a list item. The li tag is used in ordered lists (ol) and unordered lists (ul).",
     syntax: "<li>list item</li>",
   },
   b: {
-    definition: "The HTML <b> tag defines a bold text.",
+    definition: "The HTML b tag defines a bold text.",
     syntax: "<b>bold text</b>",
   },
   i: {
     definition:
-      "The HTML <i> tag defines an italic text.The HTML <i> tag defines a part of text in an alternate voice or mood. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, or a ship name",
+      "The HTML i tag defines an italic text.The HTML i tag defines a part of text in an alternate voice or mood. The i tag is often used to indicate a technical term, a phrase from another language, a thought, or a ship name",
     syntax: "<i>italic text</i>",
   },
   em: {
-    definition: "The HTML <em> tag defines an emphasized text.",
+    definition: "The HTML em tag defines an emphasized text.",
     syntax: "<em>emphasized text</em>",
   },
   strong: {
     definition:
-      "The HTML <strong> tag defines important text. The <strong> tag is often used to indicate text that should be bold by default, such as a heading or title.",
+      "The HTML strong tag defines important text. The strong tag is often used to indicate text that should be bold by default, such as a heading or title.",
     syntax: "<strong>strong text</strong>",
   },
   mark: {
@@ -130,55 +130,55 @@ const tagDefinitions = {
   },
   sub: {
     definition:
-      "The HTML <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
+      "The HTML sub tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
     syntax: "<sub>sub text</sub>",
   },
   sup: {
     definition:
-      "The HTML <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.",
+      "The HTML sup tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.",
     syntax: "<sup>sup text</sup>",
   },
   del: {
     definition:
-      "The HTML <del> tag defines deleted text. Deleted text is often rendered with a line through it. I hope this helps! Let me know if you have any other questions.",
+      "The HTML del tag defines deleted text. Deleted text is often rendered with a line through it. I hope this helps! Let me know if you have any other questions.",
     syntax: "<del>del text</del>",
   },
   ins: {
     definition:
-      "The HTML <ins> tag defines inserted text. Inserted text is often rendered with an underline.",
+      "The HTML ins tag defines inserted text. Inserted text is often rendered with an underline.",
     syntax: "<ins>ins text</ins>",
   },
   pre: {
     definition:
-      "The HTML <pre> tag defines preformatted text. Preformatted text preserves both spaces and line breaks.",
+      "The HTML pre tag defines preformatted text. Preformatted text preserves both spaces and line breaks.",
     syntax: "<pre>pre text</pre>",
   },
   code: {
     definition:
-      "The HTML <code> tag defines code . It  defines a piece of computer code.",
+      "The HTML code tag defines code . It  defines a piece of computer code.",
     syntax: "<code>code text</code>",
   },
   q: {
-    definition: "The HTML <q> tag defines a short quotation.",
+    definition: "The HTML q tag defines a short quotation.",
     syntax: "<q>quotation</q>",
   },
   link: {
     definition:
-      "The HTML <link> tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets",
+      "The HTML link tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets",
     syntax: "<link href='url' rel='stylesheet'/>",
   },
   dl: {
     definition:
-      "The HTML <dl> tag defines a description list. The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).",
+      "The HTML dl tag defines a description list. The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).",
     syntax: "<dl>\n  <dt>Description</dt>\n  <dd>Description</dd>\n</dl>",
   },
   dt: {
-    definition: "The HTML <dt> tag defines a term/name in a description list.",
+    definition: "The HTML dt tag defines a term/name in a description list.",
     syntax: "<dt>Term/name</dt>",
   },
   dd: {
     definition:
-      "The HTML <dd> tag defines the description of the term (name) in a description list. I hope this helps! Let me know if you have any other questions",
+      "The HTML dd tag defines the description of the term (name) in a description list.",
     syntax: "<dd>Description</dd>",
   },
   div: {
