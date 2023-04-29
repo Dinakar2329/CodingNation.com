@@ -2579,7 +2579,15 @@ document.querySelector("form").addEventListener("submit", function (e) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You can ask me for definitions of HTML tags, css properties, javascript words ,c words, java words . Just type in the  name and I'll give you the syntax and description. Try typing anything you want to learn from codingnation.</p>`;
   } else if (userInput === "thanks" || userInput === "thankyou") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You're welcome!</p>`;
-  } else {
+  } else if (userInput === "what's your favorite programming language?") {
+  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+  chatBox.innerHTML += `<p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
+} else if (userInput === "tell me a joke") {
+  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+  const jokes = [    "Why did the tomato turn red? Because it saw the salad dressing!",    "Why did the scarecrow win an award? Because he was outstanding in his field!",    "What do you get when you cross a snowman and a shark? Frostbite!",    "Why don't scientists trust atoms? Because they make up everything!",    "Why was the math book sad? Because it had too many problems!",  ];
+  const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+  chatBox.innerHTML += `<p><strong>CodeBot:</strong> ${randomJoke}</p>`;
+} else {
     // if the user input doesn't match a tag definition or a command, respond with a generic message
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Sorry, I didn't understand that.</p>`;
   }
