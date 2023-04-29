@@ -183,4 +183,7 @@ nav li.forward a:hover:before {
   .code-block {
     max-height: 300px;
   }
+    .chat-box {
+    font-size: 12px;
+  }
 }
