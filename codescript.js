@@ -2581,7 +2581,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You're welcome!</p>`;
   } else if (userInput === "what'syourfavoriteprogramminglanguage?") {
   chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
-} else if (userInput === "tellmeajoke" || userInput === "joke") {
+}  else if (userInput === "tellmeajoke" || userInput === "joke") {
     const jokes = [
       "Why did the tomato turn red? Because it saw the salad dressing!",
       " Why did the JavaScript developer wear glasses? Because he couldn't C#.",
