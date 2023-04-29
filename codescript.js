@@ -2557,7 +2557,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   const userInput = document
     .querySelector(".user-input")
     .value.toLowerCase()
-    .replace(/[\s.-?!']+/g, "");
+    .replace(/[\s.-?!]+/g, "");
   if (userInput in tagDefinitions) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
     showTyping();
@@ -2579,7 +2579,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You can ask me for definitions of HTML tags, css properties, javascript words ,c words, java words . Just type in the  name and I'll give you the syntax and description. Try typing anything you want to learn from codingnation.</p>`;
   } else if (userInput === "thanks" || userInput === "thankyou") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You're welcome!</p>`;
-  } else if (userInput === "what'syourfavoriteprogramminglanguage?") {
+  } else if (userInput === "what is yourfavoriteprogramminglanguage?") {
   chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
 }  else if (userInput === "tellmeajoke" || userInput === "joke") {
     const jokes = [
@@ -2600,11 +2600,11 @@ document.querySelector("form").addEventListener("submit", function (e) {
   4. Build something! One of the best ways to learn programming is by working on a project that interests you. It can be anything from a simple website to a complex app or game. <br/></p>`;
   } else if (userInput === "whatisthebesteditor") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are many great code editors out there, and it really depends on personal preference. Some popular ones include Visual Studio Code, Sublime Text, and Atom. It's worth trying out a few to see which one you like best!</p>`;
-  } else if (userInput === "whatisAI") {
+  } else if (userInput === "whatisai") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Artificial intelligence, or AI, refers to the ability of machines to perform tasks that would typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. AI is a rapidly growing field and has many practical applications in industries such as healthcare, finance, and transportation.</p>`;
   } else if (userInput === "whatcanibuild") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are so many things you can build with code! You could create a website, build a mobile app, develop a game, or even program a robot. It really depends on what interests you and what you want to learn.</p>`;
-  } else if (userInput === "what'sthebestlanguage") {
+  } else if (userInput === "what is thebestlanguage") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> That's a difficult question to answer! Each language has its own strengths and weaknesses, and it really depends on what you want to use it for. Some popular languages include Python, Java, and JavaScript.</p>`;
   } else {
     // if the user input doesn't match a tag definition or a command, respond with a generic message
