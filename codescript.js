@@ -2582,26 +2582,31 @@ document.querySelector("form").addEventListener("submit", function (e) {
   } else if (userInput === "what'syourfavoriteprogramminglanguage?") {
   chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
 } else if (userInput === "tellmeajoke" || userInput === "joke") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>
-  const jokes = [    "Why did the tomato turn red? Because it saw the salad dressing!"," Why did the JavaScript developer wear glasses? Because he couldn't C#.","Why do programmers prefer dark mode? Because light attracts bugs!",   "Why did the database administrator leave his wife? She had one-to-many relationships.","Why don't programmers like nature? It has too many bugs!",    "Why was the math book sad? Because it had too many problems!",  ];
-  const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-<p><strong>CodeBot:</strong> ${randomJoke}</p>`;
-} else if (userInput === "howdoigetstarted") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Great question! Here are a few tips to get you started with programming:
-  1. Choose a language and find some beginner resources. Learn from coding-nation,com it is an online tutorial  course that can teach you the basics of programming.
-  2. Practice, practice, practice! The more you write code, the more you'll learn and improve.
-  3. Join a community of other learners. There are many forums and online groups where you can connect with other programmers and get help when you're stuck.
-  4. Build something! One of the best ways to learn programming is by working on a project that interests you. It can be anything from a simple website to a complex app or game.</p>`;
-} else if (userInput === "whatisthebesteditor") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are many great code editors out there, and it really depends on personal preference. Some popular ones include Visual Studio Code, Sublime Text, and Atom. It's worth trying out a few to see which one you like best!</p>`;
-}else if (userInput === "whatisAI") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Artificial intelligence, or AI, refers to the ability of machines to perform tasks that would typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. AI is a rapidly growing field and has many practical applications in industries such as healthcare, finance, and transportation.</p>`;
-}else if (userInput === "whatcanibuild") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are so many things you can build with code! You could create a website, build a mobile app, develop a game, or even program a robot. It really depends on what interests you and what you want to learn.</p>`;
-}
-else if (userInput === "what'sthebestlanguage") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> That's a difficult question to answer! Each language has its own strengths and weaknesses, and it really depends on what you want to use it for. Some popular languages include Python, Java, and JavaScript.</p>`;
-} else {
+    const jokes = [
+      "Why did the tomato turn red? Because it saw the salad dressing!",
+      " Why did the JavaScript developer wear glasses? Because he couldn't C#.",
+      "Why do programmers prefer dark mode? Because light attracts bugs!",
+      "Why did the database administrator leave his wife? She had one-to-many relationships.",
+      "Why don't programmers like nature? Because It has too many bugs!",
+      "Why was the math book sad? Because it had too many problems!",
+    ];
+    const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> ${randomJoke}</p>`;
+  } else if (userInput === "howdoigetstarted") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Great question! Here are a few tips to get you started with programming: <br/>
+  1. Choose a language and find some beginner resources. Learn from coding-nation,com it is an online tutorial  course that can teach you the basics of programming. <br/>
+  2. Practice, practice, practice! The more you write code, the more you'll learn and improve. <br/>
+  3. Join a community of other learners. There are many forums and online groups where you can connect with other programmers and get help when you're stuck. <br/> <br/>
+  4. Build something! One of the best ways to learn programming is by working on a project that interests you. It can be anything from a simple website to a complex app or game. <br/></p>`;
+  } else if (userInput === "whatisthebesteditor") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are many great code editors out there, and it really depends on personal preference. Some popular ones include Visual Studio Code, Sublime Text, and Atom. It's worth trying out a few to see which one you like best!</p>`;
+  } else if (userInput === "whatisAI") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Artificial intelligence, or AI, refers to the ability of machines to perform tasks that would typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. AI is a rapidly growing field and has many practical applications in industries such as healthcare, finance, and transportation.</p>`;
+  } else if (userInput === "whatcanibuild") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are so many things you can build with code! You could create a website, build a mobile app, develop a game, or even program a robot. It really depends on what interests you and what you want to learn.</p>`;
+  } else if (userInput === "what'sthebestlanguage") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> That's a difficult question to answer! Each language has its own strengths and weaknesses, and it really depends on what you want to use it for. Some popular languages include Python, Java, and JavaScript.</p>`;
+  } else {
     // if the user input doesn't match a tag definition or a command, respond with a generic message
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Sorry, I didn't understand that.</p>`;
   }
