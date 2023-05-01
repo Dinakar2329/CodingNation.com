@@ -54,6 +54,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
@@ -76,7 +77,7 @@ function showDiv(index) {
 
   const buttonId = buttons[index].id;
   const buttonIndex = buttonId.substring(buttonId.indexOf("-") + 1);
-  const newUrl = window.location.href.split("?")[0] + "?concept-" + buttonIndex;
+  const newUrl = window.location.href.split("?")[0] + "?button-" + buttonIndex;
   window.history.replaceState(null, "", newUrl);
 }
 function updateActive() {
@@ -128,3 +129,4 @@ function setup() {
 setup();
 // Show the first div by default
 showDiv(currentDiv);
+
