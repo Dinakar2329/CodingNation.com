@@ -179,56 +179,112 @@
     <aside class="fixed-sidebar" id="myNav">
       <div class="menu">
         <h2>Introduction</h2>
-        <button class="single"  id="button-1" data-index="0" onclick="changeTitle('Information & History | CodingNation')">Information
-          & History</button>
-        <button class="single"  id="button-2" data-index="1" onclick="changeTitle('Your first CSS website | CodingNation')">Your first
-          CSS website</button>
-        <button class="single" id="button-3"  data-index="2" onclick="changeTitle('How CSS works? | CodingNation')">How CSS
-          works?</button>
-        <button class="single"  id="button-4" data-index="3" onclick="changeTitle('Ways to add CSS | CodingNation')">Ways to add
-          CSS</button>
-        <button class="single"  id="button-5" data-index="4" onclick="changeTitle('CSS Selectors | CodingNation')">CSS
-          Selectors</button>
-        <button class="single"  id="button-6" data-index="5" onclick="changeTitle('CSS Comments | CodingNation')">CSS Comments</button>
+      <button class="single" id="Information&History" data-index="0"
+          onclick="changeTitle('Information & History | CodingNation')">
+          Information & History
+        </button>
+        <button class="single" id="YourfirstCSSwebsite" data-index="1"
+          onclick="changeTitle('Your first CSS website | CodingNation')">
+          Your first CSS website
+        </button>
+        <button class="single" id="HowCSSworks?" data-index="2" onclick="changeTitle('How CSS works? | CodingNation')">
+          How CSS works?
+        </button>
+        <button class="single" id="WaystoaddCSS" data-index="3" onclick="changeTitle('Ways to add CSS | CodingNation')">
+          Ways to add CSS
+        </button>
+        <button class="single" id="CSSSelectors" data-index="4" onclick="changeTitle('CSS Selectors | CodingNation')">
+          CSS Selectors
+        </button>
+        <button class="single" id="CSSComments" data-index="5" onclick="changeTitle('CSS Comments | CodingNation')">
+          CSS Comments
+        </button>
         <h2>CSS Properties</h2>
-        <button class="single"  id="button-7" data-index="6" onclick="changeTitle('CSS Colors | CodingNation')">CSS Colors</button>
-        <button class="single"  id="button-8" data-index="7" onclick="changeTitle('CSS Backgrounds | CodingNation')">CSS
-          Backgrounds</button>
-        <button class="single"  id="button-9" data-index="8" onclick="changeTitle('CSS Borders | CodingNation')">CSS Borders</button>
-        <button class="single"  id="button-10" data-index="9" onclick="changeTitle('CSS Images | CodingNation')">CSS Images</button>
-        <button class="single"  id="button-11" data-index="10" onclick="changeTitle('CSS Video Embedding | CodingNation')">CSS Video
-          Embedding</button>
-        <button class="single"  id="button-12" data-index="11" onclick="changeTitle('CSS Fonts | CodingNation')">CSS Fonts</button>
-        <button class="single"  id="button-13" data-index="12" onclick="changeTitle('CSS Text Styling | CodingNation')">CSS Text
-          Styling</button>
-        <button class="single"  id="button-14" data-index="13" onclick="changeTitle('CSS Padding | CodingNation')">CSS Padding</button>
-        <button class="single"  id="button-15" data-index="14" onclick="changeTitle('CSS Margin | CodingNation')">CSS Margin</button>
-        <button class="single"  id="button-16" data-index="15" onclick="changeTitle('CSS Hover | CodingNation')">CSS Hover</button>
-        <button class="single"  id="button-17" data-index="16" onclick="changeTitle('CSS Cursors | CodingNation')">CSS Cursors</button>
-        <button class="single"  id="button-18" data-index="17" onclick="changeTitle('CSS Links | CodingNation')">CSS Links</button>
-        <button class="single"  id="button-19" data-index="18" onclick="changeTitle('CSS Combinators | CodingNation')">CSS
-          Combinators</button>
-        <button class="single"  id="button-20" data-index="19" onclick="changeTitle('CSS Buttons | CodingNation')">CSS Buttons</button>
-        <button class="single"  id="button-21" data-index="20" onclick="changeTitle('CSS Overflow | CodingNation')">CSS
-          Overflow</button>
-        <button class="single" id="button-22"  data-index="21" onclick="changeTitle('CSS Float | CodingNation')">CSS Float</button>
-        <button class="single" id="button-23" data-index="22" onclick="changeTitle('CSS !important | CodingNation')">CSS
-          !important</button>
-        <button class="single" id="button-24" data-index="23" onclick="changeTitle('CSS Maths Functions | CodingNation')">CSS Maths
-          Functions</button>
-        <button class="single" id="button-25" data-index="24" onclick="changeTitle('CSS Size | CodingNation')">CSS Size</button>
-        <button class="single" id="button-26" data-index="25" onclick="changeTitle('CSS Positioning | CodingNation')">CSS
-          Positioning</button>
-        <button class="single" id="button-27" data-index="26" onclick="changeTitle('CSS Z-index | CodingNation')">CSS Z-index</button>
-        <button class="single" id="button-28" data-index="27" onclick="changeTitle('CSS Forms | CodingNation')">CSS Forms</button>
-        <button class="single" id="button-29" data-index="28" onclick="changeTitle('CSS Navigation Bar | CodingNation')">CSS Navigation
-          Bar</button>
+        <button class="single" id="CSSColors" data-index="6" onclick="changeTitle('CSS Colors | CodingNation')">
+          CSS Colors
+        </button>
+        <button class="single" id="CSSBackgrounds" data-index="7" onclick="changeTitle('CSS Backgrounds | CodingNation')">
+          CSS Backgrounds
+        </button>
+        <button class="single" id="CSSBorders" data-index="8" onclick="changeTitle('CSS Borders | CodingNation')">
+          CSS Borders
+        </button>
+        <button class="single" id="CSSImages" data-index="9" onclick="changeTitle('CSS Images | CodingNation')">
+          CSS Images
+        </button>
+        <button class="single" id="CSSVideoEmbedding" data-index="10"
+          onclick="changeTitle('CSS Video Embedding | CodingNation')">
+          CSS Video Embedding
+        </button>
+        <button class="single" id="CSSFonts" data-index="11" onclick="changeTitle('CSS Fonts | CodingNation')">
+          CSS Fonts
+        </button>
+        <button class="single" id="CSSTextStyling" data-index="12" onclick="changeTitle('CSS Text Styling | CodingNation')">
+          CSS Text Styling
+        </button>
+        <button class="single" id="CSSPadding" data-index="13" onclick="changeTitle('CSS Padding | CodingNation')">
+          CSS Padding
+        </button>
+        <button class="single" id="CSSMargin" data-index="14" onclick="changeTitle('CSS Margin | CodingNation')">
+          CSS Margin
+        </button>
+        <button class="single" id="CSSHover" data-index="15" onclick="changeTitle('CSS Hover | CodingNation')">
+          CSS Hover
+        </button>
+        <button class="single" id="CSSCursors" data-index="16" onclick="changeTitle('CSS Cursors | CodingNation')">
+          CSS Cursors
+        </button>
+        <button class="single" id="CSSLinks" data-index="17" onclick="changeTitle('CSS Links | CodingNation')">
+          CSS Links
+        </button>
+        <button class="single" id="CSSCombinators" data-index="18" onclick="changeTitle('CSS Combinators | CodingNation')">
+          CSS Combinators
+        </button>
+        <button class="single" id="CSSButtons" data-index="19" onclick="changeTitle('CSS Buttons | CodingNation')">
+          CSS Buttons
+        </button>
+        <button class="single" id="CSSOverflow" data-index="20" onclick="changeTitle('CSS Overflow | CodingNation')">
+          CSS Overflow
+        </button>
+        <button class="single" id="CSSFloat" data-index="21" onclick="changeTitle('CSS Float | CodingNation')">
+          CSS Float
+        </button>
+        <button class="single" id="CSS!important" data-index="22" onclick="changeTitle('CSS !important | CodingNation')">
+          CSS !important
+        </button>
+        <button class="single" id="CSSMathsFunctions" data-index="23"
+          onclick="changeTitle('CSSMathsFunctions | CodingNation')">
+          CSS Maths Functions
+        </button>
+        <button class="single" id="CSSSize" data-index="24" onclick="changeTitle('CSS Size | CodingNation')">
+          CSS Size
+        </button>
+        <button class="single" id="CSSPositioning" data-index="25" onclick="changeTitle('CSS Positioning | CodingNation')">
+          CSS Positioning
+        </button>
+        <button class="single" id="CSSZ-index" data-index="26" onclick="changeTitle('CSS Z-index | CodingNation')">
+          CSS Z-index
+        </button>
+        <button class="single" id="CSSForms" data-index="27" onclick="changeTitle('CSS Forms | CodingNation')">
+          CSS Forms
+        </button>
+        <button class="single" id="CSSNavigationBar" data-index="28"
+          onclick="changeTitle('CSS Navigation Bar | CodingNation')">
+          CSS Navigation Bar
+        </button>
         <h2>CSS Designing</h2>
-        <button class="single" id="button-30" data-index="29" onclick="changeTitle('CSS Display | CodingNation')">CSS Display</button>
-        <button class="single" id="button-31" data-index="30" onclick="changeTitle('CSS FlexBox | CodingNation')">CSS FlexBox</button>
-        <button class="single" id="button-32" data-index="31" onclick="changeTitle('CSS Grid | CodingNation')">CSS Grid</button>
-        <button class="single" id="button-33" data-index="32" onclick="changeTitle('CSS Media Queries | CodingNation')">CSS Media
-          Queries</button>
+        <button class="single" id="CSSDisplay" data-index="29" onclick="changeTitle('CSS Display | CodingNation')">
+          CSS Display
+        </button>
+        <button class="single" id="CSSFlexBox" data-index="30" onclick="changeTitle('CSS FlexBox | CodingNation')">
+          CSS FlexBox
+        </button>
+        <button class="single" id="CSSGrid" data-index="31" onclick="changeTitle('CSS Grid | CodingNation')">
+          CSS Grid
+        </button>
+        <button class="single" id="CSSMediaQueries" data-index="32" onclick="changeTitle('CSS Media Queries | CodingNation')">
+          CSS Media Queries
+        </button>
       </div>
     </aside>
 
