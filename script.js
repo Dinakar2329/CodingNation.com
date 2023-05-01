@@ -54,19 +54,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-//toggle menu
-function toggleSidebar() {
-  const sidebar = document.getElementById("myNav");
-  sidebar.style.display === "none";
-  if (sidebar.style.display == "none") {
-    sidebar.style.display = "block";
-  } else {
-    sidebar.style.display = "none";
-  }
-}
-
-// show and hide Divs function
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
@@ -86,9 +73,12 @@ function showDiv(index) {
   nextButton1.disabled = currentDiv === divs.length - 1;
   updateActive();
   mainContent.scrollTop = 0;
-  
-}
 
+  const buttonId = buttons[index].id;
+  const buttonIndex = buttonId.substring(buttonId.indexOf("-") + 1);
+  const newUrl = window.location.href.split("?")[0] + "?button-" + buttonIndex;
+  window.history.replaceState(null, "", newUrl);
+}
 function updateActive() {
   buttons.forEach((button, index) => {
     if (index === currentDiv) {
