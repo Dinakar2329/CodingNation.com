@@ -2,6 +2,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 const textArray = [
+  "CodeBot",
   "PYTHON",
   "REACT JS",
   "HTML",
@@ -57,9 +58,9 @@ function topFunction() {
 
 // Toggle bar
 function toggleSidebar(){
-Var sidebar = document.getElementById("myNav");
+Const sidebar = document.getElementById("myNav");
 
-If(sidebar.style.display === "none"){
+if(sidebar.style.display === "none"){
 sidebar.style.display = "block";
 }else{
 sidebar.style.display = "none";
