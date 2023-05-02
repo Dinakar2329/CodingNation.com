@@ -3,7 +3,7 @@ const tagDefinitions = {
 
   html: {
     definition:
-      "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag)1",
+      "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The html tag is the container for all other HTML elements (except for the !DOCTYPE tag)",
     syntax:
       "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
   },
