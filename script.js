@@ -55,16 +55,15 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// Toggle bar
-function toggleSidebar(){
-Const sidebar = document.getElementById("myNav");
-
-if(sidebar.style.display === "none"){
-sidebar.style.display = "block";
-}else{
-sidebar.style.display = "none";
-}
+//Toggle menu
+function toggleSidebar() {
+  const sidebar = document.getElementById("myNav");
+  sidebar.style.display === "none";
+  if (sidebar.style.display == "none") {
+    sidebar.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
+  }
 }
 
 const buttons = document.querySelectorAll(".fixed-sidebar button");
