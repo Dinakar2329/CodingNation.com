@@ -10,7 +10,6 @@ const textArray = [
   "C",
   "JAVA",
   "PHP",
-"CodeBot",
 ];
 const typingDelay = 100;
 const erasingDelay = 100;
