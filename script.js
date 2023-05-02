@@ -57,7 +57,7 @@ function topFunction() {
 
 // Toggle bar
 function toggleSidebar(){
-Const sidebar = document.getElementById("myNav");
+Var sidebar = document.getElementById("myNav");
 
 If(sidebar.style.display === "none"){
 sidebar.style.display = "block";
