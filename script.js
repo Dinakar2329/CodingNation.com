@@ -2,7 +2,6 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 const textArray = [
-  "CodeBot",
   "PYTHON",
   "REACT JS",
   "HTML",
@@ -11,6 +10,7 @@ const textArray = [
   "C",
   "JAVA",
   "PHP",
+"CodeBot",
 ];
 const typingDelay = 100;
 const erasingDelay = 100;
