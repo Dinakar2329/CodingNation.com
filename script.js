@@ -55,6 +55,17 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// Toggle bar
+function toggleSidebar(){
+Const sidebar = document.getElementById("myNav");
+
+If(sidebar.style.display === "none"){
+sidebar.style.display = "block";
+}else{
+sidebar.style.display = "none";
+}
+}
+
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
