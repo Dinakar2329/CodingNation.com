@@ -137,13 +137,26 @@ function setup() {
 }
 
 function showDivOnLoad() {
+  // extract the button ID from the URL
   const urlParams = new URLSearchParams(window.location.search);
-  const buttonIndex = urlParams.get("button");
-  if (buttonIndex !== null) {
-    currentDiv = parseInt(buttonIndex);
-    showDiv(currentDiv);
+  const buttonId = urlParams.get("button");
+
+  // find the index of the corresponding button
+  let buttonIndex = -1;
+  if (buttonId) {
+    buttons.forEach((button, index) => {
+      if (button.id === buttonId) {
+        buttonIndex = index;
+      }
+    });
+  }
+
+  // if a matching button was found, show the corresponding div
+  if (buttonIndex >= 0 && buttonIndex < divs.length) {
+    showDiv(buttonIndex);
   }
 }
+
 
 setup();
 showDivOnLoad();
