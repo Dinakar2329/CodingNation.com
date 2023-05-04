@@ -64,6 +64,7 @@ function toggleSidebar() {
     sidebar.style.display = "none";
   }
 }
+
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
@@ -89,7 +90,6 @@ function showDiv(index) {
   const newUrl = window.location.href.split("?")[0] + "?button-" + buttonIndex;
   window.history.replaceState(null, "", newUrl);
 }
-
 function updateActive() {
   buttons.forEach((button, index) => {
     if (index === currentDiv) {
@@ -134,32 +134,10 @@ function setup() {
   prevButton.disabled = true;
   prevButton1.disabled = true;
   updateActive();
-   showDivOnLoad(); // add this line
 }
-
-function showDivOnLoad() {
-  // extract the button ID from the URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const buttonId = urlParams.get("button");
-
-  // find the index of the corresponding button
-  let buttonIndex = -1;
-  if (buttonId) {
-    buttons.forEach((button, index) => {
-      if (button.id === buttonId) {
-        buttonIndex = index;
-      }
-    });
-  }
-
-  // if a matching button was found, show the corresponding div
-  if (buttonIndex >= 0 && buttonIndex < divs.length) {
-    showDiv(buttonIndex);
-  }
-}
-
 
 setup();
+// Show the first div by default
 showDiv(currentDiv);
 
 
