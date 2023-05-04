@@ -134,6 +134,7 @@ function setup() {
   prevButton.disabled = true;
   prevButton1.disabled = true;
   updateActive();
+   showDivOnLoad(); // add this line
 }
 
 function showDivOnLoad() {
@@ -159,6 +160,6 @@ function showDivOnLoad() {
 
 
 setup();
-showDivOnLoad();
+showDiv(currentDiv);
 
 
