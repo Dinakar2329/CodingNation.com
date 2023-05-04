@@ -137,13 +137,11 @@ function setup() {
 }
 
 function showDivOnLoad() {
-  const queryParams = new URLSearchParams(window.location.search);
-  const buttonParam = queryParams.get("button");
-  if (buttonParam) {
-    const buttonIndex = parseInt(buttonParam.split("-")[1]);
-    if (!isNaN(buttonIndex) && buttonIndex >= 0 && buttonIndex < buttons.length) {
-      showDiv(buttonIndex);
-    }
+  const urlParams = new URLSearchParams(window.location.search);
+  const buttonIndex = urlParams.get("button");
+  if (buttonIndex !== null) {
+    currentDiv = parseInt(buttonIndex);
+    showDiv(currentDiv);
   }
 }
 
