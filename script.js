@@ -64,7 +64,6 @@ function toggleSidebar() {
     sidebar.style.display = "none";
   }
 }
-
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
@@ -90,6 +89,7 @@ function showDiv(index) {
   const newUrl = window.location.href.split("?")[0] + "?button-" + buttonIndex;
   window.history.replaceState(null, "", newUrl);
 }
+
 function updateActive() {
   buttons.forEach((button, index) => {
     if (index === currentDiv) {
@@ -136,8 +136,18 @@ function setup() {
   updateActive();
 }
 
+function showDivOnLoad() {
+  const queryParams = new URLSearchParams(window.location.search);
+  const buttonParam = queryParams.get("button");
+  if (buttonParam) {
+    const buttonIndex = parseInt(buttonParam.split("-")[1]);
+    if (!isNaN(buttonIndex) && buttonIndex >= 0 && buttonIndex < buttons.length) {
+      showDiv(buttonIndex);
+    }
+  }
+}
+
 setup();
-// Show the first div by default
-showDiv(currentDiv);
+showDivOnLoad();
 
 
