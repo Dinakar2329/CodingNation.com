@@ -414,51 +414,66 @@ const tagDefinitions = {
       "The style tag is used to define style information for an HTML document.",
     syntax: "<style> body {background-color: white;} </style>",
   },
-  //css definitions
+ 
+  
+    //css definitions
+  css: {
+    definition:
+      "CSS Stands For Cascading Style Sheets. It Is A Style Sheet Language, adds beauty to a website. It helps the user to design a majestic website according to their own liking.",
+    syntax: "",
+  },
   width: {
-    definition: "Specifies the width of an element's content area.",
+    definition: "It is used to Specify the width of an element's content area.",
     syntax: "width: value;",
   },
-
+  hover: {
+    definition:
+      "The :hover selector in CSS is used to change the style of an element when the mouse pointer is over it. It can be used on all elements, not just links",
+    syntax: "selector:hover",
+  },
   height: {
-    definition: "Specifies the height of an element's content area.",
+    definition:
+      "It is used to Specifies the height of an element's content area.",
     syntax: "height: value;",
   },
 
   padding: {
     definition:
-      "Specifies the space between an element's content and its border.",
+      "It is used to Specifies the space between an element's content and its border.",
     syntax: "padding: value;",
   },
 
   border: {
-    definition: "Specifies the style, width, and color of an element's border.",
+    definition:
+      "It is used toSpecifies the style, width, and color of an element's border.",
     syntax: "border: width style color;",
   },
 
   margin: {
     definition:
-      "Specifies the space between an element's border and adjacent elements.",
+      "It is used to Specifies the space between an element's border and adjacent elements.",
     syntax: "margin: value;",
   },
 
   boxsizing: {
     definition:
-      "Specifies how an element's width and height are calculated, including or excluding padding and border.",
+      "It is used to Specifies how an element's width and height are calculated, including or excluding padding and border.",
     syntax: "box-sizing: content-box | border-box;",
   },
   fontfamily: {
-    definition: "Specifies the font family for an element's text.",
+    definition:
+      "It is used to Specifies the Font Family or Different Fonts for an element's text.",
     syntax: "font-family: family-name | generic-family;",
   },
 
   fontsize: {
-    definition: "Specifies the size of an element's text.",
+    definition: "It is used to Specifies the Font  size of an element's text.",
     syntax: "font-size: value;",
   },
 
   fontweight: {
-    definition: "Specifies the weight or thickness of an element's text.",
+    definition:
+      "It is used to Specifies the weight or thickness of an element's text.",
     syntax: "font-weight: normal | bold | bolder | lighter | 100-900;",
   },
 
@@ -535,6 +550,10 @@ const tagDefinitions = {
     definition: "Specifies the shadow of an element's box.",
     syntax: "box-shadow: h-shadow v-shadow blur spread color;",
   },
+  top: {
+    definition: "Specifies the top position of an element when positioned.",
+    syntax: "top: value;",
+  },
   position: {
     definition: "Specifies the positioning method of an element.",
     syntax: "position: static | relative | absolute | fixed | sticky;",
@@ -576,8 +595,8 @@ const tagDefinitions = {
   },
   flex: {
     definition:
-      "Specifies the length of the item, relative to the rest of the flexible items inside the same container.",
-    syntax: "flex: flex-grow flex-shrink flex-basis;",
+      "Specifies the length of the item, relative to the rest of the flexible items inside the same container. Mainly it is used for responsiveness and flexibleness for a  website",
+    syntax: "display: flex  | flex-box",
   },
   aligncontent: {
     definition:
@@ -604,7 +623,11 @@ const tagDefinitions = {
       "Sets the order of a flexible item relative to the other items in the container.",
     syntax: "order: integer;",
   },
-
+  grid: {
+    definition:
+      "The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.",
+    syntax: "display: grid;",
+  },
   gridtemplaterows: {
     definition: "Defines the rows of the grid container.",
     syntax:
@@ -1092,6 +1115,7 @@ const tagDefinitions = {
     syntax:
       "-webkit-column-break-inside: auto | avoid | avoid-page | avoid-column;",
   },
+
 
   //c definitions
   printf: {
