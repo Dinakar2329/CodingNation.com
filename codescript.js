@@ -1,4 +1,421 @@
 const tagDefinitions = {
+   //html definitions
+
+  html: {
+    definition:
+      "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The html tag is the container for all other HTML elements (except for the !DOCTYPE tag)",
+    syntax:
+      "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
+  },
+
+  head: {
+    definition:
+      "The HTML head tag contains metadata/information for the document. It is used to specify the title of the document.",
+    syntax: "<head>\n  <title>Page Title</title>\n</head>",
+  },
+  title: {
+    definition:
+      "The HTML title tag defines a title for the document. It is used to specify the title of the document.",
+    syntax: "<title>Page Title</title>",
+  },
+  body: {
+    definition:
+      "The HTML body tag defines the document's body. It is used to specify the content of the document.",
+    syntax:
+      "<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph.</p>\n</body>",
+  },
+  // Meta Tags
+  meta: {
+    definition:
+      "The HTML meta tag provides metadata about an HTML document. It is used to specify metadata about the document.It is used for SEO purposes",
+    syntax: "<meta name='name' content='content'>",
+  },
+  base: {
+    definition:
+      "The HTML base tag specifies the base URL/target for all relative URLs in a document. It is used to specify the base URL of the document.",
+    syntax: "<base href='URL' target='_blank'>",
+  },
+  h1: {
+    definition:
+      "The HTML h1 element is used to define a heading. It is the most important heading on the page. It is used to define a heading.",
+    syntax: "<h1>Heading text</h1>",
+  },
+  h2: {
+    definition:
+      "The HTML h2 element is used to define a heading. It is the second most important heading on the page. It is used to define a heading.",
+    syntax: "<h2>Heading text</h2>",
+  },
+  h3: {
+    definition:
+      "The h3 tag is used to define a heading on a webpage, with level 3 importance. It is used to define a heading.",
+    syntax: "<h3>Heading</h3>",
+  },
+  h4: {
+    definition:
+      "The h4 tag is used to define a heading on a webpage, with level 4 importance. It is used to define a heading.",
+    syntax: "<h4>Heading</h4>",
+  },
+  h5: {
+    definition:
+      "The  h5 tag is used to define a heading on a webpage, with level 5 importance. It is used to define a heading.",
+    syntax: "<h5>Heading</h5>",
+  },
+  h6: {
+    definition:
+      "The h6 element is used to define a heading. It is the smallest and last most important heading on the page. It is used to define a heading.",
+    syntax: "<h6>Heading text</h6>",
+  },
+  p: {
+    definition:
+      "The p element is used to define a paragraph. ",
+    syntax: "<p>Paragraph text</p>",
+  },
+  br: {
+    definition:
+      "The br element is used to define a line break.",
+    syntax: "<br>",
+  },
+  hr: {
+    definition: "The hr tag is used to insert a horizontal line on a webpage.",
+    syntax: "<hr>",
+  },
+  a: {
+    definition:
+      "The HTML a tag defines a hyperlink, which is used to link from one page to another1. The most important attribute of the <a> element is the href attribute, which indicates the link’s destination1.",
+    syntax: "<a href='URL'>Link text</a>",
+  },
+  img: {
+    definition:
+      "img tag is used to insert images on an HTML page.img tag is an empty tag which means it doesn’t have a corresponding closing tag.<img>tag uses mandatory attributes i.e. 'alt attribute' a text description for an image and 'src attribute' for the location path of an image. These attributes provide additional information about the image tag.",
+    syntax: "<img src='URL'>",
+  },
+  ul: {
+    definition:
+      "The HTML ul tag defines an unordered list. An unordered list starts with the ul tag. Each list item starts with the li tag.",
+    syntax: "<ul>\n  <li>List item</li>\n  <li>List item</li>\n</ul>",
+  },
+  li: {
+    definition:
+      "The HTML li tag defines a list item. The li tag is used in ordered lists (ol) and unordered lists (ul).",
+    syntax: "<li>list item</li>",
+  },
+  b: {
+    definition: "The HTML b tag defines a bold text.",
+    syntax: "<b>bold text</b>",
+  },
+  i: {
+    definition:
+      "The HTML i tag defines an italic text.The HTML i tag defines a part of text in an alternate voice or mood. The i tag is often used to indicate a technical term, a phrase from another language, a thought, or a ship name",
+    syntax: "<i>italic text</i>",
+  },
+  em: {
+    definition: "The HTML em tag defines an emphasized text.",
+    syntax: "<em>emphasized text</em>",
+  },
+  strong: {
+    definition:
+      "The HTML strong tag defines important text. The strong tag is often used to indicate text that should be bold by default, such as a heading or title.",
+    syntax: "<strong>strong text</strong>",
+  },
+  mark: {
+    definition:
+      "The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.",
+    syntax: "<mark>highlighted text</mark>",
+  },
+  address: {
+    definition:
+      "The address element represents a location in a document, such as a physical address or a mailing address.",
+    syntax:
+      "<address>\n  <strong>Address</strong>\n  <br>\n  <em>City, State, Zipcode</em>\n</address>",
+  },
+  sub: {
+    definition:
+      "The HTML sub tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
+    syntax: "<sub>sub text</sub>",
+  },
+  sup: {
+    definition:
+      "The HTML sup tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.",
+    syntax: "<sup>sup text</sup>",
+  },
+  del: {
+    definition:
+      "The HTML del tag defines deleted text. Deleted text is often rendered with a line through it. I hope this helps! Let me know if you have any other questions.",
+    syntax: "<del>del text</del>",
+  },
+  ins: {
+    definition:
+      "The HTML ins tag defines inserted text. Inserted text is often rendered with an underline.",
+    syntax: "<ins>ins text</ins>",
+  },
+  pre: {
+    definition:
+      "The HTML pre tag defines preformatted text. Preformatted text preserves both spaces and line breaks.",
+    syntax: "<pre>pre text</pre>",
+  },
+  code: {
+    definition:
+      "The HTML code tag defines code . It  defines a piece of computer code.",
+    syntax: "<code>code text</code>",
+  },
+  q: {
+    definition: "The HTML q tag defines a short quotation.",
+    syntax: "<q>quotation</q>",
+  },
+  link: {
+    definition:
+      "The HTML link tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets",
+    syntax: "<link href='url' rel='stylesheet'/>",
+  },
+  dl: {
+    definition:
+      "The HTML dl tag defines a description list. The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).",
+    syntax: "<dl>\n  <dt>Description</dt>\n  <dd>Description</dd>\n</dl>",
+  },
+  dt: {
+    definition: "The HTML dt tag defines a term/name in a description list.",
+    syntax: "<dt>Term/name</dt>",
+  },
+  dd: {
+    definition:
+      "The HTML dd tag defines the description of the term (name) in a description list.",
+    syntax: "<dd>Description</dd>",
+  },
+  div: {
+    definition:
+      "The div element is used to group other elements together and apply styles to them.",
+    syntax: "<div>\n  <p>Paragraph 1</p>\n  <p>Paragraph 2</p>\n</div>",
+  },
+  span: {
+    definition:
+      "The span element is used to apply styles to a specific section of text.",
+    syntax:
+      "<p>This is some text with a <span style=&quot;color: red;&quot;>red</span> word.</p>",
+  },
+  form: {
+    definition: "The form element is used to create a form for user input.",
+    syntax:
+      '<form action="form-handler.php" method="post">\n  <input type="text" name="username" placeholder="Enter your username">\n  <input type="password" name="password" placeholder="Enter your password">\n  <input type="submit" value="Submit">\n</form>',
+  },
+  input: {
+    definition:
+      "The input element represents a typed data field that allows a user to enter data. The value of the input element is usually interpreted as text, but can be interpreted as other types (e.g., numbers) depending on the value of the type attribute. This example is for an input tag with type= '\text'. You can change the type attribute to specify different types of input fields, such as email, password, checkbox, radio, and more.",
+    syntax:
+      '<input type="text" name="username" id="username" value="" placeholder="Enter your username">',
+  },
+  table: {
+    definition:
+      "The table tag defines an HTML table. Tables are used to display data in rows and columns.",
+    syntax:
+      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>   \n<td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
+  },
+  tr: {
+    definition: "The tr tag defines a row in an HTML table.",
+    syntax:
+      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
+  },
+  th: {
+    definition: "The th tag defines a header cell in an HTML table.",
+    syntax:
+      "<table>\n <tr>\n  <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
+  },
+  td: {
+    definition: "The td tag defines a standard data cell in an HTML table.",
+    syntax:
+      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>   \n<td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
+  },
+  caption: {
+    definition: "The caption tag defines a table caption.",
+    syntax:
+      "<table>\n  <caption>Table Caption</caption>\n <tr>  <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
+  },
+  u: {
+    definition:
+      "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
+    syntax: "<u>underlined text</u>",
+  },
+  small: {
+    definition:
+      "The small element represents small print and similar fine print, such as legal disclaimers and caveats.",
+    syntax: "<small>small print</small>",
+  },
+  textarea: {
+    definition:
+      "The textarea element is used to create a multi-line text input field. It is typically used when you want the user to enter a large amount of text, such as a comment or message.",
+    syntax:
+      "<textarea name='message' rows='4' cols='50'>Enter your message here</textarea>",
+  },
+  select: {
+    definition:
+      "The select element creates a drop-down list of options for the user to choose from. The option elements within the select element specify the available options.",
+    syntax: `<select>\n
+          <option value="volvo">Volvo</option>\n
+          <option value="saab">Saab</option>\n
+          <option value="mercedes">Mercedes</option>\n
+          <option value="audi">Audi</option>\n
+        </select>`,
+  },
+  option: {
+    definition:
+      "The option element is used within a select element to specify an option that the user can choose. The value attribute specifies the value that will be submitted when the form is submitted.",
+    syntax: "<option value='volvo'>Volvo</option>",
+  },
+  label: {
+    definition:
+      "The label element is used to associate a text label with a form control, such as an input or select element. This allows the user to click on the label to activate the form control.",
+    syntax:
+      "<label for='firstname'>First name:</label>\n <input type='text' id='firstname' name='firstname' />",
+  },
+  video: {
+    syntax:
+      '<video src="video-url.mp4" width="640" height="360" controls></video>',
+    definition:
+      "The video tag is used to embed videos into a web page. The required src attribute specifies the URL of the video, while the optional width and height attributes specify the dimensions of the video. The controls attribute adds video playback controls to the video player.",
+  },
+  audio: {
+    syntax: '<audio src="audio-url.mp3" controls></audio>',
+    definition:
+      "The audio tag is used to embed audio files into a web page. The required src attribute specifies the URL of the audio file, while the controls attribute adds audio playback controls to the audio player.",
+  },
+  iframe: {
+    syntax:
+      '<iframe src="https://www.example.com" width="640" height="360"></iframe>',
+    definition:
+      "The iframe tag is used to embed another web page within the current web page. The required src attribute specifies the URL of the web page to be embedded, while the optional width and height attributes specify the dimensions of the embedded web page.",
+  },
+  figure: {
+    definition:
+      "The figure element represents a self-contained composition in a document, page, application, or site and that is intended to be independently distributable or reusable.",
+    syntax:
+      "<figure>\n<img src='image.png' alt='alternative text'>\n<figcaption>caption text</figcaption>\n</figure>",
+  },
+  figcaption: {
+    definition:
+      "The figcaption element represents a caption or legend for the rest of the contents of the figure element.",
+    syntax:
+      "<figure>\n<img src='image.png' alt='alternative text'>\n<figcaption>caption text</figcaption>\n</figure>",
+  },
+  nav: {
+    definition:
+      "The nav element represents a section of a page that links to other pages or to parts within the page.",
+    syntax:
+      "<nav>\n<ul>\n<li>\n<a href='/about'>About</a></li>\n<li><a href='/contact'>Contact</a></li>\n</ul>\n</nav>",
+  },
+  link: {
+    definition:
+      "The link element specifies relationships between the current document and an external resource.",
+    syntax: "<link rel='stylesheet' href='styles.css'>",
+  },
+  script: {
+    definition:
+      "The <strong>script</strong> tag is used to define a client-side script, such as a JavaScript. The script tag is used in HTML to define embedded scripts that are executed when the document is loaded in a web browser.",
+    syntax: "<script>Write your script here </script>",
+  },
+  noscript: {
+    definition:
+      "The <strong>noscript</strong> tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.",
+    syntax: "<noscript>Define alternate content here </noscript>",
+  },
+  blockquote: {
+    definition:
+      "The blockquote element is used to indicate a section of quoted text.",
+    syntax: "<blockquote><p>This is a section of quoted text.</p></blockquote>",
+  },
+
+  cite: {
+    definition:
+      "The cite element is used to indicate the title of a work, such as a book or movie.",
+    syntax: "<p><cite>The Catcher in the Rye</cite> by J.D. Salinger</p>",
+  },
+  source: {
+    definition:
+      "The source tag specifies multiple media resources for media elements like audio, video, and picture.",
+    syntax: "<source src='media_file.mp4' type='video/mp4'>",
+  },
+  track: {
+    definition:
+      "The track tag is used to add timed text tracks (captions or subtitles) to media elements like audio or video.",
+    syntax:
+      "<track src='subtitles.vtt' kind='subtitles' srclang='en' label='English' default>",
+  },
+  picture: {
+    definition:
+      "The picture tag is used to provide multiple sources of an image based on screen size and resolution.",
+    syntax:
+      "<picture><source media='(min-width: 650px)' srcset='large_image.jpg'><img src='small_image.jpg'></picture>",
+  },
+  button: {
+    definition:
+      "The button tag defines a clickable button. It can be used to submit a form or trigger a JavaScript function.",
+    syntax: "<button>Click me</button>",
+  },
+  fieldset: {
+    definition:
+      "The fieldset tag groups related elements in a form. It can also contain a <legend> element to provide a caption for the fieldset.",
+    syntax:
+      "<fieldset>\n<legend>Personal information:</legend>\n  <!-- Input fields -->\n</fieldset>",
+  },
+  legend: {
+    definition: "The legend tag defines a caption for the fieldset element.",
+    syntax: "<legend>Personal information:</legend>",
+  },
+  datalist: {
+    definition:
+      "The datalist tag specifies a list of pre-defined options for an input element. The user can select an option from the list, or enter their own value.",
+    syntax:
+      "<input list='fruits'>\n<datalist id='fruits'>\n  <option value='Apple'>\n  <option value='Banana'>\n  <option value='Orange'>\n</datalist>",
+  },
+  optgroup: {
+    definition:
+      "The optgroup tag groups related options in a select element. It can contain multiple option elements.",
+    syntax:
+      "<select>\n  <optgroup label='Group 1'>\n    <option value='option1'>Option 1</option>\n  </optgroup>\n  <optgroup label='Group 2'>\n    <option value='option2'>Option 2</option>\n  </optgroup>\n</select>",
+  },
+  article: {
+    definition:
+      "The article tag specifies independent, self-contained content.",
+    syntax: "<article>\n  <!-- article content -->\n</article>",
+  },
+  aside: {
+    definition:
+      "The aside tag defines some content aside from the content it is placed in.",
+    syntax: "<aside>\n  <!-- aside content -->\n</aside>",
+  },
+  details: {
+    definition:
+      "The details tag specifies additional details that the user can open and close on demand.",
+    syntax:
+      "<details>\n  <summary>Summary text</summary>\n  <!-- details content -->\n</details>",
+  },
+  footer: {
+    definition: "The footer tag defines a footer for a document or section.",
+    syntax: "<footer>\n  <!-- footer content -->\n</footer>",
+  },
+  header: {
+    definition: "The header tag specifies a header for a document or section.",
+    syntax: "<header>\n  <!-- header content -->\n</header>",
+  },
+  main: {
+    definition: "The main tag specifies the main content of a document.",
+    syntax: "<main>\n  <!-- main content -->\n</main>",
+  },
+  section: {
+    definition: "The section tag defines a section in a document.",
+    syntax: "<section>\n  <!-- section content -->\n</section>",
+  },
+  summary: {
+    definition:
+      "The summary tag defines a visible heading for the details element.",
+    syntax:
+      "<details>\n  <summary>Summary text</summary>\n  <!-- details content -->\n</details>",
+  },
+  style: {
+    definition:
+      "The style tag is used to define style information for an HTML document.",
+    syntax: "<style> body {background-color: white;} </style>",
+  },
+ 
+  
   //css definitions
   css: {
     definition:
