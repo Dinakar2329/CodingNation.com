@@ -1,422 +1,5 @@
 const tagDefinitions = {
-  //html definitions
-
-  html: {
-    definition:
-      "The HTML root tag represents the root of an HTML document1. It is used to specify that the document is HTML2. The html tag is the container for all other HTML elements (except for the !DOCTYPE tag)",
-    syntax:
-      "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title</title>\n  </head>\n  <body>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph.</p>\n  </body>\n</html>",
-  },
-
-  head: {
-    definition:
-      "The HTML head tag contains metadata/information for the document. It is used to specify the title of the document.",
-    syntax: "<head>\n  <title>Page Title</title>\n</head>",
-  },
-  title: {
-    definition:
-      "The HTML title tag defines a title for the document. It is used to specify the title of the document.",
-    syntax: "<title>Page Title</title>",
-  },
-  body: {
-    definition:
-      "The HTML body tag defines the document's body. It is used to specify the content of the document.",
-    syntax:
-      "<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph.</p>\n</body>",
-  },
-  // Meta Tags
-  meta: {
-    definition:
-      "The HTML meta tag provides metadata about an HTML document. It is used to specify metadata about the document.It is used for SEO purposes",
-    syntax: "<meta name='name' content='content'>",
-  },
-  base: {
-    definition:
-      "The HTML base tag specifies the base URL/target for all relative URLs in a document. It is used to specify the base URL of the document.",
-    syntax: "<base href='URL' target='_blank'>",
-  },
-  h1: {
-    definition:
-      "The HTML h1 element is used to define a heading. It is the most important heading on the page. It is used to define a heading.",
-    syntax: "<h1>Heading text</h1>",
-  },
-  h2: {
-    definition:
-      "The HTML h2 element is used to define a heading. It is the second most important heading on the page. It is used to define a heading.",
-    syntax: "<h2>Heading text</h2>",
-  },
-  h3: {
-    definition:
-      "The h3 tag is used to define a heading on a webpage, with level 3 importance. It is used to define a heading.",
-    syntax: "<h3>Heading</h3>",
-  },
-  h4: {
-    definition:
-      "The h4 tag is used to define a heading on a webpage, with level 4 importance. It is used to define a heading.",
-    syntax: "<h4>Heading</h4>",
-  },
-  h5: {
-    definition:
-      "The  h5 tag is used to define a heading on a webpage, with level 5 importance. It is used to define a heading.",
-    syntax: "<h5>Heading</h5>",
-  },
-  h6: {
-    definition:
-      "The h6 element is used to define a heading. It is the smallest and last most important heading on the page. It is used to define a heading.",
-    syntax: "<h6>Heading text</h6>",
-  },
-  p: {
-    definition:
-      "The p element is used to define a paragraph. ",
-    syntax: "<p>Paragraph text</p>",
-  },
-  br: {
-    definition:
-      "The br element is used to define a line break.",
-    syntax: "<br>",
-  },
-  hr: {
-    definition: "The hr tag is used to insert a horizontal line on a webpage.",
-    syntax: "<hr>",
-  },
-  a: {
-    definition:
-      "The HTML a tag defines a hyperlink, which is used to link from one page to another1. The most important attribute of the <a> element is the href attribute, which indicates the link’s destination1.",
-    syntax: "<a href='URL'>Link text</a>",
-  },
-  img: {
-    definition:
-      "img tag is used to insert images on an HTML page.img tag is an empty tag which means it doesn’t have a corresponding closing tag.<img>tag uses mandatory attributes i.e. 'alt attribute' a text description for an image and 'src attribute' for the location path of an image. These attributes provide additional information about the image tag.",
-    syntax: "<img src='URL'>",
-  },
-  ul: {
-    definition:
-      "The HTML ul tag defines an unordered list. An unordered list starts with the ul tag. Each list item starts with the li tag.",
-    syntax: "<ul>\n  <li>List item</li>\n  <li>List item</li>\n</ul>",
-  },
-  li: {
-    definition:
-      "The HTML li tag defines a list item. The li tag is used in ordered lists (ol) and unordered lists (ul).",
-    syntax: "<li>list item</li>",
-  },
-  b: {
-    definition: "The HTML b tag defines a bold text.",
-    syntax: "<b>bold text</b>",
-  },
-  i: {
-    definition:
-      "The HTML i tag defines an italic text.The HTML i tag defines a part of text in an alternate voice or mood. The i tag is often used to indicate a technical term, a phrase from another language, a thought, or a ship name",
-    syntax: "<i>italic text</i>",
-  },
-  em: {
-    definition: "The HTML em tag defines an emphasized text.",
-    syntax: "<em>emphasized text</em>",
-  },
-  strong: {
-    definition:
-      "The HTML strong tag defines important text. The strong tag is often used to indicate text that should be bold by default, such as a heading or title.",
-    syntax: "<strong>strong text</strong>",
-  },
-  mark: {
-    definition:
-      "The mark element represents a run of text in one document marked or highlighted for reference purposes, due to its relevance in another context.",
-    syntax: "<mark>highlighted text</mark>",
-  },
-  address: {
-    definition:
-      "The address element represents a location in a document, such as a physical address or a mailing address.",
-    syntax:
-      "<address>\n  <strong>Address</strong>\n  <br>\n  <em>City, State, Zipcode</em>\n</address>",
-  },
-  sub: {
-    definition:
-      "The HTML sub tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
-    syntax: "<sub>sub text</sub>",
-  },
-  sup: {
-    definition:
-      "The HTML sup tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.",
-    syntax: "<sup>sup text</sup>",
-  },
-  del: {
-    definition:
-      "The HTML del tag defines deleted text. Deleted text is often rendered with a line through it. I hope this helps! Let me know if you have any other questions.",
-    syntax: "<del>del text</del>",
-  },
-  ins: {
-    definition:
-      "The HTML ins tag defines inserted text. Inserted text is often rendered with an underline.",
-    syntax: "<ins>ins text</ins>",
-  },
-  pre: {
-    definition:
-      "The HTML pre tag defines preformatted text. Preformatted text preserves both spaces and line breaks.",
-    syntax: "<pre>pre text</pre>",
-  },
-  code: {
-    definition:
-      "The HTML code tag defines code . It  defines a piece of computer code.",
-    syntax: "<code>code text</code>",
-  },
-  q: {
-    definition: "The HTML q tag defines a short quotation.",
-    syntax: "<q>quotation</q>",
-  },
-  link: {
-    definition:
-      "The HTML link tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets",
-    syntax: "<link href='url' rel='stylesheet'/>",
-  },
-  dl: {
-    definition:
-      "The HTML dl tag defines a description list. The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).",
-    syntax: "<dl>\n  <dt>Description</dt>\n  <dd>Description</dd>\n</dl>",
-  },
-  dt: {
-    definition: "The HTML dt tag defines a term/name in a description list.",
-    syntax: "<dt>Term/name</dt>",
-  },
-  dd: {
-    definition:
-      "The HTML dd tag defines the description of the term (name) in a description list.",
-    syntax: "<dd>Description</dd>",
-  },
-  div: {
-    definition:
-      "The div element is used to group other elements together and apply styles to them.",
-    syntax: "<div>\n  <p>Paragraph 1</p>\n  <p>Paragraph 2</p>\n</div>",
-  },
-  span: {
-    definition:
-      "The span element is used to apply styles to a specific section of text.",
-    syntax:
-      "<p>This is some text with a <span style=&quot;color: red;&quot;>red</span> word.</p>",
-  },
-  form: {
-    definition: "The form element is used to create a form for user input.",
-    syntax:
-      '<form action="form-handler.php" method="post">\n  <input type="text" name="username" placeholder="Enter your username">\n  <input type="password" name="password" placeholder="Enter your password">\n  <input type="submit" value="Submit">\n</form>',
-  },
-  input: {
-    definition:
-      "The input element represents a typed data field that allows a user to enter data. The value of the input element is usually interpreted as text, but can be interpreted as other types (e.g., numbers) depending on the value of the type attribute. This example is for an input tag with type= '\text'. You can change the type attribute to specify different types of input fields, such as email, password, checkbox, radio, and more.",
-    syntax:
-      '<input type="text" name="username" id="username" value="" placeholder="Enter your username">',
-  },
-  table: {
-    definition:
-      "The table tag defines an HTML table. Tables are used to display data in rows and columns.",
-    syntax:
-      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>   \n<td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
-  },
-  tr: {
-    definition: "The tr tag defines a row in an HTML table.",
-    syntax:
-      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
-  },
-  th: {
-    definition: "The th tag defines a header cell in an HTML table.",
-    syntax:
-      "<table>\n <tr>\n  <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
-  },
-  td: {
-    definition: "The td tag defines a standard data cell in an HTML table.",
-    syntax:
-      "<table>\n <tr> \n <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>   \n<td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
-  },
-  caption: {
-    definition: "The caption tag defines a table caption.",
-    syntax:
-      "<table>\n  <caption>Table Caption</caption>\n <tr>  <th>Header 1</th>\n   <th>Header 2</th>\n  </tr>\n <tr>  \n <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>",
-  },
-  u: {
-    definition:
-      "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
-    syntax: "<u>underlined text</u>",
-  },
-  small: {
-    definition:
-      "The small element represents small print and similar fine print, such as legal disclaimers and caveats.",
-    syntax: "<small>small print</small>",
-  },
-  textarea: {
-    definition:
-      "The textarea element is used to create a multi-line text input field. It is typically used when you want the user to enter a large amount of text, such as a comment or message.",
-    syntax:
-      "<textarea name='message' rows='4' cols='50'>Enter your message here</textarea>",
-  },
-  select: {
-    definition:
-      "The select element creates a drop-down list of options for the user to choose from. The option elements within the select element specify the available options.",
-    syntax: `<select>\n
-          <option value="volvo">Volvo</option>\n
-          <option value="saab">Saab</option>\n
-          <option value="mercedes">Mercedes</option>\n
-          <option value="audi">Audi</option>\n
-        </select>`,
-  },
-  option: {
-    definition:
-      "The option element is used within a select element to specify an option that the user can choose. The value attribute specifies the value that will be submitted when the form is submitted.",
-    syntax: "<option value='volvo'>Volvo</option>",
-  },
-  label: {
-    definition:
-      "The label element is used to associate a text label with a form control, such as an input or select element. This allows the user to click on the label to activate the form control.",
-    syntax:
-      "<label for='firstname'>First name:</label>\n <input type='text' id='firstname' name='firstname' />",
-  },
-  video: {
-    syntax:
-      '<video src="video-url.mp4" width="640" height="360" controls></video>',
-    definition:
-      "The video tag is used to embed videos into a web page. The required src attribute specifies the URL of the video, while the optional width and height attributes specify the dimensions of the video. The controls attribute adds video playback controls to the video player.",
-  },
-  audio: {
-    syntax: '<audio src="audio-url.mp3" controls></audio>',
-    definition:
-      "The audio tag is used to embed audio files into a web page. The required src attribute specifies the URL of the audio file, while the controls attribute adds audio playback controls to the audio player.",
-  },
-  iframe: {
-    syntax:
-      '<iframe src="https://www.example.com" width="640" height="360"></iframe>',
-    definition:
-      "The iframe tag is used to embed another web page within the current web page. The required src attribute specifies the URL of the web page to be embedded, while the optional width and height attributes specify the dimensions of the embedded web page.",
-  },
-  figure: {
-    definition:
-      "The figure element represents a self-contained composition in a document, page, application, or site and that is intended to be independently distributable or reusable.",
-    syntax:
-      "<figure>\n<img src='image.png' alt='alternative text'>\n<figcaption>caption text</figcaption>\n</figure>",
-  },
-  figcaption: {
-    definition:
-      "The figcaption element represents a caption or legend for the rest of the contents of the figure element.",
-    syntax:
-      "<figure>\n<img src='image.png' alt='alternative text'>\n<figcaption>caption text</figcaption>\n</figure>",
-  },
-  nav: {
-    definition:
-      "The nav element represents a section of a page that links to other pages or to parts within the page.",
-    syntax:
-      "<nav>\n<ul>\n<li>\n<a href='/about'>About</a></li>\n<li><a href='/contact'>Contact</a></li>\n</ul>\n</nav>",
-  },
-  link: {
-    definition:
-      "The link element specifies relationships between the current document and an external resource.",
-    syntax: "<link rel='stylesheet' href='styles.css'>",
-  },
-  script: {
-    definition:
-      "The <strong>script</strong> tag is used to define a client-side script, such as a JavaScript. The script tag is used in HTML to define embedded scripts that are executed when the document is loaded in a web browser.",
-    syntax: "<script>Write your script here </script>",
-  },
-  noscript: {
-    definition:
-      "The <strong>noscript</strong> tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.",
-    syntax: "<noscript>Define alternate content here </noscript>",
-  },
-  blockquote: {
-    definition:
-      "The blockquote element is used to indicate a section of quoted text.",
-    syntax: "<blockquote><p>This is a section of quoted text.</p></blockquote>",
-  },
-
-  cite: {
-    definition:
-      "The cite element is used to indicate the title of a work, such as a book or movie.",
-    syntax: "<p><cite>The Catcher in the Rye</cite> by J.D. Salinger</p>",
-  },
-  source: {
-    definition:
-      "The source tag specifies multiple media resources for media elements like audio, video, and picture.",
-    syntax: "<source src='media_file.mp4' type='video/mp4'>",
-  },
-  track: {
-    definition:
-      "The track tag is used to add timed text tracks (captions or subtitles) to media elements like audio or video.",
-    syntax:
-      "<track src='subtitles.vtt' kind='subtitles' srclang='en' label='English' default>",
-  },
-  picture: {
-    definition:
-      "The picture tag is used to provide multiple sources of an image based on screen size and resolution.",
-    syntax:
-      "<picture><source media='(min-width: 650px)' srcset='large_image.jpg'><img src='small_image.jpg'></picture>",
-  },
-  button: {
-    definition:
-      "The button tag defines a clickable button. It can be used to submit a form or trigger a JavaScript function.",
-    syntax: "<button>Click me</button>",
-  },
-  fieldset: {
-    definition:
-      "The fieldset tag groups related elements in a form. It can also contain a <legend> element to provide a caption for the fieldset.",
-    syntax:
-      "<fieldset>\n<legend>Personal information:</legend>\n  <!-- Input fields -->\n</fieldset>",
-  },
-  legend: {
-    definition: "The legend tag defines a caption for the fieldset element.",
-    syntax: "<legend>Personal information:</legend>",
-  },
-  datalist: {
-    definition:
-      "The datalist tag specifies a list of pre-defined options for an input element. The user can select an option from the list, or enter their own value.",
-    syntax:
-      "<input list='fruits'>\n<datalist id='fruits'>\n  <option value='Apple'>\n  <option value='Banana'>\n  <option value='Orange'>\n</datalist>",
-  },
-  optgroup: {
-    definition:
-      "The optgroup tag groups related options in a select element. It can contain multiple option elements.",
-    syntax:
-      "<select>\n  <optgroup label='Group 1'>\n    <option value='option1'>Option 1</option>\n  </optgroup>\n  <optgroup label='Group 2'>\n    <option value='option2'>Option 2</option>\n  </optgroup>\n</select>",
-  },
-  article: {
-    definition:
-      "The article tag specifies independent, self-contained content.",
-    syntax: "<article>\n  <!-- article content -->\n</article>",
-  },
-  aside: {
-    definition:
-      "The aside tag defines some content aside from the content it is placed in.",
-    syntax: "<aside>\n  <!-- aside content -->\n</aside>",
-  },
-  details: {
-    definition:
-      "The details tag specifies additional details that the user can open and close on demand.",
-    syntax:
-      "<details>\n  <summary>Summary text</summary>\n  <!-- details content -->\n</details>",
-  },
-  footer: {
-    definition: "The footer tag defines a footer for a document or section.",
-    syntax: "<footer>\n  <!-- footer content -->\n</footer>",
-  },
-  header: {
-    definition: "The header tag specifies a header for a document or section.",
-    syntax: "<header>\n  <!-- header content -->\n</header>",
-  },
-  main: {
-    definition: "The main tag specifies the main content of a document.",
-    syntax: "<main>\n  <!-- main content -->\n</main>",
-  },
-  section: {
-    definition: "The section tag defines a section in a document.",
-    syntax: "<section>\n  <!-- section content -->\n</section>",
-  },
-  summary: {
-    definition:
-      "The summary tag defines a visible heading for the details element.",
-    syntax:
-      "<details>\n  <summary>Summary text</summary>\n  <!-- details content -->\n</details>",
-  },
-  style: {
-    definition:
-      "The style tag is used to define style information for an HTML document.",
-    syntax: "<style> body {background-color: white;} </style>",
-  },
- 
-  
-    //css definitions
+  //css definitions
   css: {
     definition:
       "CSS Stands For Cascading Style Sheets. It Is A Style Sheet Language, adds beauty to a website. It helps the user to design a majestic website according to their own liking.",
@@ -1115,7 +698,6 @@ const tagDefinitions = {
     syntax:
       "-webkit-column-break-inside: auto | avoid | avoid-page | avoid-column;",
   },
-
 
   //c definitions
   printf: {
@@ -1987,616 +1569,304 @@ const tagDefinitions = {
       .then(response => response.json())
       .then(data => console.log(data));`,
   },
-
-  // java definition
-  class: {
-    definition: "Defines a class in Java",
-    syntax: "public class MyClass { // class body }",
-  },
-  method: {
-    definition: "Defines a method in a Java class",
-    syntax: "public void myMethod() { // method body }",
-  },
-  variable: {
-    definition: "Declares a variable in Java",
-    syntax: "int myInt = 42;",
-  },
-  if: {
-    definition: "Conditional statement in Java",
-    syntax: "if (condition) { // code to execute if condition is true }",
-  },
-  for: {
-    definition: "Loop statement in Java",
-    syntax: "for (initialization; condition; update) { // code to execute }",
-  },
-
-  variable: {
+};
+const java = {
+  navbar: {
     definition:
-      "A container for storing a value in Java. It has a name, a data type, and a value (optional)",
-    syntax: "int myInt = 42;",
-  },
-
-  primitivetype: {
-    definition:
-      "A basic data type in Java that represents a single value. It is not an object and has no methods",
-    syntax: "int myInt = 42; // int is a primitive type",
-  },
-
-  referencetype: {
-    definition:
-      "A data type in Java that refers to an object. It has methods and can be used to access an object's properties and behavior",
-    syntax: 'String myString = "Hello, World!"; // String is a reference type',
-  },
-  class: {
-    definition:
-      "A blueprint for creating objects that define the data and behavior of those objects",
-    syntax: "public class MyClass { // class body }",
-  },
-  object: {
-    definition: "An instance of a class that has its own state and behavior",
-    syntax: "MyClass myObject = new MyClass();",
-  },
-  constructor: {
-    definition:
-      "A special method that is used to initialize objects of a class",
-    syntax: "public MyClass() { // constructor body }",
-  },
-  inheritance: {
-    definition:
-      "A mechanism by which one class can inherit the properties and methods of another class",
-    syntax: "public class SubClass extends SuperClass { // subclass body }",
-  },
-  polymorphism: {
-    definition: "The ability of an object to take on multiple forms",
+      "nav tag is used to create Navigation bar in a website. Nav bar consits list of nav fields.Nav fields are created using 'ul' tag followed by 'li' tag.",
     syntax:
-      "public class MyClass { public void myMethod() { // method body } } public class SubClass extends MyClass { public void myMethod() { // method body } }",
+      "<nav>\n <a href='' class='Icon'>Website Name</a>\n <a href=''>Home</a>\n <a href=''>About</a>\n <a href=''>Blog</a>\n<a href=''>Contact</a>\n<button>logout</button>\n</nav>",
   },
-  encapsulation: {
+  form: {
     definition:
-      "The practice of hiding the implementation details of a class from the outside world",
+      "The form tag is used to create an input form on a webpage. It consists of various input fields, like text input, radio buttons, checkboxes, and submit buttons.",
     syntax:
-      "public class MyClass { private int myVariable; public int getMyVariable() { return myVariable; } public void setMyVariable(int newValue) { myVariable = newValue; } }",
+      "<form action='url' method='post'>\n<label for='name'>Name:</label>\n<input type='text' id='name' name='name' required>\n<label for='email'>Email:</label>\n<input type='email' id='email' name='email' required>\n<label for='message'>Message:</label>\n<textarea id='message' name='message'></textarea>\n<input type='submit' value='Submit'>\n</form>",
   },
-  abstraction: {
+
+  image: {
     definition:
-      "The practice of reducing complexity by hiding unnecessary details while showing only the essential features of an object",
+      "The image tag is used to display an image on a webpage. It is a self-closing tag and does not have a closing tag.",
+    syntax: "<img src='image.jpg' alt='description of image'>",
+  },
+
+  link: {
+    definition:
+      "The link tag is used to link to external stylesheets or to other webpages. It is placed in the head section of a webpage.",
+    syntax: "<head>\n<link rel='stylesheet' href='style.css'>\n</head>\n\n",
+  },
+  anchor: {
+    definition:
+      "The anchor tag is used to link another webpages in the website.",
+    syntax: "<a href='https://www.example.com'>Link text</a>",
+  },
+
+  table: {
+    definition:
+      "The table tag is used to create a table on a webpage. It consists of rows and columns, and can include various types of data, such as text, images, and links.",
     syntax:
-      "public abstract class MyAbstractClass { public abstract void myAbstractMethod(); }",
+      "<table>\n<tr>\n<th>Header 1</th>\n<th>Header 2</th>\n</tr>\n<tr>\n<td>Row 1, Column 1</td>\n<td>Row 1, Column 2</td>\n</tr>\n<tr>\n<td>Row 2, Column 1</td>\n<td>Row 2, Column 2</td>\n</tr>\n</table>",
   },
-  interface: {
+  heading: {
     definition:
-      "A collection of abstract methods that define a set of requirements for classes that implement the interface",
+      "The heading tags are used to define headings on a webpage. There are six different levels of headings, from h1 to h6, with h1 being the most important and h6 being the least important.",
     syntax:
-      "public interface MyInterface { public void myMethod(); } public class MyClass implements MyInterface { public void myMethod() { // method body } }",
+      "<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3>\n<h4>Heading 4</h4>\n<h5>Heading 5</h5>\n<h6>Heading 6</h6>",
   },
-  package: {
+
+  list: {
     definition:
-      "A group of related classes and interfaces that are used together and stored in the same directory",
+      "There are two types of lists in HTML: ordered lists and unordered lists. Ordered lists are numbered, while unordered lists have bullet points. Both types of lists can contain multiple items.",
     syntax:
-      "package com.mycompany.mypackage; public class MyClass { // class body }",
-  },
-  try: {
-    definition: "The block of code that may throw an exception",
-    syntax: "try { // code that may throw an exception }",
-  },
-  catch: {
-    definition:
-      "The block of code that is executed when an exception is thrown in the try block",
-    syntax: "catch (Exception e) { // code to handle the exception }",
-  },
-  finally: {
-    definition:
-      "The block of code that is always executed, whether or not an exception is thrown",
-    syntax: "finally { // code that is always executed }",
-  },
-  throw: {
-    definition: "The keyword used to throw an exception in a block of code",
-    syntax: "if (myVariable == null) { throw new NullPointerException(); }",
-  },
-  throws: {
-    definition:
-      "The keyword used in a method signature to indicate that the method may throw a certain type of exception",
-    syntax: "public void myMethod() throws IOException { // method body }",
+      "<ol>\n<li>Item 1</li>\n<li>Item 2</li>\n<li>Item 3</li>\n</ol>\n\n<ul>\n<li>Item 1</li>\n<li>Item 2</li>\n<li>Item 3</li>\n</ul>",
   },
 
-  exception: {
+  paragraph: {
     definition:
-      "An event that occurs during the execution of a program that disrupts the normal flow of instructions",
+      "The paragraph tag is used to define paragraphs of text on a webpage.",
+    syntax: "<p>This is a paragraph of text.</p>",
+  },
+
+  button: {
+    definition:
+      "The button tag is used to create a clickable button on a webpage. It can be used to submit a form or to trigger an action with JavaScript.",
+    syntax: "<button type='submit'>Submit</button>",
+  },
+
+  div: {
+    definition:
+      "The div tag is used to group elements together on a webpage. It is a container that can be styled with CSS.",
+    syntax: "<div>\n<p>Paragraph 1</p>\n<p>Paragraph 2</p>\n</div>",
+  },
+  header: {
+    definition:
+      "The header tag is used to define a header section on a webpage. It can contain logos, navigation menus, and other information about the website.",
     syntax:
-      "try { // code that may throw an exception } catch (Exception e) { // code to handle the exception } finally { // code that is always executed }",
+      "<header>\n<img src='logo.png' alt='website logo'>\n<nav>\n<ul>\n<li><a href='#'>Home</a></li>\n<li><a href='#'>About</a></li>\n<li><a href='#'>Contact</a></li>\n</ul>\n</nav>\n</header>",
   },
-  trywithresources: {
+
+  footer: {
     definition:
-      "A try block that declares one or more resources to be used in the try block, and ensures that those resources are closed when the block is finished",
+      "The footer tag is used to define a footer section on a webpage. It can contain copyright information, social media links, and other information about the website.",
     syntax:
-      "try (BufferedReader br = new BufferedReader(new FileReader(file))) { // code that uses the BufferedReader }",
+      "<footer>\n<p>© 2023 Example Website. All rights reserved.</p>\n<ul>\n<li><a href='#'>Facebook</a></li>\n<li><a href='#'>Twitter</a></li>\n<li><a href='#'>Instagram</a></li>\n</ul>\n</footer>",
   },
 
-  inputstream: {
+  video: {
     definition:
-      "An abstract class that represents a stream of bytes for reading",
-    syntax: 'InputStream input = new FileInputStream("file.txt");',
-  },
-
-  outputstream: {
-    definition:
-      "An abstract class that represents a stream of bytes for writing",
-    syntax: 'OutputStream output = new FileOutputStream("file.txt");',
-  },
-
-  reader: {
-    definition:
-      "An abstract class that represents a stream of characters for reading",
-    syntax: 'Reader reader = new FileReader("file.txt");',
-  },
-
-  writer: {
-    definition:
-      "An abstract class that represents a stream of characters for writing",
-    syntax: 'Writer writer = new FileWriter("file.txt");',
-  },
-
-  bufferedinputstream: {
-    definition: "A class that provides buffering for an input stream",
+      "The video tag is used to embed a video on a webpage. It can be used to display videos from YouTube or other video hosting services, or to host your own videos.",
     syntax:
-      'InputStream input = new BufferedInputStream(new FileInputStream("file.txt"));',
+      "<video width='320' height='240' controls>\n<source src='video.mp4' type='video/mp4'>\n<source src='video.ogg' type='video/ogg'>\nYour browser does not support the video tag.\n</video>",
   },
 
-  bufferedoutputstream: {
-    definition: "A class that provides buffering for an output stream",
+  audio: {
+    definition:
+      "The audio tag is used to embed audio on a webpage. It can be used to play music or other audio files.",
     syntax:
-      'OutputStream output = new BufferedOutputStream(new FileOutputStream("file.txt"));',
+      "<audio controls>\n<source src='audio.mp3' type='audio/mpeg'>\n<source src='audio.ogg' type='audio/ogg'>\nYour browser does not support the audio tag.\n</audio>",
   },
 
-  bufferedreader: {
+  input: {
     definition:
-      "A class that reads text from a character stream and buffers characters for efficient reading",
+      "The input tag is used to create various types of input fields on a webpage, such as text input, radio buttons, checkboxes, and more.",
     syntax:
-      'BufferedReader reader = new BufferedReader(new FileReader("file.txt"));',
+      "<label for='name'>Name:</label>\n<input type='text' id='name' name='name' required>",
   },
-
-  bufferedwriter: {
+  canvas: {
     definition:
-      "A class that writes text to a character stream and buffers characters for efficient writing",
+      "The canvas tag is used to create graphics, animations, and other visual effects in a web page. The content of the canvas is defined using JavaScript.",
     syntax:
-      'BufferedWriter writer = new BufferedWriter(new FileWriter("file.txt"));',
+      "<canvas id='canvas-id' width='optional-width' height='optional-height'></canvas>",
+  },
+  label: {
+    definition:
+      "The label tag is used to associate a label with an input field in a form. The for attribute of the label tag should match the id attribute of the input field.",
+    syntax: "<label for='input-field-id'>Label text goes here.</label>",
   },
 
-  scanner: {
+  select: {
     definition:
-      "A class that provides methods for parsing primitive types and strings from a stream",
-    syntax: 'Scanner scanner = new Scanner(new File("file.txt"));',
-  },
-
-  systemin: {
-    definition:
-      "An InputStream object that represents the standard input stream",
-    syntax: "InputStream input = System.in;",
-  },
-
-  systemout: {
-    definition:
-      "An OutputStream object that represents the standard output stream",
-    syntax: "OutputStream output = System.out;",
-  },
-
-  generics: {
-    definition:
-      "Generics allow types (classes and interfaces) to be parameters when defining classes, interfaces and methods. This provides a way to re-use the same code with different inputs. It also enables compile-time type checking, which is safer than run-time type checking.",
+      "The select tag is used to create a dropdown list in a form. The option tags are used to define the options in the dropdown list.",
     syntax:
-      "public class MyGenericClass<T> {\n\tprivate T myVar;\n\tpublic T getMyVar() {\n\t\treturn myVar;\n\t}\n\tpublic void setMyVar(T myVar) {\n\t\tthis.myVar = myVar;\n\t}\n}",
+      "<select name='select-field-name' id='select-field-id'>\n<option value='option-value-1'>Option 1</option>\n<option value='option-value-2'>Option 2</option>\n</select>",
   },
 
-  typeparameter: {
+  textarea: {
     definition:
-      "A type parameter is a placeholder for a type that will be specified when an instance of a generic class or method is created.",
-    syntax: "public class MyClass<T> { ... }",
-  },
-
-  genericmethod: {
-    definition:
-      "A method that uses a type parameter to define the type of one or more of its parameters or its return type.",
-    syntax: "public <T> T myGenericMethod(T arg) { ... }",
-  },
-
-  wildcard: {
-    definition:
-      "A special type argument that can be used as a substitute for any other type.",
-    syntax: "public void myMethod(List<? extends Number> list) { ... }",
-  },
-
-  boundedtypeparameter: {
-    definition:
-      "A type parameter that specifies a bound on the type argument that can be used with a generic class or method.",
-    syntax: "public class MyClass<T extends SomeClass> { ... }",
-  },
-
-  typeerasure: {
-    definition:
-      "The process by which the Java compiler removes all information related to type parameters and type arguments during the compilation process.",
+      "The textarea tag is used to create a multiline text input field in a form.",
     syntax:
-      "public class MyClass<T> {\n\tprivate T myVar;\n\tpublic T getMyVar() {\n\t\treturn myVar;\n\t}\n\tpublic void setMyVar(T myVar) {\n\t\tthis.myVar = myVar;\n\t}\n}\n\nMyClass<Integer> myObj = new MyClass<>();",
+      "<textarea name='textarea-field-name' id='textarea-field-id' rows='number-of-rows' cols='number-of-columns'></textarea>",
   },
-  thread: {
+  span: {
     definition:
-      "A thread is a single sequential flow of execution within a program. In Java, a thread is created by instantiating an object of the Thread class and invoking its start() method.",
-    syntax: "Thread myThread = new Thread();\nmyThread.start();",
+      "The span tag is used to apply styles or perform operations on a specific section of text or other inline elements.",
+    syntax: "<span>Text or inline elements go here.</span>",
+  },
+  hr: {
+    definition:
+      "The hr tag is used to create a horizontal rule, which is a line that separates content in a web page.",
+    syntax: "<hr>",
   },
 
-  runnable: {
+  br: {
+    definition: "The br tag is used to create a line break in a web page.",
+    syntax: "<br>",
+  },
+
+  meta: {
     definition:
-      "A Runnable is an interface that defines a single method run() that must be implemented by any class whose instances are intended to be executed by a thread.",
+      "The meta tag is used to provide metadata about a web page, such as the author, description, and keywords.",
+    syntax: "<meta name='metadata-name' content='metadata-value'>",
+  },
+  script: {
+    definition:
+      "The script tag is used to embed scripts, such as JavaScript, in a web page.",
+    syntax: "<script>\nJavaScript code goes here.\n</script>",
+  },
+
+  title: {
+    definition:
+      "The title tag is used to specify the title of a web page, which is displayed in the browser's title bar or tab.",
+    syntax: "<title>Page title goes here.</title>",
+  },
+  cssfornavbar: {
+    definition: "The basic css Design for Navbar",
     syntax:
-      'public class MyRunnable implements Runnable {\n\tpublic void run() {\n\t\tSystem.out.println("MyRunnable running");\n\t}\n}\n\nMyRunnable myRunnable = new MyRunnable();\nThread myThread = new Thread(myRunnable);\nmyThread.start();',
+      "nav{\n padding:10px;\n font-weight:bold;\n font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif\n}\n\n a {\n margin:20px;\n text-decoration:none;\n color:black;\n}\n\n button {\n background-color:#7E22CE;\n color:white;\n border-radius:5px;\n margin:5px;\n padding:10px;\n box-shadow:none;\n border:none;\n}\n\n.Icon {\n font-size:30px;color:#7E22CE;\n margin:10px 450px 220px 20px;\n}",
   },
-
-  threadStates: {
-    definition:
-      "A thread can be in one of several states: NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, or TERMINATED. The state of a thread is determined by its current activity and any blocking operations it may be performing.",
-    syntax: "",
-  },
-
-  synchronization: {
-    definition:
-      "Synchronization is a mechanism that ensures that only one thread at a time executes a critical section of code. In Java, synchronization can be achieved by using the synchronized keyword on a method or a block of code.",
+  cssforheading: {
+    definition: "The basic css Design for Heading",
     syntax:
-      "public synchronized void myMethod() {\n\t// critical section of code\n}",
+      "h1 {\n font-size:36px;\n color:#333;\n}\n\nh2 {\n font-size:30px;\n color:#333;\n}\n\nh3 {\n font-size:24px;\n color:#333;\n}\n\nh4 {\n font-size:18px;\n color:#333;\n}\n\nh5 {\n font-size:16px;\n color:#333;\n}\n\nh6 {\n font-size:14px;\n color:#333;\n}",
   },
 
-  lock: {
-    definition:
-      "A lock is a mechanism that provides exclusive access to a shared resource. In Java, a lock can be obtained by calling the lock() method on a Lock object, and released by calling the unlock() method.",
+  cssforlist: {
+    definition: "The basic css Design for Ordered List",
     syntax:
-      "Lock myLock = new ReentrantLock();\nmyLock.lock();\ntry {\n\t// critical section of code\n} finally {\n\tmyLock.unlock();\n}",
+      "ol {\n list-style-type:decimal;\n}\n\nul {\n list-style-type:disc;\n}\n\nli {\n margin:10px 0;\n}",
   },
 
-  semaphore: {
-    definition:
-      "A semaphore is a synchronization primitive that controls access to a shared resource through a counter. In Java, a semaphore can be obtained by calling the acquire() method on a Semaphore object, and released by calling the release() method.",
+  cssforparagraph: {
+    definition: "The basic css Design for ParaGraph",
+    syntax: "p {\n line-height:1.5;\n font-size:18px;\n color:#333;\n}",
+  },
+  cssforresponsive: {
+    definition: "The basic CSS design for responsive layout",
     syntax:
-      "Semaphore mySemaphore = new Semaphore(1);\nmySemaphore.acquire();\ntry {\n\t// critical section of code\n} finally {\n\tmySemaphore.release();\n}",
+      "@media screen and (max-width: 600px) {\n body {\n font-size: 18px; \n}\n}\n\n@media screen and (max-width: 400px) {\n body {\n font-size: 16px; \n}\n}\n",
   },
 
-  concurrentcollection: {
-    definition:
-      "A collection class that is designed to be safely used by multiple threads concurrently.",
+  cssfortextbox: {
+    definition: "The basic CSS design for textbox",
     syntax:
-      'ConcurrentHashMap<String, Integer> myMap = new ConcurrentHashMap<>();\nmyMap.put("key", 1);\nint value = myMap.get("key");',
+      "textarea {\n width: 100%; \n height: 150px; \n padding: 12px 20px; \n box-sizing: border-box; \n border: 2px solid #ccc; \n border-radius: 4px; \n background-color: #f8f8f8; \n font-size: 16px; \n resize: none; \n}\n",
   },
-
-  threadPool: {
-    definition:
-      "A thread pool is a group of pre-initialized threads that are created to perform a set of tasks. In Java, a thread pool can be created by instantiating an object of the ThreadPoolExecutor class.",
+  cssforbutton: {
+    definition: "The basic css Design for Button",
     syntax:
-      "ExecutorService myThreadPool = Executors.newFixedThreadPool(10);\nmyThreadPool.submit(myTask);\nmyThreadPool.shutdown();",
+      "button {\n background-color:#7E22CE;\n color:white;\n border-radius:5px;\n margin:5px;\n padding:10px;\n box-shadow:none;\n border:none;\n}",
   },
 
-  socket: {
-    definition:
-      "A socket is an endpoint of a two-way communication link between two programs running on a network. In Java, a socket can be created by instantiating an object of the Socket class.",
-    syntax: 'Socket socket = new Socket("localhost", 8080);',
-  },
-
-  serversocket: {
-    definition:
-      "A ServerSocket is a socket that listens for incoming connections from clients. In Java, a ServerSocket can be created by instantiating an object of the ServerSocket class.",
+  cssfordiv: {
+    definition: "The basic css Design for Div",
     syntax:
-      "ServerSocket serverSocket = new ServerSocket(8080);\nSocket clientSocket = serverSocket.accept();",
+      "div {\n background-color:#f2f2f2;\n border:1px solid #ccc;\n padding:10px;\n margin:10px 0;\n}",
   },
 
-  url: {
-    definition:
-      "A URL is a uniform resource locator that identifies a resource on the Internet. In Java, a URL can be created by instantiating an object of the URL class.",
+  cssforheader: {
+    definition: "The basic css Design for Header",
     syntax:
-      'URL url = new URL("http://www.example.com/");\nInputStream inputStream = url.openStream();',
+      "header {\n background-color:#7E22CE;\n color:white;\n padding:20px;\n}\n\nheader img {\n max-width:100%;\n height:auto;\n}\n\nheader nav {\n float:right;\n}\n\nheader nav ul {\n margin:0;\n padding:0;\n list-style:none;\n}\n\nheader nav li {\n display:inline-block;\n margin-left:20px;\n}\n\nheader nav li a {\n color:white;\n text-decoration:none;\n}",
   },
 
-  urlconnection: {
-    definition:
-      "A URLConnection represents a connection to a URL. In Java, a URLConnection can be obtained by calling the openConnection() method on a URL object.",
+  cssforfooter: {
+    definition: "The basic css Design for Footer",
     syntax:
-      'URL url = new URL("http://www.example.com/");\nURLConnection connection = url.openConnection();\nInputStream inputStream = connection.getInputStream();',
+      "footer {\n background-color: #222;\n color: #fff;\n padding: 20px;\n text-align: center;\n font-size: 16px;\n }\n footer a {\n color: #fff;\n text-decoration: none;\n }\n footer a:hover {\n text-decoration: underline;\n }\n footer p {\n margin: 0;\n padding: 10px 0;\n }\n footer ul {\n list-style-type: none;\n margin: 0;\n padding: 0;\n }\n footer li {\n display: inline-block;\n margin-right: 20px;\n }\n",
   },
 
-  datagramsocket: {
-    definition:
-      "A DatagramSocket is a socket that sends and receives datagrams, which are packets of information that are sent over a network. In Java, a DatagramSocket can be created by instantiating an object of the DatagramSocket class.",
+  cssforvideo: {
+    definition: "The basic css Design for Video",
+    syntax: "video {\n max-width:100%;\n height:auto;\n}",
+  },
+
+  cssforaudio: {
+    definition: "The basic css Design for Audio",
+    syntax: "audio {\n display:block;\nwidth:100%;\n}",
+  },
+  cssfortable: {
+    definition: "The basic css Design for Table",
     syntax:
-      "DatagramSocket socket = new DatagramSocket();\nbyte[] buffer = new byte[1024];\nDatagramPacket packet = new DatagramPacket(buffer, buffer.length);\nsocket.receive(packet);",
+      "table {\n border-collapse:collapse;\n width:100%;\n}\n\ntd, th {\n border:1px solid #ccc;\n text-align:left;\n padding:8px;\n}\n\ntr:nth-child(even) {\n background-color:#f2f2f2;\n}",
   },
 
-  datagrampacket: {
-    definition:
-      "A DatagramPacket represents a packet of information that is sent or received by a DatagramSocket. In Java, a DatagramPacket can be created by instantiating an object of the DatagramPacket class.",
+  cssforform: {
+    definition: "The basic css Design for Form",
     syntax:
-      "DatagramSocket socket = new DatagramSocket();\nbyte[] buffer = new byte[1024];\nDatagramPacket packet = new DatagramPacket(buffer, buffer.length);\nsocket.receive(packet);",
+      "form {\n display:flex;\n flex-direction:column;\n}\n\nlabel {\n margin:10px 0;\n font-size:18px;\n color:#333;\n}\n\ninput {\n padding:10px;\n margin:10px 0;\n border:1px solid #ccc;\n border-radius:5px;\n}\n\nselect {\n padding:10px;\n margin:10px 0;\n border:1px solid #ccc;\n border-radius:5px;\n}\n\ntextarea {\n padding:10px;\n margin:10px 0;\n border:1px solid #ccc;\n border-radius:5px;\n}",
   },
 
-  inetaddress: {
-    definition:
-      "An InetAddress represents an Internet Protocol (IP) address. In Java, an InetAddress can be obtained by calling the getByName() method on the InetAddress class.",
+  cssforimage: {
+    definition: "The basic css Design for Img",
+    syntax: "img {\n max-width:100%;\n height:auto;\n}",
+  },
+
+  cssforanchor: {
+    definition: "The basic css Design for Anchor tag",
     syntax:
-      'InetAddress address = InetAddress.getByName("www.example.com");\nbyte[] buffer = new byte[1024];\nDatagramPacket packet = new DatagramPacket(buffer, buffer.length, address, 8080);\nsocket.send(packet);',
+      "a {\n color:#7E22CE;\n text-decoration:none;\n}\n\na:hover {\n text-decoration:underline;\n}",
   },
-
-  httpurlconnection: {
+  bootstrapnavbar: {
     definition:
-      "An HTTPURLConnection represents a connection to an HTTP URL. In Java, an HTTPURLConnection can be obtained by calling the openConnection() method on a URL object and casting the result to an HTTPURLConnection.",
+      "A navigation bar is a navigation header that is placed at the top of the page: With Bootstrap, a navigation bar can extend or collapse, depending on the screen size. A standard navigation bar is created with &lt;nav class='navbar navbar-default'&gt;.",
     syntax:
-      'URL url = new URL("http://www.example.com/");\nHttpURLConnection connection = (HttpURLConnection) url.openConnection();\nInputStream inputStream = connection.getInputStream();',
+      "<nav class='navbar navbar-expand-lg bg-body-tertiary'>\n <div class='container-fluid'>\n <a class='navbar-brand' href='#'>Navbar</a>\n <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>\n<span class='navbar-toggler-icon'></span>\n </button>\n\n <div class='collapse navbar-collapse' id='navbarSupportedContent'>\n <ul class='navbar-nav me-auto mb-2 mb-lg-0'>\n <li class='nav-item'>\n <a class='nav-link active' aria-current='page' href='#'>Home</a>\n </li>\n <li class='nav-item'>\n <a class='nav-link' href='#'>Contact</a>\n </li>\n  <li class='nav-item'><a class='nav-link' href='#'>Blog</a> </li>\n </ul>\n <form class='d-flex' role='search'>\n <input class='form-control me-2' type='search' placeholder='Search' aria-label='Search'>\n <button class='btn btn-outline-success' type='submit'>Search</button>\n </form>\n </div>\n </div>\n</nav>",
   },
-  stringbuffer: {
+  bootstrapcdn: {
     definition:
-      "The StringBuffer class represents a mutable sequence of characters. In Java, you can modify a StringBuffer object by appending, inserting, deleting, or replacing characters.",
+      "Include Bootstrap’s CSS and JS. Place the <link> tag in the <head> for our CSS, and the <script> tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing </body>.",
     syntax:
-      'StringBuffer sb = new StringBuffer();\nsb.append("Hello, ");\nsb.append("world!");',
+      "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' crossorigin='anonymous'>\n\n  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe' crossorigin='anonymous'></script>",
   },
-
-  length: {
+  bootstrapaccordion: {
     definition:
-      "The length() method returns the length of a string or StringBuffer object, which is the number of characters in the sequence.",
-    syntax: 'String str = "Hello, world!";\nint length = str.length();',
-  },
-
-  charAt: {
-    definition:
-      "The charAt() method returns the character at the specified index in a string or StringBuffer object.",
-    syntax: 'String str = "Hello, world!";\nchar ch = str.charAt(0);',
-  },
-
-  substring: {
-    definition:
-      "The substring() method returns a new string that is a substring of a specified string or StringBuffer object.",
-    syntax: 'String str = "Hello, world!";\nString sub = str.substring(0, 5);',
-  },
-
-  indexOf: {
-    definition:
-      "The indexOf() method returns the index of the first occurrence of a specified substring in a string or StringBuffer object.",
-    syntax: 'String str = "Hello, world!";\nint index = str.indexOf("world");',
-  },
-
-  append: {
-    definition:
-      "The append() method appends a specified string or character sequence to the end of a StringBuffer object.",
+      "The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add the .open class on the .accordion.",
     syntax:
-      'StringBuffer sb = new StringBuffer();\nsb.append("Hello, ");\nsb.append("world!");',
-  },
-
-  insert: {
-    definition:
-      "The insert() method inserts a specified string or character sequence at a specified index in a StringBuffer object.",
-    syntax:
-      'StringBuffer sb = new StringBuffer();\nsb.append("Hello, ");\nsb.insert(7, "world!");',
-  },
-
-  delete: {
-    definition:
-      "The delete() method deletes a substring from a StringBuffer object.",
-    syntax:
-      'StringBuffer sb = new StringBuffer();\nsb.append("Hello, world!");\nsb.delete(7, 13);',
-  },
-
-  replace: {
-    definition:
-      "The replace() method replaces a substring in a StringBuffer object with another substring.",
-    syntax:
-      'StringBuffer sb = new StringBuffer();\nsb.append("Hello, world!");\nsb.replace(7, 12, "there");',
-  },
-
-  abstract: {
-    definition:
-      "An abstract class is a class that cannot be instantiated. It can only be subclassed. An abstract class can contain abstract methods, which are methods without a body. Abstract methods must be implemented in a subclass.",
-    syntax:
-      "public abstract class Shape {\n  public abstract double area();\n  public abstract double perimeter();\n}",
-  },
-
-  extends: {
-    definition:
-      "The extends keyword is used in a class declaration to specify the superclass of the class. A subclass inherits all the members (fields, methods, and nested classes) of its superclass.",
-    syntax:
-      "public class Circle extends Shape {\n  private double radius;\n  public double area() {\n    return Math.PI * radius * radius;\n  }\n  public double perimeter() {\n    return 2 * Math.PI * radius;\n  }\n}",
-  },
-
-  implements: {
-    definition:
-      "The implements keyword is used in a class declaration to specify the interfaces that the class implements. A class can implement multiple interfaces.",
-    syntax:
-      "public class MyClass implements MyInterface1, MyInterface2 {\n  // class body\n}",
-  },
-
-  abstractmethod: {
-    definition:
-      "An abstract method is a method without a body. It is declared in an abstract class or interface and must be implemented in a subclass or implementing class.",
-    syntax: "public abstract double area();",
-  },
-
-  override: {
-    definition:
-      "The override annotation is used to indicate that a method in a subclass is intended to override a method in its superclass or interface. If the method does not override a method in its superclass or interface, a compilation error occurs.",
-    syntax: "@Override\npublic void myMethod() {\n  // method body\n}",
-  },
-
-  super: {
-    definition:
-      "The super keyword is used to refer to the superclass of the current object. It can be used to access the fields and methods of the superclass.",
-    syntax:
-      "public double area() {\n  return Math.PI * super.radius * super.radius;\n}",
-  },
-
-  overloading: {
-    definition:
-      "Method overloading is a feature of the Java language that allows a class to have multiple methods with the same name but different parameters. The method signature (name and parameter types) must be different for each method.",
-    syntax:
-      "public class MyClass {\n  public void myMethod(int x) {\n    // method body\n  }\n  public void myMethod(String s) {\n    // method body\n  }\n}",
-  },
-
-  methodsignature: {
-    definition:
-      "The method signature consists of the method name and the types of its parameters. Method overloading requires that each overloaded method have a different method signature.",
-    syntax:
-      "public void myMethod(int x) {\n  // method body\n}\npublic void myMethod(String s) {\n  // method body\n}",
-  },
-
-  compiletime: {
-    definition:
-      "Method overloading is resolved at compile-time based on the number and types of arguments passed to the method. The correct method to call is determined at compile-time and the appropriate method is invoked at runtime.",
-    syntax:
-      '// The following code will call the first method:\nmyObject.myMethod(5);\n// The following code will call the second method:\nmyObject.myMethod("Hello World");',
-  },
-
-  returntype: {
-    definition:
-      "The return type of a method is not part of the method signature and does not affect method overloading. Two methods with the same name and parameter types but different return types cannot coexist in the same class.",
-    syntax:
-      "public int myMethod(int x) {\n  // method body\n}\n// This code will cause a compilation error:\npublic String myMethod(int x) {\n  // method body\n}",
-  },
-  multithreading: {
-    definition:
-      "Multithreading is a concept in Java that allows concurrent execution of multiple threads within a single process. Threads are lightweight processes that can execute independently, allowing for concurrent processing and improved performance in certain scenarios.",
-    syntax:
-      "// Creating a new thread in Java\nMyThread myThread = new MyThread();\nmyThread.start();\n\n// Implementing Runnable interface\nclass MyRunnable implements Runnable {\n  public void run() {\n    // code to be executed in the thread\n  }\n}\n\n// Creating a new thread using Runnable\nThread thread = new Thread(new MyRunnable());\nthread.start();",
-  },
-  interthreadcommunication: {
-    definition:
-      "Inter-thread communication is the mechanism that allows threads to communicate with each other in Java. This can be achieved using methods like wait(), notify(), and notifyAll(), which are provided by the Object class.",
-    syntax:
-      "// Example of wait() and notify() methods\n// Thread 1\nsynchronized (sharedObject) {\n  while (!condition) {\n    sharedObject.wait();\n  }\n  // code to be executed after condition is met\n}\n\n// Thread 2\nsynchronized (sharedObject) {\n  // code to modify the condition\n  sharedObject.notify();\n}",
-  },
-  // thread: {
-  //   definition:
-  //     "A thread is a separate sequence of instructions that can run concurrently with other threads in the same process. Java threads are managed by the Java Virtual Machine (JVM) and are used to achieve concurrent processing in Java programs.",
-  //   syntax:
-  //     "// Creating a new thread in Java\nMyThread myThread = new MyThread();\nmyThread.start();\n\n// Implementing Runnable interface\nclass MyRunnable implements Runnable {\n  public void run() {\n    // code to be executed in the thread\n  }\n}\n\n// Creating a new thread using Runnable\nThread thread = new Thread(new MyRunnable());\nthread.start();",
-  // },
-
-  applet: {
-    definition:
-      "An applet is a special type of Java program that runs on a web browser. It can be embedded within an HTML page and is executed on the client-side, providing dynamic content and interactivity. Applets are typically used for creating interactive web-based applications, games, and multimedia content.",
-    syntax:
-      '<applet code="MyApplet.class" width="300" height="200">\n  <!-- HTML content for browsers that do not support applets -->\n  Your browser does not support Java applets.\n</applet>',
-  },
-
-  appletlifecycle: {
-    definition:
-      "The applet lifecycle refers to the sequence of events that an applet goes through from its initialization to its termination. The applet lifecycle includes methods that are automatically called at different stages of an applet's execution, such as init(), start(), stop(), and destroy().",
-    syntax:
-      "// Example of applet lifecycle methods\npublic class MyApplet extends Applet {\n  public void init() {\n    // code to initialize the applet\n  }\n\n  public void start() {\n    // code to start the applet\n  }\n\n  public void stop() {\n    // code to stop the applet\n  }\n\n  public void destroy() {\n    // code to clean up before the applet is terminated\n  }\n\n  // other methods for rendering and handling events\n}",
-  },
-
-  appletmethods: {
-    definition:
-      "Applet methods are special methods that can be overridden in an applet class to customize the applet's behavior. Some commonly used applet methods include init(), start(), stop(), and destroy() for applet lifecycle management, as well as paint() and update() for rendering graphics on the applet's canvas.",
-    syntax:
-      "// Example of applet methods\npublic class MyApplet extends Applet {\n  public void init() {\n    // code to initialize the applet\n  }\n\n  public void start() {\n    // code to start the applet\n  }\n\n  public void stop() {\n    // code to stop the applet\n  }\n\n  public void destroy() {\n    // code to clean up before the applet is terminated\n  }\n\n  public void paint(Graphics g) {\n    // code to render graphics on the applet's canvas\n  }\n\n  // other methods for handling events, user interactions, etc.\n}",
-  },
-  multithreadinglifecycle: {
-    definition:
-      "The multithreading lifecycle refers to the different states that a thread can go through during its lifetime. The multithreading lifecycle includes states such as new, runnable, blocked, waiting, timed waiting, and terminated. Threads can transition between these states based on their execution status and interactions with other threads or synchronization constructs.",
-    syntax:
-      "// Example of thread lifecycle states\npublic class MyThread extends Thread {\n  public void run() {\n    // code to be executed in this thread\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    MyThread t1 = new MyThread();\n    t1.start(); // Thread enters the runnable state\n    // Thread can transition to blocked, waiting, timed waiting, or terminated state based on execution\n  }\n}",
-  },
-
-  multithreadingmethods: {
-    definition:
-      "Java provides several built-in methods that can be used to manage threads, including start(), run(), sleep(), yield(), join(), interrupt(), and isAlive(). These methods are used for starting threads, controlling thread execution, managing thread synchronization, and handling thread interruptions.",
-    syntax:
-      "// Example of thread methods\npublic class MyThread extends Thread {\n  public void run() {\n    // code to be executed in this thread\n  }\n}\n\npublic class Main {\n  public static void main(String[] args) {\n    MyThread t1 = new MyThread();\n    t1.start(); // Start the thread\n    // Other methods like sleep(), yield(), join(), interrupt(), isAlive() can be used to manage the thread\n  }\n}",
-  },
-  servlet: {
-    definition:
-      "A servlet is a Java-based web component that runs on a web server and handles client requests and generates dynamic responses. Servlets are used to build server-side web applications in Java and are part of the Java Enterprise Edition (Java EE) platform. Servlets extend the functionality of web servers to handle HTTP requests, process data, and generate dynamic content that can be sent back to the client.",
-    syntax:
-      "// Example of a servlet\nimport javax.servlet.*;\nimport javax.servlet.http.*;\nimport java.io.*;\n\npublic class MyServlet extends HttpServlet {\n  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP GET request\n  }\n\n  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP POST request\n  }\n}",
-  },
-
-  servletlifecycle: {
-    definition:
-      "The servlet lifecycle refers to the different stages that a servlet goes through during its lifetime. The servlet lifecycle includes states such as initialization, service, and destruction. Servlets are initialized when they are first loaded or when the web container is started, and then they can handle service requests from clients. Servlets can be destroyed when the web container is stopped or when they are explicitly removed from the web application. During the service phase, servlets can handle multiple requests concurrently.",
-    syntax:
-      "// Example of servlet lifecycle methods\nimport javax.servlet.*;\nimport javax.servlet.http.*;\nimport java.io.*;\n\npublic class MyServlet extends HttpServlet {\n  public void init() throws ServletException {\n    // code for servlet initialization\n  }\n\n  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP GET request\n  }\n\n  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP POST request\n  }\n\n  public void destroy() {\n    // code for servlet destruction\n  }\n}",
-  },
-
-  servletmethods: {
-    definition:
-      "Java servlets provide several built-in methods that can be overridden to handle different stages of the servlet lifecycle, including init(), doGet(), doPost(), and destroy(). These methods are used for servlet initialization, handling HTTP requests, processing client data, generating dynamic responses, and cleaning up resources during servlet destruction. Servlets can also use other methods and classes from the Java Servlet API to interact with the request and response objects, manage session and application scope data, and perform other web-related tasks.",
-    syntax:
-      "// Example of servlet methods\nimport javax.servlet.*;\nimport javax.servlet.http.*;\nimport java.io.*;\n\npublic class MyServlet extends HttpServlet {\n  public void init() throws ServletException {\n    // code for servlet initialization\n  }\n\n  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP GET request\n  }\n\n  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n    // code to handle HTTP POST request\n  }\n\n  public void destroy() {\n    // code for servlet destruction\n  }\n}",
-  },
-  jdbc: {
-    definition:
-      "JDBC (Java Database Connectivity) is a Java API that provides a standard interface for connecting Java applications to relational databases. JDBC allows Java programs to interact with databases, perform various database operations such as querying, inserting, updating, and deleting data, and manage database connections.",
-  },
-
-  driverManager: {
-    definition:
-      "DriverManager is a class in JDBC that provides methods for managing JDBC drivers. It is used to establish a connection to a database by loading the appropriate JDBC driver class and obtaining a database connection.",
-    syntax:
-      "Connection connection = DriverManager.getConnection(url, username, password);",
-  },
-
-  connection: {
-    definition:
-      "Connection is an interface in JDBC that represents a connection to a specific database. It is used to establish a session with a database and provides methods for performing database operations such as creating statements, executing queries, and managing transactions.",
-    syntax:
-      "Connection connection = DriverManager.getConnection(url, username, password);",
-  },
-  systemoutprintln: {
-    definition:
-      "System.out.println is a standard Java method used for printing output to the console. It is commonly used for displaying text or values during program execution.",
-    syntax: "<code>System.out.println(<em>message</em>);</code>",
-  },
-
-  statement: {
-    definition:
-      "Statement is an interface in JDBC that represents a SQL statement that can be executed against a database. It is used to create and execute SQL statements, such as queries, updates, and deletions, and retrieve results from the database.",
-    syntax: "Statement statement = connection.createStatement();",
-  },
-
-  resultSet: {
-    definition:
-      "ResultSet is an interface in JDBC that represents the result of a database query. It is used to retrieve data from a database after executing a query and provides methods for navigating and manipulating the query result.",
-    syntax: "ResultSet resultSet = statement.executeQuery(sql);",
-  },
-
-  preparedstatement: {
-    definition:
-      "PreparedStatement is an interface in JDBC that extends Statement and provides a more efficient way to execute parameterized SQL queries. It allows precompilation of SQL statements with placeholders for parameters, which can be set dynamically at runtime.",
-    syntax:
-      "PreparedStatement preparedStatement = connection.prepareStatement(sql);",
-  },
-
-  transaction: {
-    definition:
-      "Transaction is a concept in JDBC that represents a sequence of one or more database operations that are executed as a single unit of work. JDBC provides methods to begin, commit, and rollback transactions, which can be used to ensure data integrity and consistency in a database.",
-    syntax:
-      "connection.setAutoCommit(false);\n// Execute multiple database operations\nconnection.commit();\n// or\nconnection.rollback();",
+      "<div class='accordion' id='accordionExample'>\n <div class='accordion-item'>\n<h2 class='accordion-header'>\n <button class='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>Accordion Item #1</button>\n </h2>\n <div id='collapseOne' class='accordion-collapse collapse show' data-bs-parent='#accordionExample'>\n <div class='accordion-body'>\n <strong>This is the first item's accordion body.</strong>\n It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</div>\n </div>\n </div>\n <div class='accordion-item'>\n <h2 class='accordion-header'>\n <button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'> Accordion Item #2</button>\n </h2>\n <div id='collapseTwo' class='accordion-collapse collapse' data-bs-parent='#accordionExample'>\n <div class='accordion-body'>\n <strong>This is the second item's accordion body.</strong>\n It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\n </div>\n </div>\n </div>\n </div>",
   },
 };
 const chatBox = document.getElementById("chat-box");
 const codeBox = document.getElementById("code-box");
 
+let startTime;
+
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
+  startTime = new Date().getTime();
   const userInput = document
     .querySelector(".user-input")
     .value.toLowerCase()
     .replace(/[\s.-?!]+/g, "");
-  if (userInput in tagDefinitions) {
+  if (userInput in tagDefinitions || userInput in java) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
     showTyping();
     setTimeout(() => {
       hideTyping();
-      showTagDefinition(userInput);
+      if (userInput in tagDefinitions) {
+        showTagDefinition(userInput);
+      } else {
+        showjava(userInput);
+      }
+      const endTime = new Date().getTime();
+      const timeTaken = endTime - startTime;
+      console.log(`Response Time:${timeTaken}`);
     }, 1500);
   } else if (userInput === "hello") {
     // if the user says "hello", respond with a greeting
-    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
-    chatBox.innerHTML += `<p><strong>CodeBot:</strong> Hi there!</p>`;
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Hi there!</p>`;
   } else if (userInput === "howareyou?") {
     // if the user asks how the bot is doing, respond with a message
-    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
-    chatBox.innerHTML += `<p><strong>CodeBot:</strong> I'm doing well, thank you for asking!</p>`;
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> I'm doing well, thank you for asking!</p>`;
   } else if (userInput === "hi") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Hi there! How can I help you today?</p>`;
   } else if (userInput === "help") {
@@ -2604,8 +1874,8 @@ document.querySelector("form").addEventListener("submit", function (e) {
   } else if (userInput === "thanks" || userInput === "thankyou") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> You're welcome!</p>`;
   } else if (userInput === "what is yourfavoriteprogramminglanguage?") {
-  chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
-}  else if (userInput === "tellmeajoke" || userInput === "joke") {
+    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> As an AI language model, I don't have personal preferences, but I'm familiar with many programming languages and can provide information and syntax for any of them.</p>`;
+  } else if (userInput === "tellmeajoke" || userInput === "joke") {
     const jokes = [
       "Why did the tomato turn red? Because it saw the salad dressing!",
       " Why did the JavaScript developer wear glasses? Because he couldn't C#.",
@@ -2624,10 +1894,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
   4. Build something! One of the best ways to learn programming is by working on a project that interests you. It can be anything from a simple website to a complex app or game. <br/></p>`;
   } else if (userInput === "whatisthebesteditor") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are many great code editors out there, and it really depends on personal preference. Some popular ones include Visual Studio Code, Sublime Text, and Atom. It's worth trying out a few to see which one you like best!</p>`;
-  } else if (userInput === "whatisai") {
-    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Artificial intelligence, or AI, refers to the ability of machines to perform tasks that would typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. AI is a rapidly growing field and has many practical applications in industries such as healthcare, finance, and transportation.</p>`;
-  } else if (userInput === "whatcanibuild") {
-    chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> There are so many things you can build with code! You could create a website, build a mobile app, develop a game, or even program a robot. It really depends on what interests you and what you want to learn.</p>`;
   } else if (userInput === "what is thebestlanguage") {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> That's a difficult question to answer! Each language has its own strengths and weaknesses, and it really depends on what you want to use it for. Some popular languages include Python, Java, and JavaScript.</p>`;
   } else {
@@ -2693,6 +1959,46 @@ function showTagDefinition(tag) {
   }, 50);
 }
 
+function showjava(tag) {
+  const jav = java[tag];
+  chatBox.innerHTML += `<p><strong>CodeBot:</strong> ${jav.definition}</p>`;
+  latestDefinition = jav.definition; // Store latest definition
+  chatBox.scrollTop = chatBox.scrollHeight;
+  const codeBoxEl = document.getElementById("code-box");
+  codeBoxEl.textContent = "";
+  codeBoxEl.style.display = "block";
+  let index = 0;
+
+  let ignoreNextChar = false;
+  const intervalId = setInterval(() => {
+    if (!ignoreNextChar) {
+      codeBoxEl.textContent += jav.syntax[index];
+    }
+    ignoreNextChar = false;
+    index++;
+    if (index >= jav.syntax.length) {
+      clearInterval(intervalId);
+      codeBoxEl.textContent = codeBoxEl.textContent.replace(/undefined/g, "");
+      // Add voice icon to the chat box
+
+      const voiceIcon = document.getElementById("voice-icon");
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+    // Ignore the next character if it is part of an HTML tag
+    if (jav.syntax[index - 1] === "<") {
+      ignoreNextChar = true;
+      while (jav.syntax[index] !== ">") {
+        ignoreNextChar = true;
+        codeBoxEl.textContent += jav.syntax[index];
+        index++;
+      }
+      codeBoxEl.textContent += jav.syntax[index];
+      ignoreNextChar = false;
+      index++;
+    }
+    codeBoxEl.scrollTop = codeBoxEl.scrollHeight;
+  }, 50);
+}
 function readLatestDefinition() {
   const msg = new SpeechSynthesisUtterance(latestDefinition);
   window.speechSynthesis.speak(msg);
