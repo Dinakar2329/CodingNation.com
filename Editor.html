@@ -124,29 +124,37 @@
 
       #editor {
         display: flex;
-        flex-direction: column;
-        height: 100vh;
-        overflow-y: scroll;
+        flex-direction: row;
+        gap: 0.8rem;
+        min-height: 90vh;
         width: 100%;
         max-width: 2000px;
-	caret-color: rgb(255, 0, 0);
+        caret-color: rgb(255, 0, 0);
+        margin-right: 15px;
 	margin-top:15px;
       }
 
       #code {
-        flex: 1;
-        padding: 10px;
-        font-size: 16px;
-        line-height: 1.5;
-        resize: none;
-        margin-top: 50px;
-        border-top: 25px solid #3a3b3d;
-        border-radius: 5px;
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      resize: none;
+      margin-top: 50px;
+      border-top: 25px solid #3a3b3d;
+      border-radius: 5px;
       }
 
       #preview {
-        flex: 1;
-        border: none;
+      flex: 1;
+      border: none;
+      overflow-y: auto;
+      margin-top: 50px;
+      margin-right: 6px;
+      border-top: 25px solid #3a3b3d;
+      border-radius: 5px;
+      box-shadow: 0 6px 12px #3a3b3d;
       }
       nav {
         max-width: 100vw;
@@ -161,6 +169,10 @@
       }
 
       @media only screen and (max-width: 768px) {
+	#editor {
+        display: flex;
+        flex-direction: column;
+        }
         #preview {
           font-size: 25px;
           overflow-y: auto;
