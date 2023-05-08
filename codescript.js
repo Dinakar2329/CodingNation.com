@@ -192,11 +192,6 @@ const tagDefinitions = {
     syntax:
       "<p>This is some text with a <span style=&quot;color: red;&quot;>red</span> word.</p>",
   },
-  form: {
-    definition: "The form element is used to create a form for user input.",
-    syntax:
-      '<form action="form-handler.php" method="post">\n  <input type="text" name="username" placeholder="Enter your username">\n  <input type="password" name="password" placeholder="Enter your password">\n  <input type="submit" value="Submit">\n</form>',
-  },
   input: {
     definition:
       "The input element represents a typed data field that allows a user to enter data. The value of the input element is usually interpreted as text, but can be interpreted as other types (e.g., numbers) depending on the value of the type attribute. This example is for an input tag with type= '\text'. You can change the type attribute to specify different types of input fields, such as email, password, checkbox, radio, and more.",
