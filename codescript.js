@@ -2567,7 +2567,7 @@ const tagDefinitions = {
   },
 };
 const java = {
-  navbar: {
+  createanav: {
     definition:
       "nav tag is used to create Navigation bar in a website. Nav bar consits list of nav fields.Nav fields are created using 'ul' tag followed by 'li' tag.",
     syntax:
@@ -2597,7 +2597,7 @@ const java = {
     syntax: "<a href='https://www.example.com'>Link text</a>",
   },
 
-  table: {
+  createatable: {
     definition:
       "The table tag is used to create a table on a webpage. It consists of rows and columns, and can include various types of data, such as text, images, and links.",
     syntax:
@@ -2623,46 +2623,46 @@ const java = {
     syntax: "<p>This is a paragraph of text.</p>",
   },
 
-  button: {
+  createabutton: {
     definition:
       "The button tag is used to create a clickable button on a webpage. It can be used to submit a form or to trigger an action with JavaScript.",
     syntax: "<button type='submit'>Submit</button>",
   },
 
-  div: {
+  createadiv: {
     definition:
       "The div tag is used to group elements together on a webpage. It is a container that can be styled with CSS.",
     syntax: "<div>\n<p>Paragraph 1</p>\n<p>Paragraph 2</p>\n</div>",
   },
-  header: {
+  createaheader: {
     definition:
       "The header tag is used to define a header section on a webpage. It can contain logos, navigation menus, and other information about the website.",
     syntax:
       "<header>\n<img src='logo.png' alt='website logo'>\n<nav>\n<ul>\n<li><a href='#'>Home</a></li>\n<li><a href='#'>About</a></li>\n<li><a href='#'>Contact</a></li>\n</ul>\n</nav>\n</header>",
   },
 
-  footer: {
+  createafooter: {
     definition:
       "The footer tag is used to define a footer section on a webpage. It can contain copyright information, social media links, and other information about the website.",
     syntax:
       "<footer>\n<p>© 2023 Example Website. All rights reserved.</p>\n<ul>\n<li><a href='#'>Facebook</a></li>\n<li><a href='#'>Twitter</a></li>\n<li><a href='#'>Instagram</a></li>\n</ul>\n</footer>",
   },
 
-  video: {
+  createavideo: {
     definition:
       "The video tag is used to embed a video on a webpage. It can be used to display videos from YouTube or other video hosting services, or to host your own videos.",
     syntax:
       "<video width='320' height='240' controls>\n<source src='video.mp4' type='video/mp4'>\n<source src='video.ogg' type='video/ogg'>\nYour browser does not support the video tag.\n</video>",
   },
 
-  audio: {
+  createaaudio: {
     definition:
       "The audio tag is used to embed audio on a webpage. It can be used to play music or other audio files.",
     syntax:
       "<audio controls>\n<source src='audio.mp3' type='audio/mpeg'>\n<source src='audio.ogg' type='audio/ogg'>\nYour browser does not support the audio tag.\n</audio>",
   },
 
-  input: {
+  createainput: {
     definition:
       "The input tag is used to create various types of input fields on a webpage, such as text input, radio buttons, checkboxes, and more.",
     syntax:
@@ -2674,53 +2674,53 @@ const java = {
     syntax:
       "<canvas id='canvas-id' width='optional-width' height='optional-height'></canvas>",
   },
-  label: {
+  createalabel: {
     definition:
       "The label tag is used to associate a label with an input field in a form. The for attribute of the label tag should match the id attribute of the input field.",
     syntax: "<label for='input-field-id'>Label text goes here.</label>",
   },
 
-  select: {
+  createaselect: {
     definition:
       "The select tag is used to create a dropdown list in a form. The option tags are used to define the options in the dropdown list.",
     syntax:
       "<select name='select-field-name' id='select-field-id'>\n<option value='option-value-1'>Option 1</option>\n<option value='option-value-2'>Option 2</option>\n</select>",
   },
 
-  textarea: {
+  createatextarea: {
     definition:
       "The textarea tag is used to create a multiline text input field in a form.",
     syntax:
       "<textarea name='textarea-field-name' id='textarea-field-id' rows='number-of-rows' cols='number-of-columns' placeholder='Enter Your Text Here'></textarea>",
   },
-  span: {
+  createaspan: {
     definition:
       "The span tag is used to apply styles or perform operations on a specific section of text or other inline elements.",
     syntax: "<span>Text or inline elements go here.</span>",
   },
-  hr: {
+  givehr: {
     definition:
       "The hr tag is used to create a horizontal rule, which is a line that separates content in a web page.",
     syntax: "<hr>",
   },
 
-  br: {
+  givebr: {
     definition: "The br tag is used to create a line break in a web page.",
     syntax: "<br>",
   },
 
-  meta: {
+  createametatag: {
     definition:
       "The meta tag is used to provide metadata about a web page, such as the author, description, and keywords.",
     syntax: "<meta name='metadata-name' content='metadata-value'>",
   },
-  script: {
+  createascripttag: {
     definition:
       "The script tag is used to embed scripts, such as JavaScript, in a web page.",
     syntax: "<script>\nJavaScript code goes here.\n</script>",
   },
 
-  title: {
+  createatitle: {
     definition:
       "The title tag is used to specify the title of a web page, which is displayed in the browser's title bar or tab.",
     syntax: "<title>Page title goes here.</title>",
