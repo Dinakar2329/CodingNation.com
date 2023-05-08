@@ -2862,6 +2862,11 @@ document.querySelector("form").addEventListener("submit", function (e) {
       const timeTaken = endTime - startTime;
       console.log(`Response Time:${timeTaken}`);
     }, 1500);
+     
+  } else if (userInput === "clear") {
+    chatBox.innerHTML = `<p><strong>CodeBot:</strong>&emsp;Hello! I am CodingNation's CodeBot. What programming language or concept would you like me to help you with today?</p>`;
+    codeBox.style.display = "none";
+    latestDefinition = "";
   } else if (userInput === "hello") {
     // if the user says "hello", respond with a greeting
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p><p><strong>CodeBot:</strong> Hi there!</p>`;
