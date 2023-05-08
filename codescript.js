@@ -2582,7 +2582,7 @@ const java = {
     definition:
       "The form tag is used to create an input form on a webpage. It consists of various input fields, like text input, radio buttons, checkboxes, and submit buttons.",
     syntax:
-      "<form action='url' method='post'>\n<label for='name'>Name:</label>\n<input type='text' id='name' name='name' required>\n<label for='email'>Email:</label>\n<input type='email' id='email' name='email' required>\n<label for='message'>Message:</label>\n<textarea id='message' name='message'></textarea>\n<input type='submit' value='Submit'>\n</form>",
+      "<form action='url' method='post'>\n<label for='name'>Name:</label>\n<input type='text' id='name' name='name' required>\n<label for='email'>Email:</label>\n<input type='email' id='email' name='email' required>\n<label for='message'>Message:</label>\n<textarea id='message' name='message' placeholder='Type something...'></textarea>\n<input type='submit' value='Submit'>\n</form>",
   },
 
   image: {
@@ -2696,7 +2696,7 @@ const java = {
     definition:
       "The textarea tag is used to create a multiline text input field in a form.",
     syntax:
-      "<textarea name='textarea-field-name' id='textarea-field-id' rows='number-of-rows' cols='number-of-columns' placeholder="Enter Your Text Here"></textarea>",
+      "<textarea name='textarea-field-name' id='textarea-field-id' rows='number-of-rows' cols='number-of-columns' placeholder='Enter Your Text Here'></textarea>",
   },
   span: {
     definition:
