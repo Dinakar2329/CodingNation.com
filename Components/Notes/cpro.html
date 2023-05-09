@@ -1,0 +1,3465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ad sense tag-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1733919132650092"
+        crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJL1SB5QM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FBJL1SB5QM');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Coding-nation">
+    <meta name="description"
+        content="CodingNation is a comprehensive code tutorial website, providing beginner to advanced coding tutorials, coding exercises, and coding challenges to help you learn to code and build your skills.">
+    <meta name="keywords"
+        content="Coding-nation, CodeNation, HTML tutorials, python tutorials, css tutorials, c tutorials,React js tutorials, javascript tutorials,java tutorials, php tutorials, code editor, online code editor, Codebot,chatbot,quizzes">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="coding-nation.com">
+    <title>C Language Course | coding-nation</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Styles/Notes.css" />
+
+    <script>
+        function changeTitle(newTitle) {
+            document.title = newTitle;
+        }
+    </script>
+</head>
+
+<body>
+    <!--for whole page-->
+    <div class="contain">
+        <!--navigation bar-->
+        <header class="fixed-navbar">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../Main/index.html">CodingNation</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto" id="navbarNavLinks">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Main/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">Courses</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="../Notes/Python.html">Python</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Notes/React.html">React JS</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Notes/html.html">HTML</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../Notes/css.html">CSS</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Notes/jascri.html">JavaScript</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../Notes/cpro.html">C</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Notes/java.html">Java</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../Notes/php.html">PHP</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Practice</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="../Quizzes/HTMLQuiz.html" target="_blank">HTML
+                                            Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Quizzes/CSSQuiz.html" target="_blank">CSS
+                                            Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Quizzes/JSQuiz.html"
+                                            target="_blank">JavaScript
+                                            Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Quizzes/CQuiz.html" target="_blank">C Quiz</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Quizzes/JAVAQuiz.html" target="_blank">Java
+                                            Quiz</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Main/codebot.html" target="_blank">CodeBot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Main/Editor.html" target="_blank">Editor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Main/About.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--sidebar-->
+        <button class="topics" onclick="toggleSidebar()">Topics&#9660;</button>
+        <aside class="fixed-sidebar fixed" id="myNav">
+            <div class="menu">
+                <h2>Introduction</h2>
+                <button class="single" data-index="0" onclick="changeTitle('C Overview | CodingNation')">C
+                    Overview</button>
+
+                <button class="single" data-index="1"
+                    onclick="changeTitle('Getting Started with C | CodingNation')">Getting Started with C</button>
+
+                <button class="single" data-index="2"
+                    onclick="changeTitle('Basic Structure & Syntax | CodingNation')">Basic Structure & Syntax</button>
+
+                <button class="single" data-index="3" onclick="changeTitle('C Comments | CodingNation')">C
+                    Comments</button>
+
+                <button class="single" data-index="4" onclick="changeTitle('C Variables | CodingNation')">C
+                    Variables</button>
+
+                <h2 style="font-weight: 500;">C Data Types,<br> Operators & User I/O</h2>
+
+                <button class="single" data-index="5" onclick="changeTitle('C Data Types & Constants | CodingNation')">C
+                    Data Types & Constants</button>
+
+                <button class="single" data-index="6" onclick="changeTitle('C Operators | CodingNation')">C
+                    Operators</button>
+
+                <button class="single" data-index="7"
+                    onclick="changeTitle('Format Specifiers & Escape Sequences | CodingNation')">Format Specifiers &
+                    <br>Escape Sequences</button>
+
+                <button class="single" data-index="8" onclick="changeTitle('User Input/Output | CodingNation')">User
+                    Input/Output</button>
+
+                <h2>Conditional Statements</h2>
+
+                <button class="single" data-index="9" onclick="changeTitle('C if...else statements | CodingNation')">C
+                    if...else statements</button>
+
+                <button class="single" data-index="10"
+                    onclick="changeTitle('Switch Case Statements | CodingNation')">Switch Case Statements</button>
+
+                <h2>Iteration Statements</h2>
+
+                <button class="single" data-index="11" onclick="changeTitle('C Loops | CodingNation')">C Loops</button>
+
+                <button class="single" data-index="12" onclick="changeTitle('while Loop | CodingNation')">while
+                    Loop</button>
+
+                <button class="single" data-index="13" onclick="changeTitle('do-while Loop | CodingNation')">do-while
+                    Loop</button>
+
+                <button class="single" data-index="14" onclick="changeTitle('for Loop | CodingNation')">for
+                    Loop</button>
+
+                <button class="single" data-index="15" onclick="changeTitle('CC Break/Continue | CodingNation')">C
+                    Break/Continue</button>
+
+                <h2>Arrays</h2>
+
+                <button class="single" data-index="16" onclick="changeTitle('Array Basics | CodingNation')">Array
+                    Basics</button>
+
+                <button class="single" data-index="17" onclick="changeTitle('Array Operations | CodingNation')">Array
+                    Operations</button>
+
+                <h2>Strings</h2>
+
+                <button class="single" data-index="18" onclick="changeTitle('String Basics | CodingNation')">String
+                    Basics</button>
+
+                <button class="single" data-index="19" onclick="changeTitle('String Functions | CodingNation')">String
+                    Functions</button>
+
+                <h2>C Functions</h2>
+
+                <button class="single" data-index="20" onclick="changeTitle('Function Basics | CodingNation')">Function
+                    Basics</button>
+
+                <button class="single" data-index="21"
+                    onclick="changeTitle('Function Parameters | CodingNation')">Function Parameters</button>
+
+                <button class="single" data-index="22"
+                    onclick="changeTitle('Functions Declaration | CodingNation')">Functions Declaration</button>
+
+                <button class="single" data-index="23"
+                    onclick="changeTitle('Recursive Functions | CodingNation')">Recursive Functions</button>
+
+                <h2>C Pointers</h2>
+
+                <button class="single" data-index="24" onclick="changeTitle('C Pointers | CodingNation')">C
+                    Pointers</button>
+
+                <button class="single" data-index="25"
+                    onclick="changeTitle('Operations on Pointers | CodingNation')">Operations on Pointers</button>
+
+                <button class="single" data-index="26" onclick="changeTitle('C VOID Pointer | CodingNation')">C VOID
+                    Pointer</button>
+
+                <button class="single" data-index="27" onclick="changeTitle('C NULL Pointer | CodingNation')">C NULL
+                    Pointer</button>
+
+                <button class="single" data-index="28" onclick="changeTitle('Dangling Pointer | CodingNation')">Dangling
+                    Pointer</button>
+
+                <button class="single" data-index="29" onclick="changeTitle('Wild Pointer | CodingNation')">Wild
+                    Pointer</button>
+
+                <h2>C Memory Management</h2>
+
+                <button class="single" data-index="30" onclick="changeTitle('C Static Variables | CodingNation')">C
+                    Static Variables</button>
+
+                <button class="single" data-index="31" onclick="changeTitle('C Memory Layout | CodingNation')">C Memory
+                    Layout</button>
+
+                <button class="single" data-index="32" onclick="changeTitle('C Memory Allocation | CodingNation')">C
+                    Memory Allocation</button>
+
+                <h2>C Structures & Unions</h2>
+
+                <button class="single" data-index="33" onclick="changeTitle('C Structures | CodingNation')">C
+                    Structures</button>
+
+                <button class="single" data-index="34" onclick="changeTitle('C Unions | CodingNation')">C
+                    Unions</button>
+
+                <button class="single" data-index="35" onclick="changeTitle('C Typedef | CodingNation')">C
+                    Typedef</button>
+
+                <h2>C File Handling</h2>
+
+                <button class="single" data-index="36" onclick="changeTitle('File Handling Basics | CodingNation')">File
+                    Handling Basics</button>
+
+                <button class="single" data-index="37"
+                    onclick="changeTitle('Operations on Files | CodingNation')">Operations on Files</button>
+
+                <button class="single" data-index="38" onclick="changeTitle('Files I/O | CodingNation')">Files
+                    I/O</button>
+
+            </div>
+        </aside>
+
+
+        <!--for content side-->
+        <main class="main-content">
+            <div class="content">
+
+                <!--previous and next buttons-->
+                <button id="previous">Previous</button>
+                <button id="next">Next </button>
+
+
+
+                <!--Notes-->
+                <div class="notes" id="div1 ">
+                    <h2>C Overview</h2><br>
+                    <h3>What is C?</h3><br>
+                    <li>Since the late 19th century, C has been a popular programming language for general-purpose use.
+                    </li>
+                    <li>C language was developed by Dennis M. Ritchie at bell laboratory in early 1970s</li>
+                    <li>Its applications are very diverse. It ranges from developing operating systems to databases and
+                        all.It is system programming language used to do low level programming (e.g., driver or kernel)
+                    </li>
+                    <li>Even if it’s old, it is still a very popular programming language.⁣</li>
+                    <li>As the whole UNIX operating system was written in C, it has a strong association with the
+                        operating system⁣.</li>
+                    <li>C has also been used widely while creating iOS and Android kernels.⁣</li>
+                    <li>MySQL database is written using C.⁣</li>
+                    <li>Ruby and Pearl are mostly written using C.⁣</li>
+                    <li>Most part of Apache and NGINX is written using C.⁣</li>
+                    <li>Embedded Systems are created using C⁣</li><br><br>
+                    <h3>Why should we learn C/ Features of C?</h3><br>
+                    <li>As mentioned above, it is one of the most popular programming languages in the world.</li>
+                    <li>Learning any other popular programming language such as Python or C++ becomes a cakewalk already
+                        if you know C.</li>
+                    <li>C is a flexible language and that gets proven by the fact that it can be used in a variety of
+                        applications as well as technologies.</li>
+                    <li>C is very fast when compared to other programming languages be it Java or Python.</li>
+                    <li>C takes only significant CPU time for interpretation. That is why a lot of Python libraries such
+                        as NumPy, pandas, Scikit-learn, etc. are built using C.</li>
+                    <li>Being close to Machine language, some of its functions include direct access to machine-level
+                        hardware APIs.</li>
+                    <li>It is a structural language (Follows a specific Structure) /Compiled language this point should
+                        be added.</li>
+                    <li>It is procedural programming language (POP) Procedurall Programming is the use of code in a
+                        step-wise procedure to develop applications.</li><br><br>
+                    <h3>How is it different from C++?</h3><br>
+                    <li>The syntax of C++ is almost identical to that of C, as C++ was developed as an extension of C.
+                    </li>
+                    <li>In contrast to C, C++ supports classes and objects, while C does not.</li>
+                    <li>C gives most of the control to the hand of users. Things like memory allocation and manipulation
+                        are totally in the hands of the programmer. Being a flexible language, it provides more access
+                        to the programmer because of which it is more efficient.</li>
+                    <li>.C is POP(procedure oriented programming) whereas c++ is OOP(Object oriented programming)</li>
+                    <br><br>
+                </div>
+                <div class="notes" id="div2" style="display: none;">
+                    <h2>Getting Started with C</h2><br>
+                    <h3>Requirements before you start</h3><br>
+                    <li>To start using C, you need two things:</li>
+                    <li>A text editor, like Notepad, or an IDE, like VSCode to act as a platform for you to write C code
+                    </li>
+                    <li>A compiler, like GCC to translate the C code you have written which is a high-level language
+                        into a low-level language that the computer will understand.</li><br><br>
+                    <h3>What is an IDE?</h3><br>
+                    <li>IDE stands for an Integrated Development Environment.</li>
+                    <li>It is nothing more than an enhanced version of a text editor that helps you write more efficient
+                        and nicer code.</li>
+                    <li>It helps to differentiate different parts of your codes with different colors and notifies you
+                        if you are missing some semicolon or bracket at some place by highlighting that area.</li>
+                    <li>A lot of IDEs are available, such as DEVC++ or Code Blocks, but we will prefer using VS Code for
+                        this tutorial series.</li><br><br>
+                    <h3>Installing VSCode</h3><br>
+                    <li>Visit <a
+                            href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>
+                    </li>
+                    <li>Click on the download option as per your operating system.</li>
+                    <li>After the download is completed, open the setup and run it by saving VS Code in the default
+                        location without changing any settings.</li>
+                    <li>You will need to click the next button again and again until the installation process begins.
+                    </li><br><br>
+                    <h3>What is a Compiler?</h3><br>
+                    <li>A compiler is used to run the program of a certain language which is generally high-level by
+                        converting the code into a language that is low-level that our computer could understand.</li>
+                    <li>There are a lot of compilers available, but we will proceed with teaching you to use MinGW for
+                        this course because it will fulfill all of our requirements, and also it is recommended by
+                        Microsoft itself.</li><br><br>
+                    <h3>Setting up the compiler</h3><br>
+                    <li>Visit <a
+                            href="https://code.visualstudio.com/docs/languages/cpp">https://code.visualstudio.com/docs/languages/cpp</a>
+                    </li>
+                    <li>Select C++ from the sidebar.</li>
+                    <li>Choose “GCC via Mingw-w64 on Windows” from the options shown there.</li>
+                    <li>Select the install sourceforge option.</li>
+                    <li>After the downloading gets completed, run the setup and choose all the default options as we did
+                        while installing VS Code.</li><br>
+                    <br>
+                    <h3>Setting Path for Compiler</h3><br>
+                    <li>Go to the C directory. Navigate into the Program Files. Then, open MinGW-64. Open MinGW-32. And
+                        then the bin folder. After reaching the bin, save the path or URL to the bin.</li>
+                    <li>Then go to the properties of ‘This PC’.</li>
+                    <li>Select ‘Advance System Settings’.</li>
+                    <li>Select the ‘Environment Variable’ option.</li>
+                    <li>Add the copied path to the Environment Variable.</li>
+                    <li>And now, you can visit your IDE and run your C programs on it. The configuration part is done.
+                    </li><br><br>
+                </div>
+                <div class="notes" id="div3" style="display: none;">
+                    <h2>Basic Structure & Syntax</h2><br>
+                    <p>Programming in C involves following a basic structure throughout. Here’s what it can be broken
+                        down to.</p><br>
+                    <li>Pre-processor commands</li>
+                    <li>Functions</li>
+                    <li>Variables</li>
+                    <li>Statements</li>
+                    <li>Expressions</li>
+                    <li>Comments</li><br>
+                    <h3>Pre-processor commands</h3><br>
+                    <p>Pre-processor commands are commands which tell our program that before its execution, it must
+                        include the file name mentioned in it because we are using some of the commands or codes from
+                        this file.
+                        <br>
+                        They add functionalities to a program.
+                        <br>
+                        One example could be,
+                    </p><br>
+                    <pre class="highlight">
+                        <code class="language-html">
+                                #include &lt;math.h&gt;
+                        </code>
+                     </pre>
+                    <br>
+                    <br>
+                    <p>We include math.h to be able to use some special functions like power and absolute. #include
+                        (&lt;filename.h&gt;) is how we include them into our programs.
+                        <br>
+                        Detailed explanations of everything else in the structure willfollow in the later part of the
+                        tutorial.
+                    </p><br><br>
+                    <h3>Header files:</h3><br>
+                    <li> Collection of predefined/built in functions developed.</li>
+                    <li> It is always declares on heading side of program hence it is called header file.</li>
+                    <li>It is identified with the extension(.h)</li>
+                    <li>It gets installed while installing IDE(integrated development environment)</li>
+                    <li> It stores functions as per their categories hence they are called library</li><br><br>
+                    <h3>Syntax</h3><br>
+                    <p>An example below shows how a basic C program is written.</p><br>
+                    <pre class="highlight">
+                        <code class="language-js" style="font-size: 16px;">
+                        Declaration of header file //name of the header files 
+
+                            main()  /*it is called main function which stores the execution of program*/
+                        
+                            {  //start of the program
+                        
+                            //program statements
+                        
+                            }  //end of the program
+                            </code>    
+                    </pre>
+                    <br>
+                    <br>
+                    <li>Here, the first line is a pre-processor command including a header file stdio.h.</li>
+                    <li>C ignores empty lines and spaces.</li>
+                    <li>There is a main() function then, which should always be there.</li><br><br>
+                    <p>A C program is made up of different tokens combined. These tokens include:</p><br>
+                    <li>Keywords</li>
+                    <li>Identifiers</li>
+                    <li>Constants</li>
+                    <li>String Literal</li>
+                    <li>Symbols</li><br><br>
+                    <h3>Keywords</h3><br>
+                    <p>Keywords are reserved words that can not be used elsewhere in the program for naming a variable
+                        or a function. They have a specific function or task and they are solely used for that. Their
+                        functionalities are pre-defined.</p><br>
+                    <p>One such example of a keyword could be return which is used to build return statements for
+                        functions. Other examples are auto, if, default, etc.</p><br>
+                    <p>Whenever we write any keyword in IDE their colour slightly changes and it looks different from
+                        other variables or functions for example in turbo c all keywords are turns into white colour .
+                    </p><br><br>
+                    <h3>Identifiers</h3><br>
+                    <p>Identifiers are names given to variables or functions to differentiate them from one another.
+                        Their definitions are solely based on our choice but there are a few rules that we have to
+                        follow while naming identifiers. One such rule says that the name can not contain special
+                        symbols such as @, -, *, <, etc. <br>
+                            C is a case-sensitive language so an identifier containing a capital letter and another one
+                            containing a small letter in the same place will be different. For example, the three words:
+                            Code, code, and cOde can be used as three different identifiers.</p><br>
+                    <p>Rules for naming identifier-</p><br>
+                    <li> One should not name any identifier starting with numeric value or symbol. It should start only
+                        with underscore or alphabet.</li>
+                    <li>They should not contain space</li>
+                    <li>Giving logical names is recommended as per our program</li><br>
+                    <br>
+                    <h3>Constants</h3><br>
+                    <p>Constants are very similar to a variable and they can also be of any data type. The only
+                        difference between a constant and a variable is that a constant’s value never changes. We will
+                        see constants in more detail in the upcoming tutorial.</p><br>
+                    <h3>String Literal</h3><br>
+                    <p>String literals or string constants are a sequence of characters enclosed in double quotation
+                        marks. For example, “This is a string literal!” is a string literal. C method printf() utilizes
+                        the same to format the output.</p><br><br>
+                </div>
+                <div class="notes" id="div4" style="display: none;">
+
+                    <h2>C Comments</h2><br>
+                    <p>Comments can be used to insert any informative piece which a programmer does not wish to be
+                        executed. It could be either to explain a piece of code or to make it more readable. In
+                        addition, it can be used to prevent the execution of alternative code when the process of
+                        debugging is done.
+                        <br>
+                        Comments can be singled-lined or multi-lined.
+                    </p><br><br>
+                    <h3>Single Line Comments</h3><br>
+                    <li>Single-line comments start with two forward slashes (//).</li>
+                    <li>Any information after the slashes // lying on the same line would be ignored (will not be
+                        executed).</li><br><br>
+                    <p>An example of how we use a single-line comment</p><br>
+                    <pre class="highlight">
+                    <code class="language-js">
+                            #include &lt;stdio.h&gt;
+                    
+                                int main()
+                                {
+                                    //This is a single line comment
+                                    printf("Hello World!");
+                                    return 0;
+                                }
+                        </code>
+                    </pre>
+                    <br>
+                    <br>
+                    <h3>Multi-line comments</h3><br>
+                    <li>A multi-line comment starts with /* and ends with */.</li>
+                    <li>Any information between /* and */ will be ignored by the compiler.</li><br><br>
+                    <p>An example of how we use a multi-line comment</p><br>
+                    <pre class="highlight">
+                        <code class="language-js">
+                                #include &lt;stdio.h&gt;
+                        
+                                    int main()
+                                    {
+                                        /* This is a multi-line comment */
+                                        printf("Hello World!");
+                                        return 0;
+                                    }
+                            </code>
+                    </pre>
+                    <br>
+                    <br>
+                </div>
+                <div class="notes" id="div5" style="display: none;">
+
+
+                    <h2>C Variables</h2><br>
+                    <p>Variables are containers for storing data values.</p><br><br>
+                    <p>In C, there are different types of variables.
+                        <br>
+                        For example
+                    </p>
+                    <li>an integer variable defined with the keyword int stores integers (whole numbers), without
+                        decimals, such as 91 or -13.</li>
+                    <li>a floating point variable defined with keyword float stores floating point numbers, with
+                        decimals, such as 99.98 or -1.23.</li>
+                    <li>a character variable defined with the keyword char stores single characters, such as 'A' or 'z'.
+                        Char values are bound to be surrounded by single quotes.</li><br><br>
+                    <h3>Declaration</h3><br>
+                    <p>We cannot declare a variable without specifying its data type. The data type of a variable
+                        depends on what we want to store in the variable and how much space we want it to hold. The
+                        syntax for declaring a variable is simple:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        data_type  variable_name;
+    </code>
+    </pre>
+                    <br>
+                    <br>
+                    <p>OR</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        data_type  variable_name = value;
+    </code>
+    </pre>
+                    <br>
+                    <br>
+                    <h3>Naming a variable</h3><br>
+                    <p>There is no limit to what we can call a variable. Yet there are specific rules we must follow
+                        while naming a variable:</p><br>
+                    <li>A variable name can only contain alphabets, digits, and underscores(_).</li>
+                    <li>A variable cannot start with a digit.</li>
+                    <li>A variable cannot include any white space in its name.</li>
+                    <li>The name should not be a reserved keyword or any special character.</li><br><br>
+                    <p>A variable, as its name is defined, can be altered, or its value can be changed, but the same is
+                        not true for its type. If a variable is of integer type, then it will only store an integer
+                        value through a program. We cannot assign a character type value to an integer variable. We can
+                        not even store a decimal value into an integer variable.</p><br><br>
+
+                </div>
+                <div class="notes" id="div6" style="display: none;">
+                    <h2>C Data Types & Constants</h2><br>
+                    <p>As explained previously, a variable in C must be a specified data type, and you must use a format
+                        specifier inside the printf function to display the value present in the variable
+                        <br>
+                        The data type specifies the size and type of information the variable will store.
+                    </p><br>
+                    <h3>Datatype</h3><br>
+                    <p>It is the type of value which the variable holds.
+                        <br>
+                        Here, we will focus on the most basic ones:
+                    </p><br>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Size</th>
+                            <th>Description</th>
+                            <th>Format Specifier</th>
+                        </tr>
+                        <tr>
+                            <td>int</td>
+                            <td>2 or 4 bytes</td>
+                            <td>Stores whole numbers, without decimals</td>
+                            <td>%d or %i</td>
+                        </tr>
+                        <tr>
+                            <td>Float</td>
+                            <td>4 bytes</td>
+                            <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7
+                                decimal digits</td>
+                            <td>%f</td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>8 bytes</td>
+                            <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15
+                                decimal digits</td>
+                            <td>%lf</td>
+                        </tr>
+                        <tr>
+                            <td>char</td>
+                            <td>1 byte</td>
+                            <td>Stores a single character/letter/number, or ASCII values</td>
+                            <td>%c</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p>Below are some sub datatypes</p><br>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Data type</th>
+                            <th>Size</th>
+                            <th>Description</th>
+                            <th>Format Specifier</th>
+                        </tr>
+                        <tr>
+                            <td>Short int</td>
+                            <td>2 bytes</td>
+                            <td>Stores whole numbers, without decimals</td>
+                            <td>%sd</td>
+                        </tr>
+                        <tr>
+                            <td>Long int</td>
+                            <td>4 bytes</td>
+                            <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 7
+                                decimal digits</td>
+                            <td>%ld</td>
+                        </tr>
+                        <tr>
+                            <td>unsigned short int</td>
+                            <td>2 bytes</td>
+                            <td>Stores fractional numbers, containing one or more decimals. Sufficient for storing 15
+                                decimal digits</td>
+                            <td>%usd</td>
+                        </tr>
+                        <tr>
+                            <td>Unsigned long int</td>
+                            <td>4 bytes</td>
+                            <td>Stores a single character/letter/number, or ASCII values</td>
+                            <td>%uld</td>
+                        </tr>
+                    </table><br>
+                    <p>Here’s how we make use of the data type of a variable to print it.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+       #include &lt;stdio.h&gt;
+
+           int main()
+          {
+              // Creating variables having different data types
+               int integer = 26;
+              float floating = 39.32;
+              char character = 'A';
+           
+            // Printing variables with the help of their respective format specifiers
+            printf("%d\n", integer);
+            printf("%f\n", floating);
+            printf("%c\n", character);
+          }
+            
+    </code>
+    </pre>
+                    <br>
+                    <br>
+                    <p>Output:</p><br>
+                    <p>26
+                        <br>
+                        39.320000
+                        <br>
+                        A
+                    </p><br>
+                    <br>
+                    <h3>C Constants</h3><br>
+                    <li>When you don't want the variables you declare to get modified intentionally or mistakenly in the
+                        later part of your program by you or others, you use the const keyword (this will declare the
+                        variable as "constant", which means unchangeable and read-only).</li>
+                    <li>You should always declare the variable as constant when you have values that are unlikely to
+                        change, like any mathematical constant as PI.</li>
+                    <li>When you declare a constant variable, it must be assigned a value.</li><br>
+                    <p>Here’s an example of how we declare a constant.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                const int MOD = 10000007;
+            }
+    </code>   
+    </pre><br>
+                    <br>
+
+
+                </div>
+                <div class="notes" id="div7" style="display: none;">
+
+                    <h2>C Operators</h2><br>
+                    <p>Special symbols that are used to perform actions or operations are known as operators. They could
+                        be both unary or binary.
+                        <br>
+                        For example, the symbol asterisk (*) is used to perform multiplication in C so it is an operator
+                        and it is a binary operator.
+                        <br>
+                        This section covers all types of operators.
+                    </p><br>
+                    <br>
+                    <h3>Arithmetic Operators</h3><br>
+                    <p>Arithmetic operators are used to perform mathematical operations such as addition, subtraction,
+                        etc. A few of the simple arithmetic operators are</p><br>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus</td>
+                        </tr>
+                    </table><br>
+                    <p>We all must already know their purpose and how they are used in simple mathematics. Their purpose
+                        and functionality are the same.
+                        <br>
+                        Modulus(%) operator- this operator returns the remainder of two operands when they are been
+                        divided
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include&lt;stdio&gt;
+
+            int main()
+              {
+              int x;
+              x=5%2;
+              printf("remainder is %d",x);
+             }
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Let’s see their implementation in C.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 2;
+                int b = 3;
+                printf("a + b = %d\n", a + b);
+            }
+    </code>
+    </pre>
+                    <br><br>
+                    <p>Output:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        a + b = 5
+    </code>
+    </pre>
+                    <br>
+                    <br>
+                    <h3>Relational Operators</h3><br>
+                    <p>Relational operators are used for the comparison between two or more numbers or even expressions
+                        in cases. Same as Java, C also has six relational operators and their return value is of a
+                        Boolean type that is, either True or False (1 or 0).</p><br>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>Greater than</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                < </td>
+                            <td>Less than</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Greater than or equal to</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <=< /td>
+                            <td>Less than or equal to</td>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Is equal to</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Is not equal to</td>
+                        </tr>
+                    </table><br>
+                    <p>Let’s see their implementation in C.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 2;
+                int b = 3;
+                printf("a == b = %d\n", a == b);
+            }
+            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>output</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        a == b = 0
+    </code>   
+    </pre><br>
+                    <br>
+                    <p>The output is 0, since a and b are not equal.</p><br>
+                    <br>
+                    <h3>Logical Operators</h3><br>
+                    <p>There are three logical operators i.e. AND, OR, and NOT. They can be used to compare Boolean
+                        values but are mostly used to compare conditions to see whether they are satisfying or not.</p>
+                    <br>
+                    <li>AND: it returns true when both operators are true or 1.</li>
+                    <li>OR: it returns true when either operator is true or 1.</li>
+                    <li>NOT: it is used to reverse the logical state of the operand.</li>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>&&</td>
+                            <td>AND Operator</td>
+                        </tr>
+                        <tr>
+                            <td>||</td>
+                            <td>OR Operator</td>
+                        </tr>
+                        <tr>
+                            <td>!</td>
+                            <td>NOT Operator</td>
+                        </tr>
+                    </table><br>
+                    <p>Let’s see their implementation in C.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 1;
+                int b = 0;
+                printf("a or b = %d\n", a || b);
+            }
+    </code>  
+    </pre><br><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        a or b = 1                      
+    </code>    
+    </pre><br>
+                    <br>
+                    <p>The output is 1, since either a or b is not equal to zero.</p>
+                    <br>
+                    <h3>Bitwise Operators</h3><br>
+                    <p>A bitwise operator is used to performing operations at the bit level. To obtain the results, they
+                        convert our input values into binary format and then process them using whatever operator they
+                        are being used with.</p><br>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>&</td>
+                            <td>Bitwise AND</td>
+                        </tr>
+                        <tr>
+                            <td>|</td>
+                            <td>Bitwise OR</td>
+                        </tr>
+                        <tr>
+                            <td>^</td>
+                            <td>Bitwise XOR</td>
+                        </tr>
+                        <tr>
+                            <td>~</td>
+                            <td>Bitwise Complement</td>
+                        </tr>
+                        <tr>
+                            <td>>></td>
+                            <td>Shift Right Operator</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <<< /td>
+                            <td>Shift Left Operator</td>
+                        </tr>
+                    </table><br>
+                    <p>Let’s see their implementation in C.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 2; //10
+                int b = 3; //11
+                printf("a xor b = %d\n", a ^ b);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Output</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        a or b = 1
+    </code>    
+    </pre><br>
+                    <br>
+                    <p>The output is 1, since a xor b is 01 in binary, which is 1 in decimal.</p><br>
+                    <h3>Assignment Operators</h3><br>
+                    <p>Assignment operators are used to assign values. We will use them in almost every program we
+                        develop.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int a = 0;
+        int b = 1;
+    </code> 
+    </pre><br>
+                    <br>
+                    <p>Equal to (=) is the assignment operator here. It is assigning 0 to a and 1 to b in the above
+                        example.</p><br>
+                    <table>
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>It assigns the right side operand value to the left side operand.</td>
+                        </tr>
+                        <tr>
+                            <td>+=</td>
+                            <td>It adds the right operand to the left operand and assigns the result to the left
+                                operand.</td>
+                        </tr>
+                        <tr>
+                            <td>-=</td>
+                            <td>It subtracts the right operand from the left operand and assigns the result to the left
+                                operand.</td>
+                        </tr>
+                        <tr>
+                            <td>*=</td>
+                            <td>It multiplies the right operand with the left operand and assigns the result to the left
+                                operand.</td>
+                        </tr>
+                        <tr>
+                            <td>/=</td>
+                            <td>It divides the left operand with the right operand and assigns the result to the left
+                                operand.</td>
+                        </tr>
+                    </table><br>
+                </div>
+                <div class="notes" id="div8" style="display: none;">
+                    <h2>Format Specifiers & Escape Sequences</h2><br>
+                    <p>Whenever we write a program in C, we have to use format specifiers to define the variable type in
+                        input and output and escape characters to format the output. </p><br>
+                    <br>
+                    <h3>Format Specifiers</h3><br>
+                    <p>A format specifier in C programming is used to define the type of data we are printing to the
+                        output or accepting through the input. Through this, we tell the compiler what type of variable
+                        we are using for input while using scanf() or output while using printf(). Some examples of
+                        format specifiers are %d, %c, %f, etc.</p><br>
+                    <p>Here is a list of almost all format specifiers.</p><br>
+                    <table>
+                        <tr>
+                            <th>Format Specifier</th>
+                            <th>Type</th>
+                        </tr>
+                        <tr>
+                            <td>%c</td>
+                            <td>Used to print a character</td>
+                        </tr>
+                        <tr>
+                            <td>%d</td>
+                            <td>Used to print the signed integer</td>
+                        </tr>
+                        <tr>
+                            <td>%f</td>
+                            <td>Used to print the float values</td>
+                        </tr>
+                        <tr>
+                            <td>%i</td>
+                            <td>Used to print the unsigned integer</td>
+                        </tr>
+                        <tr>
+                            <td>%l</td>
+                            <td>Used to print the long integer</td>
+                        </tr>
+                        <tr>
+                            <td>%lf</td>
+                            <td>Used to print the double values</td>
+                        </tr>
+                        <tr>
+                            <td>%lu</td>
+                            <td>Used to print the unsigned integer or unsigned long integer</td>
+                        </tr>
+                        <tr>
+                            <td>%s</td>
+                            <td>Used to print the string</td>
+                        </tr>
+                        <tr>
+                            <td>%u</td>
+                            <td>Used to print the unsigned integer</td>
+                        </tr>
+                    </table><br>
+                    <p>One example is shown below.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                char c[100] = "Coding nation";
+                printf("Printing a string, %s.", c);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Output</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Printing a string, Coding nation.            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The %s used in the printf( ) is a format specifier. This format specifier tells printf( ) to
+                        consider it as a string and print accordingly. </p><br>
+                    <h3>Escape Sequences</h3><br>
+                    <p>Many programming languages support the concept of Escape Sequences. An escape sequence is a
+                        sequence of characters that are used in formatting the output. They are not displayed on the
+                        screen while printing. Each character has its specific function. For example, \t is used to
+                        insert a tab, and \n is used to add a new line.</p><br>
+                    <p>Here’s the list of all escape sequences</p><br>
+                    <table>
+                        <tr>
+                            <th>Escape Sequence</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>\t</td>
+                            <td>Inserts a tab space</td>
+                        </tr>
+                        <tr>
+                            <td>\b</td>
+                            <td>Inserts a backspace</td>
+                        </tr>
+                        <tr>
+                            <td>\n</td>
+                            <td>Inserts a new line</td>
+                        </tr>
+                        <tr>
+                            <td>\r</td>
+                            <td>Inserts a carriage return</td>
+                        </tr>
+                        <tr>
+                            <td>\f</td>
+                            <td>Inserts a form feed</td>
+                        </tr>
+                        <tr>
+                            <td>\’</td>
+                            <td>Inserts a single quote character</td>
+                        </tr>
+                        <tr>
+                            <td>\’’</td>
+                            <td>Inserts a double quote character</td>
+                        </tr>
+                        <tr>
+                            <td>\\</td>
+                            <td>Inserts a backslash character</td>
+                        </tr>
+                    </table><br>
+                    <p>One example is shown below.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                printf("Printing inside a double quotation, \"Coding Nation\"");
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Output</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Printing inside a double quotation, “Coding Nation”.
+    </code>
+    </pre>
+                    <br>
+                    <br>
+
+                </div>
+                <div class="notes" id="div9" style="display: none;">
+                    <h2>User Input/Output</h2><br>
+                    <p>We have already learned how the printf() function is used to output values in C. Another method,
+                        which goes by the name, scanf(), is used to get user input.</p><br>
+                    <h3>The scanf() function takes two arguments:</h3><br>
+                    <li>the format specifier of the variable (as shown in the example below)</li>
+                    <li>the reference operator (&myNum), which stores the memory address of the variable. This is where
+                        the input data goes to.</li><br>
+                    <h3>Syntax</h3><br>
+                    <p>scanf("format specifier",&variable_name);
+                        <br>
+                        &-specifes the address of the variable.
+                        <br>
+                        One such example demonstrates how a program takes input from the user.
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int marks;
+                char name[30];
+                printf("Enter student's name: ");
+                scanf("%s", name);
+                printf("Enter marks in Maths: ");
+                scanf("%d", &marks);
+             
+                printf("Hello %s! You have scored %d in Maths!", name, marks);
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <p>Input</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Enter student's name: Dinakar
+        Enter marks in Maths: 98
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Output</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Hello Dinakar! You have scored 98 in Maths!
+    </code>
+    </pre><br>
+                    <br>
+                    <p>You must note that we didn’t have to specify the reference operator (&) in cases of strings if we
+                        have specified the size of the strings already. This is an exception.</p><br><br>
+
+                </div>
+                <div class="notes" id="div10" style="display: none;">
+                    <h2>C if...else statements</h2><br>
+                    <p>Sometimes, we wish to execute one set of instructions if a particular condition is met, and
+                        another set of instructions if it is not. This kind of situation is dealt with in C language
+                        using a decision control system.
+                        <br>
+                        The condition for the if statement is always enclosed within a pair of parentheses. If the
+                        condition is true, then the set of statements following the if statement will execute. And if
+                        the condition evaluates to false, then the statement will not execute, instead, the program
+                        skips that enclosed part of the code.
+                        <br>
+                        An expression in if statements are defined using relational operators. Comparing two values
+                        using relational operators allows us to determine whether they are equal, unequal, greater than,
+                        or less than.
+                        <br>
+                        If we want to execute a particular code in some situation and its vice versa /opposite/or
+                        different code if that situation doesn’t occurs then if..else statements can be used. Its all
+                        depend on the condition. If the condition returns true value the situation has occurred and the
+                        true part of code will be executed and if condition returns false value false part of the code
+                        will be executed
+                    </p><br>
+                    <table>
+                        <tr>
+                            <th>Conditions</th>
+                            <th>Meaning</th>
+                        </tr>
+                        <tr>
+                            <td>a==b</td>
+                            <td>a is equal to b</td>
+                        </tr>
+                        <tr>
+                            <td>a!=b</td>
+                            <td>a is not equal to b</td>
+                        </tr>
+                        <tr>
+                            <td>a<b< /td>
+                            <td>a is less than b</td>
+                        </tr>
+                        <tr>
+                            <td>a>b</td>
+                            <td>a is greater than b</td>
+                        </tr>
+                        <tr>
+                            <td>a<=b< /td>
+                            <td>a is less than or equal to b</td>
+                        </tr>
+                        <tr>
+                            <td>a>=b</td>
+                            <td>a is greater than or equal to b</td>
+                        </tr>
+                    </table><br>
+                    <p>The statement written in an if block will execute when the expression following if evaluates to
+                        true. But when the if block is followed by an else block, then when the condition written in the
+                        if block turns to be false, the set of statements in the else block will execute.
+                        <br>
+                        Following is the syntax of if-else statements:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        if ( condition ){
+            statements;}
+             else {
+            statements;}            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>One example where we could use the if-else statement is:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int num = 10;
+                if (num <= 10)
+                {
+                    printf("Number is less than equal to 10.");
+                }
+                else
+                {
+                    printf("Number is greater than 10.");
+                }
+                return 0;
+            }              
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Number is less than equal to 10.  
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Ladder if-else</h3>
+                    <br>
+                    <p>If we want to check the multiple conditions then ladder if else can used. If the previous
+                        condition returns false then only next condition will be checked.</p><br>
+                    <h3>Syntax</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        if(/*conditon*/)
+        {
+        //statements
+        }
+        else if(/*condition*/)
+        {
+        statements
+        }
+        else if(/*condition*/)
+        {
+        statements
+        } 
+    </code>   
+    </pre><br>
+                    <br>
+                    <h3>Nested if-else</h3><br>
+                    <p>We can also write an entire if-else statement within either the body of another if statement or
+                        the body of an else statement. This is called the ‘nesting’ of ifs.</p><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        if(/*condition*/)
+        {
+        if(/*condition*/)
+        {
+        //statements
+        }
+        else
+        {
+        //statements
+        }
+        }
+        else
+        {
+        //statements
+        }  
+    </code>
+    </pre><br><br>
+
+                </div>
+                <div class="notes" id="div11" style="display: none;">
+                    <br>
+                    <h2>Switch Case Statements</h2><br>
+                    <h3>What is Switch?</h3><br>
+                    <p>The control statement that allows us to make a decision effectively from the number of choices is
+                        called a switch, or a switch case-default since these three keywords go together to make up the
+                        control statement. The expression in switch returns an integral value, which is then compared
+                        with different cases. Switch executes that block of code, which matches the case value. If the
+                        value does not match with any of the cases, then the default block is executed.</p><br>
+                    <p>Following is the syntax of switch case-default statements:</p><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        switch ( integer expression )
+        {  
+        case {value 1} :  
+        do this ;
+         
+        case {value 2} :  
+         do this ;  
+         
+        case {value 3} :  
+        do this ;  
+         
+        default :  
+        do this ;
+         }          
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Understanding the syntax:</h3><br>
+                    <p>The expression following the switch can be an integer expression or a character expression. The
+                        case value 1, and 2 are case labels that are used to identify each case individually. Remember,
+                        that case labels should be unique for each of the cases. If it is the same, it may create a
+                        problem while executing a program. At the end of the case labels, we always use a colon ( : ).
+                        Each case is associated with a block. A block contains multiple statements that are grouped
+                        together for a particular case.
+                        <br>
+                        Whenever the switch is executed, the value of test-expression is compared with all the cases
+                        present in switch statements. When the case is found, the block of statements associated with
+                        that particular case will execute. The break keyword indicates the end of a particular case. If
+                        we do not put the break in each case, then even though the specific case is executed, C's switch
+                        will continue to execute all the cases until the end is reached. The default case is optional.
+                        Whenever the expression's value is not matched with any of the cases inside the switch, then the
+                        default case will be executed.
+                    </p><br>
+                    <p>One example where we could use the switch case statement is,</p>
+                    <br>
+                    <pre class="highlight">
+    <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int i = 2;
+             
+                switch (i)
+                {
+                case 1:
+                    printf("Statement 1");
+                    break;
+             
+                case 2:
+                    printf("Statement 2");
+                    break;
+             
+                case 3:
+                    printf("Statement 3");
+                    break;
+             
+                default:
+                    printf("No valid i to switch to.");
+                    break;
+                }
+                return 0;
+            }             
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        Statement 2
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Different to if-else. How?</h3><br>
+                    <p>There is one problem with the if statement: the program's complexity increases whenever the
+                        number of if statements increases. If we use multiple if-else statements in the program, the
+                        code might become difficult to read and comprehend. Sometimes it also even confuses the
+                        developer who himself wrote the program. Using the switch statement is the solution to this
+                        problem.
+                        <br>
+                        Furthermore,
+                    </p><br>
+                    <li>Switch statements cannot evaluate float conditions, and the test expression can only be an
+                        integer or a character, whereas if statements can evaluate float conditions as well.</li>
+                    <li>Switch statements cannot evaluate relational operators hence they are not allowed in switch
+                        statements, whereas if statements can evaluate relational operators.</li>
+                    <li>Cases in the switch can never have variable expressions; for example, we cannot write case a +3:
+                    </li><br>
+                    <h3>Rules for Switch statements</h3><br>
+                    <li>The test expression of Switch must necessarily be an int or char.</li>
+                    <li>The value of the case should be an integer or character.</li>
+                    <li>Cases should only be inside the switch statement.</li>
+                    <li>Using the break keyword in the switch statement is not necessary.</li>
+                    <li>The case label values inside the switch should be unique.</li><br>
+                    <p>It is not necessary to use the break keyword after every case. Break keywords should only be used
+                        when we want to terminate our case at that time, otherwise we won’t.
+                        <br>
+                        We can also use nested switch statements i.e., switch inside another switch. Also, the case
+                        constants of the inner and outer switch may have common values without any conflicts.
+                    </p><br><br>
+
+                </div>
+                <div class="notes" id="div12" style="display: none;">
+                    <h2>C Loops</h2><br>
+                    <p>In programming, we often have to perform an action, again and again, with little or no variations
+                        in the details each time they are executed. This need is met by a mechanism known as a loop.
+                        <br>
+                        The versatility of the computer lies in its ability to perform the set of instructions
+                        repeatedly. This involves repeating some code in the program, either a specified number of times
+                        or until a particular condition is satisfied. Loop-controlled instructions are used to perform
+                        this repetitive operation efficiently ensuring the program doesn’t look redundant at the same
+                        time due to the repetitions.
+                        <br>
+                        Following are the three types of loops in C programming.
+                    </p><br>
+                    <li>For loop</li>
+                    <li>While loop</li>
+                    <li>do-while loop</li><br>
+                    <h2>Types of Loops</h2><br>
+                    <h3>Entry Controlled loops</h3><br>
+                    <p>In entry controlled loops, the test condition is evaluated before entering the loop body. The for
+                        Loop and the while Loop are examples of entry-controlled loops.</p><br>
+                    <h3>Exit Controlled Loops</h3><br>
+                    <p>In exit-controlled loops, the test condition is tested at the end of the loop. Regardless of
+                        whether the test condition is true or false, the loop body will execute at least once. The
+                        do-while loop is an example of an exit-controlled loop.</p><br>
+                    <h3>For Loop</h3><br>
+                    <p>A for loop is a repetition control structure that allows us to efficiently write a loop that will
+                        execute a specific number of times. The for loop working is as follows:</p>
+                    <br>
+                    <li>The initialization statement is executed only once; in this statement, we initialize a variable
+                        to some value.</li>
+                    <li>In the second step, the test expression is evaluated. Suppose the test expression is evaluated
+                        to be true. In that case, the for loop keeps running, and the test expression is re-evaluated,
+                        but if the test expression is evaluated to false, then the for loop terminates.</li>
+                    <li>The loop keeps executing until the test expression is false. When the test expression is false,
+                        then the loop terminates.</li>
+                    <br>
+                    <h3>While loop</h3><br>
+                    <p>While loop is called a pre-tested loop. The while loop allows code to be executed multiple times,
+                        depending upon a boolean condition that is given as a test expression. While introducing for
+                        loops, we saw that the number of iterations is known, whereas while loops are used in situations
+                        where we do not know the exact number of iterations of the loop. The while loop execution is
+                        terminated based on the test condition which evaluates to either true or false.</p><br>
+                    <h3>do-while loop</h3><br>
+                    <p>In do-while loops, the execution is terminated based on the test condition, very similar to how
+                        it is done in a while loop. The main difference between the do-while loop and while loop is
+                        that, in the do-while loop, the condition is tested at the end of the loop body, whereas the
+                        other two loops are entry-controlled. In a do-while loop, the loop body will execute at least
+                        once irrespective of the test condition.</p><br>
+                    <p>Sometimes, while executing a loop, it becomes necessary to jump out of the loop. For this, we
+                        make use of the break statement and the continue statement.</p><br>
+                    <h3>break statement</h3><br>
+                    <p>Whenever a break statement is encountered in a loop, the loop is terminated regardless of what
+                        kind of loop we are in and the program continues with the statement following the loop.</p><br>
+                    <h3>continue statement</h3><br>
+                    <p>Whenever a continue statement is encountered in a loop, it will cause the control to go directly
+                        to the test condition which is where the loop starts, ignoring any piece of code following the
+                        continue statement. </p><br><br>
+                </div>
+                <div class="notes" id="div13" style="display: none;">
+                    <h2>while Loop</h2><br>
+                    <p>A While loop is also called a pre-tested loop. A while loop allows a piece of code in a program
+                        to be executed multiple times, depending upon a given test condition which evaluates to either
+                        true or false. The while loop is mostly used in cases where the number of iterations is not
+                        known. If the number of iterations is known, then we could also use a for loop.
+                        <br>
+                        The syntax for using a while loop,
+                    </p><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        while (condition test)
+{
+    // Set of statements
+}
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The body of a while loop can contain a single statement or a block of statements. The test
+                        condition may be any expression that should evaluate as either true or false. The loop iterates
+                        while the test condition evaluates to true.When the condition becomes false, the program control
+                        passes to the line immediately following the loop, which means, it terminates.</p><br>
+                    <p>One such example to demonstrate how a while loop works is,</p><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int i = 0;
+                while (i <= 5)
+                {
+                    printf("%d ", i);
+                    i++;
+                }
+                return 0;
+            }              
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        0 1 2 3 4 5  
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Properties of the while loop:</h3><br>
+                    <p>Following are some of the properties of the while loop.</p><br>
+                    <li>A conditional expression written in the brackets of while is used to check the condition. The
+                        Set of statements defined inside the while loop will execute until the given condition returns
+                        false.</li>
+                    <li>The condition will return 0 if it is true. The condition will be false if it returns any nonzero
+                        number.</li>
+                    <li>In the while loop, we cannot execute the loop until we do not specify the condition expression.
+                    </li>
+                    <li>It is possible to execute a while loop without any statements. This will give no error.</li>
+                    <li>We can have multiple conditional expressions in a while loop.</li>
+                    <li>Braces are optional if the loop body contains only one statement.</li><br><br>
+                </div>
+                <div class="notes" id="div14" style="display: none;">
+                    <h2>do-while Loop</h2><br>
+                    <p>A do-while loop is a little different from a normal while loop. A do-while loop, unlike what
+                        happens in a while loop, executes the statements inside the body of the loop before checking the
+                        test condition.
+                        <br>
+                        So even if a condition is false in the first place, the do-while loop would have already run
+                        once. A do-while loop is very much similar to a while loop, except for the fact that it is
+                        guaranteed to execute the body at least once.
+                    </p><br>
+                    <p>Unlike for and while loops, which test the loop condition first, then execute the code written
+                        inside the body of the loop, the do-while loop checks its condition at the end of the loop.</p>
+                    <br>
+                    <h3>Following is the syntax of the do-while loop.</h3><br>
+                    <Pre class="highlight">
+    <code class="language-js">
+        do
+          {
+              statements;
+          } while (test condition);
+    </code>
+    </pre><br>
+                    <br>
+                    <p>If the test condition returns true, the flow of control jumps back up to the do part, and the set
+                        of statements in the loop executes again. This process repeats until the given test condition
+                        becomes false.</p><br>
+                    <br>
+                    <h3>How does the do-while loop work?</h3><br>
+                    <li>First, the body of the do-while loop is executed once. Only then, the test condition is
+                        evaluated.</li>
+                    <li>If the test condition returns true, the set of instructions inside the body of the loop is
+                        executed again, and the test condition is evaluated.</li>
+                    <li>The same process goes on until the test condition becomes false.</li>
+                    <li>If the test condition returns false, then the loop terminates.</li><br>
+                    <p>One such example to demonstrate how a do-while loop works is</p>
+                    <br>
+                    <Pre class="highlight">
+    <Code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int i = 5;
+             
+                do
+                {
+                    printf("%d ", i);
+                    i++;
+                } while (i < 5);
+             
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <Pre class="highlight">
+    <Code class="language-js">
+        5
+    </code>
+    </pre>
+                    <br>
+                    <br>
+                    <p>As it was already mentioned at the beginning of this tutorial, a do-while loop runs for at least
+                        once even if the test condition returns false, because the test condition is evaluated only
+                        after the first execution of the instructions in the body of the loop.</p><br>
+                    <h3>Difference between a while and a do-while loop</h3><br>
+                    <p>A While loop is executed every time the given test condition returns true, whereas, a do-while
+                        loop is executed for the first time irrespective of the test condition being true or false
+                        because the test condition is checked only after executing the loop for the first time.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div15" style="display: none;">
+                    <h2>For Loop</h2><br>
+                    <p>The "For" loop is used to repeat a specific piece of code in a program until a specific condition
+                        is satisfied. The for loop statement is very specialized. We use a for loop when we already know
+                        the number of iterations of that particular piece of code we wish to execute. Although, when we
+                        do not know about the number of iterations, we use a while loop.</p><br>
+                    <p>Here is the syntax of a for loop in C programming.</p><br>
+                    <Pre class="highlight">
+    <Code class="language-js">
+        for (initialise counter; test counter; increment / decrement counter)
+        {
+          //set of statements
+        }
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here,</p><br>
+                    <li><b>initialize counter:</b> It will initialize the loop counter value. It is usually i=0.</li>
+                    <li><b>Test counter:</b>This is the test condition, which if found true, the loop continues,
+                        otherwise terminates.</li>
+                    <li><b>Increment/decrement counter:</b>Incrementing or decrementing the counter.</li>
+                    <li><b>Set of statements:</b>This is the body or the executable part of the for loop or the set of
+                        statements that has to repeat itself.</li><br>
+                    <p>One such example to demonstrate how a for loop works is,</p><br>
+                    <Pre class="highlight">
+    <Code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int num = 10;
+                int i;
+                for (i = 0; i < num; i++)
+                {
+                    printf("%d ", i);
+                }
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <Pre class="highlight">
+    <Code class="language-js">
+        0 1 2 3 4 5 6 7 8 9 
+    </code>
+    </pre><br>
+                    <br>
+                    <li>First, the initialization expression will initialize loop variables. The expression i=0 executes
+                        once when the loop starts. Then the condition i < num is checked. If the condition is true, then
+                            the statements inside the body of the loop are executed. After the statements inside the
+                            body are executed, the control of the program is transferred to the increment of the
+                            variable i by 1. The expression i++ modifies the loop variables. Iteratively, the condition
+                            i < num is evaluated again. </li>
+                    <li>If the condition is still evaluated true, the body of the loop will execute once again. The for
+                        loop terminates when i finally becomes less than num, therefore, making the condition i&lt;num
+                        false. </li>
+                    <li>Just as if statement, we can have a for loop inside another for loop. This is known as a nested
+                        for loop. Similarly, while loop and do while loop can also be nested.</li><br>
+                    <h3>Why for loops if we already have while loops?</h3><br>
+                    <p>It is clear to a developer exactly how many times the loop will execute. So, if the developer has
+                        to dry run the code, it will become easier.</p><br>
+                    <br>
+
+                </div>
+                <div class="notes" id="div16" style="display: none;">
+
+                    <h2>C Break/Continue</h2><br>
+                    <h3>Break Statement</h3><br>
+                    <li>Break statement is used to break the loop or switch case statements execution and brings the
+                        control to the next block of code after that particular loop or switch case it was used in.</li>
+                    <li>Break statements are used to bring the program control out of the loop it was encountered in.
+                    </li>
+                    <li>The break statement is used inside loops or switch statements in C Language.</li><br>
+                    <p>One such example to demonstrate how a break statement works is,</p><br>
+                    <pre class="highlight">
+    <code class="language-js">
+        #include &lt;stdio.h&gt;
+
+            int main()
+            {
+                int i = 0;
+                while (1)
+                {
+                    if (i > 5)
+                    {
+                        break;
+                    }
+                    printf("%d ", i);
+                    i++;
+                }
+             
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        0 1 2 3 4 5 
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, when i became 6, the break statement got executed and the program came out of the while
+                        loop.</p><br>
+                    <h3>Continue Statement</h3><br>
+                    <li>The continue statement is used inside loops in C Language. When a continue statement is
+                        encountered inside the loop, the control jumps to the beginning of the loop for the next
+                        iteration, skipping the execution of statements inside the body of the loop after the continue
+                        statement.</li>
+                    <li>It is used to bring the control to the next iteration of the loop.</li>
+                    <li>Typically, the continue statement skips some code inside the loop and lets the program move on
+                        with the next iteration.</li>
+                    <li>It is mainly used for a condition so that we can skip some lines of code for a particular
+                        condition.</li>
+                    <li>It forces the next iteration to follow in the loop unlike a break statement, which terminates
+                        the loop itself the moment it is encountered.</li><br>
+                    <p>One such example to demonstrate how a continue statement works is</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                for (int i = 0; i <= 10; i++)
+                {
+                    if (i < 6)
+                    {
+                        continue;
+                    }
+                    printf("%d ", i);
+                }
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        6 7 8 9 10
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, the continue statement was continuously executing while i remained less than 5. For all the
+                        other values of i, we got the print statement working.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div17" style="display: none;">
+                    <h2>Array Basics</h2><br>
+                    <p>An array is a collection of data items of the same data type. And it is also known as a subscript
+                        variable.</p><br>
+                    <li>Items are stored at contiguous memory locations in arrays.</li>
+                    <li>It can also store the collection of derived data types such as pointers, structures, etc.</li>
+                    <li>The C Language places no limits on the number of dimensions in an array. This means we can
+                        create arrays of any number of dimensions. It could be a 2D array or a 3D array or more.</li>
+                    <br>
+                    <br>
+                    <h3>Dimensions of an array</h3><br>
+                    <li>A one-dimensional array is like a list.</li>
+                    <li>A two-dimensional array is like a table.</li><br>
+                    <p>Some texts refer to one-dimensional arrays as vectors and two-dimensional arrays as matrices and
+                        use the general term arrays when the number of dimensions is unspecified or unimportant.</p><br>
+                    <br>
+                    <h3>How do Arrays help?</h3><br>
+                    <p>Programs that use arrays for managing a large number of the same data type variables are more
+                        organized and readable in comparison to creating different variables of the same type for each
+                        data element.
+                        <br>
+                        Arrays allow us to create many variables by just a single line. It means there is no need to
+                        create or specify every variable.
+                    </p><br>
+                    <h3>Advantages of Arrays?</h3><br>
+                    <li>It is used to represent multiple data items of the same type by using only a single name.</li>
+                    <li>Accessing any random item at any random position in a given array is very fast in an array.</li>
+                    <li>There is no case of memory shortage or overflow in the case of arrays since the size is fixed
+                        and elements are stored in contiguous memory locations.</li><br>
+                    <br>
+                    <h3>Properties of Arrays</h3><br>
+                    <li>An array stores data be it of any data type in contiguous memory locations in RAM.</li>
+                    <li>Each element of an array is of the same size i.e. their data types are the same so the memory
+                        consumed by each is also the same.</li>
+                    <li>Any element of the array with a given index can be accessed very quickly by using its address
+                        which can be calculated using the base address and the index number.</li><br>
+                    <li><b>Index Number – </b>It is the special type of number which allows us to access variables of
+                        arrays. Index number provides a method to access each element of an array in a program.</li><br>
+                    <br>
+
+                </div>
+                <div class="notes" id="div18" style="display: none;">
+                    <h2>Array Operations</h2><br>
+                    <h3>Defining an array</h3><br>
+                    <h4>1. Without specifying the size of the array</h4><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int arr[] = {1, 2, 3};
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, we can leave the square brackets empty, although the array cannot be left empty in this
+                        case. It must have elements in it.</p><br>
+                    <h4>2. With specifying the size of the array</h4><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int arr[3];
+        arr[0] = 1, arr[1] = 2, arr[2] = 3;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, we can specify the size of the array in its definition itself. We can then put array
+                        elements later as well.</p><br>
+                    <br>
+                    <h3>Accessing an array element</h3><br>
+                    <p>An element in an array can easily be accessed through its index number. This must be remembered
+                        that the index number starts from 0 and not one.</p><br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+
+            int main()
+            
+            {
+            
+                int arr[] = {1, 5, 7, 2};
+            
+                printf("%d ", arr[2]); //printing element on index 2
+            
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        7
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Changing an array element</h3><br>
+                    <p>An element in an array can be overwritten using its index number.</p><br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+
+            int main()
+            
+            {
+            
+                int arr[] = {1, 5, 7, 2};
+            
+                arr[2] = 8; //changing the element on index 2
+            
+                printf("%d ", arr[2]); //printing element on index 2
+            
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        8
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div19" style="display: none;">
+                    <h2>String Basics</h2><br>
+                    <h3>What are Strings?</h3><br>
+                    <p>A string is an array of characters. Data of the same type are stored in an array, for example,
+                        integers can be stored in an integer array, similarly, a group of characters can be stored in a
+                        character array. This character array is also known as strings. A string is a one-dimensional
+                        array of characters that is terminated by a null (‘\0’).</p><br>
+                    <h3>Declaration of Strings:</h3><br>
+                    <p>Declaring a string is very simple, the same as declaring a one-dimensional array. It’s just that
+                        we are considering it as an array of characters.
+                        <br>
+                        Below is the syntax for declaring a string.
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        char string_name[string_size]; 
+    </code>
+    </pre><br>
+                    <br>
+                    <p>In the above syntax, string_name is any name given to the string variable, and size is used to
+                        define the length of the string, i.e the number of characters that the strings will store. Keep
+                        in mind that there is an extra terminating character which is the null character (‘\0’) that is
+                        used to indicate the termination of the string.</p><br>
+                    <h3>Example of string:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            int main()
+            {
+                // declare and initialise string
+                char str[] = "Coding Nation";
+                printf("%s", str);
+                return 0;
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Coding Nation
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div20" style="display: none;">
+                    <h2>String Functions</h2><br>
+                    <p>We can use C's string handling library functions to handle strings. The string.h library is used
+                        to perform string operations. It provides several functions for manipulating strings.
+                        <br>
+                        Following are some commonly used string handling functions:
+                    </p><br>
+                    <br>
+                    <h3>1. strcat():</h3><br>
+                    <p>This function is used to concatenate the source string to the end of the target string. This
+                        function expects two parameters, first, the base address of the source string and then the base
+                        address of the target string. For example, “Hello” and “World” on concatenation would result in
+                        a string “HelloWorld”.
+                        <br>
+                        Here is how we can use the strcat( ) function:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+            int main()
+            {
+                char s[] = "Hello";
+                char t[] = "World";
+                strcat(s, t);
+                printf("String = %s", s);
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        String  = HelloWorld 
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>2. strlen():</h3><br>
+                    <p>This function is used to count the number of characters present in a string.
+                        <br>
+                        Here is how we can use the strlen( ) function:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+            int main()
+            {
+                char s[] = "Hello";
+                int len = strlen(s);
+                printf("Length = %d", len);
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Length  = 5
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>3. strcpy():</h3><br>
+                    <p>This function is used to copy the contents of one string into the other. This function expects
+                        two parameters, first, the base address of the source string and then the base address of the
+                        target string.
+                        <br>
+                        Here is how we can use the strcpy( ) function:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+            int main()
+            {
+                char s[] = "Coding Nation";
+                char t[50];
+                strcpy(t, s);
+                printf("Source string = %s\n", s);
+                printf("Target string = %s", t);
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Source string  = Coding Nation
+        Target string  = Coding Nation
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>4. strcmp():</h3><br>
+                    <p>The strcmp() function is used to compare two strings to find out whether they are the same or
+                        different. It takes two strings as two of its parameter. It will compare two strings, character
+                        by character until there is a mismatch or the iterator reaches the end of one of the strings.
+                        <br>
+                        If both of the strings are identical, strcmp( ) returns a value of zero. If they are not
+                        identical, it will return a value less than zero, considering the ASCII value of the mismatched
+                        character in the first string is less than the mismatched character in the second string. Else,
+                        it will return a value greater than 0.
+                        <br>
+                        Here is how we can use the strcmp( ) function:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+            int main()
+            {
+                char s[] = "Hello";
+                char t[] = "World";
+                int cmp = strcmp(s, t);
+                printf("Comparison result = %d", cmp);
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Comparison result = -1
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>5. strrev():</h3><br>
+                    <p>This function is used to return the reverse of the string.
+                        <br>
+                        Here is how we can use the strrev( ) function:
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+            int main()
+            {
+                char s[] = "Hello";
+                printf("Reversed string = %s", strrev(s));
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Reversed string  = olleH
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div21" style="display: none;">
+                    <h2>Function Basics</h2><br>
+                    <h3>Functions:</h3><br>
+                    <li>Functions are used to divide a large C program into smaller and less complex pieces.</li>
+                    <li>Function can be called multiple or several times to provide reusability and modularity to the C
+                        program.</li>
+                    <li>Functions are also called procedures or subroutines or methods.</li>
+                    <li>A function is also a piece of code that performs a specific task.</li><br>
+                    <p>A function is nothing but a group of code put together and given a name and it can be called
+                        anytime without writing the whole code again and again in a program.
+                        <br>
+                        I know its syntax is a bit difficult to understand but don’t worry after reading this whole
+                        information about Functions you will know each and every term or thing related to Functions.
+                    </p><br>
+                    <h3>Advantages of Functions</h3><br>
+                    <li>The use of functions allows us to avoid re-writing the same logic or code over and over again.
+                    </li>
+                    <li>With the help of functions, we can divide the work among the programmers.</li>
+                    <li>We can easily debug or can find bugs in any program using functions.</li>
+                    <li>They make code readable and less complex.</li><br>
+                    <br>
+                    <h3>Aspects of a function</h3><br>
+                    <h4>1. Declaration</h4><br>
+                    <p>This is where a function is declared to tell the compiler about its existence.</p><br>
+                    <h4>2. Definition</h4><br>
+                    <p>A function is defined to get some task executed. (It means when we define a function, we write
+                        the whole code of that function and this is where the actual implementation of the function is
+                        done.)</p><br>
+                    <h4>3. Call</h4><br>
+                    <p>This is where a function is called in order to be used.</p><br>
+                    <br>
+                    <h3>Types of functions</h3><br>
+                    <h4>1. Library functions:</h4><br>
+                    <p>Library functions are pre-defined functions in C Language. These are the functions that are
+                        included in C header files prior to any other part of the code in order to be used.
+                        <br>
+                        E.g. printf(), scanf(), etc.
+                    </p><br>
+                    <h4>2. User-defined functions</h4><br>
+                    <p>User-defined functions are functions created by the programmer for the reduction of the
+                        complexity of a program. Rather, these are functions that the user creates as per the
+                        requirements of a program.
+                        <br>
+                        E.g. Any function created by the programmer.
+                    </p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div22" style="display: none;">
+                    <h2>Function Parameters</h2><br>
+                    <p>A parameter or an argument of a function is the information we wish to pass to the function when
+                        it is called to be executed. Parameters act as variables inside the function.
+                        <br>
+                        Parameters are specified after the function name, inside the parentheses. You can add as many
+                        parameters as you want, just separate them with a comma.
+                    </p><br>
+                    <h3>Here’s the basic syntax of a function</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        return_type functionName(parameter1, parameter2) {
+            // body of the function
+          }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>What is the return_type?</h3><br>
+                    <p>Return type specifies the data type the function should return after its execution. It could also
+                        be a void where the function is required to return nothing.</p><br>
+                    <h3>Different ways to define a function</h3><br>
+                    <h4>1. Without arguments and without return value</h4><br>
+                    <p>In this function we don’t have to give any value to the function (argument/parameters) and even
+                        don’t have to take any value from it in return.
+                        <br>
+                        One example of such functions could be,
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            void func()
+            {
+                printf("This function doesn't return anything.");
+            }
+             
+            int main()
+            {
+                func();
+            }             
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        This function doesn’t return anything.
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>2. Without arguments and with the return value.</h3><br>
+                    <p>In these types of functions, we don’t have to give any value or argument to the function but in
+                        return, we get something from it i.e. some value.
+                        <br>
+                        One example of such functions could be,
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int func()
+            {
+                int a, b;
+                scanf("%d", &a);
+                scanf("%d", &b);
+                return a + b;
+            }
+             
+            int main()
+            {
+                int ans = func();
+                printf("%d", ans);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Input</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        5
+        6
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        11
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The function func when called, asks for two integer inputs and returns the sum of them. The
+                        function’s return type is an integer.</p><br>
+                    <h4>3. With arguments and without a return value.</h4><br>
+                    <p>In this type of function, we give arguments or parameters to the function but we don’t get any
+                        value from it in return.
+                        <br>
+                        One example of such functions could be,
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            void func(int a, int b)
+            {
+                printf("%d", a * b);
+            }
+             
+            int main()
+            {
+                func(2, 3);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        6
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The function’s return type is void. And it takes two integers as its parameters and prints the
+                        product of them while returning nothing.</p><br>
+                    <h4>4. With arguments and with the return value</h4><br>
+                    <p>In these functions, we give arguments to a function and in return, we also get some value from
+                        it.
+                        <br>
+                        One example of such functions could be,
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int func(int a, int b)
+            {
+                return a + b;
+            }
+             
+            int main()
+            {
+                int ans = func(2, 3);
+                printf("%d", ans);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        5
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The function func takes two integers as its parameters and return an integer which is their sum.
+                        <br>
+                        Make sure the return statement and the return_type of the functions are the same.
+                    </p><br>
+                    <br>
+
+                </div>
+                <div class="notes" id="div23" style="display: none;">
+
+                    <h2>Functions Declaration</h2><br>
+                    <h3>A function consist of two parts:</h3><br>
+                    <li>Declaration, where we specify the function's name, its return type, and required parameters (if
+                        any).</li>
+                    <li>Definition, which is nothing but the body of the function (code to be executed)</li><br>
+                    <h4>The basic structure of a function is,</h4><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        return_type functionName() { // declaration
+            // body of the function (definition)
+          }
+    </code>
+    </pre><br>
+                    <br>
+                    <p>For code optimization and readability, it is often recommended to separate the declaration and
+                        the definition of the function.
+                        <br>
+                        And this is the reason why you will often see C programs that have function declarations above
+                        the main() function, and function definitions below the main() function. This will make the code
+                        better organized and easier to read.
+                    </p><br>
+                    <p>This is how it is done,</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            // Function declaration
+            void func();
+             
+            int main()
+            {
+                func(); // calling the function
+                return 0;
+            }
+             
+            // Function definition
+            void func()
+            {
+                printf("This is the definition part.");
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        This is the definition part.
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div24" style="display: none;">
+                    <h2>Recursive Functions</h2><br>
+                    <h3>What are recursive functions?</h3><br>
+                    <p>Recursive functions or recursion is a process when a function calls a copy of itself to work on
+                        smaller problems.
+                        <br>
+                        Recursion is the process in which a function calls itself directly or indirectly. And the
+                        corresponding function or function which calls itself is called a recursive function.
+                    </p><br>
+                    <li>Any function which calls itself is called a recursive function.</li>
+                    <li>This makes the life of a programmer easy by dividing a complex problem into simple or easier
+                        problems.</li>
+                    <li>A termination condition is imposed on such functions to stop them from executing copies of
+                        themselves forever or infinitely. This is also known as the base condition.</li>
+                    <li>Any problem which can be solved recursively can also be solved iteratively.</li>
+                    <li>Recursions are used to solve tougher problems like Tower Of Hanoi, Fibonacci Series, Factorial
+                        finding, etc., and many more, where solving by intuition becomes tough.</li><br>
+                    <h3>What is a base condition?</h3><br>
+                    <p>The case in which the function doesn’t recur is called the base case.
+                        <br>
+                        For example, when we try to find the factorial of a number using recursion, the case when our
+                        number becomes smaller than 1 is the base case.
+                    </p><br>
+                    <h3>Recursive Case</h3><br>
+                    <p>The instances where the function keeps calling itself to perform a subtask which is generally the
+                        same problem with the problem size reduced to many smaller parts, is called the recursive case.
+                    </p>
+                    <br>
+                    <h3>Example of recursion,</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int factorial(int num)
+            {
+                if (num > 0)
+                {
+                    return num * factorial(num - 1);
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+             
+            int main()
+            {
+                int ans = factorial(10);
+                printf("%d", ans);
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        3628800 
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div25" style="display: none;">
+                    <h2>C Pointers</h2><br>
+                    <p>When we initialise an array, we usually come to know about the,</p><br>
+                    <li>Memory block which is the space a variable gets in RAM. We can think of that space as a block.
+                    </li>
+                    <li>Name of the memory block which is the variable’s name itself.</li>
+                    <li>Content of that block that is the value stored in that variable</li>
+                    <li>Address of the memory block assigned to the variable which is a unique address that allows us to
+                        access that variable.
+                    </li><br>
+                    <h3>What is a Pointer?</h3><br>
+                    <li>Pointer is a variable that contains the address of another variable. It means, it is a variable
+                        that points to any other variable.</li>
+                    <li>Although this is itself a variable, this contains the address or memory address of any other
+                        variable.</li>
+                    <li>It can be of type int, char, array, function, or even any other pointer.</li>
+                    <li>Its size depends on the architecture.</li>
+                    <li>Pointers in C Language can be declared using *(asterisk symbol).
+                    </li><br>
+                    <p>So, pointers are nothing but variables that store addresses of other variables, and by using
+                        pointers, we can access other variables too and can even manipulate them.</p><br>
+                    <h3>Applications of Pointers</h3><br>
+                    <li>Pointers are used to dynamically allocate or deallocate memory using methods such as malloc(),
+                        realloc(), calloc(), and free().</li>
+                    <li>Pointers are used to point to several containers such as arrays, or structs, and also for
+                        passing addresses of containers to functions.</li>
+                    <li>Return multiple values from a function</li>
+                    <li>Rather than passing a copy of a container to a function, we can simply pass its pointer. This
+                        helps reduce the memory usage of the program.</li>
+                    <li>Pointer reduces the code and improves the performance.</li><br>
+                    <br>
+                </div>
+                <div class="notes" id="div26" style="display: none;">
+                    <h2>Operations on Pointers</h2><br>
+                    <h3>Address of Operator (&):</h3><br>
+                    <li>It is a unary operator.</li>
+                    <li>Operand must be the name of an already defined variable.</li>
+                    <li>& operator gives the address number of the variable.</li>
+                    <li>& is also known as the “Referencing Operator”.</li><br>
+                    <h3>Here’s one example to demonstrate the use of the address of the operator.</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 100;
+                printf("%d\n", a);
+                printf("Address of variable a is %d", &a);
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        100
+        Address of variable a is 6422220
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Indirection Operator (*) :</h3><br>
+                    <li>* is indirection operator.</li>
+                    <li>It is also known as the “Dereferencing Operator”.</li>
+                    <li>It is also a unary operator.</li>
+                    <li>It takes an address as an argument.</li>
+                    <li>* returns the content/container whose address is its argument. </li><br>
+                    <h3>Here’s one example to demonstrate the use of the indirection operator.</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                int a = 100;
+                printf("Value of variable a stored at address %d is %d.", &a, *(&a));
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Value of variable a stored at address 6422220 is 100.
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div27" style="display: none;">
+                    <h2>C VOID Pointer</h2><br>
+                    <p>After a brief discussion about pointers, it’s time to start with a very important type of
+                        pointers, void pointers and their functionalities. We already know that a void function has no
+                        return type i.e., functions that are not returning anything are given the type void. Now, in the
+                        case of pointers that are given the datatype of a void, they can be typecasted into any other
+                        data type according to the necessity. And that aids that we do not have to decide on a data type
+                        for the pointer initially.</p><br>
+                    <p>Void pointers can also be addressed as general-purpose pointer variables.</p><br>
+                    <p>Let’s see a few examples that will demonstrate the functionalities of a void pointer.</p><br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int var = 1;
+        void *voidPointer = &var;  
+    </code>    
+    </Pre><br>
+                    <br>
+                    <p>Here, the data type of the void pointer gets typecasted into int as we have stored the address of
+                        an integer value in it.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int var = 1;
+        void *voidPointer = &var; 
+    </code>
+    </pre><br>
+                    <br>
+                    <p>In this example, the void pointer’s data type gets typecasted to char as we have stored the
+                        address of a character value in it.</p><br>
+                    <p>Type casting a void pointer must also remind you of the way we used to type cast a void pointer
+                        returned by the functions malloc() and calloc() while for dynamic memory allocation. There also,
+                        the heap returns a void pointer to the memory requested. And we could type cast it to any other
+                        data type and that is where a void pointer comes handy.</p><br>
+                    <br>
+                    <h3>Two important features of a VOID pointer are:</h3><br>
+                    <b>Void pointers cannot be dereferenced.</b><br>
+                    <p>This can be demonstrated with the help of an example.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int a = 10;
+        void *voidPointer;
+        voidPointer = &a;
+        printf("%d", *voidPointer); 
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Compiler Error!  
+    </code>
+    </pre><br>
+                    <br>
+                    <p>This program will throw a compile-time error, as we can not dereference a void pointer, meaning
+                        that we would compulsorily have to typecast the pointer every time it is being used. Here’s how
+                        it should be done.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int a = 10;
+        void *voidPointer;
+        voidPointer = &a;
+        printf("%d", *(int *)voidPointer); 
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        10
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The compiler will not throw any error and will directly output the result because we are using
+                        the type along with the pointer. </p> <br>
+                    <p><b>Pointer arithmetics cannot be used with void pointers </b>since it is not holding any address
+                        to be able to increment or decrement its value.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div28" style="display: none;">
+                    <h2>C NULL Pointer</h2><br>
+                    <p>A pointer that is not assigned any value or memory address but NULL is known as a NULL pointer. A
+                        NULL pointer does not point to any object, variable, or function. NULL pointers are often used
+                        to initialize a pointer variable, where we wish to represent that the pointer variable isn’t
+                        currently assigned to any valid memory address yet.</p> <br>
+                    <b>This is how we define a NULL pointer,</b><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int *ptr = NULL; 
+    </code>
+    </pre><br>
+                    <br>
+                    <p>A NULL pointer generally points to a NULL or 0th memory location, so in simple words, no memory
+                        is allocated to a NULL pointer.</p><br>
+                    <br>
+                    <h3>Dereferencing a NULL pointer</h3><br>
+                    <p>The dereferencing behavior of a NULL pointer is very much similar to that of a void pointer. A
+                        NULL pointer itself is a kind of a VOID pointer and hence, we have to typecast it into any data
+                        type the way we do to a void pointer before dereferencing. Failing to do so results in an error
+                        at compile time.</p><br>
+                    <br>
+                    <h3>NULL pointer vs. Uninitialized pointer</h3><br>
+                    <p>NULL pointers and uninitialised pointers are different, as a Null pointer does not occupy any
+                        memory location. That means, it points to nowhere but to a zeroth location. In contrast, an
+                        uninitialized pointer means that the pointer occupies a garbage value address. The garbage value
+                        address is still a real memory location and hence not a NULL value. So to be on the safe side,
+                        NULL pointers are preferred. </p><br>
+                    <h3>NULL pointer vs. Void pointer</h3><br>
+                    <p>NULL pointers and void pointers very much sound similar just because oif their nomenclatures, but
+                        they are very different as a NULL pointer is a pointer with a NULL value address, and a void
+                        pointer is a pointer of void data type. Their significances are contrasting.</p><br>
+                    <b>An example of a NULL pointer is as follows,</b><br>
+                    <Pre class="highlight">
+    <code cass="language-C">
+        int *ptr = NULL;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, an integer pointer variable is declared with a value NULL, which means it is not pointing
+                        to any memory location.</p> <br>
+                    <b>An example of a VOID pointer is as follows,</b><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        void *ptr;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Now, this is a void pointer. This pointer will typecast itself to any other data type as per the
+                        datatype of the value stored in it.</p><br>
+                    <h3>Advantages of a NULL pointer</h3><br>
+                    <li>We can initialize a pointer variable without allocating any specific memory location to it.</li>
+                    <li>We can use it to check whether a pointer is legitimate or not. We can check that by making the
+                        pointer a NULL pointer, after which it cannot be dereferenced. </li>
+                    <li>A NULL pointer is used for comparison with other pointers to check whether that other pointer
+                        itself is pointing to some memory address or not. </li>
+                    <li>We use it for error handling in the case of C programming.</li>
+                    <li>We can pass a NULL pointer at places where we do not want to pass a pointer with a valid memory
+                        address.</li><br>
+                    <br>
+                </div>
+                <div class="notes" id="div29" style="display: none;">
+                    <h2>Dangling Pointer</h2><br>
+                    <p>Dangling pointers are pointers that are pointing to a memory location that has been already freed
+                        or deleted.
+                        <br>
+                        Dangling pointers often come into existence during object destruction. It happens when an object
+                        with an incoming reference is deleted or de-allocated, without modifying the value of the
+                        pointer. The pointer still points to the memory location of the deallocated memory.
+                        <br>
+                        The system may itself reallocate the previously deleted memory and several unpredicted results
+                        may occur as the memory may now contain different data.
+                    </p><br>
+                    <br>
+                    <h3>Dangling pointers are caused by the following factors:</h3><br>
+                    <br>
+                    <h3>De-allocating or free variable memory</h3><br>
+                    <p>When memory is deallocated, the pointer keeps pointing to freed space. An example to demonstrate
+                        how that happens is:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            int main()
+            {
+                int a = 80;
+                int *ptr = (int *)malloc(sizeof(int));
+                ptr = &a;
+                free(ptr);
+                return 0;
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The above code demonstrates how a variable pointer *ptr and an integer variable a containing a
+                        value 80 was created. The pointer variable *ptr is created with the help of the malloc()
+                        function. As we know that malloc() function returns the void, so we use int * for type
+                        conversion to convert void pointer into int pointer.</p>
+                    <br>
+                    <h3>Function Call</h3><br>
+                    <p>Now, we will see how the pointer becomes dangling with the function call.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            int *myvalue()
+            {
+                int a = 10;
+                return &a;
+            }
+            
+            int main()
+            {
+                int *ptr = myvalue();
+                printf("%d", *ptr);
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Segmentation Fault!
+    </code>
+    </pre><br>
+                    <br>
+                    <p>In the above code, First, we create the main() function in which we have declared ptr pointer,
+                        which contains the return value of the func() function. When the function func() is called, the
+                        program control moves to the context of the int *func(). Then, the function func() returns the
+                        address of the integer variable a.
+                        <br>
+                        This is where the program control comes back to the main() function and the integer variable a
+                        becomes unavaialbale for the rest of the program execution. And the pointer ptr becomes dangling
+                        as it points to a memory location that has been freed or deleted from the stack. Hence, the
+                        program results in a segmentation fault.
+                        <br>
+                        Had this code been updated, and the integer variable been declared globally which is static and
+                        as we know, any static variable stores in global memory, the output would have been 10.
+                    </p><br>
+                    <br>
+                    <h3>How to avoid the Dangling pointer errors</h3><br>
+                    <p>The dangling pointer introduces nasty bugs into our programs, and these bugs often result in
+                        security holes. By merely initializing the pointer value to the NULL, these errors following the
+                        creation of dangling pointer can be avoided. After that, the pointer will no longer point to the
+                        freed memory location. While the reason behind assigning the NULL value to the pointer was to
+                        have the pointer not to point to any random or previously assigned memory location.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div30" style="display: none;">
+                    <h2>Wild Pointer</h2><br>
+                    <p>Uninitialized pointers are known as wild pointers because they point to some arbitrary memory
+                        location while they are not assigned to any other memory location. This may even cause a program
+                        to crash or behave unpredictably at times.</p><br>
+                    <b>For example:</b><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int *ptr;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here, a pointer named ptr is created but was not given any value. This makes the pointer ptr, a
+                        wild pointer.</p><br>
+                    <p>Declaring a pointer and not initialising it has its own disadvantages. One such disadvantage is
+                        that it will store any garbage value in it. A random location in memory will be held in it
+                        arbitrarily. This random allocation often becomes tough for a programmer to debug causing a lot
+                        of problems in the execution of the program.</p><br>
+                    <h3>A. Avoiding problems due to WILD pointers</h3><br>
+                    <p>Dereferencing a wild pointer becomes problematic at times, and to avoid the them, we often prefer
+                        to convert a void pointer to a NULL pointer. By doing so, our pointer will not point to any
+                        garbage memory location, rather it will point to a NULL location. We can convert a wild pointer
+                        to a NULL pointer by merely putting it equal to NULL. </p><br>
+                    <h3>B. Dereferencing</h3><br>
+                    <p>We cannot dereference a wild pointer as we are not sure about the data in the memory it is
+                        pointing towards. In addition to causing a lot of bugs, dereferencing a wild pointer can also
+                        cause the program to crash.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div31" style="display: none;">
+
+                    <h2>C Static Variables</h2><br>
+                    <h3>A. Local Variables</h3><br>
+                    <p>Local variables are variables that are declared inside a function or a block of code. These
+                        variables cannot be accessed outside the function they are declared in. Local variables can be
+                        accessed only by statements that are inside that function or block of code which means the scope
+                        of these variables will be within the function only.</p><br>
+                    <h3>B. Global Variables</h3><br>
+                    <p>Global variables are variables that are defined outside of all the functions. Global variables
+                        hold their values, and we can access them inside any of the functions defined in the program.
+                        When we define global variables, the system automatically initializes them.
+                        <br>
+                        If cases where we have both the local and global variables with the same name declared, the
+                        local variable takes preference.
+                    </p><br>
+                    <h3>C. Static Variables</h3><br>
+                    <p>A static variable is a variable that retains its value even after the program exits the scope it
+                        was declared in. Static variables retain their value and are not initialized again in the new
+                        scope. The memory assigned to a static variable stays until the end of the program is reached,
+                        whereas a normal variable is destroyed when a function it was declared in gets exited. They can
+                        be defined inside or outside the function. Static variables are local to the block. The default
+                        value of a static variable is zero. The keyword static is used to declare a static variable.</p>
+                    <br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        static datatype variable_name = variable_value;
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Difference between static local and static global variables</h3>
+                    <br>
+                    <h4>Static global variable</h4><br>
+                    <p>Any variable declared outside a function with a static keyword is known as a static global
+                        variable. This variable will be accessible through any of the methods in the program.</p><br>
+                    <h4>Static local variable</h4><br>
+                    <p>Any variable declared inside of a function with a static keyword is known as a static local
+                        variable. The scope of a static local variable will be the same as that of a local variable, but
+                        its memory will be available throughout the execution of the program.</p><br>
+                    <br>
+                    <h3>Properties of static variables</h3><br>
+                    <li>A static variable will retain the value even after the program exits the scope it was declared
+                        in.</li>
+                    <li>Memory allocated to a static variable is available throughout the program execution.</li>
+                    <li>If we do not initialize a static variable, then the default value will be 0.</li><br>
+                    <br>
+                </div>
+                <div class="notes" id="div32" style="display: none;">
+                    <h2>C Memory Layout</h2><br>
+                    <h3>What is Dynamic Memory?</h3><br>
+                    <p>Any allocation of memory space during the runtime of the program is called dynamic memory
+                        allocation. The concept of dynamic memory allocation is used to reduce the wastage of memory,
+                        and it is the optimal way of memory allocation. </p><br>
+                    <br>
+                    <h3>Memory Allocation in C</h3><br>
+                    <p>Memory allocation in C can be divided into four segments. </p>
+                    <br>
+                    <h3>1. Code:</h3><br>
+                    <p>Code composes of all the text segments of our program. Everything we do as a programmer to build
+                        a program falls into this category.</p><br>
+                    <h3>2. Variables:</h3><br>
+                    <p>Declarations of both global and static variables come into this segment. Global variables can be
+                        used anywhere in the program, while static has its limitations inside the function.</p><br>
+                    <h3>3. Stack:</h3><br>
+                    <p>A stack is a data structure. Initially, the stack looks like an empty bucket in which the last
+                        entry to be inserted will be the first one to get out. It is also known as a LIFO data structure
+                        i.e., last in first out.
+                        <br>
+                        Suppose the program starts executing a function named A, then this function A gets pushed into
+                        the stack. Now, if function A calls another function B during its execution, then function B
+                        will also get pushed into the stack, and the program will start executing B. Now, if B calls
+                        another function C, then the program will push C into the stack and will start with its
+                        execution. Now, after the program gets done with the execution of C, the program will pop C from
+                        the stack as it was the last one to get pushed and start executing B. When B gets executed
+                        completely, it will get popped and A will start executing further until the stack becomes empty.
+                    </p><br>
+                    <h3>4. Heap:</h3><br>
+                    <p>Heap is a tree-based data structure. It is used when we allocate memory dynamically. To use the
+                        heap data structure, we have to create a pointer in our main function that will point to some
+                        memory block in a heap. The disadvantage of using a heap is that the memory assigned to a
+                        pointer will not get freed automatically when the pointer gets overwritten. </p><br>
+                    <h3>Differences between static and dynamic memory</h3><br>
+                    <table>
+                        <tr>
+                            <th>Static</th>
+                            <th>Dynamic</th>
+                        </tr>
+                        <tr>
+                            <td>Allocation of memory before execution</td>
+                            <td>Allocation of memory at run time</td>
+                        </tr>
+                        <tr>
+                            <td>Non-reusable memory</td>
+                            <td>Reusable memory</td>
+                        </tr>
+                        <tr>
+                            <td>Less optimal way</td>
+                            <td>More optimal way</td>
+                        </tr>
+                    </table><br>
+                    <br>
+                </div>
+                <div class="notes" id="div33" style="display: none;">
+                    <h2>C Memory Allocation</h2><br>
+                    <p>There are ways in which we can allocate memories dynamically in a heap. We use these four
+                        standard library functions often;</p>
+                    <br>
+                    <br>
+                    <h3>1. malloc():</h3><br>
+                    <p>malloc stands for memory allocation. This inbuilt function requests memory from the heap and
+                        returns a pointer to the memory. The pointer is of the void type and we can typecast it to any
+                        other data type of our choice.
+                        <br>
+                        All the values at the allocation time are initialized to garbage values. The function expects
+                        the memory space along with the size we want in bytes at the time it is used.
+                    </p><br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        ptr = (ptr - type *)malloc(size_in_bytes)
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int *ptr;
+        ptr = (int *)malloc(5 *sizeof(int));
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>2. calloc():</h3><br>
+                    <p>calloc stands for contiguous memory allocation. Similar to malloc, this function also requests
+                        memory from the heap and returns a pointer to the memory. Differences lie in the way we have to
+                        call it.
+                        <br>
+                        First, we have to send as parameters the number of blocks needed along with their size in bytes.
+                        Second, in calloc(), the values at the allocation time are initialized to 0 instead of garbage
+                        value unlike what happens in malloc().
+                    </p><br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        ptr = (ptr - type *)calloc(n, size_in_bytes)
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        int *ptr;
+    ptr = (int *)calloc(5, sizeof(int));
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>3. realloc():</h3><br>
+                    <p>realloc stands for reallocation of memory. It is used in cases where the dynamic memory allocated
+                        previously is insufficient and there is a need of increasing the already allocated memory to
+                        store more data.
+                        <br>
+                        We also pass the previously declared memory address, and the new size of the memory in bytes
+                        while calling the function.
+                    </p>
+                    <br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        ptr = (ptr - type *)realloc(ptr, new_size_in_bytes)
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        ptr = (int *)realloc(ptr,10* sizeof(int));
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>4. free():</h3><br>
+                    <p>While discussing the disadvantages of dynamic memory allocation, it was mentioned that there is
+                        no automatic deletion of dynamically allocated memory when the pointer gets overwritten. So, to
+                        manually do it, we use the free() function to free up the allocated memory space. Therefore,
+                        free() is used to free up the space occupied by the allocated memory.
+                        <br>
+                        We just have to pass the pointer as a parameter inside the function and the address being
+                        pointed gets freed.
+                    </p><br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        free(ptr);
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+                <div class="notes" id="div34" style="display: none;">
+                    <h2>C Structures</h2><br>
+                    <p>We have already learnt in the previous tutorials that variables store one piece of information
+                        and arrays of certain data types store the information of the same data type. Variables and
+                        arrays can handle a great variety of situations. But quite often, we have to deal with the
+                        collection of dissimilar data types. For dealing with cases where there is a requirement to
+                        store dissimilar data types, C provides a data type called ‘structure’. It is a way to group
+                        together information belonging to different data types and combine them into one structure.</p>
+                    <br>
+                    <br>
+                    <h3>What are Structures in C?</h3><br>
+                    <p>Structures are usually used when we wish to store data of different data types together. For
+                        example, if we want to store information about a book, there could be a number of parameters
+                        defining a book.
+                        <br>
+                        Books have a title, an author name, the number of pages, and a price. All of the book attributes
+                        belong to different data types. The titles and author names must be strings, but the prices and
+                        number of pages must be numerical.
+                    </p><br>
+                    <p>One way to store the data is to construct individual arrays, and another method is to use a
+                        structure variable. It is to keep in mind that structure elements are always stored in
+                        contiguous memory locations.</p><br>
+                    <br>
+                    <h3>Creating a struct element</h3><br>
+                    <p>Basic syntax for declaring a struct is,</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        struct structure_name
+        {
+          //structure_elements
+      } structure_variable;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here’s one example of how a struct is defined and used in main as a user-defined data type.</p>
+                    <br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+
+            struct Books
+            {
+                char title[20];
+                char author[100];
+                float price;
+                int pages;
+            };
+            
+            int main()
+            {
+                struct Books book1;
+                return 0;
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Accessing struct elements</h3><br>
+                    <p>We use the subscript operator, ‘[‘ fed with the index number to access individual elements of an
+                        array. But in the case of structures, to access any element, we use the dot operator (.). This
+                        dot operator is coded between the structure variable name and the structure member that we wish
+                        to access.
+                        <br>
+                        Before the dot operator, there must always be an already defined structure variable and after
+                        the dot operator, there must always be a valid structure element.
+                    </p><br>
+                    <p>Here’s one example demonstrating how we access struct elements.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+        
+        struct Books
+        {
+            Char title[20];
+            char author[100];
+            float price;
+            int pages;
+        };
+
+        int main()
+        {
+            struct Books book1 = {"C Programming", "ABC", 123.99, 300};
+            printf("%s\n", book1.title);
+            Printf("%s\n", book1.author);
+            printf("%f\n", book1.price);
+            printf("%d\n", book1.pages);
+            return 0;
+        }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        C Programming
+        ABC
+        123.989998
+        300
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Additional Features of Structs</h3><br>
+                    <li>We can assign the values of a structure variable to another structure variable of the same type
+                        using the assignment operator.</li>
+                    <li>Structure can be nested within another structure which means structures can have their members
+                        as structures themselves.</li>
+                    <li>We can pass the structure variable to a function. We can pass the individual structure elements
+                        or the entire structure variable into the function as an argument. And functions can also return
+                        a structure variable. </li>
+                    <li>We can have a pointer pointing to a struct just like the way we can have a pointer pointing to
+                        an int, or a pointer pointing to a char variable.</li><br>
+                    <br>
+                    <h3>Where are Structs useful?</h3><br>
+                    <p>It is possible to use structures for many different purposes, including:</p><br>
+                    <li>Structures are used to store a large amount of data of varying data types.</li>
+                    <li>They are used to send data to the printer.</li>
+                    <li>For placing the cursor at an appropriate position on the screen, we can use structure.</li>
+                    <li>It can be used in drawing and floppy formatting.</li>
+                    <li>We use structures in finding out the list of equipment attached to the computer.</li><br>
+                    <br>
+                </div>
+                <div class="notes" id="div35" style="display: none;">
+                    <h2>C Unions</h2><br>
+                    <p>Just like Structures, the union is a user-defined data type. All the members in unions share the
+                        same memory location. The union is a data type that allows different data belonging to different
+                        data types to be stored in the same memory locations. One of the advantages of using a union is
+                        that it provides an efficient way of reusing the memory location, as only one of its members can
+                        be accessed at a time. A union is used in the same way we declare and use a structure. The
+                        difference lies just in the way memory is allocated to their members.</p><br>
+                    <br>
+                    <h3>Defining a Union</h3><br>
+                    <p>We use the union keyword to define the union.
+                        <br>
+                        The syntax for defining a union is,
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        union union_name
+        {
+           //union_elements
+        } structure_variable;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Here’s one example of how a union is defined and used in main as a user defined data type.</p>
+                    <br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            union Books
+            {
+                char title[20];
+                char author[100];
+                float price;
+                int pages;
+            };
+             
+            int main()
+            {
+                union Books book1;
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Initialising and accessing union elements</h3><br>
+                    <p>Different from how we used to initialise a struct in one single statement, union elements are
+                        initialised one at a time.</p><br>
+                    <p>And also, one can access only one union element at a time. Altering one union element disturbs
+                        the value stored in other union elements.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+             
+            union Books
+            {
+                char title[20];
+                char author[100];
+                float price;
+                int pages;
+            };
+             
+            int main()
+            {
+                union Books book1;
+                strcpy(book1.title, "C Programming");
+                printf("%s\n", book1.title);
+             
+                strcpy(book1.author, "ABC");
+                printf("%s\n", book1.author);
+             
+                book1.price = 123.99;
+                printf("%f\n", book1.price);
+             
+                book1.pages = 300;
+                printf("%d\n", book1.pages);
+             
+                return 0;
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Output:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        C Programming
+        ABC
+        123.989998
+        300
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>How are Structs and Unions similar?</h3><br>
+                    <li>Structures and unions, both are user-defined data types used to store data of different types.
+                    </li>
+                    <li>The members of structures and unions can be objects of any type, including even other structures
+                        and unions or arrays.</li>
+                    <li>A union or a structure can be passed by value to functions and can be returned by value by
+                        functions.</li>
+                    <li>‘.’ operator is used for accessing both union and structure members.</li><br>
+                    <h3>How are Structs and Unions different?</h3><br>
+                    <li>The keyword union is used to define a union and a keyword struct is used to define the structure
+                    </li>
+                    <li>Within a structure, each member is allocated a unique storage area of location whereas memory
+                        allocated to a union is shared by individual members of the union.</li>
+                    <li>Individual members can be accessed at a time in structures whereas only one member can be
+                        accessed at a time in unions.</li>
+                    <li>Changing the value of one of the members of a structure will not affect the values of the other
+                        members of the structure, whereas changing the value of one of the members of a union will
+                        affect the values of other members in a union.</li>
+                    <li>Several members of a structure can be initialised at once, whereas only one member can be
+                        initialised in the union.</li>
+                    <br>
+                    <br>
+                </div>
+                <div class="notes" id="div36" style="display: none;">
+                    <h2>C Typedef</h2><br>
+                    <p>In C programming, a typedef declaration is used to create shorter and more meaningful and
+                        convenient to use names for keywords already defined by C like int, float, and char.</p>
+                    <br>
+                    <br>
+                    <h3>What is a typedef in C?</h3><br>
+                    <p>A typedef is a keyword that is used to assign alternative names to existing datatypes. We use
+                        typedef with user defined datatypes, when the names of the datatypes become slightly complicated
+                        to use in programs. Typedefs can be used to:</p><br>
+                    <li>Make a more complex definition reusable by abbreviating it to something less complex.</li>
+                    <li>Provide more clarity to the code</li>
+                    <li>Make it easier to change the underlying data types that we use</li>
+                    <li>Make the code more clear and easier to modify.</li><br>
+                    <p>Following is the syntax for using typedef,</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        typedef &lt;previous_name&gt; &lt;alias_name&gt;
+    </code>
+    </pre><br>
+                    <br>
+                    <p>For example, we would often want to create a variable of type unsigned long. But, then it becomes
+                        a complex task if that need to declare an unsigned long comes for multiple variables. To
+                        overcome this problem, we use a typedef keyword.
+                        <br>
+                        Here is how we use it.
+                    </p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+            typedef unsigned long ul;
+            
+            int main()
+            {
+                ul a;
+            }
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Applications of Typedef</h3><br>
+                    <p>There are various applications of typedef. Listed below are a few applications of typedef </p>
+                    <br>
+                    <li>The typedef can be used with arrays, primarily multi-dimensional arrays. It increase the
+                        readability of the program.</li>
+                    <li>Typedefs can also be implemented for defining a user-defined data type like structs or unions
+                        with a specific name and type.
+                    </li><br>
+                    <p>Here’s how we use typedefs for defining a struct in C.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        typedef struct
+        {
+             structure element1;
+             structure element2;
+             structure element3;
+        } name_of_type 
+    </code>
+    </pre><br>
+                    <br>
+                    <p>typedef can be used for providing a pseudo name to pointer variables as well.</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        typedef int *ptr;
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Advantages of Typedef</h3><br>
+                    <li>Typedef, as mentioned, increases the readability of the code. If we are using structure or
+                        function pointer or long keywords repeatedly in our code, then using typedefs increases the
+                        readability of code</li>
+                    <li>With the help of typedef, we can use the same name for different applications even in different
+                        scopes.</li>
+                    <li>In the case of structure, if we use the typedef then we do not require to write struct keyword
+                        at the time of variable declaration.</li>
+                    <li>Typedef increases the portability of the code.</li><br>
+                    <br>
+                </div>
+                <div class="notes" id="div37" style="display: none;">
+                    <h2>File Handling Basics</h2><br>
+                    <p>A large program deployed for heavy applications cannot function without files, since we can get
+                        input from them as well as print output from them very easily. We can also save a lot of program
+                        space by accessing the file's data only when needed, making the program more efficient and
+                        faster.</p><br>
+                    <br>
+                    <h3>Why do we need to handle files in C?</h3><br>
+                    <li>Files are used to store content hence reducing the actual program's size.</li>
+                    <li>We can read or access data from files. </li>
+                    <li>The data in files remain stored even after the program's execution is terminated</li><br>
+                    <p>Files are stored in non-volatile memory. To understand what a non-volatile memory is and how it
+                        is better in terms of storing things for longer, we have to see the differences between volatile
+                        and non-volatile memory.</p><br>
+                    <table>
+                        <tr>
+                            <th>VOLATILE MEMORY</th>
+                            <th>NON-VOLATILE MEMORY</th>
+                        </tr>
+                        <TR>
+                            <td>The data can only remain in the system while the computer’s power is on.</td>
+                            <td>The data remains in the program even after the computer’s power is off. It gets
+                                retrieved after the system gets on again.</td>
+                        </TR>
+                        <tr>
+                            <td>Volatile memory can only hold information when there is a constant power supply.</td>
+                            <td>Non volatile memory can also hold information even in case of non constant power supply.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data gets held for a short period in case of volatile memory.</td>
+                            <td>Data gets held for a longer term in case of non-volatile memory.</td>
+                        </tr>
+                        <tr>
+                            <td>RAM is an example</td>
+                            <td>Hard Disk is an example.</td>
+                        </tr>
+                    </table><br>
+                    <br>
+                    <h3>What are the different type of files?</h3><br>
+                    <p>There are two types of files:</p><br>
+                    <li><b>Binary files</b></li><br>
+                    <p>Binary files store data in 01 i.e., binary format. They are not directly readable. In order to
+                        read binary files, you will need software or an application. An example of binary file is a .bin
+                        file.</p><br>
+                    <li><b>Text Files</b></li><br>
+                    <p>Text files store data in a simple text format. They are directly readable and no external
+                        software is required to access them. An example of a text file is a .txt file.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div38" style="display: none;">
+                    <h2>Operations on Files</h2><br>
+                    <p>There are basically four operations we can perform on files in C:</p><br>
+                    <li><b>Creating a File:</b></li><br>
+                    <p>We can create a file using C language, in any directory, without even leaving our compiler. We
+                        can select the name or type we want our file to have, along with its location.</p><br>
+                    <br>
+                    <li><b>Opening a File:</b></li><br>
+                    <p>We can open an existing file and create a new file and open it using our program. We can perform
+                        different operations on a file after it has been opened.</p><br>
+                    <br>
+                    <li><b>Closing a File:</b></li><br>
+                    <p>When we are done with the file, meaning that we have performed whatever we want to perform on our
+                        file, we can close the file using the close function.</p><br>
+                    <br>
+                    <li><b>Read/Write to a file:</b></li><br>
+                    <p>After opening a file, we can access its contents and read, write, or update them.</p><br>
+                    <br>
+                </div>
+                <div class="notes" id="div39" style="display: none;">
+                    <h2>Files I/O</h2><br>
+                    <p>The first and foremost thing we should know when working with files in C is that we have to
+                        declare a pointer of the file type to work with files. The syntax for declaring a pointer of
+                        file type is</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        FILE *ptr;
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Modes</h3><br>
+                    <p>Functions and their modes of declarations are two important factors of file handling. We have to
+                        learn about different modes used along with these functions as a parameter. The following are
+                        the modes:</p><br>
+                    <li>r: opens a file for reading.</li>
+                    <li>w: opens a file for writing. It can also create a new file.</li>
+                    <li>a: opens a file for appending.</li>
+                    <li>r+: opens a file for both reading and writing but cannot create a new file.</li>
+                    <li>w+: opens a file for both reading and writing.</li><br>
+                    <p>There are many other modes, but these are the basic and most used ones.</p><br>
+                    <br>
+                    <h3>Closing a file</h3><br>
+                    <p>When working with C, closing open files is an essential step. A programmer often makes a mistake
+                        of not closing an open file. This becomes crucila because files do not automatically get closed
+                        after a program uses them. The closing has to be done manually.
+                        <br>
+                        To close a file, we have to use the fclose() function. We only need to pass the pointer as a
+                        parameter to the function.
+                    </p><br>
+                    <h3>Syntax:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        fclose(ptr);
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Reading a file</h3><br>
+                    <p>Reading from a file is as easy as reading any other stuff as an input in C. We just use a file
+                        version of scanf(). In order to read from a file, we use the function fscanf(). Like scanf()
+                        used to get input from the keyboard, it gets its input from a file and prints it onto the
+                        screen.
+                        <br>
+                        We have to send the file pointer as an argument for the program to be able to read it. The file
+                        has to be opened in r mode, i.e., read mode, to work properly for fscanf().
+                    </p><br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                FILE *ptr;
+                ptr = fopen("example.txt", "r");
+                char str[128];
+                fscanf(ptr, "%s", str);
+                printf("%s", str);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>The file example.txt had “Welcome_To_Coding Nation!” as its content, hence the output:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Welcome_To_Coding Nation!
+    </code>
+    </pre><br>
+                    <br>
+                    <h3>Writing to a file</h3><br>
+                    <p>Writing to a file is as easy as printing any other stuff in C. We just use a file version of
+                        printf(). In order to write to a file, we use the function fprintf(). For printing text inside
+                        the file, we use fprintf() as we did for printing text on the screen using printf(). We have to
+                        send the file pointer as an argument for the program to be able to print it into the file. The
+                        file has to be opened in w mode, i.e. write mode, to be able to write in the file properly.
+                        <br>
+                        fprintf() takes the pointer to the file as one of the arguments along with the text to be
+                        written.
+                    </p><br>
+                    <h3>Example:</h3><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        #include &lt;stdio.h&gt;
+ 
+            int main()
+            {
+                FILE *ptr;
+                ptr = fopen("example.txt", "w");
+                char str[128] = "Hello World!";
+                fprintf(ptr, "%s", str);
+            }            
+    </code>
+    </pre><br>
+                    <br>
+                    <p>Output in the example.txt file:</p><br>
+                    <pre class="highlight">
+  <code class="language-js">
+        Hello World!
+    </code>
+    </pre><br>
+                    <br>
+                </div>
+
+                <button id="previous1">Previous</button>
+                <button id="next1">Next </button>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="../Scripts&xml/notes.js"></script>
+    <!--code highlighter-->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+    <script>
+        Prism.highlightAll();
+    </script>
+
+
+</body>
+
+</html>

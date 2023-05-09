@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- ad sense tag-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1733919132650092"
+    crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJL1SB5QM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-FBJL1SB5QM");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Coding-nation" />
+  <meta name="description"
+    content="CodingNation is a comprehensive code tutorial website, providing beginner to advanced coding tutorials, coding exercises, and coding challenges to help you learn to code and build your skills." />
+  <meta name="keywords"
+    content="Coding-nation, CodeNation, HTML tutorials, python tutorials, css tutorials, c tutorials,React js tutorials, javascript tutorials,java tutorials, php tutorials, code editor, online code editor, Codebot,chatbot,quizzes" />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
+  <meta name="author" content="coding-nation.com" />
+  <title>React Js | Coding-nation</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon.png" />
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Styles/Notes.css" />
+
+  <script>
+    function changeTitle(newTitle) {
+      document.title = newTitle;
+    }
+  </script>
+</head>
+
+<body>
+  <!--for whole page-->
+  <div class="contain">
+    <!--navigation bar-->
+    <header class="fixed-navbar">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../Main/index.html">CodingNation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="navbarNavLinks">
+              <li class="nav-item">
+                <a class="nav-link" href="../Main/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Courses</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Notes/Python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Notes/React.html">React JS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Notes/html.html">HTML</a>
+                  </li>
+                  <li><a class="dropdown-item" href="../Notes/css.html">CSS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="../Notes/jascri.html">JavaScript</a>
+                  </li>
+                  <li><a class="dropdown-item" href="../Notes/cpro.html">C</a></li>
+                  <li>
+                    <a class="dropdown-item" href="../Notes/java.html">Java</a>
+                  </li>
+                  <li><a class="dropdown-item" href="../Notes/php.html">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Practice</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../Quizzes/HTMLQuiz.html" target="_blank">HTML
+                      Quiz</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Quizzes/CSSQuiz.html" target="_blank">CSS
+                      Quiz</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Quizzes/JSQuiz.html" target="_blank">JavaScript
+                      Quiz</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Quizzes/CQuiz.html" target="_blank">C Quiz</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Quizzes/JAVAQuiz.html" target="_blank">Java
+                      Quiz</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Main/codebot.html" target="_blank">CodeBot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Main/Editor.html" target="_blank">Editor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Main/About.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--sidebar-->
+    <button class="topics" onclick="toggleSidebar()">Topics&#9660;</button>
+    <aside class="fixed-sidebar" id="myNav">
+      <div class="menu">
+        <h2>Introduction</h2>
+        <button id="ReactHome" class="single" data-index="0" onclick="changeTitle('React Home | CodingNation')">
+          React Home
+        </button>
+        <button id="reactSetup" class="single" data-index="1" onclick="changeTitle('react Setup | CodingNation')">
+          React Setup
+        </button>
+        <button id="ReactGettingStarted" class="single" data-index="2"
+          onclick="changeTitle('React Getting Started | CodingNation')">
+          React Getting Started
+        </button>
+        <button id="ReactES6" class="single" data-index="3" onclick="changeTitle('React ES6 | CodingNation')">
+          React ES6
+        </button>
+        <button id="ReactRenderHTML" class="single" data-index="4"
+          onclick="changeTitle('React Render HTML | CodingNation')">
+          React Render HTML
+        </button>
+        <button id="ReactJSX" class="single" data-index="5" onclick="changeTitle('React JSX | CodingNation')">
+          React JSX
+        </button>
+        <button id="ReactComponents" class="single" data-index="6"
+          onclick="changeTitle('React Components | CodingNation')">
+          React Components
+        </button>
+        <button id="ReactClass" class="single" data-index="7" onclick="changeTitle('React Class | CodingNation')">
+          React Class
+        </button>
+        <button id="ReactProps" class="single" data-index="8" onclick="changeTitle('React Props | CodingNation')">
+          React Props
+        </button>
+        <button id="ReactEvents" class="single" data-index="9" onclick="changeTitle('React Events | CodingNation')">
+          React Events
+        </button>
+        <button id="ReactConditional" class="single" data-index="10"
+          onclick="changeTitle('React Conditional | CodingNation')">
+          React Conditional
+        </button>
+        <button id="ReactLists" class="single" data-index="11" onclick="changeTitle('React Lists | CodingNation')">
+          React Lists
+        </button>
+        <button id="ReactForms" class="single" data-index="12" onclick="changeTitle('React Forms | CodingNation')">
+          React Forms
+        </button>
+        <button id="ReactRouter" class="single" data-index="13" onclick="changeTitle('React Router | CodingNation')">
+          React Router
+        </button>
+        <button id="ReactMemo" class="single" data-index="14" onclick="changeTitle('React Memo | CodingNation')">
+          React Memo
+        </button>
+        <button id="ReactCSSStyling" class="single" data-index="15"
+          onclick="changeTitle('React CSS Styling | CodingNation')">
+          React CSS Styling
+        </button>
+        <h2>React Hooks</h2>
+        <button id="WhatisaHook" class="single" data-index="16" onclick="changeTitle('What is a Hook? | CodingNation')">
+          What is a Hook?
+        </button>
+        <button id="ReactuseStateHook" class="single" data-index="17"
+          onclick="changeTitle('React useState Hook | CodingNation')">
+          React useState Hook
+        </button>
+        <button id="ReactuseEffectHook" class="single" data-index="18"
+          onclick="changeTitle('React useEffect Hook | CodingNation')">
+          React useEffect Hook
+        </button>
+        <button id="ReactuseContext" class="single" data-index="19"
+          onclick="changeTitle('React useContext | CodingNation')">
+          React useContext
+        </button>
+        <button id="ReactuseRef" class="single" data-index="20" onclick="changeTitle('React useRef | CodingNation')">
+          React useRef
+        </button>
+        <button id="ReactuseReducer" class="single" data-index="21"
+          onclick="changeTitle('React useReducer | CodingNation')">
+          React useReducer
+        </button>
+        <button id="ReactuseCallback" class="single" data-index="22"
+          onclick="changeTitle('React useCallback | CodingNation')">
+          React useCallback
+        </button>
+        <button id="ReactuseMemo" class="single" data-index="23" onclick="changeTitle('React useMemo | CodingNation')">
+          React useMemo
+        </button>
+      </div>
+    </aside>
+
+    <!--for content side-->
+    <main class="main-content">
+      <div class="content">
+        <!--previous and next buttons-->
+        <button id="previous">Previous</button>
+        <button id="next">Next</button>
+
+        <!--Notes-->
+        <div class="notes" id="div1">
+          <h2>React Home</h2>
+          <br />
+          <h3>What is ReactJS?</h3>
+          <br />
+          <p>
+            ReactJS is a <b>JavaScript</b> library used to build User
+            Interfaces(UI). It significantly decreases the code with it's
+            components, states i.e. hooks, etc.
+          </p>
+          <br />
+          <h3>Creating react app</h3>
+          <br />
+          <p>
+            Open your terminal in the directory you would like to create your
+            application. Run this command to create a React application named
+            my-react-app:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npx create-react-app my-react-app
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            OR, you can directly make your application without specifying a
+            name, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npx create-react-app .
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this case, all files will be kept in the current directory.
+            <br />
+            <b>Note:</b>When choosing folder name, make sure there are no
+            spaces or capital letters because of npm naming restrictions.
+            <br />
+            Once base application is created, if folder specified you just
+            have to enter the folder. You can use this command to enter:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        cd directory-name
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>Then just start up the application with this command:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npm start
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>and you are good to go!</p>
+          <br />
+          <h3>Hello World</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(&lt;h1&gt;Hello, world!&lt;/h1&gt;);
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this we are just putting &lt;h1&gt; tag in a div with id
+            'root'. That's it! In div with id 'root' everything will be
+            rendered. We can also change it from 'root' to something else, as
+            we are just getting an element and putting HTML in it.
+          </p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div2" style="display: none">
+          <h2>React Setup</h2>
+          <br />
+          <h3>Node.js</h3>
+          <br />
+          <p>You can download it from: https://nodejs.org/en/</p>
+          <br />
+          <h3>Creating our first react app</h3>
+          <br />
+          <p>
+            Open your terminal in the directory you would like to create your
+            application. Run this command to create a React application named
+            my-react-app:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npx create-react-app my-react-app
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            OR, you can directly make your application without specifying a
+            name, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npx create-react-app .
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this case, all files will be kept in the current directory.
+            <br />
+            <b>Note:</b> When choosing folder name, make sure there are no
+            spaces or capital letters because of npm naming restrictions.
+            <br />
+            Once base application is created, if folder specified you just
+            have to enter the folder. You can use this command to enter:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        cd directory-name
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>Then just start up the application with this command:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        npm start
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>and you are good to go!</p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div3" style="display: none">
+          <h2>React Getting Started</h2>
+          <br />
+          <h3>Run and Check</h3>
+          <br />
+          <p>
+            Run the React Application with this command:
+            <br />
+            A new browser window will pop up, if it does't then go on
+            http://localhost:3000/. Check if it is showing the same page:
+          </p>
+          <br />
+          <img
+            src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-getting-started/react-intro-page.png"
+            alt="" /><br />
+          <p>If it's the same page then you are good to go!</p>
+          <br />
+          <h3>Hello World</h3>
+          <br />
+          <p>
+            For this first you need to navigate to src/App.js, it will look
+            like:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        import logo from './logo.svg';
+        import './App.css';
+        
+        function App() {
+          return (
+            &lt;div className="App"
+              &lt;header className="App-header"&gt;
+                &lt;img src={logo} className="App-logo" alt="logo" /&gt;
+                &lt;p>
+                  Edit &lt;code&gt;src/App.js&lt;/code&gt;
+                  and save to reload.
+                &lt;/p&gt;
+                &lt;a
+                  className="App-link"
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                &gt;
+                  Learn React
+                &lt;/a&gt;
+              &lt;/header&gt;
+            &lt;/div&gt;
+          );
+        }
+        
+        export default App;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            Whatever you put in return will be rendered as HTML on the page,
+            you can change it like:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function App() {
+            return (
+              &lt;div className="App"&gt;
+                Hello World
+              &lt;/div&gt;
+            );
+          }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            <b>Note:</b>Remember to wrap whole return value in an HTML element
+            as you can't return multiple elements but you can return multiple
+            elements in one element.
+            <br />
+            Page would look like this:
+          </p>
+          <br />
+          <img
+            src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-getting-started/react-hello-world.png"
+            alt="" /><br />
+          <br />
+        </div>
+        <div class="notes" id="div4" style="display: none">
+          <h2>React ES6</h2>
+          <br />
+          <h3>What is ES6?</h3>
+          <br />
+          <p>
+            ES6 stands for ECMAScript 6. ECMAScript is a JavaScript standard
+            intended to ensure a common language across different browsers.
+            ES6 is the 6th version of ECMAScript.
+          </p>
+          <br />
+          <h3>Why ES6? / Features of ES6 / Upgrades in ES6</h3>
+          <br />
+          <p>
+            React uses ES6 and all of these new features will make your coding
+            experience in react much much better. You will be able to do
+            things with much more ease and in very less lines! Features like:
+          </p>
+          <br />
+          <li><b>Arrow Functions:</b></li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const hello = () => {
+            return "Hello World!";
+          }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>Or</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const hello = () => "Hello World!";
+    </code>
+    </pre>
+          <br />
+          <br />
+          <li>
+            <b>.map():</b>
+            <color>.map</color> can be used for alot of things, one of it's
+            use case is, we can make any number of cards through loop and just
+            put it in jsx, like this:
+          </li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const data = ['title1', 'title2', 'title3'];
+        let cards = data.map((item) => &lt;card&gt;{item}&lt;/card&gt;)
+    </code>
+    </pre>
+          <br />
+          <br />
+          <li><b>Destructuring:</b></li>
+          <br />
+          <p>Old way:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const languages = ['JS', 'Python', 'Java'];
+        const js = languages[0]
+        const python = languages[1]
+        const java = languages[2]
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>New way:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const languages = ['JS', 'Python', 'Java'];
+        const [ js, python, java ] = languages
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <li>
+            <b>Ternary Operator:</b> With this, you can write if/else
+            conditions in one line. It's syntax is fairly simple like this:
+          </li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        condition ? &lt;expression if true&gt; : &lt;expression if false&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Example:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        let loading = false;
+        const data = loading ? &lt;div&gt;Loading...&lt;/div&gt; : &lt;div&gt;Data&lt;/div&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <li><b>Spread Operator:</b></li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const languages = ['JS', 'Python', 'Java'];
+        const morelanguages = ['C', 'C++', 'C#']
+        
+        const allLanguages = [...languages, ...morelanguages]
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Output:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        ["JS","Python","Java","C","C++","C#"]
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>and many more like, classes, modules.</p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div5" style="display: none">
+          <h2>React Render HTML</h2>
+          <br />
+          <p>
+            React renders HTML to the web page by using a function called
+            <color>ReactDOM.render().</color>
+          </p>
+          <br />
+          <h3>ReactDOM.render()</h3>
+          <br />
+          <p>
+            This function takes two arguments, HTML content which you want to
+            show on page and HTML element where you want to put the HTML
+            content(first argument). But where will it find that element? It
+            will find it inside "index.html" located in "public" folder. There
+            you will notice a <color>div</color> with id "root". That is where
+            all this will be rendered!
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-render-html/id-root.png"
+            alt="" /><br />
+          <br />
+        </div>
+        <div class="notes" id="div6" style="display: none">
+          <h2>React JSX</h2>
+          <br />
+          <h3>What is JSX?</h3>
+          <br />
+          <p>
+            JSX stands for JavaScript XML. It is similar in appearance to
+            HTML, hence provides a way to easily write HTML in react.
+          </p>
+          <br />
+          <h3>Coding in JSX</h3>
+          <br />
+          <p>
+            Earlier we had to make an HTML element or append it into existing
+            ones with methods like
+            <color>createElement() / appendChild().</color>
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const elem = React.createElement('h1', {}, 'Hello World!');
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>Now we can just do it directly, like this:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const elem = &lt;h1&gt;Hello World!&lt;/h1&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>Expressions in JSX</h3>
+          <br />
+          <p>
+            You can write the expression in {}
+            <br />
+            You can write simple mathematical operations to variable to states
+            to complicated operations with ternary operators and it will
+            return the result, like:
+          </p>
+          <br />
+          <h4>Mathematical Operations:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const elem = &lt;h1&gt;React was released in {2010+3}&lt;/h1&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Variables/states:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const name = "CWH"
+        const elem = &lt;h1&gt;My name is {name}&lt;/h1&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Ternary Operators:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        const elem = &lt;h1&gt;Hello {name ? name : 'World'}&lt;/h1&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div7" style="display: none">
+          <h2>React Components</h2>
+          <br />
+          <p>There are two types of components:</p>
+          <br />
+          <li>Class Based Components</li>
+          <li>Function Based Components</li>
+          <br />
+          <h3>Class Based Components</h3>
+          <br />
+          <p>
+            Before making class based component we need to inherit functions
+            from <color>React.Component</color> and this can be done with
+            <color>extends,</color> like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        class Cat extends React.Component {
+            render() {
+              return &lt;h1&gt;Meow&lt;/h1&gt;;
+            }
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            it also requires a <color>render</color> method which returns
+            HTML.
+          </p>
+          <br />
+          <h3>Function Based Components</h3>
+          <br />
+          <p>
+            In function it's simpler, we just need to return the HTML, like
+            this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function Cat() {
+            return &lt;h1&gt;Meow&lt;/h1&gt;;
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            <b>Note:</b>Component's name must start with uppercase letter.
+          </p>
+          <br />
+          <h3>Rendering a Component</h3>
+          <br />
+          <p>
+            We made a component, now we want to render/use it. Syntax for
+            using a component is:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;ComponentName /&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>Components in Files</h3>
+          <br />
+          <p>
+            To have less mess inside main file(with all the components in the
+            same file) and to resuse components on different pages, we have to
+            make them separately. So that we can just import them in any file
+            and use them!
+            <br />
+            For that we will just make a new file called
+            <color>Cat.js</color>, make class or function based component
+            there and <color>export default</color> that class/function! Like
+            this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function Cat() {
+            return &lt;h1&gt;Meow&lt;/h1&gt;;
+          }
+          
+          export default Cat;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p><b>Note:</b> File name must start with uppercase letter.</p>
+          <br />
+          <h3>Props</h3>
+          <br />
+          <p>
+            As mentioned earlier, we can import the same component in
+            different files and use it, but maybe in different files some
+            changes in the component is needed. For that, we can use props!
+            Like this:
+          </p>
+          <br />
+          <h4>Component:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function Cat(props) {
+            return &lt;h1&gt;Meow's color is {props.color}&lt;/h1&gt;;
+        }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Main file:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;Cat color="purple" /&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div8" style="display: none">
+          <h2>React Class</h2>
+          <br />
+          <h3>Class Based Components</h3>
+          <br />
+          <p>
+            Before making class based component we need to inherit functions
+            from React.Component and this can be done with extends, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        class Cat extends React.Component {
+            render() {
+              return &lt;h1&gt; Meow&lt;/h1&gt; ;
+            }
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            it also requires a render method which returns HTML.
+            <br />
+            Note: Component's name must start with uppercase letter.
+          </p>
+          <br />
+          <h3>Component Constructor</h3>
+          <br />
+          <p>
+            Constructor gets called when the component is initiated. This is
+            where you initiate the component's properties. In React we have
+            states which update on page without reload. Constructor properties
+            are kept in state.
+            <br />
+            We also need to add super() statement, which executes the parent
+            component's constructor and component gets access to all the
+            functions of the parent component, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        class Cat extends React.Component {
+            constructor() {
+              super();
+              this.state = { color: "orange" };
+            }
+            render() {
+              return &lt;h1&gt;Meow's color is {this.state.color}&lt;/h1&gt;;
+            }
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div9" style="display: none">
+          <h2>React Props</h2>
+          <br />
+          <p>
+            Props are arguments passed to React components via HTML
+            attributes. Example:
+          </p>
+          <br />
+          <h4>Component:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function Cat(props) {
+            return &lt;h1&gt;Meow's color is {props.color}&lt;/h1&gt;;
+        }    
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Main file:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;Cat color="purple" /&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Output:</h4>
+          <br />
+          <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-props/react-props.png"
+            alt="" /><br />
+          <br />
+        </div>
+        <div class="notes" id="div10" style="display: none">
+          <h2>React Events</h2>
+          <br />
+          <p>
+            If you have coded even a little bit in javascript, you know the
+            importance of events.
+          </p>
+          <br />
+          <h3>Events</h3>
+          <br />
+          <p>
+            Every HTML attribute in React is written in camelCase syntax.
+            Event is also an attribute. Hence, written in camelCase.
+            <br />
+            As we learnt variables, states, javascript operations are written
+            in curly braces {}, same is true with React event handlers too!
+            Like this: <color>onClick={show}</color>
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;button onClick={show}&gt;Show&lt;/button&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>Arguments in events</h3>
+          <br />
+          <p>
+            We can't pass arguments just like that, it will give syntax error.
+            First, we need to put the whole function in arrow function, like
+            this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;button onClick={  ()=>show('true')}&gt;Show&lt;/button&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>React Event Object</h3>
+          <br />
+          <p>Event handler can be provided to the function like this:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        &lt;button onClick={  (event)=>show('true', event)  }&gt;Show&lt;/button&gt;
+    </code> 
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div11" style="display: none">
+          <h2>React Conditional</h2>
+          <br />
+          <p>
+            One of the best thing in React is in React we can conditionally
+            render elements/components!
+          </p>
+          <br />
+          <h3>&& Operator</h3>
+          <br />
+          <p>This is one of the way to conditionally render:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function App() {
+
+            const loading = true;
+          
+            return (
+              &lt;div className="App"&gt;
+                {loading && &lt;LoadingGif /&gt;}
+                {!loading && &lt;Content /&gt;}
+              &lt;/div&gt;
+            );
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            Here we are saying if loading is <color>true</color> then show
+            <color>&lt;LoadingGif /&gt;</color> and in second line, we said
+            <color>!loading</color> so that returns <color>false</color> in
+            this case so <color>&lt;Content /&gt;</color> will not load and
+            first statement is true so
+            <color>&lt;LoadingGif /&gt;</color> will load!
+          </p>
+          <br />
+          <h3>Ternary Operator</h3>
+          <br />
+          <p>
+            What we were doing in previous example was basically just
+            <color>if</color> statement. We don't have <color>else</color> so
+            we were using <color>if</color> as <color>else</color> too. Let's
+            learn how to do both(if/else)!
+            <br />
+            Same thing can be done like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function App() {
+
+            const loading = true;
+          
+            return (
+              &lt;div className="App"&gt;
+                {loading ? &lt;LoadingGif /&gt; : &lt;Content /&gt;}
+              &lt;/div&gt;
+            );
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            We are saying if loading is true then show
+            <color>&lt;LoadingGif /&gt;</color>, else show
+            <color>&lt;Content /&gt;</color>, simple!
+          </p>
+          <br />
+          <h4>Syntax:</h4>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        condition ? true : false
+    </code> 
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div12" style="display: none">
+          <h2>React Lists</h2>
+          <br />
+          <p>In React we render lists with loop</p>
+          <br />
+          <h3>
+            <color>map()</color>
+          </h3>
+          <br />
+          <p>An example of map:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function App() {
+            const languages = ['JS', 'Python', 'Java', 'C', 'C++', 'C#'];
+          
+            return (
+              &lt;div className="App"&gt;
+                {languages.map((language) => {
+                  return &lt;div&gt;I love {language}&lt;/div&gt;
+                })}
+              &lt;/div&gt;
+            );
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Output:</h4>
+          <br />
+          <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-lists/js-map-1.png"
+            alt="" /><br />
+          <h3>Keys</h3>
+          <br />
+          <p>
+            With keys React keep record of elements. This ensures that if an
+            item is updated or removed, only that item will be re-rendered
+            instead of the entire list. Example:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        function App() {
+
+            const languagesDict = [
+              { id: 1, language: 'JS' },
+              { id: 2, language: 'Python' },
+              { id: 3, language: 'Java' },
+              { id: 4, language: 'C' },
+              { id: 5, language: 'C++' },
+              { id: 6, language: 'C#' }
+            ];
+          
+            return (
+              &lt;div className="App"&gt;
+                {languagesDict.map((language) => {
+                  return &lt;div key={language.id}&gt;
+                    {language.id}. {language.language}
+                  &lt;/div&gt;
+                })}
+              &lt;/div&gt;
+            );
+          }
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h4>Output:</h4>
+          <br />
+          <img src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-lists/js-map-key.png"
+            alt="" /><br />
+          <br />
+        </div>
+        <div class="notes" id="div13" style="display: none">
+          <h2>React Forms</h2>
+          <br />
+          <p>
+            React Forms are mostly like normal HTML forms, except we use
+            <color>state</color> in this to handle inputs.
+          </p>
+          <br />
+          <h3>Handling Forms</h3>
+          <br />
+          <p>
+            In React all the data is handled by component and stored in
+            component state. We can change state with event handlers in the
+            <color>onChange</color> attribute, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        import { useState } from 'react';
+
+        function Form() {
+          const [email, setEmail] = useState('');
+        
+          return (
+            &lt;form&gt;
+              &lt;label&gt;
+                Enter your email: &lt;input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /&gt;
+              &lt;/label&gt;
+            &lt;/form&gt;
+          )
+        }
+        
+        export default Form; 
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>Submitting form</h3>
+          <br />
+          <p>
+            We can submit form with <color>onSubmit</color> attribute for the
+            <color>&lt;form&gt;</color>
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+        import { useState } from 'react';
+
+        function Form() {
+          const [email, setEmail] = useState('');
+        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            alert(`Your email is: ${email}`)
+          }
+        
+          return (
+            &lt;form onSubmit={handleSubmit}&gt;
+              &lt;label&gt;
+                Enter your email: &lt;input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /&gt;
+              &lt;/label&gt;
+              &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+          )
+        }
+        
+        export default Form;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <h3>Multiple Inputs</h3>
+          <br />
+          <p>
+            We don't have to make multiple states for multiple inputs, we can
+            save all values in one, like this:
+          </p>
+          br>
+          <pre class="highlight">
+    <code class="language-JS">
+        import { useState } from 'react';
+
+        function Form() {
+          const [data, setData] = useState({});
+        
+          const handleChange = (e)=>{
+            setData({...data, [e.target.name]: e.target.value})
+          }
+        
+          const handleSubmit = (e) => {
+            e.preventDefault();
+            alert(`Your email is: ${data.email} and your name is: ${data.name}`)
+          }
+        
+          return (
+            &lt;form onSubmit={handleSubmit}&gt;
+              &lt;label&gt;
+                Enter your email: &lt;input type="email" name='email' value={data.email} onChange={handleChange} /&gt;
+              &lt;/label&gt;
+              &lt;label&gt;
+                Enter your name: &lt;input type="text" name='name' value={data.name} onChange={handleChange} /&gt;
+              &lt;/label&gt;
+              &lt;input type="submit" /&gt;
+            &lt;/form&gt;
+          )
+        }
+        
+        export default Form;
+    </code> 
+    </pre>
+          <br />
+          <br />
+          <p>
+            Here in <color>handleChange</color> we used
+            <b>Spread Operators</b>. We are basically saying keep whole data
+            as it was, just change this name's value. Then it is saved as an
+            object so we are getting that by <color>data.email</color> and
+            <color>data.name.</color>
+          </p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div14" style="display: none">
+          <h2>React Router</h2>
+          <br />
+          <p>
+            React router is used for page routing as React App doesn't include
+            it as default.
+          </p>
+          <br />
+          <h3>Add React Router</h3>
+          <br />
+          <p>To install React router, run this in your terminal:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      npm i -D react-router-dom
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Creating Multiple Routes</h3>
+          <br />
+          <p>
+            To do this first we need to create multiple files and to keep code
+            clean, we will make a folder and make all the pages there, hence
+            we will create a folder named <color>pages</color> in
+            <color>src</color>
+          </p>
+          <br />
+          <h3>Folder Structure:</h3>
+          <br />
+          <p>
+            <color>src/pages/:</color>
+          </p>
+          <br />
+          <li>Home.js</li>
+          <li>Blogs.js</li>
+          <li>Contact.js</li>
+          <li>Nopage.js</li>
+          <br />
+          <h3>Usage</h3>
+          <br />
+          <p>
+            Now we will make routes in <color>src/index.js</color>, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import { BrowserRouter, Routes, Route } from "react-router-dom";
+      import reportWebVitals from './reportWebVitals';
+      import Home from "./pages/Home";
+      import Blogs from "./pages/Blogs";
+      import Contact from "./pages/Contact";
+      import NoPage from "./pages/NoPage";
+      
+      export default function App() {
+        return (
+          &lt;BrowserRouter&gt;
+            &lt;Routes&gt;
+              &lt;Route index element={&lt;Home /&gt;} /&gt;
+              &lt;Route path="/blogs" element={&lt;Blogs /&gt;} /&gt;
+              &lt;Route path="/contact" element={&lt;Contact /&gt;} /&gt;
+              &lt;Route path="*" element={&lt;NoPage /&gt;} /&gt;
+            &lt;/Routes&gt;
+          &lt;/BrowserRouter&gt;
+        );
+      }
+      
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(
+        &lt;React.StrictMode&gt;
+          &lt;App /&gt;
+        &lt;/React.StrictMode&gt;
+      );
+      
+      reportWebVitals();
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Home.js</h3>
+          <br />
+          <p>
+            Make all the Navigation links using &lt;Link&gt; tag, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { Link } from "react-router-dom";
+
+      const Home = () => {
+          return (
+              &lt;&gt;
+                  &lt;nav&gt;
+                      &lt;ul&gt;
+                          &lt;li&gt;
+                              &lt;Link to="/"&gt;Home&lt;/Link&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;
+                              &lt;Link to="/blogs"&gt;Blogs&lt;/Link&gt;
+                          &lt;/li&gt;
+                          &lt;li&gt;
+                              &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+                          &lt;/li&gt;
+                      &lt;/ul&gt;
+                  &lt;/nav&gt;
+              &lt;/&gt;
+          )
+      };
+      
+      export default Home;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Blogs.js</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const Blogs = () => {
+        return &lt;h1&gt;Blogs&lt;/h1&gt; ;
+    };
+    
+    export default Blogs;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>COntact.js</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const Contact = () => {
+        return &lt;h1&gt;Contact&lt;/h1&gt; ;
+    };
+    
+    export default Contact;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Nopage.js</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const NoPage = () => {
+        return &lt;h1&gt;404&lt;/h1&gt; ;
+    };
+    
+    export default Nopage;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            This is made for any route that doesn't exist. To show
+            <color>404</color> error there!
+          </p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div15" style="display: none">
+          <h2>React Memo</h2>
+          <br />
+          <p>
+            By default React re-renders components again and again. Using memo
+            will stop that if props have not changed.
+          </p>
+          <br />
+          <h3>Problem</h3>
+          <br />
+          <p>
+            When we make components like Navbar, Footer, they re-render even
+            if there is no change in them. To test this you can make a Navbar
+            component and import it. Put a <color>console.log</color>, if it
+            is logging, it means navbar is re-rendering.
+          </p>
+          <br />
+          <h3>Solution</h3>
+          <br />
+          <p>
+            So what's the solution for this? Because this re-rendering is just
+            wastage of resources.
+            <br />
+            <color>memo</color> is a simple solution for this! What memo does
+            is, it just monitors if <color>props</color> have changed, if they
+            have it re-renders, if they haven't it doesn't render again.
+            <br />
+            <color>props</color>is an object and javascript is very fast in
+            comparing objects as it doesn't compare the whole object, it just
+            checks the address!
+          </p>
+          <br />
+          <h3>Importing memo</h3>
+          <br />
+          <p>
+            To use it, first we need to import <color>memo</color>. It can be
+            imported like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { memo } from "react";
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Using memo</h3>
+          <br />
+          <p>
+            Everything remains the same, just when you are exporting the
+            Navbar, you have to wrap it in <color>memo</color>, like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      export default memo(Navbar);
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div16" style="display: none">
+          <h2>React CSS Styling</h2>
+          <br />
+          <p>There are three ways to style in React:</p>
+          <br />
+          <li>Inline Styling</li>
+          <li>CSS Stylesheets</li>
+          <li>CSS Modules</li>
+          <br />
+          <h3>Inline Styling</h3>
+          <br />
+          <p>
+            To inline style an element, we can make a Javascript Object, like
+            this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const App = () => {
+        return (
+          &lt;&gt;
+            &lt;h1 style={{ backgroundColor: "purple" }}&gt;Coding-nation&lt;/h1&gt;
+          &lt;/&gt;
+        );
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this first curly brace is to write javascript and second is to
+            make a javascript object. We can also write it like:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const App = () => {
+
+        const h1Style = {
+          backgroundColor: 'purple',
+          color: 'white'
+        }
+      
+        return (
+          &lt;&gt;
+            &lt;h1 style={h1Style}&gt;Coding-nation&lt;/h1&gt;
+          &lt;/&gt;
+        );
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            <b>Note:</b>CSS property name must be camelCase. background-color
+            would be backgroundColor
+          </p>
+          <br />
+          <h3>CSS Stylesheets</h3>
+          <br />
+          <p>
+            You can save the whole CSS in a separate file with file extension
+            .css and import it in your application.
+            <br />
+            <color>App.css</color>
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      body {
+        background-color: 'purple';
+        color: 'white';
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            Here we are writing CSS, so we don't need to make JS Object or do
+            it in camelCase.
+            <br />
+            <color>Index.js</color>
+            <br />
+            Just import it like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import './App.css'
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>CSS Modules</h3>
+          <br />
+          <p>
+            In this you don't have to worry about name conflicts as it is
+            component specific. The CSS is available only for the file in
+            which it is imported.
+            <br />
+            Make a file with extension .module.css, example: index.module.css
+            <br />
+            Make a new file index.module.css and insert some CSS into it, like
+            this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      .button {
+        background-color: 'purple';
+        color: 'white';
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>Import it in component like this:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import styles from './index.module.css'; 
+
+      const Home = () => {
+          return (
+              &lt;button className={styles.button}&gt;Click me!&lt;/button&gt;
+          )
+      };
+      
+      export default Home;
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div17" style="display: none">
+          <h2>What is a Hook?</h2>
+          <br />
+          <p>
+            Hooks were added to React in version 16.8. Hooks let you use state
+            and other React features without writing a class.
+            <br />
+            Although states have largely replaced classes in React, there is
+            no plan of removing classes from React.
+          </p>
+          <br />
+          <h4>Things you need to keep in mind while using hooks:</h4>
+          <br />
+          <li>You must import hook first</li>
+          <li>You must import it from react</li>
+          <li>
+            Hooks can only be called in React Function Components, meaning:
+          </li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      // import statements
+      // Can't call here
+      const Blogs = () => {
+          // Can call here
+          return &lt;h1&gt;Blogs&lt;/h1&gt;;
+      };
+      
+      export default Blogs;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <li>Hooks cannot be conditional</li>
+          <li>Hooks cannot work in React Class Components</li>
+          <li>
+            Hooks can only be called at the top level of a component, meaning
+            it can't be called from inside a block, i.e. {}. So, can't be
+            called inside if, loops or any block, example:
+          </li>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const Blogs = () => {
+        // Can call here
+        if (true){
+            // Can't call here
+        }
+        return &lt;h1&gt;Blogs&lt;/h1&gt;;
+    };
+    
+    export default Blogs;
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div18" style="display: none">
+          <h2>React UseState Hook</h2>
+          <br />
+          <p>
+            <color>useState</color> is a Hook that lets you add React state to
+            function components.
+          </p>
+          <br />
+          <h3>Importing <color>UseState</color>
+          </h3>
+          <br />
+          <p>
+            To use useState, first we need to import useState and initialize
+            it, you can import it from react like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Initializing <color>use State</color>
+          </h3>
+          <br />
+          <p>You can initialize state like this:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+
+      const App = () => {
+          const [name, setName] = useState('')
+      };
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            useState takes initial state as argument and gives a state and a
+            function(setName in this case) to update that state as we can't
+            directly change/update a state. Also, these state names are just
+            like variables, hence you can name them anything you like.
+          </p>
+          <br />
+          <h3>Reading a state</h3>
+          <br />
+          <p>
+            As mentioned earlier, it returns a state and a function to
+            change/update that state. Hence, everything is stored in name. We
+            can read states just like variables:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+
+      const App = () => {
+          const [name, setName] = useState('')
+      
+          return &lt;h1&gt;My name is {name}&lt;/h1&gt;
+      };
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Updating a state</h3>
+          <br />
+          <p>
+            To update state we use the function it returns to update state, in
+            this case: <color>setName</color>. State can be updated like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+
+      const App = () => {
+          const [name, setName] = useState('')
+          setName('Lovish')
+      
+          return &lt;h1&gt;My name is {name}&lt;/h1&gt;
+      };
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>What can state hold?</h3>
+          <br />
+          <p>
+            Like normal variables, state can hold any datatype like strings,
+            numbers, booleans, arrays, objects, objects in arrays, arrays in
+            objects. For example:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+
+      const App = () => {
+          const [data, setData] = useState({
+              name: 'Lovish',
+              age: 21
+          })
+      
+          return &lt;h1&gt;My name is {data.name} and my age is {data.age}&lt;/h1&gt;
+      };
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Updating Objects and Arrays in State</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState } from "react";
+
+      const App = () => {
+        const [data, setData] = useState({
+          name: 'lovish',
+          age: 21
+        })
+      
+        return &lt;&gt;
+          &lt;h1&gt;My name is {data.name} and my age is {data.age}&lt;/h1&gt;
+          &lt;button onClick={() => setData({ ...data, name: 'CWH' })}>Click Me&lt;/button>&lt;/&gt;
+      };
+      
+      export default App;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <img
+            src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-usestate-hook/object-state-change.mp4"
+            alt="" /><br />
+          <br />
+        </div>
+        <div class="notes" id="div19" style="display: none">
+          <h2>React useEffect Hook</h2>
+          <br />
+          <p>
+            The <color>useEffect</color> Hook allows you to perform side
+            effects in your components.
+            <br />
+            <color>useEffect</color> accepts two arguments. The second one is
+            optional.
+          </p>
+          <br />
+          <h3>Runs on every render:</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState, useEffect } from "react";
+
+      function Home() {
+        const [count, setCount] = useState(0);
+      
+        useEffect(() => {
+          setTimeout(() => {
+            setCount((count) => count + 1);
+          }, 1000);
+        });
+      
+        return &lt;h1&gt;I have rendered {count} times!&lt;/h1&gt;;
+      }
+      
+      export default Home;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Runs on first render:</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState, useEffect } from "react";
+
+      function Home() {
+        const [count, setCount] = useState(0);
+      
+        useEffect(() => {
+          setTimeout(() => {
+            setCount((count) => count + 1);
+          }, 1000);
+        }, []);
+      
+        return &lt;h1&gt;I have rendered {count} times!&lt;/h1&gt;;
+      }
+      
+      export default Home;
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Runs when data changes:</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState, useEffect } from "react";
+
+      function Home() {
+        const [count, setCount] = useState(0);
+        const [data, setData] = useState('');
+      
+        const handleChange = (e) => {
+          setData(e.target.value)
+        }
+      
+        useEffect(() => {
+          setCount((count) => count + 1);
+        }, [data]);
+      
+        return (
+          &lt;&gt;
+            &lt;input onChange={handleChange} value={data} /&gt;
+            &lt;p&gt;{count}&lt;/p&gt;
+          &lt;/&gt;
+        );
+      }
+      
+      export default Home;
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div20" style="display: none">
+          <h2>React useContext</h2>
+          <br />
+          <p>
+            <color>useState</color> is a Hook that lets you add React state to
+            function components. <color>useContext</color> helps to manage
+            states globally, i.e. between components.
+          </p>
+          <br />
+          <h3>Problem</h3>
+          <br />
+          <p>
+            Suppose there is a button in
+            <color>&lt;Navbar /&gt;</color> Component which affects something
+            in <color>&lt;Home /&gt;</color> Component. Problems:
+            <br />
+            In this case, state can't be held in
+            <color>&lt;Navbar /&gt;</color> or <color>&lt;Home /&gt;</color>,
+            it will be in <color>App.js</color>
+            <br />
+            To access it, we have to pass it like a prop to the components,
+            and if the component is within 3-4 components, we have to pass it
+            to everyone as shown in image below:
+          </p>
+          <br />
+          <img
+            src="https://cwh-full-next-space.fra1.digitaloceanspaces.com/tutorial/react-usecontext/react-component-hierarchy.png"
+            alt="" /><br />
+          <h3>Solution - Create Context</h3>
+          <br />
+          <p>
+            It's a hook so first we need to import it from react and
+            initialize it! To do this, write:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { createContext } from "react";
+
+      const StateContext = createContext()
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>Context Provider</h3>
+          <br />
+          <p>
+            Now we need to wrap the component tree that need the state Context
+            in a Provider. It's like the Provider will provide the state to
+            every component in that tree which is wrapped in Provider.
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      function App() {
+        const [state, setState] = useState('true');
+      
+        return (
+          &lt;StateContext.Provider value={state}&gt;
+            &lt;h1&gt;{`Hi! My state is ${state}!`}&lt;/h1&gt;
+            &lt;Home state={state} /&gt;
+          &lt;/StateContext.Provider&gt;
+        );
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+          <h3>useContext hook</h3>
+          <br />
+          <p>First we need to import it:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState, createContext, useContext } from "react";
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>To access useContext, you can do something like this:</p>
+          <br />
+          <p>First we need to import it:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      function Home() {
+        const state = useContext(StateContext);
+      
+        return (
+          &lt;&gt;
+            &lt;h2&gt;{`Hii! My state is ${state}! `}&lt;/h2&gt;
+          &lt;/&gt;
+        );
+      }
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div21" style="display: none">
+          <h2>React useRef</h2>
+          <br />
+          <p>
+            <color>useRef</color> keeps the value stored between renders.
+            <br />
+            In this, value changed doesn't cause a re-render.
+            <br />
+            It can also be used to access a DOM element directly.
+          </p>
+          <br />
+          <h3>Doesn't cause re-render</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useState, useRef } from "react";
+      import ReactDOM from "react-dom/client";
+      
+      function App() {
+        const [stateValue, setStateValue] = useState("");
+        const refValue = useRef("");
+      
+        return (
+          &lt;&gt;
+      
+            &lt;h1&gt;Will cause a re-render:&lt;/h1&gt;
+            &lt;button onClick={()=>{setStateValue(Math.random())}}>state&lt;/button&gt; : {stateValue}
+            
+            &lt;h1&gt;Will change but won't cause a re-render:&lt;/h1&gt;
+            &lt;button onClick={()=>{refValue.current=Math.random()}}>ref&lt;/button&gt; : {refValue.current}
+      
+          &lt;/&gt;
+        );
+      }
+      
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(&lt;App /&gt;);
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this, if you click on <color>state</color> button,
+            <color>state</color> will update and it will re-render, whereas if
+            you click on <color>ref</color>, nothing visible will happen, i.e.
+            <color>ref</color> will change but it won't re-render. To verify
+            this, you can again click on <color>state</color>, it will again
+            update and re-render but this time <color>ref</color> has some
+            value stored, so that will display.
+          </p>
+          <br />
+          <h3>Accessing DOM elements with ref</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useRef } from "react";
+      import ReactDOM from "react-dom/client";
+      
+      function App() {
+        const inputElement = useRef();
+      
+        const focusInput = () => {
+          inputElement.current.focus();
+        };
+      
+        return (
+          &lt;&gt;
+            &lt;input type="text" ref={inputElement} /&gt;
+            &lt;button onClick={focusInput}>Focus Input&lt;/button&gt;
+          &lt;/&gt;
+        );
+      }
+      
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(&lt;App /&gt;);
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            In this, we initialized a useRef. In jsx, we used an attribute
+            called ref to store reference, once we have reference then we can
+            use it anyway we want.
+          </p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div22" style="display: none">
+          <h2>React useReducer</h2>
+          <br />
+          <p>
+            <color>useReducer</color> is similar to
+            <color>useState</color> hook.
+            <br />
+            It lets you write your custom state logic.
+            <br />
+            It lets you pass dispatch down instead of callbacks resulting in
+            optimized performance for components that trigger deep updates.
+          </p>
+          <br />
+          <h3>When to use useReducer?</h3>
+          <br />
+          <p>
+            <color>useReducer</color> is usually preferable to
+            <color>useState</color> when you have complex state logic,
+            changing more than 2-3 states in a function.
+          </p>
+          <br />
+          <h3>Syntax</h3>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const [state, dispatch] = useReducer(reducer, initialState);
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            Here reducer is a function which contains your custom state logic
+            and initialState is as name suggests, it's initial state.
+            <br />
+            As you can see useReducer returns the current state and a dispatch
+            method.
+            <br />
+            Here is an example:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useReducer } from "react";
+
+      const initialData = {
+        lowercase: '',
+        uppercase: '',
+        spaces: ''
+      }
+      
+      const reducer = (state, action) => {
+        switch (action.type) {
+          case 'LOWERCASE':
+            return {...state, [action.payload.name]: action.payload.value.toLowerCase()}
+          case 'UPPERCASE':
+            return {...state, [action.payload.name]: action.payload.value.toUpperCase()}
+          case 'SPACES':
+            return {...state, [action.payload.name]: action.payload.value.replaceAll(' ', '')}
+          default:
+            return state;
+        }
+      };
+      
+      function App() {
+        const [data, dispatch] = useReducer(reducer, initialData);
+      
+        const handleChange = (e) => {
+          dispatch({ type: e.target.name.toUpperCase(), payload: {name: e.target.name, value: e.target.value} });
+        };
+      
+        return (
+          &lt;&gt;
+            &lt;form&gt;
+              &lt;input type="text" placeholder="Only Lowercase" name="lowercase" onChange={handleChange} value={data.lowercase} /&gt;&lt;br /&gt;
+              &lt;input type="text" placeholder="Only Uppercase" name="uppercase" onChange={handleChange} value={data.uppercase} /&gt;&lt;br /&gt;
+              &lt;input type="text" placeholder="No Spaces" name="spaces" onChange={handleChange} value={data.spaces} /&gt;
+            &lt;/form&gt;
+          &lt;/&gt;
+        );
+      }
+      
+      export default App;
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div23" style="display: none">
+          <h2>React useCallback</h2>
+          <br />
+          <p>
+            React <color>useCallback</color> Hook returns a memoized callback
+            function.
+            <br />
+            It is done so that it does not need to be recalculated resulting
+            in improved performance.
+            <br />
+            If we don't use useCallback function would run on every render.
+            This helps us to memoize resource intensive functions so that they
+            will not automatically run on every render.
+            <br />
+            With <color>useCallback</color> Hook, memoized function only runs
+            when any of its dependencies update.
+          </p>
+          <br />
+          <h3>When to use useCallback?</h3>
+          <br />
+          <p>
+            You may think we can use memo and stop a component from
+            re-rendering but if there is a case where you are passing a
+            function as prop to a component, then it will re-render
+            irrespective of memo. It is because of something called
+            "referential equality". In this every time a component re-renders,
+            its function gets recreated. Hence, memo is working but because
+            function is getting recreated, component will re-render. To avoid
+            this, we can use useCallback!
+            <br />
+            Like this:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const handleState = useCallback(() => {
+        setState({...state, type: 'CONFIRMED'});
+      }, [state])
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            Like this we are memoizing the function and only letting it run
+            when the dependency <color>state</color> changes!
+          </p>
+          <br />
+          <br />
+        </div>
+        <div class="notes" id="div24" style="display: none">
+          <h2>React useMemo</h2>
+          <br />
+          <p>
+            React <color>useMemo</color> Hook returns a memoized value.
+            <br />
+            It is similar to <color>useCallback</color> Hook. The main
+            difference is <color>useMemo</color> returns a memoized value and
+            <color>useCallback</color> returns a memoized function.
+            <br />
+            The <color>useMemo</color> Hook only runs when any of its
+            dependencies update.
+            <br />
+            <color>useMemo</color> can improve performance big time.
+          </p>
+          <br />
+          <h3>When to use it?</h3>
+          <br />
+          <p>Like if you have an expensive function like this:</p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      const expensiveFunction = (num) => {
+        console.log("Calculating...");
+        for (let i = 0; i &lt; 1000000000; i++) {
+          num += 1;
+        }
+        return num;
+      };
+    </code>
+    </pre>
+          <br />
+          <br />
+          <p>
+            This function will run on every render resulting in slowing down
+            of everything. To prevent this, we can memoize it's result and
+            return it without calculating and only recalculate it when num
+            changes.
+            <br />
+            For this we will make a state number because we have to give
+            changing factor as dependency. Hence, code would be:
+          </p>
+          <br />
+          <pre class="highlight">
+    <code class="language-JS">
+      import { useMemo, useState } from "react";
+
+      const App = () => {
+        const [number, setNumber] = useState(0);
+        const calculation = useMemo(() => expensiveFunction(number), [number]);
+      
+        return (
+          &lt;div&gt;
+            {calculation}
+          &lt;/div&gt;
+        );
+      };
+      
+      const expensiveFunction = (num) => {
+        console.log("Calculating...");
+        for (let i = 0; i &lt; 1000000000; i++) {
+          num = num + i;
+        }
+        return num;
+      };
+      
+      export default App;
+    </code>
+    </pre>
+          <br />
+          <br />
+        </div>
+
+        <button id="previous1">Previous</button>
+        <button id="next1">Next</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="../Scripts&xml/notes.js"></script>
+  <!--code highlighter-->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/prism.min.js"></script>
+  <script>
+    Prism.highlightAll();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ad sense tag-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1733919132650092"
+    crossorigin="anonymous"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJL1SB5QM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FBJL1SB5QM');
+  </script>
+
+  <title>JavaScript QUIZ - Test Your Coding Knowledge | CodingNation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Coding-nation">
+  <meta name="description"
+    content="CodingNation is a comprehensive code tutorial website, providing beginner to advanced coding tutorials, coding exercises, and coding challenges to help you learn to code and build your skills.">
+  <meta name="keywords"
+    content="Coding-nation, CodeNation, HTML tutorials, python tutorials, css tutorials, c tutorials,React js tutorials, javascript tutorials,java tutorials, php tutorials, code editor, online code editor, Codebot,chatbot,quizzes">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="coding-nation.com">
+  <link rel="stylesheet" href="../Styles/Quiz.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon.png">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body onload="NextQuestion(0)">
+  <div class="chatbot-icon">
+    <a href="../Main/codebot.html"><i class='bx bx-bot'></i></i>
+    </a>
+  </div>
+
+  <!--navigation bar-->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Main/index.html">CodingNation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" id="navbarNavLinks">
+          <li class="nav-item">
+            <a class="nav-link" href="../Main/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Courses</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../Notes/Python.html">Python</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Notes/React.html">React JS</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Notes/html.html">HTML</a>
+              </li>
+              <li><a class="dropdown-item" href="../Notes/css.html">CSS</a></li>
+              <li>
+                <a class="dropdown-item" href="../Notes/jascri.html">JavaScript</a>
+              </li>
+              <li><a class="dropdown-item" href="../Notes/cpro.html">C</a></li>
+              <li>
+                <a class="dropdown-item" href="../Notes/java.html">Java</a>
+              </li>
+              <li><a class="dropdown-item" href="../Notes/php.html">PHP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Practice</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../Quizzes/HTMLQuiz.html" target="_blank">HTML Quiz</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Quizzes/CSSQuiz.html" target="_blank">CSS Quiz</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Quizzes/JSQuiz.html" target="_blank">JavaScript Quiz</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Quizzes/CQuiz.html" target="_blank">C Quiz</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../Quizzes/JAVAQuiz.html" target="_blank">Java Quiz</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Main/codebot.html" target="_blank">CodeBot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Main/Editor.html" target="_blank">Editor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Main/About.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- creating a modal for when quiz ends -->
+    <div class="modal-container" id="score-modal">
+      <div class="modal-content-container">
+        <h1>Congratulations, Quiz Completed.</h1>
+
+        <div class="grade-details">
+          <p style="font-size: 16px">Result :</p>
+          <p>Wrong Answers : <span id="wrong-answers"></span></p>
+          <p>Right Answers : <span id="right-answers"></span></p>
+          <p>Grade : <span id="grade-percentage"></span>%</p>
+          <p><span id="remarks"></span></p>
+        </div>
+
+        <div class="modal-button-container">
+          <button onclick="closeScoreModal()">Continue</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal of quiz details-->
+
+    <div class="game-quiz-container">
+      <div class="game-details-container">
+        <h1>Score : <span id="player-score"></span> / 20</h1>
+        <h1>Question : <span id="question-number"></span> / 20</h1>
+      </div>
+
+      <div class="game-question-container">
+        <h1 id="display-question"></h1>
+      </div>
+
+      <div class="game-options-container">
+        <div class="modal-container" id="option-modal">
+          <div class="modal-content-container">
+            <h1>Please Pick An Option</h1>
+
+            <div class="modal-button-container">
+              <button onclick="closeOptionModal()">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <span>
+          <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+          <label for="option-one" class="option" id="option-one-label"></label>
+        </span>
+
+        <span>
+          <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+          <label for="option-two" class="option" id="option-two-label"></label>
+        </span>
+
+        <span>
+          <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+          <label for="option-three" class="option" id="option-three-label"></label>
+        </span>
+
+        <span>
+          <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+          <label for="option-four" class="option" id="option-four-label"></label>
+        </span>
+      </div>
+
+      <div class="next-button-container">
+        <button onclick="handleNextQuestion()">Next Question</button>
+      </div>
+    </div>
+  </main>
+  <script>
+    //this would be the object shape for storing the questions
+    //you can change the questions to your own taste or even add more questions..
+    const questions = [
+      {
+        question: "What does JavaScript stand for?",
+        optionA: "JavaServer Pages",
+        optionB: "JavaServer Programming Language",
+        optionC: "Java Script",
+        optionD: "JavaScript is not an acronym",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "Which keyword is used to declare a variable in JavaScript?",
+        optionA: "var",
+        optionB: "variable",
+        optionC: "let",
+        optionD: "const",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "What is the result of the following expression: 10 + 5 * 2?",
+        optionA: "30",
+        optionB: "20",
+        optionC: "15",
+        optionD: "25",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "What is the syntax for a single-line comment in JavaScript?",
+        optionA: "// This is a comment",
+        optionB: "<!-- This is a comment -->",
+        optionC: "* This is a comment",
+        optionD: "/* This is a comment */",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "What is the syntax for a multi-line comment in JavaScript?",
+        optionA: "// This is a comment",
+        optionB: "<!-- This is a comment -->",
+        optionC: "* This is a comment",
+        optionD: "/* This is a comment */",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "Which of the following is not a valid way to declare a variable in JavaScript?",
+        optionA: "var x = 5;",
+        optionB: "let y = 'hello';",
+        optionC: "const z = [1, 2, 3];",
+        optionD: "boolean a = true;",
+        correctOption: "optionD",
+      },
+
+      {
+        question:
+          "What is the output of the following code: console.log('5' == 5)?",
+        optionA: "true",
+        optionB: "false",
+        optionC: "NaN",
+        optionD: "undefined",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "What is the output of the following code: console.log('5' === 5)?",
+        optionA: "true",
+        optionB: "false",
+        optionC: "NaN",
+        optionD: "undefined",
+        correctOption: "optionB",
+      },
+      {
+        question:
+          "What is the output of the following code: console.log(1/0)?",
+        optionA: "NaN",
+        optionB: "Infinity",
+        optionC: "-Infinity",
+        optionD: "undefined",
+        correctOption: "optionB",
+      },
+      {
+        question:
+          "What is the output of the following code: console.log('Hello' + 'World')?",
+        optionA: "'HelloWorld'",
+        optionB: "'Hello World'",
+        optionC: "'WorldHello'",
+        optionD: "'Hello' 'World'",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "What is the output of the following code: console.log(typeof null)?",
+        optionA: "null",
+        optionB: "object",
+        optionC: "undefined",
+        optionD: "number",
+        correctOption: "optionB",
+      },
+      {
+        question:
+          "Which built-in method returns the index of the first occurrence of a specified value in a string?",
+        optionA: "indexOf()",
+        optionB: "search()",
+        optionC: "findIndex()",
+        optionD: "startsWith()",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "What is the output of the following code? console.log(typeof [])",
+        optionA: "undefined",
+        optionB: "null",
+        optionC: "string",
+        optionD: "object",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "What is the difference between `==` and `===` in JavaScript?",
+        optionA: "`==` performs a type conversion, while `===` does not",
+        optionB: "`===` performs a type conversion, while `==` does not",
+        optionC: "`==` and `===` are the same",
+        optionD: "none of the above",
+        correctOption: "optionA",
+      },
+      {
+        question:
+          "Which of the following is not a JavaScript loop statement?",
+        optionA: "for",
+        optionB: "while",
+        optionC: "do-while",
+        optionD: "switch",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "Which of the following is a primitive data type in JavaScript?",
+        optionA: "array",
+        optionB: "object",
+        optionC: "boolean",
+        optionD: "function",
+        correctOption: "optionC",
+      },
+      {
+        question: "What is the purpose of the `let` keyword in JavaScript?",
+        optionA: "to declare a block-scoped variable",
+        optionB: "to declare a global variable",
+        optionC: "to declare a function",
+        optionD: "none of the above",
+        correctOption: "optionA",
+      },
+      {
+        question: "What does the `this` keyword refer to in JavaScript?",
+        optionA: "the current file",
+        optionB: "the global object",
+        optionC: "the parent object",
+        optionD: "the current object",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "Which of the following is not a valid way to declare a function in JavaScript?",
+        optionA: "function myFunction() {}",
+        optionB: "let myFunction = function() {}",
+        optionC: "myFunction = function() {}",
+        optionD: "myFunction() {}",
+        correctOption: "optionD",
+      },
+      {
+        question:
+          "What is the difference between `var`, `let`, and `const` in JavaScript?",
+        optionA:
+          "`var` has function scope, while `let` and `const` have block scope",
+        optionB:
+          "`var` has block scope, while `let` and `const` have function scope",
+        optionC: "`let` and `const` are immutable, while `var` is mutable",
+        optionD: "there is no difference",
+        correctOption: "optionA",
+      },
+    ];
+
+    let shuffledQuestions = []; //empty array to hold shuffled selected questions out of all available questions
+
+    function handleQuestions() {
+      //function to shuffle and push 10 questions to shuffledQuestions array
+      //app would be dealing with 10questions per session
+      while (shuffledQuestions.length <= 19) {
+        const random =
+          questions[Math.floor(Math.random() * questions.length)];
+        if (!shuffledQuestions.includes(random)) {
+          shuffledQuestions.push(random);
+        }
+      }
+    }
+
+    let questionNumber = 1; //holds the current question number
+    let playerScore = 0; //holds the player score
+    let wrongAttempt = 0; //amount of wrong answers picked by player
+    let indexNumber = 0; //will be used in displaying next question
+
+    // function for displaying next question in the array to dom
+    //also handles displaying players and quiz information to dom
+    function NextQuestion(index) {
+      handleQuestions();
+      const currentQuestion = shuffledQuestions[index];
+      document.getElementById("question-number").innerHTML = questionNumber;
+      document.getElementById("player-score").innerHTML = playerScore;
+      document.getElementById("display-question").innerHTML =
+        currentQuestion.question;
+      document.getElementById("option-one-label").innerHTML =
+        currentQuestion.optionA;
+      document.getElementById("option-two-label").innerHTML =
+        currentQuestion.optionB;
+      document.getElementById("option-three-label").innerHTML =
+        currentQuestion.optionC;
+      document.getElementById("option-four-label").innerHTML =
+        currentQuestion.optionD;
+    }
+
+    function checkForAnswer() {
+      const currentQuestion = shuffledQuestions[indexNumber]; //gets current Question
+      const currentQuestionAnswer = currentQuestion.correctOption; //gets current Question's answer
+      const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
+      let correctOption = null;
+
+      options.forEach((option) => {
+        if (option.value === currentQuestionAnswer) {
+          //get's correct's radio input with correct answer
+          correctOption = option.labels[0].id;
+        }
+      });
+
+      //checking to make sure a radio input has been checked or an option being chosen
+      if (
+        options[0].checked === false &&
+        options[1].checked === false &&
+        options[2].checked === false &&
+        options[3].checked == false
+      ) {
+        document.getElementById("option-modal").style.display = "flex";
+      }
+
+      //checking if checked radio button is same as answer
+      options.forEach((option) => {
+        if (
+          option.checked === true &&
+          option.value === currentQuestionAnswer
+        ) {
+          document.getElementById(correctOption).style.backgroundColor =
+            "green";
+          playerScore++; //adding to player's score
+          indexNumber++; //adding 1 to index so has to display next question..
+          //set to delay question number till when next question loads
+          setTimeout(() => {
+            questionNumber++;
+          }, 1000);
+        } else if (option.checked && option.value !== currentQuestionAnswer) {
+          const wrongLabelId = option.labels[0].id;
+          document.getElementById(wrongLabelId).style.backgroundColor = "red";
+          document.getElementById(correctOption).style.backgroundColor =
+            "green";
+          wrongAttempt++; //adds 1 to wrong attempts
+          indexNumber++;
+          //set to delay question number till when next question loads
+          setTimeout(() => {
+            questionNumber++;
+          }, 1000);
+        }
+      });
+    }
+
+    //called when the next button is called
+    function handleNextQuestion() {
+      checkForAnswer(); //check if player picked right or wrong option
+      unCheckRadioButtons();
+      //delays next question displaying for a second just for some effects so questions don't rush in on player
+      setTimeout(() => {
+        if (indexNumber <= 19) {
+          //displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
+          NextQuestion(indexNumber);
+        } else {
+          handleEndGame(); //ends game if index number greater than 9 meaning we're already at the 10th question
+        }
+        resetOptionBackground();
+      }, 1000);
+    }
+
+    //sets options background back to null after display the right/wrong colors
+    function resetOptionBackground() {
+      const options = document.getElementsByName("option");
+      options.forEach((option) => {
+        document.getElementById(option.labels[0].id).style.backgroundColor =
+          "";
+      });
+    }
+
+    // unchecking all radio buttons for next question(can be done with map or foreach loop also)
+    function unCheckRadioButtons() {
+      const options = document.getElementsByName("option");
+      for (let i = 0; i < options.length; i++) {
+        options[i].checked = false;
+      }
+    }
+
+    // function for when all questions being answered
+    function handleEndGame() {
+      let remark = null;
+      let remarkColor = null;
+
+      // condition check for player remark and remark color
+      if (playerScore <= 3) {
+        remark =
+          "Bad Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com'>Click Here</a>.";
+        remarkColor = "red";
+      } else if (playerScore >= 8 && playerScore < 14) {
+        remark =
+          "Below Average Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com'>Click Here</a>..";
+        remarkColor = "orange";
+      } else if (playerScore >= 14 && playerScore < 17) {
+        remark =
+          "Average Grades, Keep Practicing the HTML<a href='https://www.coding-nation.com'>Click Here</a>..";
+        remarkColor = "orange";
+      } else if (playerScore >= 17) {
+        remark = "Excellent, Keep the good work going the HTML.";
+        remarkColor = "green";
+      }
+      const playerGrade = (playerScore / 20) * 100;
+
+      //data to display to score board
+      document.getElementById("remarks").innerHTML = remark;
+      document.getElementById("remarks").style.color = remarkColor;
+      document.getElementById("grade-percentage").innerHTML = playerGrade;
+      document.getElementById("wrong-answers").innerHTML = wrongAttempt;
+      document.getElementById("right-answers").innerHTML = playerScore;
+      document.getElementById("score-modal").style.display = "flex";
+    }
+
+    //closes score modal, resets game and reshuffles questions
+    function closeScoreModal() {
+      questionNumber = 1;
+      playerScore = 0;
+      wrongAttempt = 0;
+      indexNumber = 0;
+      shuffledQuestions = [];
+      NextQuestion(indexNumber);
+      document.getElementById("score-modal").style.display = "none";
+    }
+
+    //function to close warning modal
+    function closeOptionModal() {
+      document.getElementById("option-modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
