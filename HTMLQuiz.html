@@ -17,7 +17,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS QUIZ - Test Your Coding Knowledge | CodingNation</title>
+  <title>HTML QUIZ - Test Your Coding Knowledge | CodingNation</title>
   <meta name="description"
     content="Take our free coding quiz and test your knowledge in various programming languages such as Python, JavaScript, HTML, and more. Get instant feedback and track your progress.">
   <meta name="keywords"
@@ -27,7 +27,6 @@
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="../Styles/Quiz.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
-
   <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -46,7 +45,9 @@
     <a href="../Main/codebot.html"><i class='bx bx-bot'></i></i>
     </a>
   </div>
+
   <!--navigation bar-->
+
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">CodingNation</a>
@@ -65,53 +66,53 @@
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Courses</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="../Notes/Python.html">Python</a>
+                <a class="dropdown-item" href="../Python.html">Python</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Notes/React.html">React JS</a>
+                <a class="dropdown-item" href="../React.html">React JS</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Notes/html.html">HTML</a>
+                <a class="dropdown-item" href="../html.html">HTML</a>
               </li>
-              <li><a class="dropdown-item" href="../Notes/css.html">CSS</a></li>
+              <li><a class="dropdown-item" href="../css.html">CSS</a></li>
               <li>
-                <a class="dropdown-item" href="../Notes/jascri.html">JavaScript</a>
+                <a class="dropdown-item" href="../jascri.html">JavaScript</a>
               </li>
-              <li><a class="dropdown-item" href="../Notes/cpro.html">C</a></li>
+              <li><a class="dropdown-item" href="../cpro.html">C</a></li>
               <li>
-                <a class="dropdown-item" href="../Notes/java.html">Java</a>
+                <a class="dropdown-item" href="../java.html">Java</a>
               </li>
-              <li><a class="dropdown-item" href="../Notes/php.html">PHP</a></li>
+              <li><a class="dropdown-item" href="../php.html">PHP</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Practice</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="../Quizzes/HTMLQuiz.html" target="_blank">HTML Quiz</a>
+                <a class="dropdown-item" href="../HTMLQuiz.html" target="_blank">HTML Quiz</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Quizzes/CSSQuiz.html" target="_blank">CSS Quiz</a>
+                <a class="dropdown-item" href="../CSSQuiz.html" target="_blank">CSS Quiz</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Quizzes/JSQuiz.html" target="_blank">JavaScript Quiz</a>
+                <a class="dropdown-item" href="../JSQuiz.html" target="_blank">JavaScript Quiz</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Quizzes/CQuiz.html" target="_blank">C Quiz</a>
+                <a class="dropdown-item" href="../CQuiz.html" target="_blank">C Quiz</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../Quizzes/JAVAQuiz.html" target="_blank">Java Quiz</a>
+                <a class="dropdown-item" href="../JAVAQuiz.html" target="_blank">Java Quiz</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Main/codebot.html" target="_blank">CodeBot</a>
+            <a class="nav-link" href="../codebot.html" target="_blank">CodeBot</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Main/Editor.html" target="_blank">Editor</a>
+            <a class="nav-link" href="../Editor.html" target="_blank">Editor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Main/About.html">About</a>
+            <a class="nav-link" href="../About.html">About</a>
           </li>
         </ul>
       </div>
@@ -190,183 +191,170 @@
     //you can change the questions to your own taste or even add more questions..
     const questions = [
       {
-        question:
-          "What is the CSS property used to change the color of text?",
-        optionA: "background-color",
-        optionB: "text-color",
-        optionC: "color",
-        optionD: "font-color",
+        question: "What does HTML stand for?",
+        optionA: "Hyper Text Markup Language",
+        optionB: "Hyperlinks and Text Markup Language",
+        optionC: "Home Tool Markup Language",
+        optionD: "Hyper Technology Markup Language",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for the largest heading?",
+        optionA: "&lt;h6&gt;",
+        optionB: "&lt;h1&gt;",
+        optionC: "&lt;heading&gt;",
+        optionD: "&lt;head&gt;",
+        correctOption: "optionB",
+      },
+      {
+        question: "Which HTML tag is used to define an internal style sheet?",
+        optionA: "&lt;script&gt;",
+        optionB: "&lt;style&gt;",
+        optionC: "&lt;link&gt;",
+        optionD: "&lt;head&gt;",
+        correctOption: "optionB",
+      },
+      {
+        question: "Which HTML attribute is used to define inline styles?",
+        optionA: "class",
+        optionB: "style",
+        optionC: "src",
+        optionD: "id",
+        correctOption: "optionB",
+      },
+      {
+        question: "Which HTML tag is used to define a hyperlink?",
+        optionA: "&lt;a&gt;",
+        optionB: "&lt;link&gt;",
+        optionC: "&lt;href&gt;",
+        optionD: "&lt;hyperlink&gt;",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for inserting a line break?",
+        optionA: "&lt;lb&gt;",
+        optionB: "&lt;break&gt;",
+        optionC: "&lt;br&gt;",
+        optionD: "&lt;linebreak&gt;",
         correctOption: "optionC",
       },
       {
         question:
-          "What is the CSS property used to set the font family of text?",
-        optionA: "font-family",
-        optionB: "text-family",
-        optionC: "font-style",
-        optionD: "text-style",
+          "What is the correct HTML tag for creating an unordered list?",
+        optionA: "&lt;ol&gt;",
+        optionB: "&lt;list&gt;",
+        optionC: "&lt;ul&gt;",
+        optionD: "&lt;unordered&gt;",
+        correctOption: "optionC",
+      },
+      {
+        question: "What is the correct HTML tag for inserting an image?",
+        optionA: "&lt;img&gt;",
+        optionB: "&lt;src&gt;",
+        optionC: "&lt;image&gt;",
+        optionD: "&lt;picture&gt;",
+        correctOption: "optionA",
+      },
+      {
+        question: "Which HTML tag is used to define a table?",
+        optionA: "&lt;table&gt;",
+        optionB: "&lt;tr&gt;",
+        optionC: "&lt;td&gt;",
+        optionD: "&lt;th&gt;",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for defining a form?",
+        optionA: "&lt;form&gt;",
+        optionB: "&lt;input&gt;",
+        optionC: "&lt;button&gt;",
+        optionD: "&lt;submit&gt;",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for the body of a web page?",
+        optionA: "&lt;main&gt;",
+        optionB: "&lt;header&gt;",
+        optionC: "&lt;body&gt;",
+        optionD: "&lt;section&gt;",
+        correctOption: "optionC",
+      },
+      {
+        question: "What is the correct HTML tag for defining a paragraph?",
+        optionA: "&lt;paragraph&gt;",
+        optionB: "&lt;p&gt;",
+        optionC: "&lt;para&gt;",
+        optionD: "&lt;text&gt;",
+        correctOption: "optionB",
+      },
+      {
+        question:
+          "Which HTML attribute is used to specify a unique name for an element?",
+        optionA: "id",
+        optionB: "class",
+        optionC: "name",
+        optionD: "value",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for defining a footer?",
+        optionA: "&lt;end&gt;",
+        optionB: "&lt;footer&gt;",
+        optionC: "&lt;bottom&gt;",
+        optionD: "&lt;foot&gt;",
+        correctOption: "optionB",
+      },
+      {
+        question: "Which HTML tag is used to define a navigation menu?",
+        optionA: "&lt;nav&gt;",
+        optionB: "&lt;menu&gt;",
+        optionC: "&lt;list&gt;",
+        optionD: "&lt;navigation&gt;",
+        correctOption: "optionA",
+      },
+      {
+        question: "What is the correct HTML tag for a line of computer code?",
+        optionA: "&lt;code&gt;",
+        optionB: "&lt;pre&gt;",
+        optionC: "&lt;var&gt;",
+        optionD: "&lt;kbd&gt;",
         correctOption: "optionA",
       },
       {
         question:
-          "What is the CSS property used to set the font size of text?",
-        optionA: "font-size",
-        optionB: "text-size",
-        optionC: "font-style",
-        optionD: "text-style",
-        correctOption: "optionA",
+          "What is the purpose of the 'alt' attribute in an image tag?",
+        optionA: "To provide a title for the image",
+        optionB: "To specify the location of the image",
+        optionC: "To provide a description of the image",
+        optionD: "To define the style of the image",
+        correctOption: "optionC",
+      },
+
+      {
+        question:
+          "What is the purpose of the 'scoped' attribute in a style tag?",
+        optionA: "To apply the styles to all elements on the page",
+        optionB: "To apply the styles to a specific element",
+        optionC: "To limit the scope of the styles to the parent element",
+        optionD: "There is no 'scoped' attribute for style tags",
+        correctOption: "optionC",
       },
       {
         question:
-          "What is the CSS property used to set the background color of an element?",
-        optionA: "background-color",
-        optionB: "color",
-        optionC: "background",
-        optionD: "bgcolor",
-        correctOption: "optionA",
+          "Which of the following is NOT a valid value for the 'target' attribute in an anchor tag?",
+        optionA: "_blank",
+        optionB: "_self",
+        optionC: "_top",
+        optionD: "_new",
+        correctOption: "optionD",
       },
       {
         question:
-          "What is the CSS property used to set the height of an element?",
-        optionA: "height",
-        optionB: "width",
-        optionC: "size",
-        optionD: "length",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the width of an element?",
-        optionA: "width",
-        optionB: "height",
-        optionC: "size",
-        optionD: "length",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the border of an element?",
-        optionA: "border",
-        optionB: "outline",
-        optionC: "box-shadow",
-        optionD: "border-style",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the margin of an element?",
-        optionA: "margin",
-        optionB: "padding",
-        optionC: "spacing",
-        optionD: "border",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the padding of an element?",
-        optionA: "padding",
-        optionB: "margin",
-        optionC: "spacing",
-        optionD: "border",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the text alignment of an element?",
-        optionA: "text-align",
-        optionB: "align",
-        optionC: "text-style",
-        optionD: "font-align",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the display of an element?",
-        optionA: "display",
-        optionB: "visibility",
-        optionC: "position",
-        optionD: "float",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the vertical alignment of an element?",
-        optionA: "vertical-align",
-        optionB: "line-height",
-        optionC: "text-align",
-        optionD: "justify-content",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the opacity of an element?",
-        optionA: "opacity",
-        optionB: "visibility",
-        optionC: "display",
-        optionD: "float",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the position of an element?",
-        optionA: "position",
-        optionB: "display",
-        optionC: "float",
-        optionD: "visibility",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the z-index of an element?",
-        optionA: "z-index",
-        optionB: "position",
-        optionC: "display",
-        optionD: "float",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the overflow of an element?",
-        optionA: "overflow",
-        optionB: "visibility",
-        optionC: "display",
-        optionD: "float",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the box-shadow of an element?",
-        optionA: "box-shadow",
-        optionB: "border",
-        optionC: "outline",
-        optionD: "background-color",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the transition of an element?",
-        optionA: "transition",
-        optionB: "animation",
-        optionC: "transform",
-        optionD: "translate",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the transform of an element?",
-        optionA: "transform",
-        optionB: "transition",
-        optionC: "animation",
-        optionD: "translate",
-        correctOption: "optionA",
-      },
-      {
-        question:
-          "What is the CSS property used to set the background image of an element?",
-        optionA: "background-image",
-        optionB: "background-color",
-        optionC: "color",
-        optionD: "font-color",
+          "What is the purpose of the 'figcaption' element in an HTML5 figure tag?",
+        optionA: "To provide a caption for the image or media in the figure",
+        optionB: "To define a figure or illustration",
+        optionC: "To group related content together",
+        optionD: "There is no 'figcaption' element in an HTML5 figure tag",
         correctOption: "optionA",
       },
     ];
@@ -502,18 +490,18 @@
       // condition check for player remark and remark color
       if (playerScore <= 3) {
         remark =
-          "Bad Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com'>Click Here</a>.";
+          "Bad Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com/html.html'>Click Here</a>.";
         remarkColor = "red";
       } else if (playerScore >= 8 && playerScore < 14) {
         remark =
-          "Below Average Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com'>Click Here</a>..";
+          "Below Average Grades, Keep Practicing the HTML <a href='https://www.coding-nation.com/html.html'>Click Here</a>..";
         remarkColor = "orange";
       } else if (playerScore >= 14 && playerScore < 17) {
         remark =
-          "Average Grades, Keep Practicing the HTML<a href='https://www.coding-nation.com'>Click Here</a>..";
+          "Average Grades, Keep Practicing the HTML<a href='https://www.coding-nation.com/html.html'>Click Here</a>..";
         remarkColor = "orange";
       } else if (playerScore >= 17) {
-        remark = "Excellent, Keep the good work going the HTML.";
+        remark = "Excellent, Keep on Going with HTML.";
         remarkColor = "green";
       }
       const playerGrade = (playerScore / 20) * 100;
