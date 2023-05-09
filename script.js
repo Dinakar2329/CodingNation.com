@@ -57,14 +57,14 @@ function topFunction() {
 //Toggle menu
 function toggleSidebar() {
   const sidebar = document.getElementById("myNav");
-  sidebar.style.display === "none";
-  if (sidebar.style.display == "none") {
+  if (sidebar.style.display === "none") {
+    sidebar.classList.add("sidebar");
     sidebar.style.display = "block";
   } else {
     sidebar.style.display = "none";
+    sidebar.classList.remove("sidebar");
   }
 }
-
 const buttons = document.querySelectorAll(".fixed-sidebar button");
 const divs = document.querySelectorAll(".content > div");
 const prevButton = document.getElementById("previous");
@@ -139,5 +139,3 @@ function setup() {
 setup();
 // Show the first div by default
 showDiv(currentDiv);
-
-

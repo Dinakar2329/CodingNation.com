@@ -96,13 +96,14 @@ nav li.forward a:hover:before {
   grid-column: 1;
   overflow-y: auto;
   overflow-x: hidden;
-    margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .topics {
   margin: 5rem 0.5rem;
-  padding: 8px 0.5rem;
+  padding: 5px 0.5rem;
   background-color: #1c1c1c;
+  font-size: 15px;
   color: white;
   font-weight: 700;
   position: fixed;
@@ -392,7 +393,6 @@ pre[class*="language-"] {
     top: 12%;
     left: 3%;
   }
-
   .fixed-sidebar {
     opacity: 0;
     pointer-events: none;
@@ -400,7 +400,7 @@ pre[class*="language-"] {
     transition: all 0.2s;
   }
 
-  .fixed-sidebar {
+  .sidebar {
     opacity: 100%;
     pointer-events: auto;
     visibility: visible;
@@ -409,8 +409,8 @@ pre[class*="language-"] {
     z-index: 10;
     height: 92vh;
     margin-top: 3.6rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   }
-
   header > button {
     display: block;
     border: 1.5px solid #22ce33;
