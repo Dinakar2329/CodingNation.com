@@ -54,3 +54,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+const btn = document.getElementById('btn');
+const jumb = document.getElementById('jumb');
+    btn.addEventListener('click', () => {
+              jumb.style.display = "none";
+     })
