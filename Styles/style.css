@@ -132,13 +132,7 @@ nav li.forward a:hover:before {
   font-size: 18px;
 }
 
-#box p {
-  color: #777;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+
 
 #box>.btn {
   color: #ffffff;
