@@ -131,7 +131,9 @@ nav li.forward a:hover:before {
   color: #444;
   font-size: 18px;
 }
-
+#box p {
+  color: #777;
+}
 
 
 #box>.btn {
