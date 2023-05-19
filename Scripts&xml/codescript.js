@@ -2838,7 +2838,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   const userInput = document
     .querySelector(".user-input")
     .value.toLowerCase()
-    .replace(/[\s.-?!]+/g, "");
+    .replace(/[\s.?!]+/g, "");
   if (userInput in tagDefinitions || userInput in java) {
     chatBox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
     showTyping();
