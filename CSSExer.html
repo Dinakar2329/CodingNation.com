@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ad sense tag-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1733919132650092"
+        crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBJL1SB5QM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FBJL1SB5QM');
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="CodingNation provides exercises to pratice and learn coding. Coding Nation Execise are used to enhance your coding skills">
+    <meta name="keywords"
+        content="coding, programming, tutorial, learn, HTML, CSS, JavaScript, Python, resources, free, code tutorial, coding exercises, coding challenges, learn to code, coding skills">
+    <meta name="author" content="coding-nation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <title>CSS Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Exercise.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <header class="fixed-navbar">
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">CodingNation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="navbarNavLinks">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../Python.html">Python</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../React.html">React JS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html.html">HTML</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../css.html">CSS</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="../jascri.html">JavaScript</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../cpro.html">C</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="../java.html">Java</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../php.html">PHP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Practice</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../HTMLQuiz.html" target="_blank">HTML Quiz</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../CSSQuiz.html" target="_blank">CSS Quiz</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../JSQuiz.html" target="_blank">JavaScript Quiz</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../CQuiz.html" target="_blank">C Quiz</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../JAVAQuiz.html" target="_blank">Java Quiz</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Exercises</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../HTMLExer.html" target="_blank">HTML Exercise</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../CSSExer.html" target="_blank">CSS Exercise</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../JsExer.html" target="_blank">JavaScript
+                                        Exercise</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../CExer.html" target="_blank">C Exercise</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../JAVAExer.html" target="_blank">Java Exercise</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../codebot.html" target="_blank">CodeBot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Editor.html" target="_blank">Editor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../About.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="float-start">Exercise</h1>
+        <p id="title"></p>
+        <div class="questions" id="questions"></div>
+        <div class="bt">
+            <button type="submit" id="submit">Submit</button>
+            <button id="next">Next</button>
+            <button id="wrong">Try Again</button>
+            <button id="showAnswer">Show Answer</button>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="container-fluid text-center">
+        <hr />
+        <span class="bi bi-caret-up" onclick="topFunction()"></span>
+        <p>Copyright &copy; 2023 CodingNation. All rights reserved. <br /></p>
+        <p>
+            Trademark &trade; CodingNation
+            <a href="https://www.coding-nation.com/">www.coding-nation.com</a>
+        </p>
+    </footer>
+    <script>
+        const submit = document.getElementById("submit");
+        const next = document.getElementById("next");
+        const wrong = document.getElementById("wrong");
+        const questions = document.getElementById("questions");
+        const head = document.getElementById("title");
+        const showAnswer = document.getElementById("showAnswer");
+
+        const quiz = [
+            {
+                title: 'Add an external style sheet with the URL: "mystyle.css".',
+                question: `<p>&lt;head&gt;<br><input style="width:260px;" type="text"  maxlength="42"><br>&lt;/head&gt;<br><br>&lt;body&gt;
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                &lt;/body&gt;</p>`,
+                answer: '<link rel="stylesheet" href="mystyle.css">',
+            },
+            {
+                title:
+                    "Set the page's background color to red, by using an inline style.",
+                question: `<p>&lt;body <input type="text"  maxlength="42">
+                        ="background-color: red"&gt; <br><br>
+                        &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                        &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                        &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                        &lt;/body&gt;</p>`,
+                answer: "style",
+            },
+            {
+                title:
+                    'Set the background color of the &lt;h1&gt; element to "lightblue".',
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:250px;" type="text"  maxlength="42">: lightblue;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "background-color",
+            },
+            {
+                title:
+                    'Use the correct border property to set the LEFT border to "dotted".',
+                question: `<p>&lt;style&gt;<br>
+                            p {  <br>
+                            <input style="width:250px;" type="text"  maxlength="42">: dotted;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "border-left-style",
+            },
+            {
+                title: "Add a 20 pixels left margin to the &lt;h1&gt; element.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:200px;" type="text"  maxlength="42">: 20px;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "margin-left",
+            },
+            {
+                title: "Set the top padding of the &lt;h1&gt; element to 30 pixels.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:200px;" type="text"  maxlength="42">: 30px;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "padding-top",
+            },
+            {
+                title:
+                    "Set the padding of all sides of the &lt;h1&gt; element to 30 pixels.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:200px;" type="text"  maxlength="42">: 30px;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "padding",
+            },
+            {
+                title: "Set the height of the &lt;h1&gt; element to 100px.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:100px;" type="text"  maxlength="42">: 100px;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "height",
+            },
+            {
+                title: "Set the width of the &lt;h1&gt; element to 50%.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:100px;" type="text"  maxlength="42">: 50%;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "width",
+            },
+            {
+                title: "Set the font-family for &lt;h1&gt; Verdana.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:150px;" type="text"  maxlength="42">: Verdana;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "font-family",
+            },
+            {
+                title: "Set the color of the &lt;h1&gt; element to blue.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:100px;" type="text"  maxlength="42">: blue;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "color",
+            },
+
+            {
+                title: "Set the font-size of the &lt;h1&gt; element to 20px.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:100px;" type="text"  maxlength="42">: 20px;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "font-size",
+            },
+
+            {
+                title: "Set the font-weight of the &lt;h1&gt; element to bold.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:150px;" type="text"  maxlength="42">: bold;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "font-weight",
+            },
+
+            {
+                title: "Set the text-align of the &lt;h1&gt; element to center.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:100px;" type="text"  maxlength="42">: center;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>    
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "text-align",
+            },
+
+            {
+                title:
+                    "Set the text-decoration of the &lt;h1&gt; element to underline.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>
+                            <input style="width:180px;" type="text"  maxlength="42">: underline;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "text-decoration",
+            },
+            {
+                title:
+                    "Set the text-transform of the &lt;h1&gt; element to uppercase.",
+                question: `<p>&lt;style&gt;<br>
+                            h1 {  <br>  
+                            <input style="width:150px;" type="text"  maxlength="42">: uppercase;<br>
+                            }<br>
+                            &lt;/style&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;p&gt;This is a paragraph&lt;/p&gt;<br>
+                            &lt;/body&gt;</p>`,
+                answer: "text-transform",
+            },
+        ];
+    </script>
+    <script src="Exercise.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
